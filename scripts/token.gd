@@ -8,6 +8,7 @@ var tween
 signal value_changed
 
 func _ready():
+	add_to_group("tokens")
 	connect("value_changed", g, "handle_token_increased", [], CONNECT_DEFERRED)
 
 func _spawn_animation():

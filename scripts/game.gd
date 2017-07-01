@@ -52,13 +52,14 @@ func _set_direction_pivots():
 					direction_pivots[d.matrix_direction] = []
 				direction_pivots[d.matrix_direction].append(cell_pos)
 
-func _reset_board():
+func reset_board():
 	# remove all tokens from the tween
 	tween.remove_all()
-	# clear direction pivots since they'll be different between boards
-	direction_pivots.clear()
 	# clear the matrix
 	matrix.clear()
+	# remove all tokens
+	get_tree().call_group(0, "tokens", "queue_free")
+	_prepare_next_round()
 
 func _get_empty_position():
 	var available_positions = []
