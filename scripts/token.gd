@@ -20,6 +20,8 @@ func setup(pos, t):
 	current_pos = pos
 	set_pos(get_parent().map_to_world(pos))
 	_spawn_animation()
+	# set Z properly, so we avoid problems with depth
+	_set_Z()
 
 func _increase_value():
 	level += 1
@@ -58,3 +60,8 @@ func _define_tweening():
 							 cnf.ANIMATION_TIME, tween.TRANS_LINEAR, tween.EASE_IN)
 	# decrease opacity for a smoother animation
 	set_opacity(cnf.MOVEMENT_OPACITY)
+	# set Z properly, so we avoid problems with depth
+	_set_Z()
+
+func _set_Z():
+	set_z(current_pos.x + current_pos.y)

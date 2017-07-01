@@ -154,5 +154,4 @@ func _move_token(token, destination):
 			matrix[destination] = token
 	
 		token.current_pos = destination  # update the current position
-		token.set_z(destination.x + destination.y)
 		token._define_tweening()
