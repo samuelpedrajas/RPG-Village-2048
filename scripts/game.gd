@@ -28,12 +28,10 @@ func check_moves_available():
 	if matrix.keys().size() < used_cells.size():
 		return
 
-	for i in range(0, used_cells.size() - 1):
-		for j in range(i + 1, used_cells.size()):
-			var cell_i = used_cells[i]
-			var cell_j = used_cells[j]
-			var v = cell_i - cell_j
-			if abs(v.x) <= 1 and abs(v.y) <= 1 and matrix[cell_i].level == matrix[cell_j].level:
+	for current_cell in used_cells:
+		for d in cnf.DIRECTIONS:
+			var v = current_cell - d.matrix_direction
+			if matrix.has(v) and matrix[v].level == matrix[current_cell].level:
 				return
 
 	# TODO: GAME OVER HERE RATHER THAN PREPARING THE DEFAULT BOARD HERE
@@ -46,13 +44,13 @@ func _set_direction_pivots():
 	# for each used cell, if it has no previous cell but it has a next one
 	# for a given direction, then it is a pivot for that direction
 	for cell_pos in used_cells:
-		for direction in cnf.DIRECTIONS.values():
-			var next_pos = (cell_pos + direction)
-			var prev_pos = (cell_pos - direction)
+		for d in cnf.DIRECTIONS:
+			var next_pos = (cell_pos + d.matrix_direction)
+			var prev_pos = (cell_pos - d.matrix_direction)
 			if next_pos in used_cells and !(prev_pos in used_cells):
-				if !direction_pivots.has(direction):
-					direction_pivots[direction] = []
-				direction_pivots[direction].append(cell_pos)
+				if !direction_pivots.has(d.matrix_direction):
+					direction_pivots[d.matrix_direction] = []
+				direction_pivots[d.matrix_direction].append(cell_pos)
 
 func _reset_board():
 	# remove all tokens from the tween

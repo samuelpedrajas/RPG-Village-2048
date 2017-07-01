@@ -1,12 +1,12 @@
 extends Node
 
 # Directions available for input
-const DIRECTIONS = {
-	Vector2(2 / sqrt(5), 1 / sqrt(5)): Vector2(1, 0), 
-	Vector2(-2 / sqrt(5), -1 / sqrt(5)): Vector2(-1, 0),
-	Vector2(2 / sqrt(5), -1 / sqrt(5)): Vector2(0, -1),
-	Vector2(-2 / sqrt(5), 1 / sqrt(5)): Vector2(0, 1)
-}
+const DIRECTIONS = [
+	{"mouse_direction": Vector2(2 / sqrt(5), 1 / sqrt(5)), "matrix_direction": Vector2(1, 0)}, 
+	{"mouse_direction": Vector2(-2 / sqrt(5), -1 / sqrt(5)), "matrix_direction": Vector2(-1, 0)},
+	{"mouse_direction": Vector2(2 / sqrt(5), -1 / sqrt(5)), "matrix_direction": Vector2(0, -1)},
+	{"mouse_direction": Vector2(-2 / sqrt(5), 1 / sqrt(5)), "matrix_direction": Vector2(0, 1)}
+]
 
 const ANIMATION_TIME = 0.1  # time to travel to the destination, in seconds
 const MERGE_THRESHOLD = 20  # in pixels, distance to the destination to perform a merge
