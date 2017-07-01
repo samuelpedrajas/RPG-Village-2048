@@ -62,7 +62,7 @@ default/chorus_send = 0.0
 
 [node name="board" type="TileMap" parent="."]
 
-transform/pos = Vector2( 370, 0 )
+transform/pos = Vector2( 370, 10 )
 mode = 1
 tile_set = ExtResource( 5 )
 cell/size = Vector2( 590, 330 )
