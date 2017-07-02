@@ -16,7 +16,7 @@ func _ready():
 	tween = get_node("tween")
 	board = get_node("board")
 	_set_direction_pivots()  # set its direction pivots
-	_prepare_next_round()
+	_spawn_token(1)
 
 func is_valid_pos(p):
 	# check if the position is inside the board
@@ -75,16 +75,22 @@ func _get_empty_position():
 	randomize()  # otherwise it generates the same numbers
 	return available_positions[randi() % available_positions.size()]
 
-func _spawn_token(pos):
+func _spawn_token(level):
+	var pos = _get_empty_position()
+	if pos == null:
+		return
+
 	var t = token.instance()
 	board.add_child(t)  # t.setup() needs access to the board, so add it before
-	t.setup(pos, tween)
+	t.setup(pos, tween, level)
 	matrix[pos] = t
 
+func _get_level():
+	randomize()
+	return int(randi() % 3 > 1) + 1
+
 func _prepare_next_round():
-	var pos = _get_empty_position()
-	if pos != null:
-		_spawn_token(pos)
+	_spawn_token(_get_level())  # level 1 or 2
 	check_moves_available()
 
 func move(direction):

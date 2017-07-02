@@ -15,11 +15,12 @@ func _spawn_animation():
 	# play spawn animation
 	get_node("animation").play("spawn")
 
-func setup(pos, t):
-	level = 1
+func setup(pos, t, l):
 	tween = t
 	current_pos = pos
+	level = l
 	set_pos(get_parent().map_to_world(pos))
+	_set_texture()
 	_spawn_animation()
 	# set Z properly, so we avoid problems with depth
 	_set_Z()
@@ -27,10 +28,13 @@ func setup(pos, t):
 func _increase_value():
 	level += 1
 	# TODO: NEXT LINE WILL BE REMOVED
-	get_node("sprite").set_texture(load("res://images/islands/island" + str(level) + ".tex"))
+	_set_texture()
 	emit_signal("value_changed", level)
 	# play merge animation
 	get_node("animation").play("merge")
+
+func _set_texture():
+	get_node("sprite").set_texture(load("res://images/islands/island" + str(level) + ".tex"))
 
 func _interpolated_move(pos):
 	var world_current_pos = get_parent().map_to_world(current_pos)
