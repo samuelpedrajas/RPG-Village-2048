@@ -7,24 +7,27 @@ var line_skip = 2048
 var current_pos = Vector2(0, 0)
 
 func _run():
-	var path = "res://images/islands/"
-	var dir = Directory.new()
+	var path_list = ["res://images/tiles/tiles/", "res://images/tiles/trees/"]
 
-	if dir.open(path) == OK:
-		dir.list_dir_begin()
-		var file_name = dir.get_next()
-		while (file_name != ""):
-			if !file_name.ends_with(".tex"):
+	for path in path_list:
+		var dir = Directory.new()
+	
+		if dir.open(path) == OK:
+			dir.list_dir_begin()
+			var file_name = dir.get_next()
+			while (file_name != ""):
+				if !file_name.ends_with(".tex"):
+					file_name = dir.get_next()
+					continue
+				_create_sprite(path, file_name)
 				file_name = dir.get_next()
-				continue
-			_create_sprite(path + file_name)
-			file_name = dir.get_next()
 
-func _create_sprite(file_path):
+func _create_sprite(path, file_name):
 	var s = Sprite.new()
-	var t = ResourceLoader.load(file_path)
+	var t = ResourceLoader.load(path + file_name)
 
 	s.set_texture(t)
+	s.set_name(file_name.replace(".tex", ""))
 	s.set_pos(current_pos)
 	get_scene().add_child(s)
 	s.set_owner(get_scene())
