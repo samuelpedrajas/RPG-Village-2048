@@ -34,7 +34,8 @@ func _increase_value():
 	get_node("animation").play("merge")
 
 func _set_texture():
-	get_node("sprite").set_texture(load("res://images/islands/island" + str(level) + ".tex"))
+	pass
+	# get_node("sprite").set_texture(load("res://images/islands/island" + str(level) + ".tex"))
 
 func _interpolated_move(pos):
 	var world_current_pos = get_parent().map_to_world(current_pos)
