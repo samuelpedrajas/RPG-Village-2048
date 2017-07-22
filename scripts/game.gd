@@ -9,14 +9,16 @@ var tween
 var board
 
 onready var token = preload("res://scenes/token.tscn")
+onready var token_tilemap_generator = preload("res://scripts/token_tilemap_generator.gd").new()
 
 func _ready():
+	token_tilemap_generator.create_tilemaps()
 	input_handler = get_node("input_handler")
 	input_handler.connect("user_input", self, "move")
 	tween = get_node("tween")
 	board = get_node("board")
 	_set_direction_pivots()  # set its direction pivots
-	_spawn_token(1)
+	_spawn_token(0)
 
 func is_valid_pos(p):
 	# check if the position is inside the board
@@ -87,7 +89,7 @@ func _spawn_token(level):
 
 func _get_level():
 	randomize()
-	return int(randi() % 3 > 1) + 1
+	return int(randi() % 3 > 1)
 
 func _prepare_next_round():
 	_spawn_token(_get_level())  # level 1 or 2

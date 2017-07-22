@@ -34,8 +34,9 @@ func _increase_value():
 	get_node("animation").play("merge")
 
 func _set_texture():
-	pass
-	# get_node("sprite").set_texture(load("res://images/islands/island" + str(level) + ".tex"))
+	if has_node("tilemap"):
+		remove_child(get_node("tilemap"))
+	add_child(g.get_tilemap(level))
 
 func _interpolated_move(pos):
 	var world_current_pos = get_parent().map_to_world(current_pos)

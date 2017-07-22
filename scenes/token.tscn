@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scripts/token.gd" type="Script" id=1]
-[ext_resource path="res://tilesets/token_tileset.tres" type="TileSet" id=2]
 
 [sub_resource type="Animation" id=1]
 
@@ -31,49 +30,5 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
-
-[node name="tilemap" type="Node2D" parent="."]
-
-transform/pos = Vector2( 0, -7 )
-
-[node name="layer0" type="TileMap" parent="tilemap"]
-
-transform/pos = Vector2( 0, 20 )
-transform/scale = Vector2( 0.5, 0.5 )
-mode = 1
-tile_set = ExtResource( 2 )
-cell/size = Vector2( 151, 76 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( 0, 0, 1, 10, 2, 10, 3, 10, 4, 10, 5, 10, 6, 14, 65536, 5, 65537, 13, 65538, 13, 65539, 13, 65540, 13, 65541, 13, 65542, 16, 131072, 5, 131073, 13, 131074, 13, 131075, 13, 131076, 13, 131077, 13, 131078, 16, 196608, 5, 196609, 13, 196610, 13, 196611, 13, 196612, 13, 196613, 13, 196614, 16, 262144, 5, 262145, 13, 262146, 13, 262147, 13, 262148, 13, 262149, 13, 262150, 16, 327680, 5, 327681, 13, 327682, 13, 327683, 13, 327684, 13, 327685, 13, 327686, 16, 393216, 17, 393217, 8, 393218, 8, 393219, 8, 393220, 8, 393221, 8, 393222, 20 )
-
-[node name="layer1" type="TileMap" parent="tilemap"]
-
-transform/pos = Vector2( 0, 20 )
-transform/scale = Vector2( 0.5, 0.5 )
-mode = 1
-tile_set = ExtResource( 2 )
-cell/size = Vector2( 151, 76 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( 65538, 27, 131073, 27, 196612, 27, 262147, 27 )
 
 
