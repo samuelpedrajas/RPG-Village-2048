@@ -10,7 +10,3 @@ func game_over():
 	print("Game over")
 	self.score = 0
 	game.reset_board()
-
-func get_tilemap(level):
-	var game = get_tree().get_root().get_node("game")
-	return game.token_tilemap_generator.tilemaps[level].duplicate()

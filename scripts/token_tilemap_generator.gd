@@ -61,3 +61,6 @@ func _put_trees(layer):
 			if layer.get_cell(i % max_pos , j % max_pos) < 0:
 				layer.set_cell(i % max_pos, j % max_pos, 26 + r)
 				return
+
+func get_tilemap(level):
+	return tilemaps[level].duplicate()

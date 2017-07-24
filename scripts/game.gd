@@ -9,7 +9,6 @@ var tween
 var board
 
 onready var token = preload("res://scenes/token.tscn")
-onready var token_tilemap_generator = preload("res://scripts/token_tilemap_generator.gd").new()
 
 func _ready():
 	token_tilemap_generator.create_tilemaps()
