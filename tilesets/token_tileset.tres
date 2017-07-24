@@ -100,7 +100,7 @@
 6/shapes = [  ]
 7/name = "road_tile_2_1"
 7/texture = ExtResource( 30 )
-7/tex_offset = Vector2( 0, 0 )
+7/tex_offset = Vector2( 0, 1 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 151, 73 )
 7/occluder_offset = Vector2( 75.5, 36.5 )
@@ -136,7 +136,7 @@
 10/shapes = [  ]
 11/name = "road_tile_1_3"
 11/texture = ExtResource( 4 )
-11/tex_offset = Vector2( 0, 0 )
+11/tex_offset = Vector2( 0, 2 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 0, 0, 149, 72 )
 11/occluder_offset = Vector2( 74.5, 36 )
@@ -253,7 +253,7 @@
 23/shapes = [  ]
 24/name = "road_tile_1_4"
 24/texture = ExtResource( 18 )
-24/tex_offset = Vector2( 0, 0 )
+24/tex_offset = Vector2( 0, 1 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 0, 0, 151, 74 )
 24/occluder_offset = Vector2( 75.5, 37 )
@@ -271,7 +271,7 @@
 25/shapes = [  ]
 26/name = "5"
 26/texture = ExtResource( 20 )
-26/tex_offset = Vector2( 0, 0 )
+26/tex_offset = Vector2( 0, -37 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 0, 0, 122, 150 )
 26/occluder_offset = Vector2( 61, 75 )
@@ -280,7 +280,7 @@
 26/shapes = [  ]
 27/name = "1"
 27/texture = ExtResource( 21 )
-27/tex_offset = Vector2( 0, 0 )
+27/tex_offset = Vector2( 0, -37 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 0, 0, 122, 150 )
 27/occluder_offset = Vector2( 61, 75 )
@@ -289,7 +289,7 @@
 27/shapes = [  ]
 28/name = "2"
 28/texture = ExtResource( 22 )
-28/tex_offset = Vector2( 0, 0 )
+28/tex_offset = Vector2( 0, -37 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 0, 0, 122, 150 )
 28/occluder_offset = Vector2( 61, 75 )
@@ -298,7 +298,7 @@
 28/shapes = [  ]
 29/name = "6"
 29/texture = ExtResource( 23 )
-29/tex_offset = Vector2( 0, 0 )
+29/tex_offset = Vector2( 0, -37 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 0, 0, 122, 150 )
 29/occluder_offset = Vector2( 61, 75 )
@@ -307,7 +307,7 @@
 29/shapes = [  ]
 30/name = "3"
 30/texture = ExtResource( 25 )
-30/tex_offset = Vector2( 0, 0 )
+30/tex_offset = Vector2( 0, -37 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 0, 0, 122, 150 )
 30/occluder_offset = Vector2( 61, 75 )
@@ -316,7 +316,7 @@
 30/shapes = [  ]
 31/name = "4"
 31/texture = ExtResource( 26 )
-31/tex_offset = Vector2( 0, 0 )
+31/tex_offset = Vector2( 0, -37 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 0, 0, 122, 150 )
 31/occluder_offset = Vector2( 61, 75 )

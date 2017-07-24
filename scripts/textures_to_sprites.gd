@@ -1,6 +1,7 @@
 extends EditorScript
 tool
 
+var cell_height = 76
 var h_spacing = 16
 var v_spacing = 512
 var line_skip = 2048
@@ -29,6 +30,7 @@ func _create_sprite(path, file_name):
 	s.set_texture(t)
 	s.set_name(file_name.replace(".tex", ""))
 	s.set_pos(current_pos)
+	s.set_offset(Vector2(0, (cell_height - t.get_height()) / 2))
 	get_scene().add_child(s)
 	s.set_owner(get_scene())
 	current_pos.x += t.get_width() + h_spacing
