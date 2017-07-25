@@ -1,0 +1,2366 @@
+[gd_resource type="TileSet" load_steps=237 format=1]
+
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/5.tex" type="Texture" id=1]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/8.tex" type="Texture" id=2]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/1.tex" type="Texture" id=3]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/1.tex" type="Texture" id=4]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/2.tex" type="Texture" id=5]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/6.tex" type="Texture" id=6]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/3.tex" type="Texture" id=7]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/4.tex" type="Texture" id=8]
+[ext_resource path="res://images/TILES/NATURE/PLANT/12.tex" type="Texture" id=9]
+[ext_resource path="res://images/TILES/NATURE/PLANT/18.tex" type="Texture" id=10]
+[ext_resource path="res://images/TILES/NATURE/PLANT/15.tex" type="Texture" id=11]
+[ext_resource path="res://images/TILES/NATURE/PLANT/10.tex" type="Texture" id=12]
+[ext_resource path="res://images/TILES/NATURE/PLANT/5.tex" type="Texture" id=13]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/2.tex" type="Texture" id=14]
+[ext_resource path="res://images/TILES/NATURE/PLANT/8.tex" type="Texture" id=15]
+[ext_resource path="res://images/TILES/NATURE/PLANT/1.tex" type="Texture" id=16]
+[ext_resource path="res://images/TILES/NATURE/PLANT/11.tex" type="Texture" id=17]
+[ext_resource path="res://images/TILES/NATURE/PLANT/9.tex" type="Texture" id=18]
+[ext_resource path="res://images/TILES/NATURE/PLANT/16.tex" type="Texture" id=19]
+[ext_resource path="res://images/TILES/NATURE/PLANT/17.tex" type="Texture" id=20]
+[ext_resource path="res://images/TILES/NATURE/PLANT/2.tex" type="Texture" id=21]
+[ext_resource path="res://images/TILES/NATURE/PLANT/13.tex" type="Texture" id=22]
+[ext_resource path="res://images/TILES/NATURE/PLANT/14.tex" type="Texture" id=23]
+[ext_resource path="res://images/TILES/NATURE/PLANT/7.tex" type="Texture" id=24]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/7.tex" type="Texture" id=25]
+[ext_resource path="res://images/TILES/NATURE/PLANT/6.tex" type="Texture" id=26]
+[ext_resource path="res://images/TILES/NATURE/PLANT/3.tex" type="Texture" id=27]
+[ext_resource path="res://images/TILES/NATURE/PLANT/4.tex" type="Texture" id=28]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/12.tex" type="Texture" id=29]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/18.tex" type="Texture" id=30]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/15.tex" type="Texture" id=31]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/10.tex" type="Texture" id=32]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/5.tex" type="Texture" id=33]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/20.tex" type="Texture" id=34]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/8.tex" type="Texture" id=35]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/6.tex" type="Texture" id=36]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/1.tex" type="Texture" id=37]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/11.tex" type="Texture" id=38]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/9.tex" type="Texture" id=39]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/16.tex" type="Texture" id=40]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/17.tex" type="Texture" id=41]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/2.tex" type="Texture" id=42]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/13.tex" type="Texture" id=43]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/14.tex" type="Texture" id=44]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/19.tex" type="Texture" id=45]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/7.tex" type="Texture" id=46]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/3.tex" type="Texture" id=47]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/6.tex" type="Texture" id=48]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/3.tex" type="Texture" id=49]
+[ext_resource path="res://images/TILES/NATURE/SINGLE_BUSH/4.tex" type="Texture" id=50]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/12.tex" type="Texture" id=51]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/21.tex" type="Texture" id=52]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/18.tex" type="Texture" id=53]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/15.tex" type="Texture" id=54]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/10.tex" type="Texture" id=55]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/24.tex" type="Texture" id=56]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/5.tex" type="Texture" id=57]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/4.tex" type="Texture" id=58]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/20.tex" type="Texture" id=59]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/8.tex" type="Texture" id=60]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/22.tex" type="Texture" id=61]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/1.tex" type="Texture" id=62]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/11.tex" type="Texture" id=63]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/9.tex" type="Texture" id=64]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/16.tex" type="Texture" id=65]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/23.tex" type="Texture" id=66]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/17.tex" type="Texture" id=67]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/2.tex" type="Texture" id=68]
+[ext_resource path="res://images/TILES/LIVING/HEALER/5.tex" type="Texture" id=69]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/25.tex" type="Texture" id=70]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/13.tex" type="Texture" id=71]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/14.tex" type="Texture" id=72]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/19.tex" type="Texture" id=73]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/7.tex" type="Texture" id=74]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/6.tex" type="Texture" id=75]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/3.tex" type="Texture" id=76]
+[ext_resource path="res://images/TILES/NATURE/SMALL_FOLIAGE/4.tex" type="Texture" id=77]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE0/1.tex" type="Texture" id=78]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE0/2.tex" type="Texture" id=79]
+[ext_resource path="res://images/TILES/LIVING/HEALER/1.tex" type="Texture" id=80]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE0/3.tex" type="Texture" id=81]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE0/4.tex" type="Texture" id=82]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/5.tex" type="Texture" id=83]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/1.tex" type="Texture" id=84]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/2.tex" type="Texture" id=85]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/6.tex" type="Texture" id=86]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/3.tex" type="Texture" id=87]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE1/4.tex" type="Texture" id=88]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/5.tex" type="Texture" id=89]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/1.tex" type="Texture" id=90]
+[ext_resource path="res://images/TILES/LIVING/HEALER/2.tex" type="Texture" id=91]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/2.tex" type="Texture" id=92]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/6.tex" type="Texture" id=93]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/3.tex" type="Texture" id=94]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE2/4.tex" type="Texture" id=95]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/12.tex" type="Texture" id=96]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/10.tex" type="Texture" id=97]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/5.tex" type="Texture" id=98]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/8.tex" type="Texture" id=99]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/1.tex" type="Texture" id=100]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/11.tex" type="Texture" id=101]
+[ext_resource path="res://images/TILES/LIVING/HEALER/7.tex" type="Texture" id=102]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/9.tex" type="Texture" id=103]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/2.tex" type="Texture" id=104]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/13.tex" type="Texture" id=105]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/7.tex" type="Texture" id=106]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/6.tex" type="Texture" id=107]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/3.tex" type="Texture" id=108]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE3/4.tex" type="Texture" id=109]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE4/1.tex" type="Texture" id=110]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE4/2.tex" type="Texture" id=111]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE4/3.tex" type="Texture" id=112]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/1.tex" type="Texture" id=113]
+[ext_resource path="res://images/TILES/LIVING/HEALER/6.tex" type="Texture" id=114]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE5/1.tex" type="Texture" id=115]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE5/2.tex" type="Texture" id=116]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE5/3.tex" type="Texture" id=117]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE5/4.tex" type="Texture" id=118]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/5.tex" type="Texture" id=119]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/1.tex" type="Texture" id=120]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/2.tex" type="Texture" id=121]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/7.tex" type="Texture" id=122]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/6.tex" type="Texture" id=123]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/3.tex" type="Texture" id=124]
+[ext_resource path="res://images/TILES/LIVING/HEALER/3.tex" type="Texture" id=125]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE6/4.tex" type="Texture" id=126]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE8/1.tex" type="Texture" id=127]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE8/2.tex" type="Texture" id=128]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE8/3.tex" type="Texture" id=129]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE8/4.tex" type="Texture" id=130]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE9/1.tex" type="Texture" id=131]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE9/2.tex" type="Texture" id=132]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE9/3.tex" type="Texture" id=133]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/12.tex" type="Texture" id=134]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/18.tex" type="Texture" id=135]
+[ext_resource path="res://images/TILES/LIVING/HEALER/4.tex" type="Texture" id=136]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/15.tex" type="Texture" id=137]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/10.tex" type="Texture" id=138]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/5.tex" type="Texture" id=139]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/8.tex" type="Texture" id=140]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/1.tex" type="Texture" id=141]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/11.tex" type="Texture" id=142]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/9.tex" type="Texture" id=143]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/16.tex" type="Texture" id=144]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/17.tex" type="Texture" id=145]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/2.tex" type="Texture" id=146]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/5.tex" type="Texture" id=147]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/13.tex" type="Texture" id=148]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/14.tex" type="Texture" id=149]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/7.tex" type="Texture" id=150]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/6.tex" type="Texture" id=151]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/3.tex" type="Texture" id=152]
+[ext_resource path="res://images/TILES/NATURE/TREE/TYPE10/4.tex" type="Texture" id=153]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/1.tex" type="Texture" id=154]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/2.tex" type="Texture" id=155]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/6.tex" type="Texture" id=156]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/3.tex" type="Texture" id=157]
+[ext_resource path="res://images/TILES/LIVING/SWMAN/4.tex" type="Texture" id=158]
+[ext_resource path="res://images/TILES/MISC/ARROW/1.tex" type="Texture" id=159]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/9.tex" type="Texture" id=160]
+[ext_resource path="res://images/TILES/MISC/ARROW/2.tex" type="Texture" id=161]
+[ext_resource path="res://images/TILES/MISC/ARROW/3.tex" type="Texture" id=162]
+[ext_resource path="res://images/TILES/MISC/ARROW/4.tex" type="Texture" id=163]
+[ext_resource path="res://images/TILES/MISC/FARMING/12.tex" type="Texture" id=164]
+[ext_resource path="res://images/TILES/MISC/FARMING/10.tex" type="Texture" id=165]
+[ext_resource path="res://images/TILES/MISC/FARMING/5.tex" type="Texture" id=166]
+[ext_resource path="res://images/TILES/MISC/FARMING/8.tex" type="Texture" id=167]
+[ext_resource path="res://images/TILES/MISC/FARMING/1.tex" type="Texture" id=168]
+[ext_resource path="res://images/TILES/MISC/FARMING/11.tex" type="Texture" id=169]
+[ext_resource path="res://images/TILES/MISC/FARMING/9.tex" type="Texture" id=170]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/2.tex" type="Texture" id=171]
+[ext_resource path="res://images/TILES/MISC/FARMING/2.tex" type="Texture" id=172]
+[ext_resource path="res://images/TILES/MISC/FARMING/13.tex" type="Texture" id=173]
+[ext_resource path="res://images/TILES/MISC/FARMING/14.tex" type="Texture" id=174]
+[ext_resource path="res://images/TILES/MISC/FARMING/7.tex" type="Texture" id=175]
+[ext_resource path="res://images/TILES/MISC/FARMING/6.tex" type="Texture" id=176]
+[ext_resource path="res://images/TILES/MISC/FARMING/3.tex" type="Texture" id=177]
+[ext_resource path="res://images/TILES/MISC/FARMING/4.tex" type="Texture" id=178]
+[ext_resource path="res://images/TILES/MISC/OTHER/5.tex" type="Texture" id=179]
+[ext_resource path="res://images/TILES/MISC/OTHER/1.tex" type="Texture" id=180]
+[ext_resource path="res://images/TILES/MISC/OTHER/2.tex" type="Texture" id=181]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/7.tex" type="Texture" id=182]
+[ext_resource path="res://images/TILES/MISC/OTHER/6.tex" type="Texture" id=183]
+[ext_resource path="res://images/TILES/MISC/OTHER/3.tex" type="Texture" id=184]
+[ext_resource path="res://images/TILES/MISC/OTHER/4.tex" type="Texture" id=185]
+[ext_resource path="res://images/TILES/MISC/ROCK/12.tex" type="Texture" id=186]
+[ext_resource path="res://images/TILES/MISC/ROCK/18.tex" type="Texture" id=187]
+[ext_resource path="res://images/TILES/MISC/ROCK/15.tex" type="Texture" id=188]
+[ext_resource path="res://images/TILES/MISC/ROCK/10.tex" type="Texture" id=189]
+[ext_resource path="res://images/TILES/MISC/ROCK/5.tex" type="Texture" id=190]
+[ext_resource path="res://images/TILES/MISC/ROCK/8.tex" type="Texture" id=191]
+[ext_resource path="res://images/TILES/MISC/ROCK/1.tex" type="Texture" id=192]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/6.tex" type="Texture" id=193]
+[ext_resource path="res://images/TILES/MISC/ROCK/11.tex" type="Texture" id=194]
+[ext_resource path="res://images/TILES/MISC/ROCK/9.tex" type="Texture" id=195]
+[ext_resource path="res://images/TILES/MISC/ROCK/16.tex" type="Texture" id=196]
+[ext_resource path="res://images/TILES/MISC/ROCK/17.tex" type="Texture" id=197]
+[ext_resource path="res://images/TILES/MISC/ROCK/2.tex" type="Texture" id=198]
+[ext_resource path="res://images/TILES/MISC/ROCK/13.tex" type="Texture" id=199]
+[ext_resource path="res://images/TILES/MISC/ROCK/14.tex" type="Texture" id=200]
+[ext_resource path="res://images/TILES/MISC/ROCK/7.tex" type="Texture" id=201]
+[ext_resource path="res://images/TILES/MISC/ROCK/6.tex" type="Texture" id=202]
+[ext_resource path="res://images/TILES/MISC/ROCK/3.tex" type="Texture" id=203]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/3.tex" type="Texture" id=204]
+[ext_resource path="res://images/TILES/MISC/ROCK/4.tex" type="Texture" id=205]
+[ext_resource path="res://images/TILES/MISC/WOOD/12.tex" type="Texture" id=206]
+[ext_resource path="res://images/TILES/MISC/WOOD/21.tex" type="Texture" id=207]
+[ext_resource path="res://images/TILES/MISC/WOOD/18.tex" type="Texture" id=208]
+[ext_resource path="res://images/TILES/MISC/WOOD/26.tex" type="Texture" id=209]
+[ext_resource path="res://images/TILES/MISC/WOOD/15.tex" type="Texture" id=210]
+[ext_resource path="res://images/TILES/MISC/WOOD/28.tex" type="Texture" id=211]
+[ext_resource path="res://images/TILES/MISC/WOOD/10.tex" type="Texture" id=212]
+[ext_resource path="res://images/TILES/MISC/WOOD/24.tex" type="Texture" id=213]
+[ext_resource path="res://images/TILES/MISC/WOOD/5.tex" type="Texture" id=214]
+[ext_resource path="res://images/TILES/LIVING/ANIMAL/4.tex" type="Texture" id=215]
+[ext_resource path="res://images/TILES/MISC/WOOD/20.tex" type="Texture" id=216]
+[ext_resource path="res://images/TILES/MISC/WOOD/8.tex" type="Texture" id=217]
+[ext_resource path="res://images/TILES/MISC/WOOD/22.tex" type="Texture" id=218]
+[ext_resource path="res://images/TILES/MISC/WOOD/1.tex" type="Texture" id=219]
+[ext_resource path="res://images/TILES/MISC/WOOD/11.tex" type="Texture" id=220]
+[ext_resource path="res://images/TILES/MISC/WOOD/9.tex" type="Texture" id=221]
+[ext_resource path="res://images/TILES/MISC/WOOD/16.tex" type="Texture" id=222]
+[ext_resource path="res://images/TILES/MISC/WOOD/23.tex" type="Texture" id=223]
+[ext_resource path="res://images/TILES/MISC/WOOD/17.tex" type="Texture" id=224]
+[ext_resource path="res://images/TILES/MISC/WOOD/2.tex" type="Texture" id=225]
+[ext_resource path="res://images/TILES/LIVING/ARCHER/5.tex" type="Texture" id=226]
+[ext_resource path="res://images/TILES/MISC/WOOD/27.tex" type="Texture" id=227]
+[ext_resource path="res://images/TILES/MISC/WOOD/25.tex" type="Texture" id=228]
+[ext_resource path="res://images/TILES/MISC/WOOD/13.tex" type="Texture" id=229]
+[ext_resource path="res://images/TILES/MISC/WOOD/14.tex" type="Texture" id=230]
+[ext_resource path="res://images/TILES/MISC/WOOD/19.tex" type="Texture" id=231]
+[ext_resource path="res://images/TILES/MISC/WOOD/7.tex" type="Texture" id=232]
+[ext_resource path="res://images/TILES/MISC/WOOD/6.tex" type="Texture" id=233]
+[ext_resource path="res://images/TILES/MISC/WOOD/3.tex" type="Texture" id=234]
+[ext_resource path="res://images/TILES/MISC/WOOD/4.tex" type="Texture" id=235]
+[ext_resource path="res://images/TILES/NATURE/MULTIPLE_BUSH/5.tex" type="Texture" id=236]
+
+[resource]
+
+0/name = "LIVING-ANIMAL-5"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, -37 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 138, 150 )
+0/occluder_offset = Vector2( 69, 75 )
+0/navigation_offset = Vector2( 69, 75 )
+0/shape_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+1/name = "LIVING-ANIMAL-8"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, -32 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 138, 140 )
+1/occluder_offset = Vector2( 69, 70 )
+1/navigation_offset = Vector2( 69, 70 )
+1/shape_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+2/name = "LIVING-ANIMAL-1"
+2/texture = ExtResource( 113 )
+2/tex_offset = Vector2( 0, -1 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 138, 78 )
+2/occluder_offset = Vector2( 69, 39 )
+2/navigation_offset = Vector2( 69, 39 )
+2/shape_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+3/name = "LIVING-ANIMAL-9"
+3/texture = ExtResource( 160 )
+3/tex_offset = Vector2( 0, -50 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 138, 177 )
+3/occluder_offset = Vector2( 69, 88.5 )
+3/navigation_offset = Vector2( 69, 88.5 )
+3/shape_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+4/name = "LIVING-ANIMAL-2"
+4/texture = ExtResource( 171 )
+4/tex_offset = Vector2( 0, -33 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 138, 142 )
+4/occluder_offset = Vector2( 69, 71 )
+4/navigation_offset = Vector2( 69, 71 )
+4/shape_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+5/name = "LIVING-ANIMAL-7"
+5/texture = ExtResource( 182 )
+5/tex_offset = Vector2( 0, -27 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 138, 130 )
+5/occluder_offset = Vector2( 69, 65 )
+5/navigation_offset = Vector2( 69, 65 )
+5/shape_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+6/name = "LIVING-ANIMAL-6"
+6/texture = ExtResource( 193 )
+6/tex_offset = Vector2( 0, -25 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 138, 126 )
+6/occluder_offset = Vector2( 69, 63 )
+6/navigation_offset = Vector2( 69, 63 )
+6/shape_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+7/name = "LIVING-ANIMAL-3"
+7/texture = ExtResource( 204 )
+7/tex_offset = Vector2( 0, -95 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 138, 267 )
+7/occluder_offset = Vector2( 69, 133.5 )
+7/navigation_offset = Vector2( 69, 133.5 )
+7/shape_offset = Vector2( 0, 0 )
+7/shapes = [  ]
+8/name = "LIVING-ANIMAL-4"
+8/texture = ExtResource( 215 )
+8/tex_offset = Vector2( 0, -23 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 138, 122 )
+8/occluder_offset = Vector2( 69, 61 )
+8/navigation_offset = Vector2( 69, 61 )
+8/shape_offset = Vector2( 0, 0 )
+8/shapes = [  ]
+9/name = "LIVING-ARCHER-5"
+9/texture = ExtResource( 226 )
+9/tex_offset = Vector2( 0, -26 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 96, 129 )
+9/occluder_offset = Vector2( 48, 64.5 )
+9/navigation_offset = Vector2( 48, 64.5 )
+9/shape_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+10/name = "LIVING-ARCHER-1"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, -24 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 95, 124 )
+10/occluder_offset = Vector2( 47.5, 62 )
+10/navigation_offset = Vector2( 47.5, 62 )
+10/shape_offset = Vector2( 0, 0 )
+10/shapes = [  ]
+11/name = "LIVING-ARCHER-2"
+11/texture = ExtResource( 14 )
+11/tex_offset = Vector2( 0, -25 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 96, 126 )
+11/occluder_offset = Vector2( 48, 63 )
+11/navigation_offset = Vector2( 48, 63 )
+11/shape_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+12/name = "LIVING-ARCHER-7"
+12/texture = ExtResource( 25 )
+12/tex_offset = Vector2( 0, -13 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 124, 103 )
+12/occluder_offset = Vector2( 62, 51.5 )
+12/navigation_offset = Vector2( 62, 51.5 )
+12/shape_offset = Vector2( 0, 0 )
+12/shapes = [  ]
+13/name = "LIVING-ARCHER-6"
+13/texture = ExtResource( 36 )
+13/tex_offset = Vector2( 0, -29 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 102, 135 )
+13/occluder_offset = Vector2( 51, 67.5 )
+13/navigation_offset = Vector2( 51, 67.5 )
+13/shape_offset = Vector2( 0, 0 )
+13/shapes = [  ]
+14/name = "LIVING-ARCHER-3"
+14/texture = ExtResource( 47 )
+14/tex_offset = Vector2( 0, -10 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 122, 96 )
+14/occluder_offset = Vector2( 61, 48 )
+14/navigation_offset = Vector2( 61, 48 )
+14/shape_offset = Vector2( 0, 0 )
+14/shapes = [  ]
+15/name = "LIVING-ARCHER-4"
+15/texture = ExtResource( 58 )
+15/tex_offset = Vector2( 0, -26 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 95, 128 )
+15/occluder_offset = Vector2( 47.5, 64 )
+15/navigation_offset = Vector2( 47.5, 64 )
+15/shape_offset = Vector2( 0, 0 )
+15/shapes = [  ]
+16/name = "LIVING-HEALER-5"
+16/texture = ExtResource( 69 )
+16/tex_offset = Vector2( 0, -27 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 108, 130 )
+16/occluder_offset = Vector2( 54, 65 )
+16/navigation_offset = Vector2( 54, 65 )
+16/shape_offset = Vector2( 0, 0 )
+16/shapes = [  ]
+17/name = "LIVING-HEALER-1"
+17/texture = ExtResource( 80 )
+17/tex_offset = Vector2( 0, -26 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 115, 128 )
+17/occluder_offset = Vector2( 57.5, 64 )
+17/navigation_offset = Vector2( 57.5, 64 )
+17/shape_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+18/name = "LIVING-HEALER-2"
+18/texture = ExtResource( 91 )
+18/tex_offset = Vector2( 0, -30 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 122, 137 )
+18/occluder_offset = Vector2( 61, 68.5 )
+18/navigation_offset = Vector2( 61, 68.5 )
+18/shape_offset = Vector2( 0, 0 )
+18/shapes = [  ]
+19/name = "LIVING-HEALER-7"
+19/texture = ExtResource( 102 )
+19/tex_offset = Vector2( 0, -19 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 116, 114 )
+19/occluder_offset = Vector2( 58, 57 )
+19/navigation_offset = Vector2( 58, 57 )
+19/shape_offset = Vector2( 0, 0 )
+19/shapes = [  ]
+20/name = "LIVING-HEALER-6"
+20/texture = ExtResource( 114 )
+20/tex_offset = Vector2( 0, -29 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 90, 134 )
+20/occluder_offset = Vector2( 45, 67 )
+20/navigation_offset = Vector2( 45, 67 )
+20/shape_offset = Vector2( 0, 0 )
+20/shapes = [  ]
+21/name = "LIVING-HEALER-3"
+21/texture = ExtResource( 125 )
+21/tex_offset = Vector2( 0, -25 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 104, 126 )
+21/occluder_offset = Vector2( 52, 63 )
+21/navigation_offset = Vector2( 52, 63 )
+21/shape_offset = Vector2( 0, 0 )
+21/shapes = [  ]
+22/name = "LIVING-HEALER-4"
+22/texture = ExtResource( 136 )
+22/tex_offset = Vector2( 0, -17 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 114, 110 )
+22/occluder_offset = Vector2( 57, 55 )
+22/navigation_offset = Vector2( 57, 55 )
+22/shape_offset = Vector2( 0, 0 )
+22/shapes = [  ]
+23/name = "LIVING-SWMAN-5"
+23/texture = ExtResource( 147 )
+23/tex_offset = Vector2( 0, -31 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 153, 139 )
+23/occluder_offset = Vector2( 76.5, 69.5 )
+23/navigation_offset = Vector2( 76.5, 69.5 )
+23/shape_offset = Vector2( 0, 0 )
+23/shapes = [  ]
+24/name = "LIVING-SWMAN-1"
+24/texture = ExtResource( 154 )
+24/tex_offset = Vector2( 0, -26 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 122, 129 )
+24/occluder_offset = Vector2( 61, 64.5 )
+24/navigation_offset = Vector2( 61, 64.5 )
+24/shape_offset = Vector2( 0, 0 )
+24/shapes = [  ]
+25/name = "LIVING-SWMAN-2"
+25/texture = ExtResource( 155 )
+25/tex_offset = Vector2( 0, -17 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 125, 111 )
+25/occluder_offset = Vector2( 62.5, 55.5 )
+25/navigation_offset = Vector2( 62.5, 55.5 )
+25/shape_offset = Vector2( 0, 0 )
+25/shapes = [  ]
+26/name = "LIVING-SWMAN-6"
+26/texture = ExtResource( 156 )
+26/tex_offset = Vector2( 0, -19 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 119, 114 )
+26/occluder_offset = Vector2( 59.5, 57 )
+26/navigation_offset = Vector2( 59.5, 57 )
+26/shape_offset = Vector2( 0, 0 )
+26/shapes = [  ]
+27/name = "LIVING-SWMAN-3"
+27/texture = ExtResource( 157 )
+27/tex_offset = Vector2( 0, -29 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 98, 134 )
+27/occluder_offset = Vector2( 49, 67 )
+27/navigation_offset = Vector2( 49, 67 )
+27/shape_offset = Vector2( 0, 0 )
+27/shapes = [  ]
+28/name = "LIVING-SWMAN-4"
+28/texture = ExtResource( 158 )
+28/tex_offset = Vector2( 0, -29 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 151, 134 )
+28/occluder_offset = Vector2( 75.5, 67 )
+28/navigation_offset = Vector2( 75.5, 67 )
+28/shape_offset = Vector2( 0, 0 )
+28/shapes = [  ]
+29/name = "MISC-ARROW-1"
+29/texture = ExtResource( 159 )
+29/tex_offset = Vector2( 0, -1 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 53, 78 )
+29/occluder_offset = Vector2( 26.5, 39 )
+29/navigation_offset = Vector2( 26.5, 39 )
+29/shape_offset = Vector2( 0, 0 )
+29/shapes = [  ]
+30/name = "MISC-ARROW-2"
+30/texture = ExtResource( 161 )
+30/tex_offset = Vector2( 0, -1 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 0, 53, 78 )
+30/occluder_offset = Vector2( 26.5, 39 )
+30/navigation_offset = Vector2( 26.5, 39 )
+30/shape_offset = Vector2( 0, 0 )
+30/shapes = [  ]
+31/name = "MISC-ARROW-3"
+31/texture = ExtResource( 162 )
+31/tex_offset = Vector2( 0, -1 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 59, 78 )
+31/occluder_offset = Vector2( 29.5, 39 )
+31/navigation_offset = Vector2( 29.5, 39 )
+31/shape_offset = Vector2( 0, 0 )
+31/shapes = [  ]
+32/name = "MISC-ARROW-4"
+32/texture = ExtResource( 163 )
+32/tex_offset = Vector2( 0, -1 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 59, 78 )
+32/occluder_offset = Vector2( 29.5, 39 )
+32/navigation_offset = Vector2( 29.5, 39 )
+32/shape_offset = Vector2( 0, 0 )
+32/shapes = [  ]
+33/name = "MISC-FARMING-12"
+33/texture = ExtResource( 164 )
+33/tex_offset = Vector2( 0, 2 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 0, 0, 140, 71 )
+33/occluder_offset = Vector2( 70, 35.5 )
+33/navigation_offset = Vector2( 70, 35.5 )
+33/shape_offset = Vector2( 0, 0 )
+33/shapes = [  ]
+34/name = "MISC-FARMING-10"
+34/texture = ExtResource( 165 )
+34/tex_offset = Vector2( 0, -12 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 0, 0, 140, 100 )
+34/occluder_offset = Vector2( 70, 50 )
+34/navigation_offset = Vector2( 70, 50 )
+34/shape_offset = Vector2( 0, 0 )
+34/shapes = [  ]
+35/name = "MISC-FARMING-5"
+35/texture = ExtResource( 166 )
+35/tex_offset = Vector2( 0, -8 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 0, 0, 140, 93 )
+35/occluder_offset = Vector2( 70, 46.5 )
+35/navigation_offset = Vector2( 70, 46.5 )
+35/shape_offset = Vector2( 0, 0 )
+35/shapes = [  ]
+36/name = "MISC-FARMING-8"
+36/texture = ExtResource( 167 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 0, 0, 140, 77 )
+36/occluder_offset = Vector2( 70, 38.5 )
+36/navigation_offset = Vector2( 70, 38.5 )
+36/shape_offset = Vector2( 0, 0 )
+36/shapes = [  ]
+37/name = "MISC-FARMING-1"
+37/texture = ExtResource( 168 )
+37/tex_offset = Vector2( 0, 3 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 0, 0, 140, 70 )
+37/occluder_offset = Vector2( 70, 35 )
+37/navigation_offset = Vector2( 70, 35 )
+37/shape_offset = Vector2( 0, 0 )
+37/shapes = [  ]
+38/name = "MISC-FARMING-11"
+38/texture = ExtResource( 169 )
+38/tex_offset = Vector2( 0, 3 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 0, 0, 140, 70 )
+38/occluder_offset = Vector2( 70, 35 )
+38/navigation_offset = Vector2( 70, 35 )
+38/shape_offset = Vector2( 0, 0 )
+38/shapes = [  ]
+39/name = "MISC-FARMING-9"
+39/texture = ExtResource( 170 )
+39/tex_offset = Vector2( 0, -12 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 0, 0, 140, 100 )
+39/occluder_offset = Vector2( 70, 50 )
+39/navigation_offset = Vector2( 70, 50 )
+39/shape_offset = Vector2( 0, 0 )
+39/shapes = [  ]
+40/name = "MISC-FARMING-2"
+40/texture = ExtResource( 172 )
+40/tex_offset = Vector2( 0, -9 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 0, 0, 140, 94 )
+40/occluder_offset = Vector2( 70, 47 )
+40/navigation_offset = Vector2( 70, 47 )
+40/shape_offset = Vector2( 0, 0 )
+40/shapes = [  ]
+41/name = "MISC-FARMING-13"
+41/texture = ExtResource( 173 )
+41/tex_offset = Vector2( 0, 0 )
+41/modulate = Color( 1, 1, 1, 1 )
+41/region = Rect2( 0, 0, 140, 77 )
+41/occluder_offset = Vector2( 70, 38.5 )
+41/navigation_offset = Vector2( 70, 38.5 )
+41/shape_offset = Vector2( 0, 0 )
+41/shapes = [  ]
+42/name = "MISC-FARMING-14"
+42/texture = ExtResource( 174 )
+42/tex_offset = Vector2( 0, -2 )
+42/modulate = Color( 1, 1, 1, 1 )
+42/region = Rect2( 0, 0, 140, 80 )
+42/occluder_offset = Vector2( 70, 40 )
+42/navigation_offset = Vector2( 70, 40 )
+42/shape_offset = Vector2( 0, 0 )
+42/shapes = [  ]
+43/name = "MISC-FARMING-7"
+43/texture = ExtResource( 175 )
+43/tex_offset = Vector2( 0, 3 )
+43/modulate = Color( 1, 1, 1, 1 )
+43/region = Rect2( 0, 0, 140, 70 )
+43/occluder_offset = Vector2( 70, 35 )
+43/navigation_offset = Vector2( 70, 35 )
+43/shape_offset = Vector2( 0, 0 )
+43/shapes = [  ]
+44/name = "MISC-FARMING-6"
+44/texture = ExtResource( 176 )
+44/tex_offset = Vector2( 0, 5 )
+44/modulate = Color( 1, 1, 1, 1 )
+44/region = Rect2( 0, 0, 132, 65 )
+44/occluder_offset = Vector2( 66, 32.5 )
+44/navigation_offset = Vector2( 66, 32.5 )
+44/shape_offset = Vector2( 0, 0 )
+44/shapes = [  ]
+45/name = "MISC-FARMING-3"
+45/texture = ExtResource( 177 )
+45/tex_offset = Vector2( 0, -8 )
+45/modulate = Color( 1, 1, 1, 1 )
+45/region = Rect2( 0, 0, 140, 93 )
+45/occluder_offset = Vector2( 70, 46.5 )
+45/navigation_offset = Vector2( 70, 46.5 )
+45/shape_offset = Vector2( 0, 0 )
+45/shapes = [  ]
+46/name = "MISC-FARMING-4"
+46/texture = ExtResource( 178 )
+46/tex_offset = Vector2( 0, -9 )
+46/modulate = Color( 1, 1, 1, 1 )
+46/region = Rect2( 0, 0, 140, 94 )
+46/occluder_offset = Vector2( 70, 47 )
+46/navigation_offset = Vector2( 70, 47 )
+46/shape_offset = Vector2( 0, 0 )
+46/shapes = [  ]
+47/name = "MISC-OTHER-5"
+47/texture = ExtResource( 179 )
+47/tex_offset = Vector2( 0, -33 )
+47/modulate = Color( 1, 1, 1, 1 )
+47/region = Rect2( 0, 0, 156, 142 )
+47/occluder_offset = Vector2( 78, 71 )
+47/navigation_offset = Vector2( 78, 71 )
+47/shape_offset = Vector2( 0, 0 )
+47/shapes = [  ]
+48/name = "MISC-OTHER-1"
+48/texture = ExtResource( 180 )
+48/tex_offset = Vector2( 0, -3 )
+48/modulate = Color( 1, 1, 1, 1 )
+48/region = Rect2( 0, 0, 83, 83 )
+48/occluder_offset = Vector2( 41.5, 41.5 )
+48/navigation_offset = Vector2( 41.5, 41.5 )
+48/shape_offset = Vector2( 0, 0 )
+48/shapes = [  ]
+49/name = "MISC-OTHER-2"
+49/texture = ExtResource( 181 )
+49/tex_offset = Vector2( 0, 5 )
+49/modulate = Color( 1, 1, 1, 1 )
+49/region = Rect2( 0, 0, 68, 66 )
+49/occluder_offset = Vector2( 34, 33 )
+49/navigation_offset = Vector2( 34, 33 )
+49/shape_offset = Vector2( 0, 0 )
+49/shapes = [  ]
+50/name = "MISC-OTHER-6"
+50/texture = ExtResource( 183 )
+50/tex_offset = Vector2( 0, -5 )
+50/modulate = Color( 1, 1, 1, 1 )
+50/region = Rect2( 0, 0, 83, 86 )
+50/occluder_offset = Vector2( 41.5, 43 )
+50/navigation_offset = Vector2( 41.5, 43 )
+50/shape_offset = Vector2( 0, 0 )
+50/shapes = [  ]
+51/name = "MISC-OTHER-3"
+51/texture = ExtResource( 184 )
+51/tex_offset = Vector2( 0, -4 )
+51/modulate = Color( 1, 1, 1, 1 )
+51/region = Rect2( 0, 0, 44, 84 )
+51/occluder_offset = Vector2( 22, 42 )
+51/navigation_offset = Vector2( 22, 42 )
+51/shape_offset = Vector2( 0, 0 )
+51/shapes = [  ]
+52/name = "MISC-OTHER-4"
+52/texture = ExtResource( 185 )
+52/tex_offset = Vector2( 0, -47 )
+52/modulate = Color( 1, 1, 1, 1 )
+52/region = Rect2( 0, 0, 143, 171 )
+52/occluder_offset = Vector2( 71.5, 85.5 )
+52/navigation_offset = Vector2( 71.5, 85.5 )
+52/shape_offset = Vector2( 0, 0 )
+52/shapes = [  ]
+53/name = "MISC-ROCK-12"
+53/texture = ExtResource( 186 )
+53/tex_offset = Vector2( 0, 11 )
+53/modulate = Color( 1, 1, 1, 1 )
+53/region = Rect2( 0, 0, 83, 54 )
+53/occluder_offset = Vector2( 41.5, 27 )
+53/navigation_offset = Vector2( 41.5, 27 )
+53/shape_offset = Vector2( 0, 0 )
+53/shapes = [  ]
+54/name = "MISC-ROCK-18"
+54/texture = ExtResource( 187 )
+54/tex_offset = Vector2( 0, -6 )
+54/modulate = Color( 1, 1, 1, 1 )
+54/region = Rect2( 0, 0, 126, 89 )
+54/occluder_offset = Vector2( 63, 44.5 )
+54/navigation_offset = Vector2( 63, 44.5 )
+54/shape_offset = Vector2( 0, 0 )
+54/shapes = [  ]
+55/name = "MISC-ROCK-15"
+55/texture = ExtResource( 188 )
+55/tex_offset = Vector2( 0, 3 )
+55/modulate = Color( 1, 1, 1, 1 )
+55/region = Rect2( 0, 0, 101, 69 )
+55/occluder_offset = Vector2( 50.5, 34.5 )
+55/navigation_offset = Vector2( 50.5, 34.5 )
+55/shape_offset = Vector2( 0, 0 )
+55/shapes = [  ]
+56/name = "MISC-ROCK-10"
+56/texture = ExtResource( 189 )
+56/tex_offset = Vector2( 0, 7 )
+56/modulate = Color( 1, 1, 1, 1 )
+56/region = Rect2( 0, 0, 69, 61 )
+56/occluder_offset = Vector2( 34.5, 30.5 )
+56/navigation_offset = Vector2( 34.5, 30.5 )
+56/shape_offset = Vector2( 0, 0 )
+56/shapes = [  ]
+57/name = "MISC-ROCK-5"
+57/texture = ExtResource( 190 )
+57/tex_offset = Vector2( 0, 13 )
+57/modulate = Color( 1, 1, 1, 1 )
+57/region = Rect2( 0, 0, 83, 50 )
+57/occluder_offset = Vector2( 41.5, 25 )
+57/navigation_offset = Vector2( 41.5, 25 )
+57/shape_offset = Vector2( 0, 0 )
+57/shapes = [  ]
+58/name = "MISC-ROCK-8"
+58/texture = ExtResource( 191 )
+58/tex_offset = Vector2( 0, 10 )
+58/modulate = Color( 1, 1, 1, 1 )
+58/region = Rect2( 0, 0, 80, 55 )
+58/occluder_offset = Vector2( 40, 27.5 )
+58/navigation_offset = Vector2( 40, 27.5 )
+58/shape_offset = Vector2( 0, 0 )
+58/shapes = [  ]
+59/name = "MISC-ROCK-1"
+59/texture = ExtResource( 192 )
+59/tex_offset = Vector2( 0, 11 )
+59/modulate = Color( 1, 1, 1, 1 )
+59/region = Rect2( 0, 0, 74, 54 )
+59/occluder_offset = Vector2( 37, 27 )
+59/navigation_offset = Vector2( 37, 27 )
+59/shape_offset = Vector2( 0, 0 )
+59/shapes = [  ]
+60/name = "MISC-ROCK-11"
+60/texture = ExtResource( 194 )
+60/tex_offset = Vector2( 0, 7 )
+60/modulate = Color( 1, 1, 1, 1 )
+60/region = Rect2( 0, 0, 68, 61 )
+60/occluder_offset = Vector2( 34, 30.5 )
+60/navigation_offset = Vector2( 34, 30.5 )
+60/shape_offset = Vector2( 0, 0 )
+60/shapes = [  ]
+61/name = "MISC-ROCK-9"
+61/texture = ExtResource( 195 )
+61/tex_offset = Vector2( 0, 10 )
+61/modulate = Color( 1, 1, 1, 1 )
+61/region = Rect2( 0, 0, 80, 55 )
+61/occluder_offset = Vector2( 40, 27.5 )
+61/navigation_offset = Vector2( 40, 27.5 )
+61/shape_offset = Vector2( 0, 0 )
+61/shapes = [  ]
+62/name = "MISC-ROCK-16"
+62/texture = ExtResource( 196 )
+62/tex_offset = Vector2( 0, 5 )
+62/modulate = Color( 1, 1, 1, 1 )
+62/region = Rect2( 0, 0, 112, 66 )
+62/occluder_offset = Vector2( 56, 33 )
+62/navigation_offset = Vector2( 56, 33 )
+62/shape_offset = Vector2( 0, 0 )
+62/shapes = [  ]
+63/name = "MISC-ROCK-17"
+63/texture = ExtResource( 197 )
+63/tex_offset = Vector2( 0, -1 )
+63/modulate = Color( 1, 1, 1, 1 )
+63/region = Rect2( 0, 0, 132, 78 )
+63/occluder_offset = Vector2( 66, 39 )
+63/navigation_offset = Vector2( 66, 39 )
+63/shape_offset = Vector2( 0, 0 )
+63/shapes = [  ]
+64/name = "MISC-ROCK-2"
+64/texture = ExtResource( 198 )
+64/tex_offset = Vector2( 0, 11 )
+64/modulate = Color( 1, 1, 1, 1 )
+64/region = Rect2( 0, 0, 83, 54 )
+64/occluder_offset = Vector2( 41.5, 27 )
+64/navigation_offset = Vector2( 41.5, 27 )
+64/shape_offset = Vector2( 0, 0 )
+64/shapes = [  ]
+65/name = "MISC-ROCK-13"
+65/texture = ExtResource( 199 )
+65/tex_offset = Vector2( 0, 4 )
+65/modulate = Color( 1, 1, 1, 1 )
+65/region = Rect2( 0, 0, 80, 67 )
+65/occluder_offset = Vector2( 40, 33.5 )
+65/navigation_offset = Vector2( 40, 33.5 )
+65/shape_offset = Vector2( 0, 0 )
+65/shapes = [  ]
+66/name = "MISC-ROCK-14"
+66/texture = ExtResource( 200 )
+66/tex_offset = Vector2( 0, 11 )
+66/modulate = Color( 1, 1, 1, 1 )
+66/region = Rect2( 0, 0, 91, 54 )
+66/occluder_offset = Vector2( 45.5, 27 )
+66/navigation_offset = Vector2( 45.5, 27 )
+66/shape_offset = Vector2( 0, 0 )
+66/shapes = [  ]
+67/name = "MISC-ROCK-7"
+67/texture = ExtResource( 201 )
+67/tex_offset = Vector2( 0, 11 )
+67/modulate = Color( 1, 1, 1, 1 )
+67/region = Rect2( 0, 0, 74, 54 )
+67/occluder_offset = Vector2( 37, 27 )
+67/navigation_offset = Vector2( 37, 27 )
+67/shape_offset = Vector2( 0, 0 )
+67/shapes = [  ]
+68/name = "MISC-ROCK-6"
+68/texture = ExtResource( 202 )
+68/tex_offset = Vector2( 0, 13 )
+68/modulate = Color( 1, 1, 1, 1 )
+68/region = Rect2( 0, 0, 83, 50 )
+68/occluder_offset = Vector2( 41.5, 25 )
+68/navigation_offset = Vector2( 41.5, 25 )
+68/shape_offset = Vector2( 0, 0 )
+68/shapes = [  ]
+69/name = "MISC-ROCK-3"
+69/texture = ExtResource( 203 )
+69/tex_offset = Vector2( 0, 11 )
+69/modulate = Color( 1, 1, 1, 1 )
+69/region = Rect2( 0, 0, 89, 54 )
+69/occluder_offset = Vector2( 44.5, 27 )
+69/navigation_offset = Vector2( 44.5, 27 )
+69/shape_offset = Vector2( 0, 0 )
+69/shapes = [  ]
+70/name = "MISC-ROCK-4"
+70/texture = ExtResource( 205 )
+70/tex_offset = Vector2( 0, 11 )
+70/modulate = Color( 1, 1, 1, 1 )
+70/region = Rect2( 0, 0, 88, 54 )
+70/occluder_offset = Vector2( 44, 27 )
+70/navigation_offset = Vector2( 44, 27 )
+70/shape_offset = Vector2( 0, 0 )
+70/shapes = [  ]
+71/name = "MISC-WOOD-12"
+71/texture = ExtResource( 206 )
+71/tex_offset = Vector2( 0, 17 )
+71/modulate = Color( 1, 1, 1, 1 )
+71/region = Rect2( 0, 0, 29, 41 )
+71/occluder_offset = Vector2( 14.5, 20.5 )
+71/navigation_offset = Vector2( 14.5, 20.5 )
+71/shape_offset = Vector2( 0, 0 )
+71/shapes = [  ]
+72/name = "MISC-WOOD-21"
+72/texture = ExtResource( 207 )
+72/tex_offset = Vector2( 0, 17 )
+72/modulate = Color( 1, 1, 1, 1 )
+72/region = Rect2( 0, 0, 77, 42 )
+72/occluder_offset = Vector2( 38.5, 21 )
+72/navigation_offset = Vector2( 38.5, 21 )
+72/shape_offset = Vector2( 0, 0 )
+72/shapes = [  ]
+73/name = "MISC-WOOD-18"
+73/texture = ExtResource( 208 )
+73/tex_offset = Vector2( 0, 14 )
+73/modulate = Color( 1, 1, 1, 1 )
+73/region = Rect2( 0, 0, 55, 48 )
+73/occluder_offset = Vector2( 27.5, 24 )
+73/navigation_offset = Vector2( 27.5, 24 )
+73/shape_offset = Vector2( 0, 0 )
+73/shapes = [  ]
+74/name = "MISC-WOOD-26"
+74/texture = ExtResource( 209 )
+74/tex_offset = Vector2( 0, 9 )
+74/modulate = Color( 1, 1, 1, 1 )
+74/region = Rect2( 0, 0, 71, 58 )
+74/occluder_offset = Vector2( 35.5, 29 )
+74/navigation_offset = Vector2( 35.5, 29 )
+74/shape_offset = Vector2( 0, 0 )
+74/shapes = [  ]
+75/name = "MISC-WOOD-15"
+75/texture = ExtResource( 210 )
+75/tex_offset = Vector2( 0, 14 )
+75/modulate = Color( 1, 1, 1, 1 )
+75/region = Rect2( 0, 0, 77, 48 )
+75/occluder_offset = Vector2( 38.5, 24 )
+75/navigation_offset = Vector2( 38.5, 24 )
+75/shape_offset = Vector2( 0, 0 )
+75/shapes = [  ]
+76/name = "MISC-WOOD-28"
+76/texture = ExtResource( 211 )
+76/tex_offset = Vector2( 0, 17 )
+76/modulate = Color( 1, 1, 1, 1 )
+76/region = Rect2( 0, 0, 57, 41 )
+76/occluder_offset = Vector2( 28.5, 20.5 )
+76/navigation_offset = Vector2( 28.5, 20.5 )
+76/shape_offset = Vector2( 0, 0 )
+76/shapes = [  ]
+77/name = "MISC-WOOD-10"
+77/texture = ExtResource( 212 )
+77/tex_offset = Vector2( 0, 5 )
+77/modulate = Color( 1, 1, 1, 1 )
+77/region = Rect2( 0, 0, 77, 65 )
+77/occluder_offset = Vector2( 38.5, 32.5 )
+77/navigation_offset = Vector2( 38.5, 32.5 )
+77/shape_offset = Vector2( 0, 0 )
+77/shapes = [  ]
+78/name = "MISC-WOOD-24"
+78/texture = ExtResource( 213 )
+78/tex_offset = Vector2( 0, 5 )
+78/modulate = Color( 1, 1, 1, 1 )
+78/region = Rect2( 0, 0, 73, 65 )
+78/occluder_offset = Vector2( 36.5, 32.5 )
+78/navigation_offset = Vector2( 36.5, 32.5 )
+78/shape_offset = Vector2( 0, 0 )
+78/shapes = [  ]
+79/name = "MISC-WOOD-5"
+79/texture = ExtResource( 214 )
+79/tex_offset = Vector2( 0, 13 )
+79/modulate = Color( 1, 1, 1, 1 )
+79/region = Rect2( 0, 0, 29, 50 )
+79/occluder_offset = Vector2( 14.5, 25 )
+79/navigation_offset = Vector2( 14.5, 25 )
+79/shape_offset = Vector2( 0, 0 )
+79/shapes = [  ]
+80/name = "MISC-WOOD-20"
+80/texture = ExtResource( 216 )
+80/tex_offset = Vector2( 0, 15 )
+80/modulate = Color( 1, 1, 1, 1 )
+80/region = Rect2( 0, 0, 80, 45 )
+80/occluder_offset = Vector2( 40, 22.5 )
+80/navigation_offset = Vector2( 40, 22.5 )
+80/shape_offset = Vector2( 0, 0 )
+80/shapes = [  ]
+81/name = "MISC-WOOD-8"
+81/texture = ExtResource( 217 )
+81/tex_offset = Vector2( 0, 9 )
+81/modulate = Color( 1, 1, 1, 1 )
+81/region = Rect2( 0, 0, 77, 57 )
+81/occluder_offset = Vector2( 38.5, 28.5 )
+81/navigation_offset = Vector2( 38.5, 28.5 )
+81/shape_offset = Vector2( 0, 0 )
+81/shapes = [  ]
+82/name = "MISC-WOOD-22"
+82/texture = ExtResource( 218 )
+82/tex_offset = Vector2( 0, 17 )
+82/modulate = Color( 1, 1, 1, 1 )
+82/region = Rect2( 0, 0, 77, 42 )
+82/occluder_offset = Vector2( 38.5, 21 )
+82/navigation_offset = Vector2( 38.5, 21 )
+82/shape_offset = Vector2( 0, 0 )
+82/shapes = [  ]
+83/name = "MISC-WOOD-1"
+83/texture = ExtResource( 219 )
+83/tex_offset = Vector2( 0, 12 )
+83/modulate = Color( 1, 1, 1, 1 )
+83/region = Rect2( 0, 0, 71, 51 )
+83/occluder_offset = Vector2( 35.5, 25.5 )
+83/navigation_offset = Vector2( 35.5, 25.5 )
+83/shape_offset = Vector2( 0, 0 )
+83/shapes = [  ]
+84/name = "MISC-WOOD-11"
+84/texture = ExtResource( 220 )
+84/tex_offset = Vector2( 0, 19 )
+84/modulate = Color( 1, 1, 1, 1 )
+84/region = Rect2( 0, 0, 35, 38 )
+84/occluder_offset = Vector2( 17.5, 19 )
+84/navigation_offset = Vector2( 17.5, 19 )
+84/shape_offset = Vector2( 0, 0 )
+84/shapes = [  ]
+85/name = "MISC-WOOD-9"
+85/texture = ExtResource( 221 )
+85/tex_offset = Vector2( 0, 9 )
+85/modulate = Color( 1, 1, 1, 1 )
+85/region = Rect2( 0, 0, 77, 58 )
+85/occluder_offset = Vector2( 38.5, 29 )
+85/navigation_offset = Vector2( 38.5, 29 )
+85/shape_offset = Vector2( 0, 0 )
+85/shapes = [  ]
+86/name = "MISC-WOOD-16"
+86/texture = ExtResource( 222 )
+86/tex_offset = Vector2( 0, 14 )
+86/modulate = Color( 1, 1, 1, 1 )
+86/region = Rect2( 0, 0, 77, 48 )
+86/occluder_offset = Vector2( 38.5, 24 )
+86/navigation_offset = Vector2( 38.5, 24 )
+86/shape_offset = Vector2( 0, 0 )
+86/shapes = [  ]
+87/name = "MISC-WOOD-23"
+87/texture = ExtResource( 223 )
+87/tex_offset = Vector2( 0, 11 )
+87/modulate = Color( 1, 1, 1, 1 )
+87/region = Rect2( 0, 0, 77, 54 )
+87/occluder_offset = Vector2( 38.5, 27 )
+87/navigation_offset = Vector2( 38.5, 27 )
+87/shape_offset = Vector2( 0, 0 )
+87/shapes = [  ]
+88/name = "MISC-WOOD-17"
+88/texture = ExtResource( 224 )
+88/tex_offset = Vector2( 0, 6 )
+88/modulate = Color( 1, 1, 1, 1 )
+88/region = Rect2( 0, 0, 77, 64 )
+88/occluder_offset = Vector2( 38.5, 32 )
+88/navigation_offset = Vector2( 38.5, 32 )
+88/shape_offset = Vector2( 0, 0 )
+88/shapes = [  ]
+89/name = "MISC-WOOD-2"
+89/texture = ExtResource( 225 )
+89/tex_offset = Vector2( 0, 15 )
+89/modulate = Color( 1, 1, 1, 1 )
+89/region = Rect2( 0, 0, 29, 45 )
+89/occluder_offset = Vector2( 14.5, 22.5 )
+89/navigation_offset = Vector2( 14.5, 22.5 )
+89/shape_offset = Vector2( 0, 0 )
+89/shapes = [  ]
+90/name = "MISC-WOOD-27"
+90/texture = ExtResource( 227 )
+90/tex_offset = Vector2( 0, 19 )
+90/modulate = Color( 1, 1, 1, 1 )
+90/region = Rect2( 0, 0, 29, 37 )
+90/occluder_offset = Vector2( 14.5, 18.5 )
+90/navigation_offset = Vector2( 14.5, 18.5 )
+90/shape_offset = Vector2( 0, 0 )
+90/shapes = [  ]
+91/name = "MISC-WOOD-25"
+91/texture = ExtResource( 228 )
+91/tex_offset = Vector2( 0, 9 )
+91/modulate = Color( 1, 1, 1, 1 )
+91/region = Rect2( 0, 0, 59, 57 )
+91/occluder_offset = Vector2( 29.5, 28.5 )
+91/navigation_offset = Vector2( 29.5, 28.5 )
+91/shape_offset = Vector2( 0, 0 )
+91/shapes = [  ]
+92/name = "MISC-WOOD-13"
+92/texture = ExtResource( 229 )
+92/tex_offset = Vector2( 0, 4 )
+92/modulate = Color( 1, 1, 1, 1 )
+92/region = Rect2( 0, 0, 120, 67 )
+92/occluder_offset = Vector2( 60, 33.5 )
+92/navigation_offset = Vector2( 60, 33.5 )
+92/shape_offset = Vector2( 0, 0 )
+92/shapes = [  ]
+93/name = "MISC-WOOD-14"
+93/texture = ExtResource( 230 )
+93/tex_offset = Vector2( 0, 9 )
+93/modulate = Color( 1, 1, 1, 1 )
+93/region = Rect2( 0, 0, 81, 57 )
+93/occluder_offset = Vector2( 40.5, 28.5 )
+93/navigation_offset = Vector2( 40.5, 28.5 )
+93/shape_offset = Vector2( 0, 0 )
+93/shapes = [  ]
+94/name = "MISC-WOOD-19"
+94/texture = ExtResource( 231 )
+94/tex_offset = Vector2( 0, 19 )
+94/modulate = Color( 1, 1, 1, 1 )
+94/region = Rect2( 0, 0, 29, 38 )
+94/occluder_offset = Vector2( 14.5, 19 )
+94/navigation_offset = Vector2( 14.5, 19 )
+94/shape_offset = Vector2( 0, 0 )
+94/shapes = [  ]
+95/name = "MISC-WOOD-7"
+95/texture = ExtResource( 232 )
+95/tex_offset = Vector2( 0, 10 )
+95/modulate = Color( 1, 1, 1, 1 )
+95/region = Rect2( 0, 0, 78, 56 )
+95/occluder_offset = Vector2( 39, 28 )
+95/navigation_offset = Vector2( 39, 28 )
+95/shape_offset = Vector2( 0, 0 )
+95/shapes = [  ]
+96/name = "MISC-WOOD-6"
+96/texture = ExtResource( 233 )
+96/tex_offset = Vector2( 0, 7 )
+96/modulate = Color( 1, 1, 1, 1 )
+96/region = Rect2( 0, 0, 90, 61 )
+96/occluder_offset = Vector2( 45, 30.5 )
+96/navigation_offset = Vector2( 45, 30.5 )
+96/shape_offset = Vector2( 0, 0 )
+96/shapes = [  ]
+97/name = "MISC-WOOD-3"
+97/texture = ExtResource( 234 )
+97/tex_offset = Vector2( 0, 7 )
+97/modulate = Color( 1, 1, 1, 1 )
+97/region = Rect2( 0, 0, 58, 61 )
+97/occluder_offset = Vector2( 29, 30.5 )
+97/navigation_offset = Vector2( 29, 30.5 )
+97/shape_offset = Vector2( 0, 0 )
+97/shapes = [  ]
+98/name = "MISC-WOOD-4"
+98/texture = ExtResource( 235 )
+98/tex_offset = Vector2( 0, 17 )
+98/modulate = Color( 1, 1, 1, 1 )
+98/region = Rect2( 0, 0, 71, 41 )
+98/occluder_offset = Vector2( 35.5, 20.5 )
+98/navigation_offset = Vector2( 35.5, 20.5 )
+98/shape_offset = Vector2( 0, 0 )
+98/shapes = [  ]
+99/name = "NATURE-MULTIPLE_BUSH-5"
+99/texture = ExtResource( 236 )
+99/tex_offset = Vector2( 0, -2 )
+99/modulate = Color( 1, 1, 1, 1 )
+99/region = Rect2( 0, 0, 117, 80 )
+99/occluder_offset = Vector2( 58.5, 40 )
+99/navigation_offset = Vector2( 58.5, 40 )
+99/shape_offset = Vector2( 0, 0 )
+99/shapes = [  ]
+100/name = "NATURE-MULTIPLE_BUSH-1"
+100/texture = ExtResource( 4 )
+100/tex_offset = Vector2( 0, -4 )
+100/modulate = Color( 1, 1, 1, 1 )
+100/region = Rect2( 0, 0, 129, 84 )
+100/occluder_offset = Vector2( 64.5, 42 )
+100/navigation_offset = Vector2( 64.5, 42 )
+100/shape_offset = Vector2( 0, 0 )
+100/shapes = [  ]
+101/name = "NATURE-MULTIPLE_BUSH-2"
+101/texture = ExtResource( 5 )
+101/tex_offset = Vector2( 0, -2 )
+101/modulate = Color( 1, 1, 1, 1 )
+101/region = Rect2( 0, 0, 117, 80 )
+101/occluder_offset = Vector2( 58.5, 40 )
+101/navigation_offset = Vector2( 58.5, 40 )
+101/shape_offset = Vector2( 0, 0 )
+101/shapes = [  ]
+102/name = "NATURE-MULTIPLE_BUSH-6"
+102/texture = ExtResource( 6 )
+102/tex_offset = Vector2( 0, -2 )
+102/modulate = Color( 1, 1, 1, 1 )
+102/region = Rect2( 0, 0, 94, 80 )
+102/occluder_offset = Vector2( 47, 40 )
+102/navigation_offset = Vector2( 47, 40 )
+102/shape_offset = Vector2( 0, 0 )
+102/shapes = [  ]
+103/name = "NATURE-MULTIPLE_BUSH-3"
+103/texture = ExtResource( 7 )
+103/tex_offset = Vector2( 0, -2 )
+103/modulate = Color( 1, 1, 1, 1 )
+103/region = Rect2( 0, 0, 94, 80 )
+103/occluder_offset = Vector2( 47, 40 )
+103/navigation_offset = Vector2( 47, 40 )
+103/shape_offset = Vector2( 0, 0 )
+103/shapes = [  ]
+104/name = "NATURE-MULTIPLE_BUSH-4"
+104/texture = ExtResource( 8 )
+104/tex_offset = Vector2( 0, -4 )
+104/modulate = Color( 1, 1, 1, 1 )
+104/region = Rect2( 0, 0, 129, 84 )
+104/occluder_offset = Vector2( 64.5, 42 )
+104/navigation_offset = Vector2( 64.5, 42 )
+104/shape_offset = Vector2( 0, 0 )
+104/shapes = [  ]
+105/name = "NATURE-PLANT-12"
+105/texture = ExtResource( 9 )
+105/tex_offset = Vector2( 0, -31 )
+105/modulate = Color( 1, 1, 1, 1 )
+105/region = Rect2( 0, 0, 63, 138 )
+105/occluder_offset = Vector2( 31.5, 69 )
+105/navigation_offset = Vector2( 31.5, 69 )
+105/shape_offset = Vector2( 0, 0 )
+105/shapes = [  ]
+106/name = "NATURE-PLANT-18"
+106/texture = ExtResource( 10 )
+106/tex_offset = Vector2( 0, -25 )
+106/modulate = Color( 1, 1, 1, 1 )
+106/region = Rect2( 0, 0, 95, 127 )
+106/occluder_offset = Vector2( 47.5, 63.5 )
+106/navigation_offset = Vector2( 47.5, 63.5 )
+106/shape_offset = Vector2( 0, 0 )
+106/shapes = [  ]
+107/name = "NATURE-PLANT-15"
+107/texture = ExtResource( 11 )
+107/tex_offset = Vector2( 0, -5 )
+107/modulate = Color( 1, 1, 1, 1 )
+107/region = Rect2( 0, 0, 120, 86 )
+107/occluder_offset = Vector2( 60, 43 )
+107/navigation_offset = Vector2( 60, 43 )
+107/shape_offset = Vector2( 0, 0 )
+107/shapes = [  ]
+108/name = "NATURE-PLANT-10"
+108/texture = ExtResource( 12 )
+108/tex_offset = Vector2( 0, -30 )
+108/modulate = Color( 1, 1, 1, 1 )
+108/region = Rect2( 0, 0, 110, 137 )
+108/occluder_offset = Vector2( 55, 68.5 )
+108/navigation_offset = Vector2( 55, 68.5 )
+108/shape_offset = Vector2( 0, 0 )
+108/shapes = [  ]
+109/name = "NATURE-PLANT-5"
+109/texture = ExtResource( 13 )
+109/tex_offset = Vector2( 0, -30 )
+109/modulate = Color( 1, 1, 1, 1 )
+109/region = Rect2( 0, 0, 104, 136 )
+109/occluder_offset = Vector2( 52, 68 )
+109/navigation_offset = Vector2( 52, 68 )
+109/shape_offset = Vector2( 0, 0 )
+109/shapes = [  ]
+110/name = "NATURE-PLANT-8"
+110/texture = ExtResource( 15 )
+110/tex_offset = Vector2( 0, 0 )
+110/modulate = Color( 1, 1, 1, 1 )
+110/region = Rect2( 0, 0, 60, 75 )
+110/occluder_offset = Vector2( 30, 37.5 )
+110/navigation_offset = Vector2( 30, 37.5 )
+110/shape_offset = Vector2( 0, 0 )
+110/shapes = [  ]
+111/name = "NATURE-PLANT-1"
+111/texture = ExtResource( 16 )
+111/tex_offset = Vector2( 0, -11 )
+111/modulate = Color( 1, 1, 1, 1 )
+111/region = Rect2( 0, 0, 76, 98 )
+111/occluder_offset = Vector2( 38, 49 )
+111/navigation_offset = Vector2( 38, 49 )
+111/shape_offset = Vector2( 0, 0 )
+111/shapes = [  ]
+112/name = "NATURE-PLANT-11"
+112/texture = ExtResource( 17 )
+112/tex_offset = Vector2( 0, -25 )
+112/modulate = Color( 1, 1, 1, 1 )
+112/region = Rect2( 0, 0, 55, 127 )
+112/occluder_offset = Vector2( 27.5, 63.5 )
+112/navigation_offset = Vector2( 27.5, 63.5 )
+112/shape_offset = Vector2( 0, 0 )
+112/shapes = [  ]
+113/name = "NATURE-PLANT-9"
+113/texture = ExtResource( 18 )
+113/tex_offset = Vector2( 0, -5 )
+113/modulate = Color( 1, 1, 1, 1 )
+113/region = Rect2( 0, 0, 74, 87 )
+113/occluder_offset = Vector2( 37, 43.5 )
+113/navigation_offset = Vector2( 37, 43.5 )
+113/shape_offset = Vector2( 0, 0 )
+113/shapes = [  ]
+114/name = "NATURE-PLANT-16"
+114/texture = ExtResource( 19 )
+114/tex_offset = Vector2( 0, -30 )
+114/modulate = Color( 1, 1, 1, 1 )
+114/region = Rect2( 0, 0, 126, 136 )
+114/occluder_offset = Vector2( 63, 68 )
+114/navigation_offset = Vector2( 63, 68 )
+114/shape_offset = Vector2( 0, 0 )
+114/shapes = [  ]
+115/name = "NATURE-PLANT-17"
+115/texture = ExtResource( 20 )
+115/tex_offset = Vector2( 0, -34 )
+115/modulate = Color( 1, 1, 1, 1 )
+115/region = Rect2( 0, 0, 141, 145 )
+115/occluder_offset = Vector2( 70.5, 72.5 )
+115/navigation_offset = Vector2( 70.5, 72.5 )
+115/shape_offset = Vector2( 0, 0 )
+115/shapes = [  ]
+116/name = "NATURE-PLANT-2"
+116/texture = ExtResource( 21 )
+116/tex_offset = Vector2( 0, 3 )
+116/modulate = Color( 1, 1, 1, 1 )
+116/region = Rect2( 0, 0, 65, 69 )
+116/occluder_offset = Vector2( 32.5, 34.5 )
+116/navigation_offset = Vector2( 32.5, 34.5 )
+116/shape_offset = Vector2( 0, 0 )
+116/shapes = [  ]
+117/name = "NATURE-PLANT-13"
+117/texture = ExtResource( 22 )
+117/tex_offset = Vector2( 0, 3 )
+117/modulate = Color( 1, 1, 1, 1 )
+117/region = Rect2( 0, 0, 57, 70 )
+117/occluder_offset = Vector2( 28.5, 35 )
+117/navigation_offset = Vector2( 28.5, 35 )
+117/shape_offset = Vector2( 0, 0 )
+117/shapes = [  ]
+118/name = "NATURE-PLANT-14"
+118/texture = ExtResource( 23 )
+118/tex_offset = Vector2( 0, -35 )
+118/modulate = Color( 1, 1, 1, 1 )
+118/region = Rect2( 0, 0, 144, 146 )
+118/occluder_offset = Vector2( 72, 73 )
+118/navigation_offset = Vector2( 72, 73 )
+118/shape_offset = Vector2( 0, 0 )
+118/shapes = [  ]
+119/name = "NATURE-PLANT-7"
+119/texture = ExtResource( 24 )
+119/tex_offset = Vector2( 0, -10 )
+119/modulate = Color( 1, 1, 1, 1 )
+119/region = Rect2( 0, 0, 63, 96 )
+119/occluder_offset = Vector2( 31.5, 48 )
+119/navigation_offset = Vector2( 31.5, 48 )
+119/shape_offset = Vector2( 0, 0 )
+119/shapes = [  ]
+120/name = "NATURE-PLANT-6"
+120/texture = ExtResource( 26 )
+120/tex_offset = Vector2( 0, -31 )
+120/modulate = Color( 1, 1, 1, 1 )
+120/region = Rect2( 0, 0, 116, 139 )
+120/occluder_offset = Vector2( 58, 69.5 )
+120/navigation_offset = Vector2( 58, 69.5 )
+120/shape_offset = Vector2( 0, 0 )
+120/shapes = [  ]
+121/name = "NATURE-PLANT-3"
+121/texture = ExtResource( 27 )
+121/tex_offset = Vector2( 0, -11 )
+121/modulate = Color( 1, 1, 1, 1 )
+121/region = Rect2( 0, 0, 58, 99 )
+121/occluder_offset = Vector2( 29, 49.5 )
+121/navigation_offset = Vector2( 29, 49.5 )
+121/shape_offset = Vector2( 0, 0 )
+121/shapes = [  ]
+122/name = "NATURE-PLANT-4"
+122/texture = ExtResource( 28 )
+122/tex_offset = Vector2( 0, -26 )
+122/modulate = Color( 1, 1, 1, 1 )
+122/region = Rect2( 0, 0, 85, 129 )
+122/occluder_offset = Vector2( 42.5, 64.5 )
+122/navigation_offset = Vector2( 42.5, 64.5 )
+122/shape_offset = Vector2( 0, 0 )
+122/shapes = [  ]
+123/name = "NATURE-SINGLE_BUSH-12"
+123/texture = ExtResource( 29 )
+123/tex_offset = Vector2( 0, 15 )
+123/modulate = Color( 1, 1, 1, 1 )
+123/region = Rect2( 0, 0, 54, 46 )
+123/occluder_offset = Vector2( 27, 23 )
+123/navigation_offset = Vector2( 27, 23 )
+123/shape_offset = Vector2( 0, 0 )
+123/shapes = [  ]
+124/name = "NATURE-SINGLE_BUSH-18"
+124/texture = ExtResource( 30 )
+124/tex_offset = Vector2( 0, 16 )
+124/modulate = Color( 1, 1, 1, 1 )
+124/region = Rect2( 0, 0, 60, 44 )
+124/occluder_offset = Vector2( 30, 22 )
+124/navigation_offset = Vector2( 30, 22 )
+124/shape_offset = Vector2( 0, 0 )
+124/shapes = [  ]
+125/name = "NATURE-SINGLE_BUSH-15"
+125/texture = ExtResource( 31 )
+125/tex_offset = Vector2( 0, 4 )
+125/modulate = Color( 1, 1, 1, 1 )
+125/region = Rect2( 0, 0, 74, 67 )
+125/occluder_offset = Vector2( 37, 33.5 )
+125/navigation_offset = Vector2( 37, 33.5 )
+125/shape_offset = Vector2( 0, 0 )
+125/shapes = [  ]
+126/name = "NATURE-SINGLE_BUSH-10"
+126/texture = ExtResource( 32 )
+126/tex_offset = Vector2( 0, 3 )
+126/modulate = Color( 1, 1, 1, 1 )
+126/region = Rect2( 0, 0, 60, 70 )
+126/occluder_offset = Vector2( 30, 35 )
+126/navigation_offset = Vector2( 30, 35 )
+126/shape_offset = Vector2( 0, 0 )
+126/shapes = [  ]
+127/name = "NATURE-SINGLE_BUSH-5"
+127/texture = ExtResource( 33 )
+127/tex_offset = Vector2( 0, 1 )
+127/modulate = Color( 1, 1, 1, 1 )
+127/region = Rect2( 0, 0, 97, 73 )
+127/occluder_offset = Vector2( 48.5, 36.5 )
+127/navigation_offset = Vector2( 48.5, 36.5 )
+127/shape_offset = Vector2( 0, 0 )
+127/shapes = [  ]
+128/name = "NATURE-SINGLE_BUSH-20"
+128/texture = ExtResource( 34 )
+128/tex_offset = Vector2( 0, 16 )
+128/modulate = Color( 1, 1, 1, 1 )
+128/region = Rect2( 0, 0, 60, 44 )
+128/occluder_offset = Vector2( 30, 22 )
+128/navigation_offset = Vector2( 30, 22 )
+128/shape_offset = Vector2( 0, 0 )
+128/shapes = [  ]
+129/name = "NATURE-SINGLE_BUSH-8"
+129/texture = ExtResource( 35 )
+129/tex_offset = Vector2( 0, 4 )
+129/modulate = Color( 1, 1, 1, 1 )
+129/region = Rect2( 0, 0, 74, 67 )
+129/occluder_offset = Vector2( 37, 33.5 )
+129/navigation_offset = Vector2( 37, 33.5 )
+129/shape_offset = Vector2( 0, 0 )
+129/shapes = [  ]
+130/name = "NATURE-SINGLE_BUSH-1"
+130/texture = ExtResource( 37 )
+130/tex_offset = Vector2( 0, -9 )
+130/modulate = Color( 1, 1, 1, 1 )
+130/region = Rect2( 0, 0, 88, 95 )
+130/occluder_offset = Vector2( 44, 47.5 )
+130/navigation_offset = Vector2( 44, 47.5 )
+130/shape_offset = Vector2( 0, 0 )
+130/shapes = [  ]
+131/name = "NATURE-SINGLE_BUSH-11"
+131/texture = ExtResource( 38 )
+131/tex_offset = Vector2( 0, 16 )
+131/modulate = Color( 1, 1, 1, 1 )
+131/region = Rect2( 0, 0, 60, 44 )
+131/occluder_offset = Vector2( 30, 22 )
+131/navigation_offset = Vector2( 30, 22 )
+131/shape_offset = Vector2( 0, 0 )
+131/shapes = [  ]
+132/name = "NATURE-SINGLE_BUSH-9"
+132/texture = ExtResource( 39 )
+132/tex_offset = Vector2( 0, 7 )
+132/modulate = Color( 1, 1, 1, 1 )
+132/region = Rect2( 0, 0, 72, 62 )
+132/occluder_offset = Vector2( 36, 31 )
+132/navigation_offset = Vector2( 36, 31 )
+132/shape_offset = Vector2( 0, 0 )
+132/shapes = [  ]
+133/name = "NATURE-SINGLE_BUSH-16"
+133/texture = ExtResource( 40 )
+133/tex_offset = Vector2( 0, 7 )
+133/modulate = Color( 1, 1, 1, 1 )
+133/region = Rect2( 0, 0, 72, 62 )
+133/occluder_offset = Vector2( 36, 31 )
+133/navigation_offset = Vector2( 36, 31 )
+133/shape_offset = Vector2( 0, 0 )
+133/shapes = [  ]
+134/name = "NATURE-SINGLE_BUSH-17"
+134/texture = ExtResource( 41 )
+134/tex_offset = Vector2( 0, 3 )
+134/modulate = Color( 1, 1, 1, 1 )
+134/region = Rect2( 0, 0, 60, 70 )
+134/occluder_offset = Vector2( 30, 35 )
+134/navigation_offset = Vector2( 30, 35 )
+134/shape_offset = Vector2( 0, 0 )
+134/shapes = [  ]
+135/name = "NATURE-SINGLE_BUSH-2"
+135/texture = ExtResource( 42 )
+135/tex_offset = Vector2( 0, -13 )
+135/modulate = Color( 1, 1, 1, 1 )
+135/region = Rect2( 0, 0, 112, 102 )
+135/occluder_offset = Vector2( 56, 51 )
+135/navigation_offset = Vector2( 56, 51 )
+135/shape_offset = Vector2( 0, 0 )
+135/shapes = [  ]
+136/name = "NATURE-SINGLE_BUSH-13"
+136/texture = ExtResource( 43 )
+136/tex_offset = Vector2( 0, 16 )
+136/modulate = Color( 1, 1, 1, 1 )
+136/region = Rect2( 0, 0, 60, 44 )
+136/occluder_offset = Vector2( 30, 22 )
+136/navigation_offset = Vector2( 30, 22 )
+136/shape_offset = Vector2( 0, 0 )
+136/shapes = [  ]
+137/name = "NATURE-SINGLE_BUSH-14"
+137/texture = ExtResource( 44 )
+137/tex_offset = Vector2( 0, 6 )
+137/modulate = Color( 1, 1, 1, 1 )
+137/region = Rect2( 0, 0, 76, 64 )
+137/occluder_offset = Vector2( 38, 32 )
+137/navigation_offset = Vector2( 38, 32 )
+137/shape_offset = Vector2( 0, 0 )
+137/shapes = [  ]
+138/name = "NATURE-SINGLE_BUSH-19"
+138/texture = ExtResource( 45 )
+138/tex_offset = Vector2( 0, 15 )
+138/modulate = Color( 1, 1, 1, 1 )
+138/region = Rect2( 0, 0, 54, 46 )
+138/occluder_offset = Vector2( 27, 23 )
+138/navigation_offset = Vector2( 27, 23 )
+138/shape_offset = Vector2( 0, 0 )
+138/shapes = [  ]
+139/name = "NATURE-SINGLE_BUSH-7"
+139/texture = ExtResource( 46 )
+139/tex_offset = Vector2( 0, 6 )
+139/modulate = Color( 1, 1, 1, 1 )
+139/region = Rect2( 0, 0, 76, 64 )
+139/occluder_offset = Vector2( 38, 32 )
+139/navigation_offset = Vector2( 38, 32 )
+139/shape_offset = Vector2( 0, 0 )
+139/shapes = [  ]
+140/name = "NATURE-SINGLE_BUSH-6"
+140/texture = ExtResource( 48 )
+140/tex_offset = Vector2( 0, 3 )
+140/modulate = Color( 1, 1, 1, 1 )
+140/region = Rect2( 0, 0, 97, 69 )
+140/occluder_offset = Vector2( 48.5, 34.5 )
+140/navigation_offset = Vector2( 48.5, 34.5 )
+140/shape_offset = Vector2( 0, 0 )
+140/shapes = [  ]
+141/name = "NATURE-SINGLE_BUSH-3"
+141/texture = ExtResource( 49 )
+141/tex_offset = Vector2( 0, 0 )
+141/modulate = Color( 1, 1, 1, 1 )
+141/region = Rect2( 0, 0, 90, 76 )
+141/occluder_offset = Vector2( 45, 38 )
+141/navigation_offset = Vector2( 45, 38 )
+141/shape_offset = Vector2( 0, 0 )
+141/shapes = [  ]
+142/name = "NATURE-SINGLE_BUSH-4"
+142/texture = ExtResource( 50 )
+142/tex_offset = Vector2( 0, 5 )
+142/modulate = Color( 1, 1, 1, 1 )
+142/region = Rect2( 0, 0, 97, 65 )
+142/occluder_offset = Vector2( 48.5, 32.5 )
+142/navigation_offset = Vector2( 48.5, 32.5 )
+142/shape_offset = Vector2( 0, 0 )
+142/shapes = [  ]
+143/name = "NATURE-SMALL_FOLIAGE-12"
+143/texture = ExtResource( 51 )
+143/tex_offset = Vector2( 0, 12 )
+143/modulate = Color( 1, 1, 1, 1 )
+143/region = Rect2( 0, 0, 57, 51 )
+143/occluder_offset = Vector2( 28.5, 25.5 )
+143/navigation_offset = Vector2( 28.5, 25.5 )
+143/shape_offset = Vector2( 0, 0 )
+143/shapes = [  ]
+144/name = "NATURE-SMALL_FOLIAGE-21"
+144/texture = ExtResource( 52 )
+144/tex_offset = Vector2( 0, -11 )
+144/modulate = Color( 1, 1, 1, 1 )
+144/region = Rect2( 0, 0, 121, 99 )
+144/occluder_offset = Vector2( 60.5, 49.5 )
+144/navigation_offset = Vector2( 60.5, 49.5 )
+144/shape_offset = Vector2( 0, 0 )
+144/shapes = [  ]
+145/name = "NATURE-SMALL_FOLIAGE-18"
+145/texture = ExtResource( 53 )
+145/tex_offset = Vector2( 0, -3 )
+145/modulate = Color( 1, 1, 1, 1 )
+145/region = Rect2( 0, 0, 138, 83 )
+145/occluder_offset = Vector2( 69, 41.5 )
+145/navigation_offset = Vector2( 69, 41.5 )
+145/shape_offset = Vector2( 0, 0 )
+145/shapes = [  ]
+146/name = "NATURE-SMALL_FOLIAGE-15"
+146/texture = ExtResource( 54 )
+146/tex_offset = Vector2( 0, 11 )
+146/modulate = Color( 1, 1, 1, 1 )
+146/region = Rect2( 0, 0, 67, 53 )
+146/occluder_offset = Vector2( 33.5, 26.5 )
+146/navigation_offset = Vector2( 33.5, 26.5 )
+146/shape_offset = Vector2( 0, 0 )
+146/shapes = [  ]
+147/name = "NATURE-SMALL_FOLIAGE-10"
+147/texture = ExtResource( 55 )
+147/tex_offset = Vector2( 0, 7 )
+147/modulate = Color( 1, 1, 1, 1 )
+147/region = Rect2( 0, 0, 105, 62 )
+147/occluder_offset = Vector2( 52.5, 31 )
+147/navigation_offset = Vector2( 52.5, 31 )
+147/shape_offset = Vector2( 0, 0 )
+147/shapes = [  ]
+148/name = "NATURE-SMALL_FOLIAGE-24"
+148/texture = ExtResource( 56 )
+148/tex_offset = Vector2( 0, 0 )
+148/modulate = Color( 1, 1, 1, 1 )
+148/region = Rect2( 0, 0, 138, 75 )
+148/occluder_offset = Vector2( 69, 37.5 )
+148/navigation_offset = Vector2( 69, 37.5 )
+148/shape_offset = Vector2( 0, 0 )
+148/shapes = [  ]
+149/name = "NATURE-SMALL_FOLIAGE-5"
+149/texture = ExtResource( 57 )
+149/tex_offset = Vector2( 0, 24 )
+149/modulate = Color( 1, 1, 1, 1 )
+149/region = Rect2( 0, 0, 29, 27 )
+149/occluder_offset = Vector2( 14.5, 13.5 )
+149/navigation_offset = Vector2( 14.5, 13.5 )
+149/shape_offset = Vector2( 0, 0 )
+149/shapes = [  ]
+150/name = "NATURE-SMALL_FOLIAGE-20"
+150/texture = ExtResource( 59 )
+150/tex_offset = Vector2( 0, -12 )
+150/modulate = Color( 1, 1, 1, 1 )
+150/region = Rect2( 0, 0, 66, 100 )
+150/occluder_offset = Vector2( 33, 50 )
+150/navigation_offset = Vector2( 33, 50 )
+150/shape_offset = Vector2( 0, 0 )
+150/shapes = [  ]
+151/name = "NATURE-SMALL_FOLIAGE-8"
+151/texture = ExtResource( 60 )
+151/tex_offset = Vector2( 0, -3 )
+151/modulate = Color( 1, 1, 1, 1 )
+151/region = Rect2( 0, 0, 112, 83 )
+151/occluder_offset = Vector2( 56, 41.5 )
+151/navigation_offset = Vector2( 56, 41.5 )
+151/shape_offset = Vector2( 0, 0 )
+151/shapes = [  ]
+152/name = "NATURE-SMALL_FOLIAGE-22"
+152/texture = ExtResource( 61 )
+152/tex_offset = Vector2( 0, -5 )
+152/modulate = Color( 1, 1, 1, 1 )
+152/region = Rect2( 0, 0, 104, 87 )
+152/occluder_offset = Vector2( 52, 43.5 )
+152/navigation_offset = Vector2( 52, 43.5 )
+152/shape_offset = Vector2( 0, 0 )
+152/shapes = [  ]
+153/name = "NATURE-SMALL_FOLIAGE-1"
+153/texture = ExtResource( 62 )
+153/tex_offset = Vector2( 0, 0 )
+153/modulate = Color( 1, 1, 1, 1 )
+153/region = Rect2( 0, 0, 142, 76 )
+153/occluder_offset = Vector2( 71, 38 )
+153/navigation_offset = Vector2( 71, 38 )
+153/shape_offset = Vector2( 0, 0 )
+153/shapes = [  ]
+154/name = "NATURE-SMALL_FOLIAGE-11"
+154/texture = ExtResource( 63 )
+154/tex_offset = Vector2( 0, 14 )
+154/modulate = Color( 1, 1, 1, 1 )
+154/region = Rect2( 0, 0, 126, 48 )
+154/occluder_offset = Vector2( 63, 24 )
+154/navigation_offset = Vector2( 63, 24 )
+154/shape_offset = Vector2( 0, 0 )
+154/shapes = [  ]
+155/name = "NATURE-SMALL_FOLIAGE-9"
+155/texture = ExtResource( 64 )
+155/tex_offset = Vector2( 0, 24 )
+155/modulate = Color( 1, 1, 1, 1 )
+155/region = Rect2( 0, 0, 29, 27 )
+155/occluder_offset = Vector2( 14.5, 13.5 )
+155/navigation_offset = Vector2( 14.5, 13.5 )
+155/shape_offset = Vector2( 0, 0 )
+155/shapes = [  ]
+156/name = "NATURE-SMALL_FOLIAGE-16"
+156/texture = ExtResource( 65 )
+156/tex_offset = Vector2( 0, -3 )
+156/modulate = Color( 1, 1, 1, 1 )
+156/region = Rect2( 0, 0, 138, 83 )
+156/occluder_offset = Vector2( 69, 41.5 )
+156/navigation_offset = Vector2( 69, 41.5 )
+156/shape_offset = Vector2( 0, 0 )
+156/shapes = [  ]
+157/name = "NATURE-SMALL_FOLIAGE-23"
+157/texture = ExtResource( 66 )
+157/tex_offset = Vector2( 0, -13 )
+157/modulate = Color( 1, 1, 1, 1 )
+157/region = Rect2( 0, 0, 116, 102 )
+157/occluder_offset = Vector2( 58, 51 )
+157/navigation_offset = Vector2( 58, 51 )
+157/shape_offset = Vector2( 0, 0 )
+157/shapes = [  ]
+158/name = "NATURE-SMALL_FOLIAGE-17"
+158/texture = ExtResource( 67 )
+158/tex_offset = Vector2( 0, -3 )
+158/modulate = Color( 1, 1, 1, 1 )
+158/region = Rect2( 0, 0, 138, 83 )
+158/occluder_offset = Vector2( 69, 41.5 )
+158/navigation_offset = Vector2( 69, 41.5 )
+158/shape_offset = Vector2( 0, 0 )
+158/shapes = [  ]
+159/name = "NATURE-SMALL_FOLIAGE-2"
+159/texture = ExtResource( 68 )
+159/tex_offset = Vector2( 0, 26 )
+159/modulate = Color( 1, 1, 1, 1 )
+159/region = Rect2( 0, 0, 124, 24 )
+159/occluder_offset = Vector2( 62, 12 )
+159/navigation_offset = Vector2( 62, 12 )
+159/shape_offset = Vector2( 0, 0 )
+159/shapes = [  ]
+160/name = "NATURE-SMALL_FOLIAGE-25"
+160/texture = ExtResource( 70 )
+160/tex_offset = Vector2( 0, -25 )
+160/modulate = Color( 1, 1, 1, 1 )
+160/region = Rect2( 0, 0, 139, 126 )
+160/occluder_offset = Vector2( 69.5, 63 )
+160/navigation_offset = Vector2( 69.5, 63 )
+160/shape_offset = Vector2( 0, 0 )
+160/shapes = [  ]
+161/name = "NATURE-SMALL_FOLIAGE-13"
+161/texture = ExtResource( 71 )
+161/tex_offset = Vector2( 0, 2 )
+161/modulate = Color( 1, 1, 1, 1 )
+161/region = Rect2( 0, 0, 72, 71 )
+161/occluder_offset = Vector2( 36, 35.5 )
+161/navigation_offset = Vector2( 36, 35.5 )
+161/shape_offset = Vector2( 0, 0 )
+161/shapes = [  ]
+162/name = "NATURE-SMALL_FOLIAGE-14"
+162/texture = ExtResource( 72 )
+162/tex_offset = Vector2( 0, 14 )
+162/modulate = Color( 1, 1, 1, 1 )
+162/region = Rect2( 0, 0, 85, 47 )
+162/occluder_offset = Vector2( 42.5, 23.5 )
+162/navigation_offset = Vector2( 42.5, 23.5 )
+162/shape_offset = Vector2( 0, 0 )
+162/shapes = [  ]
+163/name = "NATURE-SMALL_FOLIAGE-19"
+163/texture = ExtResource( 73 )
+163/tex_offset = Vector2( 0, -14 )
+163/modulate = Color( 1, 1, 1, 1 )
+163/region = Rect2( 0, 0, 83, 104 )
+163/occluder_offset = Vector2( 41.5, 52 )
+163/navigation_offset = Vector2( 41.5, 52 )
+163/shape_offset = Vector2( 0, 0 )
+163/shapes = [  ]
+164/name = "NATURE-SMALL_FOLIAGE-7"
+164/texture = ExtResource( 74 )
+164/tex_offset = Vector2( 0, 9 )
+164/modulate = Color( 1, 1, 1, 1 )
+164/region = Rect2( 0, 0, 117, 58 )
+164/occluder_offset = Vector2( 58.5, 29 )
+164/navigation_offset = Vector2( 58.5, 29 )
+164/shape_offset = Vector2( 0, 0 )
+164/shapes = [  ]
+165/name = "NATURE-SMALL_FOLIAGE-6"
+165/texture = ExtResource( 75 )
+165/tex_offset = Vector2( 0, 26 )
+165/modulate = Color( 1, 1, 1, 1 )
+165/region = Rect2( 0, 0, 124, 24 )
+165/occluder_offset = Vector2( 62, 12 )
+165/navigation_offset = Vector2( 62, 12 )
+165/shape_offset = Vector2( 0, 0 )
+165/shapes = [  ]
+166/name = "NATURE-SMALL_FOLIAGE-3"
+166/texture = ExtResource( 76 )
+166/tex_offset = Vector2( 0, 9 )
+166/modulate = Color( 1, 1, 1, 1 )
+166/region = Rect2( 0, 0, 117, 58 )
+166/occluder_offset = Vector2( 58.5, 29 )
+166/navigation_offset = Vector2( 58.5, 29 )
+166/shape_offset = Vector2( 0, 0 )
+166/shapes = [  ]
+167/name = "NATURE-SMALL_FOLIAGE-4"
+167/texture = ExtResource( 77 )
+167/tex_offset = Vector2( 0, -3 )
+167/modulate = Color( 1, 1, 1, 1 )
+167/region = Rect2( 0, 0, 112, 83 )
+167/occluder_offset = Vector2( 56, 41.5 )
+167/navigation_offset = Vector2( 56, 41.5 )
+167/shape_offset = Vector2( 0, 0 )
+167/shapes = [  ]
+168/name = "NATURE-TREE-TYPE0-1"
+168/texture = ExtResource( 78 )
+168/tex_offset = Vector2( 0, -37 )
+168/modulate = Color( 1, 1, 1, 1 )
+168/region = Rect2( 0, 0, 111, 150 )
+168/occluder_offset = Vector2( 55.5, 75 )
+168/navigation_offset = Vector2( 55.5, 75 )
+168/shape_offset = Vector2( 0, 0 )
+168/shapes = [  ]
+169/name = "NATURE-TREE-TYPE0-2"
+169/texture = ExtResource( 79 )
+169/tex_offset = Vector2( 0, -35 )
+169/modulate = Color( 1, 1, 1, 1 )
+169/region = Rect2( 0, 0, 118, 146 )
+169/occluder_offset = Vector2( 59, 73 )
+169/navigation_offset = Vector2( 59, 73 )
+169/shape_offset = Vector2( 0, 0 )
+169/shapes = [  ]
+170/name = "NATURE-TREE-TYPE0-3"
+170/texture = ExtResource( 81 )
+170/tex_offset = Vector2( 0, -35 )
+170/modulate = Color( 1, 1, 1, 1 )
+170/region = Rect2( 0, 0, 118, 146 )
+170/occluder_offset = Vector2( 59, 73 )
+170/navigation_offset = Vector2( 59, 73 )
+170/shape_offset = Vector2( 0, 0 )
+170/shapes = [  ]
+171/name = "NATURE-TREE-TYPE0-4"
+171/texture = ExtResource( 82 )
+171/tex_offset = Vector2( 0, -35 )
+171/modulate = Color( 1, 1, 1, 1 )
+171/region = Rect2( 0, 0, 118, 146 )
+171/occluder_offset = Vector2( 59, 73 )
+171/navigation_offset = Vector2( 59, 73 )
+171/shape_offset = Vector2( 0, 0 )
+171/shapes = [  ]
+172/name = "NATURE-TREE-TYPE1-5"
+172/texture = ExtResource( 83 )
+172/tex_offset = Vector2( 0, -37 )
+172/modulate = Color( 1, 1, 1, 1 )
+172/region = Rect2( 0, 0, 122, 150 )
+172/occluder_offset = Vector2( 61, 75 )
+172/navigation_offset = Vector2( 61, 75 )
+172/shape_offset = Vector2( 0, 0 )
+172/shapes = [  ]
+173/name = "NATURE-TREE-TYPE1-1"
+173/texture = ExtResource( 84 )
+173/tex_offset = Vector2( 0, -37 )
+173/modulate = Color( 1, 1, 1, 1 )
+173/region = Rect2( 0, 0, 122, 150 )
+173/occluder_offset = Vector2( 61, 75 )
+173/navigation_offset = Vector2( 61, 75 )
+173/shape_offset = Vector2( 0, 0 )
+173/shapes = [  ]
+174/name = "NATURE-TREE-TYPE1-2"
+174/texture = ExtResource( 85 )
+174/tex_offset = Vector2( 0, -37 )
+174/modulate = Color( 1, 1, 1, 1 )
+174/region = Rect2( 0, 0, 122, 150 )
+174/occluder_offset = Vector2( 61, 75 )
+174/navigation_offset = Vector2( 61, 75 )
+174/shape_offset = Vector2( 0, 0 )
+174/shapes = [  ]
+175/name = "NATURE-TREE-TYPE1-6"
+175/texture = ExtResource( 86 )
+175/tex_offset = Vector2( 0, -37 )
+175/modulate = Color( 1, 1, 1, 1 )
+175/region = Rect2( 0, 0, 122, 150 )
+175/occluder_offset = Vector2( 61, 75 )
+175/navigation_offset = Vector2( 61, 75 )
+175/shape_offset = Vector2( 0, 0 )
+175/shapes = [  ]
+176/name = "NATURE-TREE-TYPE1-3"
+176/texture = ExtResource( 87 )
+176/tex_offset = Vector2( 0, -37 )
+176/modulate = Color( 1, 1, 1, 1 )
+176/region = Rect2( 0, 0, 122, 150 )
+176/occluder_offset = Vector2( 61, 75 )
+176/navigation_offset = Vector2( 61, 75 )
+176/shape_offset = Vector2( 0, 0 )
+176/shapes = [  ]
+177/name = "NATURE-TREE-TYPE1-4"
+177/texture = ExtResource( 88 )
+177/tex_offset = Vector2( 0, -37 )
+177/modulate = Color( 1, 1, 1, 1 )
+177/region = Rect2( 0, 0, 122, 150 )
+177/occluder_offset = Vector2( 61, 75 )
+177/navigation_offset = Vector2( 61, 75 )
+177/shape_offset = Vector2( 0, 0 )
+177/shapes = [  ]
+178/name = "NATURE-TREE-TYPE2-5"
+178/texture = ExtResource( 89 )
+178/tex_offset = Vector2( 0, -31 )
+178/modulate = Color( 1, 1, 1, 1 )
+178/region = Rect2( 0, 0, 115, 139 )
+178/occluder_offset = Vector2( 57.5, 69.5 )
+178/navigation_offset = Vector2( 57.5, 69.5 )
+178/shape_offset = Vector2( 0, 0 )
+178/shapes = [  ]
+179/name = "NATURE-TREE-TYPE2-1"
+179/texture = ExtResource( 90 )
+179/tex_offset = Vector2( 0, -31 )
+179/modulate = Color( 1, 1, 1, 1 )
+179/region = Rect2( 0, 0, 115, 139 )
+179/occluder_offset = Vector2( 57.5, 69.5 )
+179/navigation_offset = Vector2( 57.5, 69.5 )
+179/shape_offset = Vector2( 0, 0 )
+179/shapes = [  ]
+180/name = "NATURE-TREE-TYPE2-2"
+180/texture = ExtResource( 92 )
+180/tex_offset = Vector2( 0, -31 )
+180/modulate = Color( 1, 1, 1, 1 )
+180/region = Rect2( 0, 0, 115, 139 )
+180/occluder_offset = Vector2( 57.5, 69.5 )
+180/navigation_offset = Vector2( 57.5, 69.5 )
+180/shape_offset = Vector2( 0, 0 )
+180/shapes = [  ]
+181/name = "NATURE-TREE-TYPE2-6"
+181/texture = ExtResource( 93 )
+181/tex_offset = Vector2( 0, -31 )
+181/modulate = Color( 1, 1, 1, 1 )
+181/region = Rect2( 0, 0, 116, 139 )
+181/occluder_offset = Vector2( 58, 69.5 )
+181/navigation_offset = Vector2( 58, 69.5 )
+181/shape_offset = Vector2( 0, 0 )
+181/shapes = [  ]
+182/name = "NATURE-TREE-TYPE2-3"
+182/texture = ExtResource( 94 )
+182/tex_offset = Vector2( 0, -31 )
+182/modulate = Color( 1, 1, 1, 1 )
+182/region = Rect2( 0, 0, 115, 139 )
+182/occluder_offset = Vector2( 57.5, 69.5 )
+182/navigation_offset = Vector2( 57.5, 69.5 )
+182/shape_offset = Vector2( 0, 0 )
+182/shapes = [  ]
+183/name = "NATURE-TREE-TYPE2-4"
+183/texture = ExtResource( 95 )
+183/tex_offset = Vector2( 0, -31 )
+183/modulate = Color( 1, 1, 1, 1 )
+183/region = Rect2( 0, 0, 115, 139 )
+183/occluder_offset = Vector2( 57.5, 69.5 )
+183/navigation_offset = Vector2( 57.5, 69.5 )
+183/shape_offset = Vector2( 0, 0 )
+183/shapes = [  ]
+184/name = "NATURE-TREE-TYPE3-12"
+184/texture = ExtResource( 96 )
+184/tex_offset = Vector2( 0, -35 )
+184/modulate = Color( 1, 1, 1, 1 )
+184/region = Rect2( 0, 0, 91, 147 )
+184/occluder_offset = Vector2( 45.5, 73.5 )
+184/navigation_offset = Vector2( 45.5, 73.5 )
+184/shape_offset = Vector2( 0, 0 )
+184/shapes = [  ]
+185/name = "NATURE-TREE-TYPE3-10"
+185/texture = ExtResource( 97 )
+185/tex_offset = Vector2( 0, -35 )
+185/modulate = Color( 1, 1, 1, 1 )
+185/region = Rect2( 0, 0, 91, 147 )
+185/occluder_offset = Vector2( 45.5, 73.5 )
+185/navigation_offset = Vector2( 45.5, 73.5 )
+185/shape_offset = Vector2( 0, 0 )
+185/shapes = [  ]
+186/name = "NATURE-TREE-TYPE3-5"
+186/texture = ExtResource( 98 )
+186/tex_offset = Vector2( 0, -35 )
+186/modulate = Color( 1, 1, 1, 1 )
+186/region = Rect2( 0, 0, 102, 146 )
+186/occluder_offset = Vector2( 51, 73 )
+186/navigation_offset = Vector2( 51, 73 )
+186/shape_offset = Vector2( 0, 0 )
+186/shapes = [  ]
+187/name = "NATURE-TREE-TYPE3-8"
+187/texture = ExtResource( 99 )
+187/tex_offset = Vector2( 0, -35 )
+187/modulate = Color( 1, 1, 1, 1 )
+187/region = Rect2( 0, 0, 91, 147 )
+187/occluder_offset = Vector2( 45.5, 73.5 )
+187/navigation_offset = Vector2( 45.5, 73.5 )
+187/shape_offset = Vector2( 0, 0 )
+187/shapes = [  ]
+188/name = "NATURE-TREE-TYPE3-1"
+188/texture = ExtResource( 100 )
+188/tex_offset = Vector2( 0, -35 )
+188/modulate = Color( 1, 1, 1, 1 )
+188/region = Rect2( 0, 0, 102, 146 )
+188/occluder_offset = Vector2( 51, 73 )
+188/navigation_offset = Vector2( 51, 73 )
+188/shape_offset = Vector2( 0, 0 )
+188/shapes = [  ]
+189/name = "NATURE-TREE-TYPE3-11"
+189/texture = ExtResource( 101 )
+189/tex_offset = Vector2( 0, -35 )
+189/modulate = Color( 1, 1, 1, 1 )
+189/region = Rect2( 0, 0, 91, 147 )
+189/occluder_offset = Vector2( 45.5, 73.5 )
+189/navigation_offset = Vector2( 45.5, 73.5 )
+189/shape_offset = Vector2( 0, 0 )
+189/shapes = [  ]
+190/name = "NATURE-TREE-TYPE3-9"
+190/texture = ExtResource( 103 )
+190/tex_offset = Vector2( 0, -35 )
+190/modulate = Color( 1, 1, 1, 1 )
+190/region = Rect2( 0, 0, 91, 147 )
+190/occluder_offset = Vector2( 45.5, 73.5 )
+190/navigation_offset = Vector2( 45.5, 73.5 )
+190/shape_offset = Vector2( 0, 0 )
+190/shapes = [  ]
+191/name = "NATURE-TREE-TYPE3-2"
+191/texture = ExtResource( 104 )
+191/tex_offset = Vector2( 0, -35 )
+191/modulate = Color( 1, 1, 1, 1 )
+191/region = Rect2( 0, 0, 92, 146 )
+191/occluder_offset = Vector2( 46, 73 )
+191/navigation_offset = Vector2( 46, 73 )
+191/shape_offset = Vector2( 0, 0 )
+191/shapes = [  ]
+192/name = "NATURE-TREE-TYPE3-13"
+192/texture = ExtResource( 105 )
+192/tex_offset = Vector2( 0, -35 )
+192/modulate = Color( 1, 1, 1, 1 )
+192/region = Rect2( 0, 0, 91, 147 )
+192/occluder_offset = Vector2( 45.5, 73.5 )
+192/navigation_offset = Vector2( 45.5, 73.5 )
+192/shape_offset = Vector2( 0, 0 )
+192/shapes = [  ]
+193/name = "NATURE-TREE-TYPE3-7"
+193/texture = ExtResource( 106 )
+193/tex_offset = Vector2( 0, -35 )
+193/modulate = Color( 1, 1, 1, 1 )
+193/region = Rect2( 0, 0, 102, 146 )
+193/occluder_offset = Vector2( 51, 73 )
+193/navigation_offset = Vector2( 51, 73 )
+193/shape_offset = Vector2( 0, 0 )
+193/shapes = [  ]
+194/name = "NATURE-TREE-TYPE3-6"
+194/texture = ExtResource( 107 )
+194/tex_offset = Vector2( 0, -35 )
+194/modulate = Color( 1, 1, 1, 1 )
+194/region = Rect2( 0, 0, 102, 146 )
+194/occluder_offset = Vector2( 51, 73 )
+194/navigation_offset = Vector2( 51, 73 )
+194/shape_offset = Vector2( 0, 0 )
+194/shapes = [  ]
+195/name = "NATURE-TREE-TYPE3-3"
+195/texture = ExtResource( 108 )
+195/tex_offset = Vector2( 0, -35 )
+195/modulate = Color( 1, 1, 1, 1 )
+195/region = Rect2( 0, 0, 102, 146 )
+195/occluder_offset = Vector2( 51, 73 )
+195/navigation_offset = Vector2( 51, 73 )
+195/shape_offset = Vector2( 0, 0 )
+195/shapes = [  ]
+196/name = "NATURE-TREE-TYPE3-4"
+196/texture = ExtResource( 109 )
+196/tex_offset = Vector2( 0, -35 )
+196/modulate = Color( 1, 1, 1, 1 )
+196/region = Rect2( 0, 0, 102, 146 )
+196/occluder_offset = Vector2( 51, 73 )
+196/navigation_offset = Vector2( 51, 73 )
+196/shape_offset = Vector2( 0, 0 )
+196/shapes = [  ]
+197/name = "NATURE-TREE-TYPE4-1"
+197/texture = ExtResource( 110 )
+197/tex_offset = Vector2( 0, -31 )
+197/modulate = Color( 1, 1, 1, 1 )
+197/region = Rect2( 0, 0, 82, 139 )
+197/occluder_offset = Vector2( 41, 69.5 )
+197/navigation_offset = Vector2( 41, 69.5 )
+197/shape_offset = Vector2( 0, 0 )
+197/shapes = [  ]
+198/name = "NATURE-TREE-TYPE4-2"
+198/texture = ExtResource( 111 )
+198/tex_offset = Vector2( 0, -29 )
+198/modulate = Color( 1, 1, 1, 1 )
+198/region = Rect2( 0, 0, 139, 134 )
+198/occluder_offset = Vector2( 69.5, 67 )
+198/navigation_offset = Vector2( 69.5, 67 )
+198/shape_offset = Vector2( 0, 0 )
+198/shapes = [  ]
+199/name = "NATURE-TREE-TYPE4-3"
+199/texture = ExtResource( 112 )
+199/tex_offset = Vector2( 0, -30 )
+199/modulate = Color( 1, 1, 1, 1 )
+199/region = Rect2( 0, 0, 106, 137 )
+199/occluder_offset = Vector2( 53, 68.5 )
+199/navigation_offset = Vector2( 53, 68.5 )
+199/shape_offset = Vector2( 0, 0 )
+199/shapes = [  ]
+200/name = "NATURE-TREE-TYPE5-1"
+200/texture = ExtResource( 115 )
+200/tex_offset = Vector2( 0, -13 )
+200/modulate = Color( 1, 1, 1, 1 )
+200/region = Rect2( 0, 0, 71, 102 )
+200/occluder_offset = Vector2( 35.5, 51 )
+200/navigation_offset = Vector2( 35.5, 51 )
+200/shape_offset = Vector2( 0, 0 )
+200/shapes = [  ]
+201/name = "NATURE-TREE-TYPE5-2"
+201/texture = ExtResource( 116 )
+201/tex_offset = Vector2( 0, -13 )
+201/modulate = Color( 1, 1, 1, 1 )
+201/region = Rect2( 0, 0, 71, 102 )
+201/occluder_offset = Vector2( 35.5, 51 )
+201/navigation_offset = Vector2( 35.5, 51 )
+201/shape_offset = Vector2( 0, 0 )
+201/shapes = [  ]
+202/name = "NATURE-TREE-TYPE5-3"
+202/texture = ExtResource( 117 )
+202/tex_offset = Vector2( 0, -13 )
+202/modulate = Color( 1, 1, 1, 1 )
+202/region = Rect2( 0, 0, 71, 102 )
+202/occluder_offset = Vector2( 35.5, 51 )
+202/navigation_offset = Vector2( 35.5, 51 )
+202/shape_offset = Vector2( 0, 0 )
+202/shapes = [  ]
+203/name = "NATURE-TREE-TYPE5-4"
+203/texture = ExtResource( 118 )
+203/tex_offset = Vector2( 0, -13 )
+203/modulate = Color( 1, 1, 1, 1 )
+203/region = Rect2( 0, 0, 71, 102 )
+203/occluder_offset = Vector2( 35.5, 51 )
+203/navigation_offset = Vector2( 35.5, 51 )
+203/shape_offset = Vector2( 0, 0 )
+203/shapes = [  ]
+204/name = "NATURE-TREE-TYPE6-5"
+204/texture = ExtResource( 119 )
+204/tex_offset = Vector2( 0, -9 )
+204/modulate = Color( 1, 1, 1, 1 )
+204/region = Rect2( 0, 0, 100, 94 )
+204/occluder_offset = Vector2( 50, 47 )
+204/navigation_offset = Vector2( 50, 47 )
+204/shape_offset = Vector2( 0, 0 )
+204/shapes = [  ]
+205/name = "NATURE-TREE-TYPE6-1"
+205/texture = ExtResource( 120 )
+205/tex_offset = Vector2( 0, -31 )
+205/modulate = Color( 1, 1, 1, 1 )
+205/region = Rect2( 0, 0, 109, 138 )
+205/occluder_offset = Vector2( 54.5, 69 )
+205/navigation_offset = Vector2( 54.5, 69 )
+205/shape_offset = Vector2( 0, 0 )
+205/shapes = [  ]
+206/name = "NATURE-TREE-TYPE6-2"
+206/texture = ExtResource( 121 )
+206/tex_offset = Vector2( 0, -18 )
+206/modulate = Color( 1, 1, 1, 1 )
+206/region = Rect2( 0, 0, 92, 112 )
+206/occluder_offset = Vector2( 46, 56 )
+206/navigation_offset = Vector2( 46, 56 )
+206/shape_offset = Vector2( 0, 0 )
+206/shapes = [  ]
+207/name = "NATURE-TREE-TYPE6-7"
+207/texture = ExtResource( 122 )
+207/tex_offset = Vector2( 0, -28 )
+207/modulate = Color( 1, 1, 1, 1 )
+207/region = Rect2( 0, 0, 104, 133 )
+207/occluder_offset = Vector2( 52, 66.5 )
+207/navigation_offset = Vector2( 52, 66.5 )
+207/shape_offset = Vector2( 0, 0 )
+207/shapes = [  ]
+208/name = "NATURE-TREE-TYPE6-6"
+208/texture = ExtResource( 123 )
+208/tex_offset = Vector2( 0, -29 )
+208/modulate = Color( 1, 1, 1, 1 )
+208/region = Rect2( 0, 0, 149, 134 )
+208/occluder_offset = Vector2( 74.5, 67 )
+208/navigation_offset = Vector2( 74.5, 67 )
+208/shape_offset = Vector2( 0, 0 )
+208/shapes = [  ]
+209/name = "NATURE-TREE-TYPE6-3"
+209/texture = ExtResource( 124 )
+209/tex_offset = Vector2( 0, -30 )
+209/modulate = Color( 1, 1, 1, 1 )
+209/region = Rect2( 0, 0, 95, 136 )
+209/occluder_offset = Vector2( 47.5, 68 )
+209/navigation_offset = Vector2( 47.5, 68 )
+209/shape_offset = Vector2( 0, 0 )
+209/shapes = [  ]
+210/name = "NATURE-TREE-TYPE6-4"
+210/texture = ExtResource( 126 )
+210/tex_offset = Vector2( 0, -31 )
+210/modulate = Color( 1, 1, 1, 1 )
+210/region = Rect2( 0, 0, 136, 139 )
+210/occluder_offset = Vector2( 68, 69.5 )
+210/navigation_offset = Vector2( 68, 69.5 )
+210/shape_offset = Vector2( 0, 0 )
+210/shapes = [  ]
+211/name = "NATURE-TREE-TYPE8-1"
+211/texture = ExtResource( 127 )
+211/tex_offset = Vector2( 0, -60 )
+211/modulate = Color( 1, 1, 1, 1 )
+211/region = Rect2( 0, 0, 181, 197 )
+211/occluder_offset = Vector2( 90.5, 98.5 )
+211/navigation_offset = Vector2( 90.5, 98.5 )
+211/shape_offset = Vector2( 0, 0 )
+211/shapes = [  ]
+212/name = "NATURE-TREE-TYPE8-2"
+212/texture = ExtResource( 128 )
+212/tex_offset = Vector2( 0, -67 )
+212/modulate = Color( 1, 1, 1, 1 )
+212/region = Rect2( 0, 0, 180, 210 )
+212/occluder_offset = Vector2( 90, 105 )
+212/navigation_offset = Vector2( 90, 105 )
+212/shape_offset = Vector2( 0, 0 )
+212/shapes = [  ]
+213/name = "NATURE-TREE-TYPE8-3"
+213/texture = ExtResource( 129 )
+213/tex_offset = Vector2( 0, -67 )
+213/modulate = Color( 1, 1, 1, 1 )
+213/region = Rect2( 0, 0, 180, 210 )
+213/occluder_offset = Vector2( 90, 105 )
+213/navigation_offset = Vector2( 90, 105 )
+213/shape_offset = Vector2( 0, 0 )
+213/shapes = [  ]
+214/name = "NATURE-TREE-TYPE8-4"
+214/texture = ExtResource( 130 )
+214/tex_offset = Vector2( 0, -67 )
+214/modulate = Color( 1, 1, 1, 1 )
+214/region = Rect2( 0, 0, 180, 210 )
+214/occluder_offset = Vector2( 90, 105 )
+214/navigation_offset = Vector2( 90, 105 )
+214/shape_offset = Vector2( 0, 0 )
+214/shapes = [  ]
+215/name = "NATURE-TREE-TYPE9-1"
+215/texture = ExtResource( 131 )
+215/tex_offset = Vector2( 0, -56 )
+215/modulate = Color( 1, 1, 1, 1 )
+215/region = Rect2( 0, 0, 125, 188 )
+215/occluder_offset = Vector2( 62.5, 94 )
+215/navigation_offset = Vector2( 62.5, 94 )
+215/shape_offset = Vector2( 0, 0 )
+215/shapes = [  ]
+216/name = "NATURE-TREE-TYPE9-2"
+216/texture = ExtResource( 132 )
+216/tex_offset = Vector2( 0, -80 )
+216/modulate = Color( 1, 1, 1, 1 )
+216/region = Rect2( 0, 0, 153, 237 )
+216/occluder_offset = Vector2( 76.5, 118.5 )
+216/navigation_offset = Vector2( 76.5, 118.5 )
+216/shape_offset = Vector2( 0, 0 )
+216/shapes = [  ]
+217/name = "NATURE-TREE-TYPE9-3"
+217/texture = ExtResource( 133 )
+217/tex_offset = Vector2( 0, -80 )
+217/modulate = Color( 1, 1, 1, 1 )
+217/region = Rect2( 0, 0, 153, 237 )
+217/occluder_offset = Vector2( 76.5, 118.5 )
+217/navigation_offset = Vector2( 76.5, 118.5 )
+217/shape_offset = Vector2( 0, 0 )
+217/shapes = [  ]
+218/name = "NATURE-TREE-TYPE10-12"
+218/texture = ExtResource( 134 )
+218/tex_offset = Vector2( 0, -22 )
+218/modulate = Color( 1, 1, 1, 1 )
+218/region = Rect2( 0, 0, 83, 120 )
+218/occluder_offset = Vector2( 41.5, 60 )
+218/navigation_offset = Vector2( 41.5, 60 )
+218/shape_offset = Vector2( 0, 0 )
+218/shapes = [  ]
+219/name = "NATURE-TREE-TYPE10-18"
+219/texture = ExtResource( 135 )
+219/tex_offset = Vector2( 0, -22 )
+219/modulate = Color( 1, 1, 1, 1 )
+219/region = Rect2( 0, 0, 112, 120 )
+219/occluder_offset = Vector2( 56, 60 )
+219/navigation_offset = Vector2( 56, 60 )
+219/shape_offset = Vector2( 0, 0 )
+219/shapes = [  ]
+220/name = "NATURE-TREE-TYPE10-15"
+220/texture = ExtResource( 137 )
+220/tex_offset = Vector2( 0, -22 )
+220/modulate = Color( 1, 1, 1, 1 )
+220/region = Rect2( 0, 0, 113, 120 )
+220/occluder_offset = Vector2( 56.5, 60 )
+220/navigation_offset = Vector2( 56.5, 60 )
+220/shape_offset = Vector2( 0, 0 )
+220/shapes = [  ]
+221/name = "NATURE-TREE-TYPE10-10"
+221/texture = ExtResource( 138 )
+221/tex_offset = Vector2( 0, -22 )
+221/modulate = Color( 1, 1, 1, 1 )
+221/region = Rect2( 0, 0, 83, 120 )
+221/occluder_offset = Vector2( 41.5, 60 )
+221/navigation_offset = Vector2( 41.5, 60 )
+221/shape_offset = Vector2( 0, 0 )
+221/shapes = [  ]
+222/name = "NATURE-TREE-TYPE10-5"
+222/texture = ExtResource( 139 )
+222/tex_offset = Vector2( 0, -37 )
+222/modulate = Color( 1, 1, 1, 1 )
+222/region = Rect2( 0, 0, 104, 151 )
+222/occluder_offset = Vector2( 52, 75.5 )
+222/navigation_offset = Vector2( 52, 75.5 )
+222/shape_offset = Vector2( 0, 0 )
+222/shapes = [  ]
+223/name = "NATURE-TREE-TYPE10-8"
+223/texture = ExtResource( 140 )
+223/tex_offset = Vector2( 0, -22 )
+223/modulate = Color( 1, 1, 1, 1 )
+223/region = Rect2( 0, 0, 83, 120 )
+223/occluder_offset = Vector2( 41.5, 60 )
+223/navigation_offset = Vector2( 41.5, 60 )
+223/shape_offset = Vector2( 0, 0 )
+223/shapes = [  ]
+224/name = "NATURE-TREE-TYPE10-1"
+224/texture = ExtResource( 141 )
+224/tex_offset = Vector2( 0, -37 )
+224/modulate = Color( 1, 1, 1, 1 )
+224/region = Rect2( 0, 0, 104, 151 )
+224/occluder_offset = Vector2( 52, 75.5 )
+224/navigation_offset = Vector2( 52, 75.5 )
+224/shape_offset = Vector2( 0, 0 )
+224/shapes = [  ]
+225/name = "NATURE-TREE-TYPE10-11"
+225/texture = ExtResource( 142 )
+225/tex_offset = Vector2( 0, -22 )
+225/modulate = Color( 1, 1, 1, 1 )
+225/region = Rect2( 0, 0, 83, 120 )
+225/occluder_offset = Vector2( 41.5, 60 )
+225/navigation_offset = Vector2( 41.5, 60 )
+225/shape_offset = Vector2( 0, 0 )
+225/shapes = [  ]
+226/name = "NATURE-TREE-TYPE10-9"
+226/texture = ExtResource( 143 )
+226/tex_offset = Vector2( 0, -22 )
+226/modulate = Color( 1, 1, 1, 1 )
+226/region = Rect2( 0, 0, 83, 120 )
+226/occluder_offset = Vector2( 41.5, 60 )
+226/navigation_offset = Vector2( 41.5, 60 )
+226/shape_offset = Vector2( 0, 0 )
+226/shapes = [  ]
+227/name = "NATURE-TREE-TYPE10-16"
+227/texture = ExtResource( 144 )
+227/tex_offset = Vector2( 0, -22 )
+227/modulate = Color( 1, 1, 1, 1 )
+227/region = Rect2( 0, 0, 113, 120 )
+227/occluder_offset = Vector2( 56.5, 60 )
+227/navigation_offset = Vector2( 56.5, 60 )
+227/shape_offset = Vector2( 0, 0 )
+227/shapes = [  ]
+228/name = "NATURE-TREE-TYPE10-17"
+228/texture = ExtResource( 145 )
+228/tex_offset = Vector2( 0, -22 )
+228/modulate = Color( 1, 1, 1, 1 )
+228/region = Rect2( 0, 0, 113, 120 )
+228/occluder_offset = Vector2( 56.5, 60 )
+228/navigation_offset = Vector2( 56.5, 60 )
+228/shape_offset = Vector2( 0, 0 )
+228/shapes = [  ]
+229/name = "NATURE-TREE-TYPE10-2"
+229/texture = ExtResource( 146 )
+229/tex_offset = Vector2( 0, -37 )
+229/modulate = Color( 1, 1, 1, 1 )
+229/region = Rect2( 0, 0, 104, 151 )
+229/occluder_offset = Vector2( 52, 75.5 )
+229/navigation_offset = Vector2( 52, 75.5 )
+229/shape_offset = Vector2( 0, 0 )
+229/shapes = [  ]
+230/name = "NATURE-TREE-TYPE10-13"
+230/texture = ExtResource( 148 )
+230/tex_offset = Vector2( 0, -22 )
+230/modulate = Color( 1, 1, 1, 1 )
+230/region = Rect2( 0, 0, 113, 120 )
+230/occluder_offset = Vector2( 56.5, 60 )
+230/navigation_offset = Vector2( 56.5, 60 )
+230/shape_offset = Vector2( 0, 0 )
+230/shapes = [  ]
+231/name = "NATURE-TREE-TYPE10-14"
+231/texture = ExtResource( 149 )
+231/tex_offset = Vector2( 0, -22 )
+231/modulate = Color( 1, 1, 1, 1 )
+231/region = Rect2( 0, 0, 112, 120 )
+231/occluder_offset = Vector2( 56, 60 )
+231/navigation_offset = Vector2( 56, 60 )
+231/shape_offset = Vector2( 0, 0 )
+231/shapes = [  ]
+232/name = "NATURE-TREE-TYPE10-7"
+232/texture = ExtResource( 150 )
+232/tex_offset = Vector2( 0, -22 )
+232/modulate = Color( 1, 1, 1, 1 )
+232/region = Rect2( 0, 0, 83, 120 )
+232/occluder_offset = Vector2( 41.5, 60 )
+232/navigation_offset = Vector2( 41.5, 60 )
+232/shape_offset = Vector2( 0, 0 )
+232/shapes = [  ]
+233/name = "NATURE-TREE-TYPE10-6"
+233/texture = ExtResource( 151 )
+233/tex_offset = Vector2( 0, -37 )
+233/modulate = Color( 1, 1, 1, 1 )
+233/region = Rect2( 0, 0, 104, 151 )
+233/occluder_offset = Vector2( 52, 75.5 )
+233/navigation_offset = Vector2( 52, 75.5 )
+233/shape_offset = Vector2( 0, 0 )
+233/shapes = [  ]
+234/name = "NATURE-TREE-TYPE10-3"
+234/texture = ExtResource( 152 )
+234/tex_offset = Vector2( 0, -37 )
+234/modulate = Color( 1, 1, 1, 1 )
+234/region = Rect2( 0, 0, 104, 151 )
+234/occluder_offset = Vector2( 52, 75.5 )
+234/navigation_offset = Vector2( 52, 75.5 )
+234/shape_offset = Vector2( 0, 0 )
+234/shapes = [  ]
+235/name = "NATURE-TREE-TYPE10-4"
+235/texture = ExtResource( 153 )
+235/tex_offset = Vector2( 0, -37 )
+235/modulate = Color( 1, 1, 1, 1 )
+235/region = Rect2( 0, 0, 104, 151 )
+235/occluder_offset = Vector2( 52, 75.5 )
+235/navigation_offset = Vector2( 52, 75.5 )
+235/shape_offset = Vector2( 0, 0 )
+235/shapes = [  ]
+

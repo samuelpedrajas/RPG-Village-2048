@@ -1,0 +1,101 @@
+[gd_scene load_steps=17 format=1]
+
+[ext_resource path="res://images/TILES/TILE/GRASS/1.tex" type="Texture" id=1]
+[ext_resource path="res://images/TILES/TILE/GRASS/2.tex" type="Texture" id=2]
+[ext_resource path="res://images/TILES/TILE/GRASS/3.tex" type="Texture" id=3]
+[ext_resource path="res://images/TILES/TILE/WATER/12.tex" type="Texture" id=4]
+[ext_resource path="res://images/TILES/TILE/WATER/10.tex" type="Texture" id=5]
+[ext_resource path="res://images/TILES/TILE/WATER/5.tex" type="Texture" id=6]
+[ext_resource path="res://images/TILES/TILE/WATER/8.tex" type="Texture" id=7]
+[ext_resource path="res://images/TILES/TILE/WATER/1.tex" type="Texture" id=8]
+[ext_resource path="res://images/TILES/TILE/WATER/11.tex" type="Texture" id=9]
+[ext_resource path="res://images/TILES/TILE/WATER/9.tex" type="Texture" id=10]
+[ext_resource path="res://images/TILES/TILE/WATER/2.tex" type="Texture" id=11]
+[ext_resource path="res://images/TILES/TILE/WATER/13.tex" type="Texture" id=12]
+[ext_resource path="res://images/TILES/TILE/WATER/7.tex" type="Texture" id=13]
+[ext_resource path="res://images/TILES/TILE/WATER/6.tex" type="Texture" id=14]
+[ext_resource path="res://images/TILES/TILE/WATER/3.tex" type="Texture" id=15]
+[ext_resource path="res://images/TILES/TILE/WATER/4.tex" type="Texture" id=16]
+
+[node name="layer0_tileset_edit" type="Node"]
+
+[node name="TILE-GRASS-1" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+
+[node name="TILE-GRASS-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 167, 0 )
+texture = ExtResource( 2 )
+
+[node name="TILE-GRASS-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 334, 0 )
+texture = ExtResource( 3 )
+
+[node name="TILE-WATER-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 501, 0 )
+texture = ExtResource( 4 )
+
+[node name="TILE-WATER-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 668, 0 )
+texture = ExtResource( 5 )
+
+[node name="TILE-WATER-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 835, 0 )
+texture = ExtResource( 6 )
+
+[node name="TILE-WATER-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1002, 0 )
+texture = ExtResource( 7 )
+
+[node name="TILE-WATER-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1169, 0 )
+texture = ExtResource( 8 )
+
+[node name="TILE-WATER-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1336, 0 )
+texture = ExtResource( 9 )
+
+[node name="TILE-WATER-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1503, 0 )
+texture = ExtResource( 10 )
+
+[node name="TILE-WATER-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1670, 0 )
+texture = ExtResource( 11 )
+
+[node name="TILE-WATER-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1837, 0 )
+texture = ExtResource( 12 )
+
+[node name="TILE-WATER-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2004, 0 )
+texture = ExtResource( 13 )
+
+[node name="TILE-WATER-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 512 )
+texture = ExtResource( 14 )
+
+[node name="TILE-WATER-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 167, 512 )
+texture = ExtResource( 15 )
+
+[node name="TILE-WATER-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 334, 512 )
+texture = ExtResource( 16 )
+
+

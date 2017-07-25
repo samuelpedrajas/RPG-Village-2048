@@ -40,7 +40,7 @@ const TILES_PATH = [
 		"res://images/TILES/NATURE/TREE/TYPE10/"
 	]
 ]
-const GROUP_TO_IMPORT = 0
+const GROUP_TO_IMPORT = 2
 
 var cell_height = 76
 var h_spacing = 16
