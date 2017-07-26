@@ -1,54 +1,114 @@
 extends Node
 
 const N_TILEMAPS = 9
-const TILESET_PATH = "res://tilesets/token_tileset.tres"
-const DEFAULT_SCALE = Vector2(0.5, 0.5)
+const TILESET_PATHS = {
+	0: "res://tilesets/layer0_tileset.tres",
+	1: "res://tilesets/layer1_tileset.tres",
+	2: "res://tilesets/layer2_tileset.tres"
+}
+const TILEMAP_SIZES = [
+	{"total": Vector2(5, 5), "usable": Vector2(1, 1)},
+	{"total": Vector2(5, 5), "usable": Vector2(3, 3)},
+	{"total": Vector2(5, 5), "usable": Vector2(3, 3)},
+	{"total": Vector2(5, 5), "usable": Vector2(3, 3)},
+	{"total": Vector2(6, 6), "usable": Vector2(4, 4)},
+	{"total": Vector2(7, 7), "usable": Vector2(5, 5)},
+	{"total": Vector2(7, 7), "usable": Vector2(7, 7)},
+	{"total": Vector2(8, 8), "usable": Vector2(8, 8)},
+	{"total": Vector2(9, 9), "usable": Vector2(9, 9)}
+]
+const TOKEN_SIZE = Vector2(532, 268)
 const CELL_SIZE = Vector2(151, 76)
 const V_OFFSET = 10
 
+var tilesets = {}
+var name2id = {}
 var tilemaps = []
 
-func create_tilemaps():
-	var tilemap = Node2D.new()
-	var layer0 = TileMap.new()
-	var layer1 = TileMap.new()
+func _get_initalised_map(layer_index, level):
+	var tileset = tilesets[layer_index]
+	var layer = TileMap.new()
+	var scale = TOKEN_SIZE.x / (CELL_SIZE.x * TILEMAP_SIZES[level].total.x)
 
-	tilemap.set_name("tilemap")
-	tilemap.set_pos(Vector2(0, V_OFFSET))
-	_init_tilemap_layer(layer0)
-	_init_tilemap_layer(layer1)
-	_put_grass(layer0)
-	_put_trees(layer1)
-	tilemap.add_child(layer0)
-	tilemap.add_child(layer1)
-	tilemaps.append(tilemap)
-
-	var prev = layer1
-	for i in range(1, N_TILEMAPS):
-		var tm = Node2D.new()
-		var l0 = layer0.duplicate()
-		var l1 = prev.duplicate()
-
-		tm.set_name("tilemap")
-		tm.set_pos(Vector2(0, V_OFFSET))
-		_put_trees(l1)
-		tm.add_child(l0)
-		tm.add_child(l1)
-		tilemaps.append(tm)
-		prev = l1
-
-func _init_tilemap_layer(layer):
-	var tileset = load(TILESET_PATH)
 	layer.set_tileset(tileset)
-	layer.set_scale(DEFAULT_SCALE)
+	layer.set_scale(Vector2(scale, scale))
 	layer.set_mode(layer.MODE_ISOMETRIC)
 	layer.set_cell_size(CELL_SIZE)
 	layer.set_tile_origin(layer.TILE_ORIGIN_CENTER)
 
-func _put_grass(layer):
-	for i in range(7):
-		for j in range(7):
-			layer.set_cell(i, j, 13)
+	return layer
+
+func _get_complete_tilemap(l0, l1, l2):
+	var tilemap = Node2D.new()
+
+	tilemap.set_name("tilemap")
+	tilemap.set_pos(Vector2(0, V_OFFSET))
+	tilemap.add_child(l0)
+	tilemap.add_child(l1)
+	tilemap.add_child(l2)
+
+	return tilemap
+
+func _init_name2id():
+	for tileset in tilesets.values():
+		for tile_id in tileset.get_tiles_ids():
+			name2id[tileset.tile_get_name(tile_id)] = tile_id
+
+func _load_tilesets():
+	for key in TILESET_PATHS:
+		tilesets[key] = load(TILESET_PATHS[key])
+
+func create_tilemaps():
+	_load_tilesets()
+	_init_name2id()
+	for i in range(0, N_TILEMAPS):
+		var layer0 = _get_initalised_map(0, i)
+		var layer1 = _get_initalised_map(1, i)
+		var layer2 = _get_initalised_map(2, i)
+
+		_put_floor(layer0, i)
+		tilemaps.append(_get_complete_tilemap(layer0, layer1, layer2))
+
+func _put_floor(layer, level):
+	var total_size = TILEMAP_SIZES[level].total
+	var usable_size = TILEMAP_SIZES[level].usable
+	var upper_left_corner = total_size / 2 - usable_size / 2 - Vector2(1, 1)
+	var lower_right_corner = upper_left_corner + usable_size + Vector2(1, 1)
+	var center = Rect2(upper_left_corner + Vector2(1, 1), usable_size)
+	var big_center = Rect2(upper_left_corner, usable_size + Vector2(2, 2))
+	var bounds = {
+		"up": upper_left_corner.x,
+		"left": upper_left_corner.y,
+		"down": lower_right_corner.x,
+		"right": lower_right_corner.y
+	}
+
+	for i in range(total_size.x):
+		for j in range(total_size.y):
+			var cell_pos = Vector2(i, j)
+			var tile = name2id["TILE-WATER-13"]
+
+			if center.has_point(cell_pos):
+				tile = name2id["TILE-GRASS-1"]
+			elif cell_pos == Vector2(bounds.down, bounds.left):
+				tile = name2id["TILE-WATER-9"]
+			elif cell_pos == Vector2(bounds.down, bounds.right):
+				tile = name2id["TILE-WATER-10"]
+			elif cell_pos == Vector2(bounds.up, bounds.right):
+				tile = name2id["TILE-WATER-11"]
+			elif cell_pos == Vector2(bounds.up, bounds.left):
+				tile = name2id["TILE-WATER-12"]
+			elif big_center.has_point(cell_pos): 
+				if cell_pos.x == bounds.right:
+					tile = name2id["TILE-WATER-1"]
+				elif cell_pos.y == bounds.down:
+					tile = name2id["TILE-WATER-2"]
+				elif cell_pos.x == bounds.left:
+					tile = name2id["TILE-WATER-3"]
+				elif cell_pos.y == bounds.up:
+					tile = name2id["TILE-WATER-4"]
+
+			layer.set_cell(i, j, tile)
 
 func _put_trees(layer):
 	randomize()
