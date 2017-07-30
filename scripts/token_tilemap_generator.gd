@@ -25,7 +25,7 @@ var tilesets = {}
 var name2id = {}
 var tilemaps = []
 var default_probabilities = {}
-var probabilities = {}
+var realistic_probabilities = {}
 
 func _get_initalised_map(layer_index, level):
 	var tileset = tilesets[layer_index]
@@ -65,6 +65,16 @@ func _get_tile_dimensions(tile_id, tileset):
 
 	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
 
+func _even_spread(t):
+	var keys = t.keys()
+	var p = 1.0 / keys.size()
+
+	for key in keys:
+		var c = t[key]
+		c.p = p
+		if "d" in c.keys():
+			_even_spread(c.d)
+
 func _build_tree(d, tile_name, tileset, tile_id):
 	var c = tile_name[0]
 
@@ -91,6 +101,7 @@ func _init_probabilities():
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
 			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
+			_even_spread(default_probabilities[i])
 	print(default_probabilities)
 
 func create_tilemaps():
