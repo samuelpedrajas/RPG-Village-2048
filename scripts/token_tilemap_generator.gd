@@ -60,13 +60,19 @@ func _load_tilesets():
 	for key in TILESET_PATHS:
 		tilesets[key] = load(TILESET_PATHS[key])
 
-func _build_tree(d, tile_name, tile_id):
+func _get_tile_dimensions(tile_id, tileset):
+	var t = tileset.tile_get_texture(tile_id)
+
+	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
+
+func _build_tree(d, tile_name, tileset, tile_id):
 	var c = tile_name[0]
 
 	if tile_name.size() == 1:
 		d[c] = {}
 		d[c]["p"] = 0
 		d[c]["id"] = tile_id
+		d[c]["size"] = _get_tile_dimensions(tile_id, tileset)
 	else:
 		tile_name.remove(0)
 		if !d.has(c):
@@ -74,7 +80,7 @@ func _build_tree(d, tile_name, tile_id):
 				"p": 0,
 				"d": {}
 			}
-		_build_tree(d[c].d, tile_name, tile_id)
+		_build_tree(d[c].d, tile_name, tileset, tile_id)
 
 func _init_probabilities():
 	for i in range(3):
@@ -84,7 +90,7 @@ func _init_probabilities():
 
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
-			_build_tree(default_probabilities[i], tile_name.split("-"), tile_id)
+			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
 	print(default_probabilities)
 
 func create_tilemaps():
