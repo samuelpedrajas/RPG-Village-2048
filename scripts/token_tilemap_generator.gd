@@ -27,6 +27,8 @@ var tilemaps = []
 var default_probabilities = {}
 var realistic_probabilities = {}
 
+var matrix_list = []
+
 func _get_initalised_map(layer_index, level):
 	var tileset = tilesets[layer_index]
 	var layer = TileMap.new()
@@ -67,7 +69,7 @@ func _get_tile_dimensions(tile_id, tileset):
 
 func _even_spread(t):
 	var keys = t.keys()
-	var p = 1.0 / keys.size()
+	var p = (1.0 / keys.size()) * 100
 
 	for key in keys:
 		var c = t[key]
@@ -102,7 +104,49 @@ func _init_probabilities():
 			var tile_name = tileset.tile_get_name(tile_id)
 			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
 			_even_spread(default_probabilities[i])
-	print(default_probabilities)
+
+func _pick_random_tile(t):
+	var acc = 0.0
+	for key in t.keys():
+		var c = t[key]
+		var p = c.p
+		var r = randi() % 100
+
+		acc += p
+		if !acc > r:
+			continue
+
+		if "d" in c.keys():
+			return _pick_random_tile(c.d)
+		else:
+			return c
+
+func _pick_random_pos(m):
+	var w = m.size()
+	var h = m[0].size()
+	var s = w * h
+	var r = randi() % s
+	var p = Vector2(r / h, r % h)
+
+	var first = r
+	while m[p.x][p.y] != -1:
+		r = (r + 1) % s
+		if r == first:
+			return Vector2(-1, -1)
+		p = Vector2(r / h, r % h)
+
+	return p
+
+func _create_matrix(i):
+	var size = TILEMAP_SIZES[i].usable
+	var m = []
+	for i in range(int(size.x)):
+		var r = []
+		for j in range(int(size.y)):
+			r.append(-1)
+		m.append(r)
+
+	matrix_list.append(m)
 
 func create_tilemaps():
 	_load_tilesets()
@@ -114,6 +158,8 @@ func create_tilemaps():
 		var layer2 = _get_initalised_map(2, i)
 
 		_put_floor(layer0, i)
+		_create_matrix(i)
+		print(_pick_random_pos(matrix_list[i]))
 		tilemaps.append(_get_complete_tilemap(layer0, layer1, layer2))
 
 func _put_floor(layer, level):
