@@ -24,6 +24,8 @@ const V_OFFSET = 10
 var tilesets = {}
 var name2id = {}
 var tilemaps = []
+var default_probabilities = {}
+var probabilities = {}
 
 func _get_initalised_map(layer_index, level):
 	var tileset = tilesets[layer_index]
@@ -58,8 +60,36 @@ func _load_tilesets():
 	for key in TILESET_PATHS:
 		tilesets[key] = load(TILESET_PATHS[key])
 
+func _build_tree(d, tile_name, tile_id):
+	var c = tile_name[0]
+
+	if tile_name.size() == 1:
+		d[c] = {}
+		d[c]["p"] = 0
+		d[c]["id"] = tile_id
+	else:
+		tile_name.remove(0)
+		if !d.has(c):
+			d[c] = {
+				"p": 0,
+				"d": {}
+			}
+		_build_tree(d[c].d, tile_name, tile_id)
+
+func _init_probabilities():
+	for i in range(3):
+		var tileset = tilesets[i]
+		var tiles = []
+		default_probabilities[i] = {}
+
+		for tile_id in tileset.get_tiles_ids():
+			var tile_name = tileset.tile_get_name(tile_id)
+			_build_tree(default_probabilities[i], tile_name.split("-"), tile_id)
+	print(default_probabilities)
+
 func create_tilemaps():
 	_load_tilesets()
+	_init_probabilities()
 	_init_name2id()
 	for i in range(0, N_TILEMAPS):
 		var layer0 = _get_initalised_map(0, i)
