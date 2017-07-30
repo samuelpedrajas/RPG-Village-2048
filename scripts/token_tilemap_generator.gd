@@ -27,7 +27,7 @@ var tilemaps = []
 var default_probabilities = {}
 var realistic_probabilities = {}
 
-var matrix_list = []
+var MATRIX = []
 
 func _get_initalised_map(layer_index, level):
 	var tileset = tilesets[layer_index]
@@ -122,7 +122,7 @@ func _pick_random_tile(t):
 			return c
 
 func _pick_random_pos(i):
-	var m = matrix_list[i]
+	var m = MATRIX
 	var w = m.size()
 	var h = m[0].size()
 	var s = w * h
@@ -138,28 +138,57 @@ func _pick_random_pos(i):
 
 	return p
 
+func _add_row(m, s):
+	var rn = randi() % int(s.x)
+	var r = []
+	for _ in range(s.y):
+		r.append(-1)
+	m.insert(rn, r)
+
+func _add_col(m, s):
+	var rn = randi() % int(s.y)
+	for r in m:
+		r.insert(rn, -1)
+
+func _create_expanded_matrix(i):
+	var diff = TILEMAP_SIZES[i].usable - TILEMAP_SIZES[i - 1].usable
+	var m = MATRIX
+
+	for r in range(diff.x):
+		_add_row(m, TILEMAP_SIZES[i - 1].usable)
+	for c in range(diff.y):
+		_add_col(m, TILEMAP_SIZES[i - 1].usable)
+
 func _create_matrix(i):
 	var size = TILEMAP_SIZES[i].usable
-	var m = []
+	var m = MATRIX
 	for i in range(int(size.x)):
 		var r = []
 		for j in range(int(size.y)):
 			r.append(-1)
 		m.append(r)
 
-	matrix_list.append(m)
-
 func _put_stuff(layer, i):
 	var p = _pick_random_pos(i)
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
-	var m = matrix_list[i]
+	var m = MATRIX
 	if p.x != -1:
 		var map_position = p + offset
 		var tile = _pick_random_tile(default_probabilities[2])
 		m[p.x][p.y] = tile.id
 		layer.set_cell(map_position.x, map_position.y, tile.id)
 
+func _rebuild_layer(layer, i):
+	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
+	var m = MATRIX
+
+	for i in range(m.size()):
+		for j in range(m[0].size()):
+			if m[i][j] > -1:
+				layer.set_cell(i + offset.x, j + offset.y, m[i][j])
+
 func create_tilemaps():
+	randomize()
 	_load_tilesets()
 	_init_probabilities()
 	_init_name2id()
@@ -168,8 +197,13 @@ func create_tilemaps():
 		var layer1 = _get_initalised_map(1, i)
 		var layer2 = _get_initalised_map(2, i)
 
+		if i == 0:
+			_create_matrix(0)
+		else:
+			_create_expanded_matrix(i)
+			_rebuild_layer(layer2, i)
+
 		_put_floor(layer0, i)
-		_create_matrix(i)
 		_put_stuff(layer2, i)
 		tilemaps.append(_get_complete_tilemap(layer0, layer1, layer2))
 
