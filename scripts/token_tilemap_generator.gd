@@ -67,15 +67,14 @@ func _get_tile_dimensions(tile_id, tileset):
 
 	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
 
-func _even_spread(t):
+func _even_spread(t, p):
 	var keys = t.keys()
-	var p = (1.0 / keys.size()) * 100
 
 	for key in keys:
 		var c = t[key]
 		c.p = p
 		if "d" in c.keys():
-			_even_spread(c.d)
+			_even_spread(c.d, (1.0 / keys.size()) * 100)
 
 func _build_tree(d, tile_name, tileset, tile_id):
 	var c = tile_name[0]
@@ -102,11 +101,13 @@ func _init_probabilities():
 
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
+			var first_probabilities = (1.0 / default_probabilities[i].keys().size()) * 100
 			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
-			_even_spread(default_probabilities[i])
+			_even_spread(default_probabilities[i], first_probabilities)
 
 func _pick_random_tile(t):
 	var acc = 0.0
+
 	for key in t.keys():
 		var c = t[key]
 		var p = c.p
