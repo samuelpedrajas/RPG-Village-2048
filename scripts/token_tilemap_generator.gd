@@ -121,7 +121,8 @@ func _pick_random_tile(t):
 		else:
 			return c
 
-func _pick_random_pos(m):
+func _pick_random_pos(i):
+	var m = matrix_list[i]
 	var w = m.size()
 	var h = m[0].size()
 	var s = w * h
@@ -148,6 +149,16 @@ func _create_matrix(i):
 
 	matrix_list.append(m)
 
+func _put_stuff(layer, i):
+	var p = _pick_random_pos(i)
+	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
+	var m = matrix_list[i]
+	if p.x != -1:
+		var map_position = p + offset
+		var tile = _pick_random_tile(default_probabilities[2])
+		m[p.x][p.y] = tile.id
+		layer.set_cell(map_position.x, map_position.y, tile.id)
+
 func create_tilemaps():
 	_load_tilesets()
 	_init_probabilities()
@@ -159,7 +170,7 @@ func create_tilemaps():
 
 		_put_floor(layer0, i)
 		_create_matrix(i)
-		print(_pick_random_pos(matrix_list[i]))
+		_put_stuff(layer2, i)
 		tilemaps.append(_get_complete_tilemap(layer0, layer1, layer2))
 
 func _put_floor(layer, level):
@@ -204,7 +215,6 @@ func _put_floor(layer, level):
 			layer.set_cell(i, j, tile)
 
 func _put_trees(layer):
-	randomize()
 	var max_pos = 6
 	var r = randi() % 6
 	var offset = Vector2(randi() % max_pos, randi() % max_pos)
