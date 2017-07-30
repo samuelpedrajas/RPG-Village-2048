@@ -291,463 +291,463 @@
 [node name="BUILDING-BIG-1" type="Sprite" parent="."]
 
 texture = ExtResource( 1 )
-offset = Vector2( 0, -181 )
+offset = Vector2( -199, -181 )
 
 [node name="BUILDING-BIG-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 565, 0 )
 texture = ExtResource( 2 )
-offset = Vector2( 0, -211 )
+offset = Vector2( -187.5, -211 )
 
 [node name="BUILDING-BIG-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1107, 0 )
 texture = ExtResource( 3 )
-offset = Vector2( 0, -232 )
+offset = Vector2( -184.5, -232.5 )
 
 [node name="BUILDING-MEDIUM-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1643, 0 )
 texture = ExtResource( 4 )
-offset = Vector2( 0, -66 )
+offset = Vector2( -70.5, -66.5 )
 
 [node name="BUILDING-MEDIUM-21" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1951, 0 )
 texture = ExtResource( 5 )
-offset = Vector2( 0, -82 )
+offset = Vector2( -45.5, -82 )
 
 [node name="BUILDING-MEDIUM-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 512 )
 texture = ExtResource( 6 )
-offset = Vector2( 0, -107 )
+offset = Vector2( -62.5, -107.5 )
 
 [node name="BUILDING-MEDIUM-26" type="Sprite" parent="."]
 
 transform/pos = Vector2( 292, 512 )
 texture = ExtResource( 7 )
-offset = Vector2( 0, -80 )
+offset = Vector2( -58, -80 )
 
 [node name="BUILDING-MEDIUM-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 575, 512 )
 texture = ExtResource( 8 )
-offset = Vector2( 0, -74 )
+offset = Vector2( -72, -74.5 )
 
 [node name="BUILDING-MEDIUM-28" type="Sprite" parent="."]
 
 transform/pos = Vector2( 886, 512 )
 texture = ExtResource( 9 )
-offset = Vector2( 0, -79 )
+offset = Vector2( -67, -79 )
 
 [node name="BUILDING-MEDIUM-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1187, 512 )
 texture = ExtResource( 10 )
-offset = Vector2( 0, -69 )
+offset = Vector2( -67.5, -69.5 )
 
 [node name="BUILDING-MEDIUM-24" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1489, 512 )
 texture = ExtResource( 11 )
-offset = Vector2( 0, -46 )
+offset = Vector2( -18.5, -46.5 )
 
 [node name="BUILDING-MEDIUM-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1693, 512 )
 texture = ExtResource( 12 )
-offset = Vector2( 0, -37 )
+offset = Vector2( -23, -37.5 )
 
 [node name="BUILDING-MEDIUM-20" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1906, 512 )
 texture = ExtResource( 13 )
-offset = Vector2( 0, -51 )
+offset = Vector2( -21, -51 )
 
 [node name="BUILDING-MEDIUM-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 1024 )
 texture = ExtResource( 14 )
-offset = Vector2( 0, -91 )
+offset = Vector2( -24, -91 )
 
 [node name="BUILDING-MEDIUM-22" type="Sprite" parent="."]
 
 transform/pos = Vector2( 215, 1024 )
 texture = ExtResource( 15 )
-offset = Vector2( 0, -69 )
+offset = Vector2( -50.5, -69.5 )
 
 [node name="BUILDING-MEDIUM-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 483, 1024 )
 texture = ExtResource( 16 )
-offset = Vector2( 0, -58 )
+offset = Vector2( -59.5, -58 )
 
 [node name="BUILDING-MEDIUM-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 769, 1024 )
 texture = ExtResource( 17 )
-offset = Vector2( 0, -78 )
+offset = Vector2( -38, -78 )
 
 [node name="BUILDING-MEDIUM-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1012, 1024 )
 texture = ExtResource( 18 )
-offset = Vector2( 0, -105 )
+offset = Vector2( -39, -105 )
 
 [node name="BUILDING-MEDIUM-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1257, 1024 )
 texture = ExtResource( 19 )
-offset = Vector2( 0, -53 )
+offset = Vector2( -55, -53 )
 
 [node name="BUILDING-MEDIUM-23" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1534, 1024 )
 texture = ExtResource( 20 )
-offset = Vector2( 0, -37 )
+offset = Vector2( -17.5, -37 )
 
 [node name="BUILDING-MEDIUM-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1736, 1024 )
 texture = ExtResource( 21 )
-offset = Vector2( 0, -51 )
+offset = Vector2( -49, -51 )
 
 [node name="BUILDING-MEDIUM-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2001, 1024 )
 texture = ExtResource( 22 )
-offset = Vector2( 0, -54 )
+offset = Vector2( -52.5, -54 )
 
 [node name="BUILDING-MEDIUM-27" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 1536 )
 texture = ExtResource( 23 )
-offset = Vector2( 0, -74 )
+offset = Vector2( -42, -74 )
 
 [node name="BUILDING-MEDIUM-25" type="Sprite" parent="."]
 
 transform/pos = Vector2( 251, 1536 )
 texture = ExtResource( 24 )
-offset = Vector2( 0, -65 )
+offset = Vector2( -25.5, -65.5 )
 
 [node name="BUILDING-MEDIUM-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 469, 1536 )
 texture = ExtResource( 25 )
-offset = Vector2( 0, -68 )
+offset = Vector2( -66.5, -68.5 )
 
 [node name="BUILDING-MEDIUM-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 769, 1536 )
 texture = ExtResource( 26 )
-offset = Vector2( 0, -88 )
+offset = Vector2( -64, -88 )
 
 [node name="BUILDING-MEDIUM-19" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1064, 1536 )
 texture = ExtResource( 27 )
-offset = Vector2( 0, -111 )
+offset = Vector2( -43, -111 )
 
 [node name="BUILDING-MEDIUM-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1317, 1536 )
 texture = ExtResource( 28 )
-offset = Vector2( 0, -71 )
+offset = Vector2( -29, -71.5 )
 
 [node name="BUILDING-MEDIUM-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1542, 1536 )
 texture = ExtResource( 29 )
-offset = Vector2( 0, -60 )
+offset = Vector2( -50, -60 )
 
 [node name="BUILDING-MEDIUM-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1809, 1536 )
 texture = ExtResource( 30 )
-offset = Vector2( 0, -57 )
+offset = Vector2( -29.5, -57 )
 
 [node name="BUILDING-MEDIUM-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2035, 1536 )
 texture = ExtResource( 31 )
-offset = Vector2( 0, -81 )
+offset = Vector2( -19.5, -81 )
 
 [node name="BUILDING-SMALL-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 2048 )
 texture = ExtResource( 32 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 32, -25 )
 
 [node name="BUILDING-SMALL-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 103, 2048 )
 texture = ExtResource( 33 )
-offset = Vector2( 0, -76 )
+offset = Vector2( -5, -76 )
 
 [node name="BUILDING-SMALL-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 280, 2048 )
 texture = ExtResource( 34 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 17, -37.5 )
 
 [node name="BUILDING-SMALL-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 413, 2048 )
 texture = ExtResource( 35 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 27, -25.5 )
 
 [node name="BUILDING-SMALL-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 526, 2048 )
 texture = ExtResource( 36 )
-offset = Vector2( 0, -21 )
+offset = Vector2( 0, -21.5 )
 
 [node name="BUILDING-SMALL-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 693, 2048 )
 texture = ExtResource( 37 )
-offset = Vector2( 0, -76 )
+offset = Vector2( -5, -76 )
 
 [node name="BUILDING-SMALL-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 870, 2048 )
 texture = ExtResource( 38 )
-offset = Vector2( 0, -12 )
+offset = Vector2( 15, -12 )
 
 [node name="BUILDING-SMALL-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1007, 2048 )
 texture = ExtResource( 39 )
-offset = Vector2( 0, -21 )
+offset = Vector2( 2, -21.5 )
 
 [node name="BUILDING-SMALL-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1170, 2048 )
 texture = ExtResource( 40 )
-offset = Vector2( 0, -24 )
+offset = Vector2( 32, -24.5 )
 
 [node name="BUILDING-SMALL-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1273, 2048 )
 texture = ExtResource( 41 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 32, -25.5 )
 
 [node name="BUILDING-SMALL-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1376, 2048 )
 texture = ExtResource( 42 )
-offset = Vector2( 0, -18 )
+offset = Vector2( 25, -18.5 )
 
 [node name="BUILDING-SMALL-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1493, 2048 )
 texture = ExtResource( 43 )
-offset = Vector2( 0, -17 )
+offset = Vector2( 20.5, -17.5 )
 
 [node name="BUILDING-SMALL-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1619, 2048 )
 texture = ExtResource( 44 )
-offset = Vector2( 0, -15 )
+offset = Vector2( 2, -15 )
 
 [node name="BUILDING-SMALL-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1782, 2048 )
 texture = ExtResource( 45 )
-offset = Vector2( 0, -32 )
+offset = Vector2( 5.5, -32 )
 
 [node name="BUILDING-TOWER-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1938, 2048 )
 texture = ExtResource( 46 )
-offset = Vector2( 0, -69 )
+offset = Vector2( 26, -69 )
 
 [node name="BUILDING-TOWER-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 2560 )
 texture = ExtResource( 47 )
-offset = Vector2( 0, -66 )
+offset = Vector2( -10, -66 )
 
 [node name="BUILDING-TOWER-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 187, 2560 )
 texture = ExtResource( 48 )
-offset = Vector2( 0, -51 )
+offset = Vector2( 18.5, -51.5 )
 
 [node name="BUILDING-TOWER-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 317, 2560 )
 texture = ExtResource( 49 )
-offset = Vector2( 0, -61 )
+offset = Vector2( 33, -61.5 )
 
 [node name="LIVING-ANIMAL-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 418, 2560 )
 texture = ExtResource( 50 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 6.5, -37 )
 
 [node name="LIVING-ANIMAL-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 572, 2560 )
 texture = ExtResource( 51 )
-offset = Vector2( 0, -32 )
+offset = Vector2( 6.5, -32 )
 
 [node name="LIVING-ANIMAL-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 726, 2560 )
 texture = ExtResource( 52 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 6.5, -1 )
 
 [node name="LIVING-ANIMAL-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 880, 2560 )
 texture = ExtResource( 53 )
-offset = Vector2( 0, -50 )
+offset = Vector2( 6.5, -50.5 )
 
 [node name="LIVING-ANIMAL-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1034, 2560 )
 texture = ExtResource( 54 )
-offset = Vector2( 0, -33 )
+offset = Vector2( 6.5, -33 )
 
 [node name="LIVING-ANIMAL-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1188, 2560 )
 texture = ExtResource( 55 )
-offset = Vector2( 0, -27 )
+offset = Vector2( 6.5, -27 )
 
 [node name="LIVING-ANIMAL-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1342, 2560 )
 texture = ExtResource( 56 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 6.5, -25 )
 
 [node name="LIVING-ANIMAL-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1496, 2560 )
 texture = ExtResource( 57 )
-offset = Vector2( 0, -95 )
+offset = Vector2( 6.5, -95.5 )
 
 [node name="LIVING-ANIMAL-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1650, 2560 )
 texture = ExtResource( 58 )
-offset = Vector2( 0, -23 )
+offset = Vector2( 6.5, -23 )
 
 [node name="LIVING-ARCHER-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1804, 2560 )
 texture = ExtResource( 59 )
-offset = Vector2( 0, -26 )
+offset = Vector2( 27.5, -26.5 )
 
 [node name="LIVING-ARCHER-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1916, 2560 )
 texture = ExtResource( 60 )
-offset = Vector2( 0, -24 )
+offset = Vector2( 28, -24 )
 
 [node name="LIVING-ARCHER-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2027, 2560 )
 texture = ExtResource( 61 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 27.5, -25 )
 
 [node name="LIVING-ARCHER-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 3072 )
 texture = ExtResource( 62 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 13.5, -13.5 )
 
 [node name="LIVING-ARCHER-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 140, 3072 )
 texture = ExtResource( 63 )
-offset = Vector2( 0, -29 )
+offset = Vector2( 24.5, -29.5 )
 
 [node name="LIVING-ARCHER-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 258, 3072 )
 texture = ExtResource( 64 )
-offset = Vector2( 0, -10 )
+offset = Vector2( 14.5, -10 )
 
 [node name="LIVING-ARCHER-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 396, 3072 )
 texture = ExtResource( 65 )
-offset = Vector2( 0, -26 )
+offset = Vector2( 28, -26 )
 
 [node name="LIVING-HEALER-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 507, 3072 )
 texture = ExtResource( 66 )
-offset = Vector2( 0, -27 )
+offset = Vector2( 21.5, -27 )
 
 [node name="LIVING-HEALER-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 631, 3072 )
 texture = ExtResource( 67 )
-offset = Vector2( 0, -26 )
+offset = Vector2( 18, -26 )
 
 [node name="LIVING-HEALER-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 762, 3072 )
 texture = ExtResource( 68 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 14.5, -30.5 )
 
 [node name="LIVING-HEALER-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 900, 3072 )
 texture = ExtResource( 69 )
-offset = Vector2( 0, -19 )
+offset = Vector2( 17.5, -19 )
 
 [node name="LIVING-HEALER-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1032, 3072 )
 texture = ExtResource( 70 )
-offset = Vector2( 0, -29 )
+offset = Vector2( 30.5, -29 )
 
 [node name="LIVING-HEALER-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1138, 3072 )
 texture = ExtResource( 71 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 23.5, -25 )
 
 [node name="LIVING-HEALER-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1258, 3072 )
 texture = ExtResource( 72 )
-offset = Vector2( 0, -17 )
+offset = Vector2( 18.5, -17 )
 
 [node name="LIVING-SWMAN-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1388, 3072 )
 texture = ExtResource( 73 )
-offset = Vector2( 0, -31 )
+offset = Vector2( -1, -31.5 )
 
 [node name="LIVING-SWMAN-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1557, 3072 )
 texture = ExtResource( 74 )
-offset = Vector2( 0, -26 )
+offset = Vector2( 14.5, -26.5 )
 
 [node name="LIVING-SWMAN-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1695, 3072 )
 texture = ExtResource( 75 )
-offset = Vector2( 0, -17 )
+offset = Vector2( 13, -17.5 )
 
 [node name="LIVING-SWMAN-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1836, 3072 )
 texture = ExtResource( 76 )
-offset = Vector2( 0, -19 )
+offset = Vector2( 16, -19 )
 
 [node name="LIVING-SWMAN-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1971, 3072 )
 texture = ExtResource( 77 )
-offset = Vector2( 0, -29 )
+offset = Vector2( 26.5, -29 )
 
 [node name="LIVING-SWMAN-4" type="Sprite" parent="."]
 
@@ -759,1236 +759,1242 @@ offset = Vector2( 0, -29 )
 
 transform/pos = Vector2( 167, 3584 )
 texture = ExtResource( 79 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 49, -1 )
 
 [node name="MISC-ARROW-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 236, 3584 )
 texture = ExtResource( 80 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 49, -1 )
 
 [node name="MISC-ARROW-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 305, 3584 )
 texture = ExtResource( 81 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 46, -1 )
 
 [node name="MISC-ARROW-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 380, 3584 )
 texture = ExtResource( 82 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 46, -1 )
 
 [node name="MISC-FARMING-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 455, 3584 )
 texture = ExtResource( 83 )
-offset = Vector2( 0, 2 )
+offset = Vector2( 5.5, 2.5 )
 
 [node name="MISC-FARMING-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 611, 3584 )
 texture = ExtResource( 84 )
-offset = Vector2( 0, -12 )
+offset = Vector2( 5.5, -12 )
 
 [node name="MISC-FARMING-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 767, 3584 )
 texture = ExtResource( 85 )
-offset = Vector2( 0, -8 )
+offset = Vector2( 5.5, -8.5 )
 
 [node name="MISC-FARMING-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 923, 3584 )
 texture = ExtResource( 86 )
+offset = Vector2( 5.5, -0.5 )
 
 [node name="MISC-FARMING-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1079, 3584 )
 texture = ExtResource( 87 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 5.5, 3 )
 
 [node name="MISC-FARMING-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1235, 3584 )
 texture = ExtResource( 88 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 5.5, 3 )
 
 [node name="MISC-FARMING-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1391, 3584 )
 texture = ExtResource( 89 )
-offset = Vector2( 0, -12 )
+offset = Vector2( 5.5, -12 )
 
 [node name="MISC-FARMING-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1547, 3584 )
 texture = ExtResource( 90 )
-offset = Vector2( 0, -9 )
+offset = Vector2( 5.5, -9 )
 
 [node name="MISC-FARMING-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1703, 3584 )
 texture = ExtResource( 91 )
+offset = Vector2( 5.5, -0.5 )
 
 [node name="MISC-FARMING-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1859, 3584 )
 texture = ExtResource( 92 )
-offset = Vector2( 0, -2 )
+offset = Vector2( 5.5, -2 )
 
 [node name="MISC-FARMING-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2015, 3584 )
 texture = ExtResource( 93 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 5.5, 3 )
 
 [node name="MISC-FARMING-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 4096 )
 texture = ExtResource( 94 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 9.5, 5.5 )
 
 [node name="MISC-FARMING-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 148, 4096 )
 texture = ExtResource( 95 )
-offset = Vector2( 0, -8 )
+offset = Vector2( 5.5, -8.5 )
 
 [node name="MISC-FARMING-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 304, 4096 )
 texture = ExtResource( 96 )
-offset = Vector2( 0, -9 )
+offset = Vector2( 5.5, -9 )
 
 [node name="MISC-OTHER-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 460, 4096 )
 texture = ExtResource( 97 )
-offset = Vector2( 0, -33 )
+offset = Vector2( -2.5, -33 )
 
 [node name="MISC-OTHER-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 632, 4096 )
 texture = ExtResource( 98 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 34, -3.5 )
 
 [node name="MISC-OTHER-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 731, 4096 )
 texture = ExtResource( 99 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 41.5, 5 )
 
 [node name="MISC-OTHER-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 815, 4096 )
 texture = ExtResource( 100 )
-offset = Vector2( 0, -5 )
+offset = Vector2( 34, -5 )
 
 [node name="MISC-OTHER-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 914, 4096 )
 texture = ExtResource( 101 )
-offset = Vector2( 0, -4 )
+offset = Vector2( 53.5, -4 )
 
 [node name="MISC-OTHER-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 974, 4096 )
 texture = ExtResource( 102 )
-offset = Vector2( 0, -47 )
+offset = Vector2( 4, -47.5 )
 
 [node name="MISC-ROCK-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1133, 4096 )
 texture = ExtResource( 103 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 34, 11 )
 
 [node name="MISC-ROCK-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1232, 4096 )
 texture = ExtResource( 104 )
-offset = Vector2( 0, -6 )
+offset = Vector2( 12.5, -6.5 )
 
 [node name="MISC-ROCK-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1374, 4096 )
 texture = ExtResource( 105 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 25, 3.5 )
 
 [node name="MISC-ROCK-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1491, 4096 )
 texture = ExtResource( 106 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 41, 7.5 )
 
 [node name="MISC-ROCK-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1576, 4096 )
 texture = ExtResource( 107 )
-offset = Vector2( 0, 13 )
+offset = Vector2( 34, 13 )
 
 [node name="MISC-ROCK-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1675, 4096 )
 texture = ExtResource( 108 )
-offset = Vector2( 0, 10 )
+offset = Vector2( 35.5, 10.5 )
 
 [node name="MISC-ROCK-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1771, 4096 )
 texture = ExtResource( 109 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 38.5, 11 )
 
 [node name="MISC-ROCK-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1861, 4096 )
 texture = ExtResource( 110 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 41.5, 7.5 )
 
 [node name="MISC-ROCK-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1945, 4096 )
 texture = ExtResource( 111 )
-offset = Vector2( 0, 10 )
+offset = Vector2( 35.5, 10.5 )
 
 [node name="MISC-ROCK-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2041, 4096 )
 texture = ExtResource( 112 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 19.5, 5 )
 
 [node name="MISC-ROCK-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 4608 )
 texture = ExtResource( 113 )
-offset = Vector2( 0, -1 )
+offset = Vector2( 9.5, -1 )
 
 [node name="MISC-ROCK-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 148, 4608 )
 texture = ExtResource( 114 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 34, 11 )
 
 [node name="MISC-ROCK-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 247, 4608 )
 texture = ExtResource( 115 )
-offset = Vector2( 0, 4 )
+offset = Vector2( 35.5, 4.5 )
 
 [node name="MISC-ROCK-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 343, 4608 )
 texture = ExtResource( 116 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 30, 11 )
 
 [node name="MISC-ROCK-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 450, 4608 )
 texture = ExtResource( 117 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 38.5, 11 )
 
 [node name="MISC-ROCK-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 540, 4608 )
 texture = ExtResource( 118 )
-offset = Vector2( 0, 13 )
+offset = Vector2( 34, 13 )
 
 [node name="MISC-ROCK-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 639, 4608 )
 texture = ExtResource( 119 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 31, 11 )
 
 [node name="MISC-ROCK-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 744, 4608 )
 texture = ExtResource( 120 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 31.5, 11 )
 
 [node name="MISC-WOOD-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 848, 4608 )
 texture = ExtResource( 121 )
-offset = Vector2( 0, 17 )
+offset = Vector2( 61, 17.5 )
 
 [node name="MISC-WOOD-21" type="Sprite" parent="."]
 
 transform/pos = Vector2( 893, 4608 )
 texture = ExtResource( 122 )
-offset = Vector2( 0, 17 )
+offset = Vector2( 37, 17 )
 
 [node name="MISC-WOOD-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 986, 4608 )
 texture = ExtResource( 123 )
-offset = Vector2( 0, 14 )
+offset = Vector2( 48, 14 )
 
 [node name="MISC-WOOD-26" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1057, 4608 )
 texture = ExtResource( 124 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 40, 9 )
 
 [node name="MISC-WOOD-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1144, 4608 )
 texture = ExtResource( 125 )
-offset = Vector2( 0, 14 )
+offset = Vector2( 37, 14 )
 
 [node name="MISC-WOOD-28" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1237, 4608 )
 texture = ExtResource( 126 )
-offset = Vector2( 0, 17 )
+offset = Vector2( 47, 17.5 )
 
 [node name="MISC-WOOD-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1310, 4608 )
 texture = ExtResource( 127 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 37, 5.5 )
 
 [node name="MISC-WOOD-24" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1403, 4608 )
 texture = ExtResource( 128 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 39, 5.5 )
 
 [node name="MISC-WOOD-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1492, 4608 )
 texture = ExtResource( 129 )
-offset = Vector2( 0, 13 )
+offset = Vector2( 61, 13 )
 
 [node name="MISC-WOOD-20" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1537, 4608 )
 texture = ExtResource( 130 )
-offset = Vector2( 0, 15 )
+offset = Vector2( 35.5, 15.5 )
 
 [node name="MISC-WOOD-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1633, 4608 )
 texture = ExtResource( 131 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 37, 9.5 )
 
 [node name="MISC-WOOD-22" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1726, 4608 )
 texture = ExtResource( 132 )
-offset = Vector2( 0, 17 )
+offset = Vector2( 37, 17 )
 
 [node name="MISC-WOOD-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1819, 4608 )
 texture = ExtResource( 133 )
-offset = Vector2( 0, 12 )
+offset = Vector2( 40, 12.5 )
 
 [node name="MISC-WOOD-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1906, 4608 )
 texture = ExtResource( 134 )
-offset = Vector2( 0, 19 )
+offset = Vector2( 58, 19 )
 
 [node name="MISC-WOOD-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1957, 4608 )
 texture = ExtResource( 135 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 37, 9 )
 
 [node name="MISC-WOOD-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 5120 )
 texture = ExtResource( 136 )
-offset = Vector2( 0, 14 )
+offset = Vector2( 37, 14 )
 
 [node name="MISC-WOOD-23" type="Sprite" parent="."]
 
 transform/pos = Vector2( 93, 5120 )
 texture = ExtResource( 137 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 37, 11 )
 
 [node name="MISC-WOOD-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 186, 5120 )
 texture = ExtResource( 138 )
-offset = Vector2( 0, 6 )
+offset = Vector2( 37, 6 )
 
 [node name="MISC-WOOD-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 279, 5120 )
 texture = ExtResource( 139 )
-offset = Vector2( 0, 15 )
+offset = Vector2( 61, 15.5 )
 
 [node name="MISC-WOOD-27" type="Sprite" parent="."]
 
 transform/pos = Vector2( 324, 5120 )
 texture = ExtResource( 140 )
-offset = Vector2( 0, 19 )
+offset = Vector2( 61, 19.5 )
 
 [node name="MISC-WOOD-25" type="Sprite" parent="."]
 
 transform/pos = Vector2( 369, 5120 )
 texture = ExtResource( 141 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 46, 9.5 )
 
 [node name="MISC-WOOD-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 444, 5120 )
 texture = ExtResource( 142 )
-offset = Vector2( 0, 4 )
+offset = Vector2( 15.5, 4.5 )
 
 [node name="MISC-WOOD-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 580, 5120 )
 texture = ExtResource( 143 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 35, 9.5 )
 
 [node name="MISC-WOOD-19" type="Sprite" parent="."]
 
 transform/pos = Vector2( 677, 5120 )
 texture = ExtResource( 144 )
-offset = Vector2( 0, 19 )
+offset = Vector2( 61, 19 )
 
 [node name="MISC-WOOD-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 722, 5120 )
 texture = ExtResource( 145 )
-offset = Vector2( 0, 10 )
+offset = Vector2( 36.5, 10 )
 
 [node name="MISC-WOOD-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 816, 5120 )
 texture = ExtResource( 146 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 30.5, 7.5 )
 
 [node name="MISC-WOOD-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 922, 5120 )
 texture = ExtResource( 147 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 46.5, 7.5 )
 
 [node name="MISC-WOOD-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 996, 5120 )
 texture = ExtResource( 148 )
-offset = Vector2( 0, 17 )
+offset = Vector2( 40, 17.5 )
 
 [node name="NATURE-MULTIPLE_BUSH-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1083, 5120 )
 texture = ExtResource( 149 )
-offset = Vector2( 0, -2 )
+offset = Vector2( 17, -2 )
 
 [node name="NATURE-MULTIPLE_BUSH-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1216, 5120 )
 texture = ExtResource( 150 )
-offset = Vector2( 0, -4 )
+offset = Vector2( 11, -4 )
 
 [node name="NATURE-MULTIPLE_BUSH-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1361, 5120 )
 texture = ExtResource( 151 )
-offset = Vector2( 0, -2 )
+offset = Vector2( 17, -2 )
 
 [node name="NATURE-MULTIPLE_BUSH-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1494, 5120 )
 texture = ExtResource( 152 )
-offset = Vector2( 0, -2 )
+offset = Vector2( 28.5, -2 )
 
 [node name="NATURE-MULTIPLE_BUSH-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1604, 5120 )
 texture = ExtResource( 153 )
-offset = Vector2( 0, -2 )
+offset = Vector2( 28.5, -2 )
 
 [node name="NATURE-MULTIPLE_BUSH-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1714, 5120 )
 texture = ExtResource( 154 )
-offset = Vector2( 0, -4 )
+offset = Vector2( 11, -4 )
 
 [node name="NATURE-PLANT-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1859, 5120 )
 texture = ExtResource( 155 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 44, -31 )
 
 [node name="NATURE-PLANT-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1938, 5120 )
 texture = ExtResource( 156 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 28, -25.5 )
 
 [node name="NATURE-PLANT-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 5632 )
 texture = ExtResource( 157 )
-offset = Vector2( 0, -5 )
+offset = Vector2( 15.5, -5 )
 
 [node name="NATURE-PLANT-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 136, 5632 )
 texture = ExtResource( 158 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 20.5, -30.5 )
 
 [node name="NATURE-PLANT-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 262, 5632 )
 texture = ExtResource( 159 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 23.5, -30 )
 
 [node name="NATURE-PLANT-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 382, 5632 )
 texture = ExtResource( 160 )
+offset = Vector2( 45.5, 0.5 )
 
 [node name="NATURE-PLANT-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 458, 5632 )
 texture = ExtResource( 161 )
-offset = Vector2( 0, -11 )
+offset = Vector2( 37.5, -11 )
 
 [node name="NATURE-PLANT-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 550, 5632 )
 texture = ExtResource( 162 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 48, -25.5 )
 
 [node name="NATURE-PLANT-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 621, 5632 )
 texture = ExtResource( 163 )
-offset = Vector2( 0, -5 )
+offset = Vector2( 38.5, -5.5 )
 
 [node name="NATURE-PLANT-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 711, 5632 )
 texture = ExtResource( 164 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 12.5, -30 )
 
 [node name="NATURE-PLANT-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 853, 5632 )
 texture = ExtResource( 165 )
-offset = Vector2( 0, -34 )
+offset = Vector2( 5, -34.5 )
 
 [node name="NATURE-PLANT-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1010, 5632 )
 texture = ExtResource( 166 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 43, 3.5 )
 
 [node name="NATURE-PLANT-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1091, 5632 )
 texture = ExtResource( 167 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 47, 3 )
 
 [node name="NATURE-PLANT-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1164, 5632 )
 texture = ExtResource( 168 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 3.5, -35 )
 
 [node name="NATURE-PLANT-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1324, 5632 )
 texture = ExtResource( 169 )
-offset = Vector2( 0, -10 )
+offset = Vector2( 44, -10 )
 
 [node name="NATURE-PLANT-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1403, 5632 )
 texture = ExtResource( 170 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 17.5, -31.5 )
 
 [node name="NATURE-PLANT-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1535, 5632 )
 texture = ExtResource( 171 )
-offset = Vector2( 0, -11 )
+offset = Vector2( 46.5, -11.5 )
 
 [node name="NATURE-PLANT-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1609, 5632 )
 texture = ExtResource( 172 )
-offset = Vector2( 0, -26 )
+offset = Vector2( 33, -26.5 )
 
 [node name="NATURE-SINGLE_BUSH-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1710, 5632 )
 texture = ExtResource( 173 )
-offset = Vector2( 0, 15 )
+offset = Vector2( 48.5, 15 )
 
 [node name="NATURE-SINGLE_BUSH-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1780, 5632 )
 texture = ExtResource( 174 )
-offset = Vector2( 0, 16 )
+offset = Vector2( 45.5, 16 )
 
 [node name="NATURE-SINGLE_BUSH-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1856, 5632 )
 texture = ExtResource( 175 )
-offset = Vector2( 0, 4 )
+offset = Vector2( 38.5, 4.5 )
 
 [node name="NATURE-SINGLE_BUSH-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1946, 5632 )
 texture = ExtResource( 176 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 45.5, 3 )
 
 [node name="NATURE-SINGLE_BUSH-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2022, 5632 )
 texture = ExtResource( 177 )
-offset = Vector2( 0, 1 )
+offset = Vector2( 27, 1.5 )
 
 [node name="NATURE-SINGLE_BUSH-20" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 6144 )
 texture = ExtResource( 178 )
-offset = Vector2( 0, 16 )
+offset = Vector2( 45.5, 16 )
 
 [node name="NATURE-SINGLE_BUSH-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 76, 6144 )
 texture = ExtResource( 179 )
-offset = Vector2( 0, 4 )
+offset = Vector2( 38.5, 4.5 )
 
 [node name="NATURE-SINGLE_BUSH-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 166, 6144 )
 texture = ExtResource( 180 )
-offset = Vector2( 0, -9 )
+offset = Vector2( 31.5, -9.5 )
 
 [node name="NATURE-SINGLE_BUSH-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 270, 6144 )
 texture = ExtResource( 181 )
-offset = Vector2( 0, 16 )
+offset = Vector2( 45.5, 16 )
 
 [node name="NATURE-SINGLE_BUSH-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 346, 6144 )
 texture = ExtResource( 182 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 39.5, 7 )
 
 [node name="NATURE-SINGLE_BUSH-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 434, 6144 )
 texture = ExtResource( 183 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 39.5, 7 )
 
 [node name="NATURE-SINGLE_BUSH-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 522, 6144 )
 texture = ExtResource( 184 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 45.5, 3 )
 
 [node name="NATURE-SINGLE_BUSH-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 598, 6144 )
 texture = ExtResource( 185 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 19.5, -13 )
 
 [node name="NATURE-SINGLE_BUSH-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 726, 6144 )
 texture = ExtResource( 186 )
-offset = Vector2( 0, 16 )
+offset = Vector2( 45.5, 16 )
 
 [node name="NATURE-SINGLE_BUSH-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 802, 6144 )
 texture = ExtResource( 187 )
-offset = Vector2( 0, 6 )
+offset = Vector2( 37.5, 6 )
 
 [node name="NATURE-SINGLE_BUSH-19" type="Sprite" parent="."]
 
 transform/pos = Vector2( 894, 6144 )
 texture = ExtResource( 188 )
-offset = Vector2( 0, 15 )
+offset = Vector2( 48.5, 15 )
 
 [node name="NATURE-SINGLE_BUSH-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 964, 6144 )
 texture = ExtResource( 189 )
-offset = Vector2( 0, 6 )
+offset = Vector2( 37.5, 6 )
 
 [node name="NATURE-SINGLE_BUSH-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1056, 6144 )
 texture = ExtResource( 190 )
-offset = Vector2( 0, 3 )
+offset = Vector2( 27, 3.5 )
 
 [node name="NATURE-SINGLE_BUSH-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1169, 6144 )
 texture = ExtResource( 191 )
+offset = Vector2( 30.5, 0 )
 
 [node name="NATURE-SINGLE_BUSH-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1275, 6144 )
 texture = ExtResource( 192 )
-offset = Vector2( 0, 5 )
+offset = Vector2( 27, 5.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1388, 6144 )
 texture = ExtResource( 193 )
-offset = Vector2( 0, 12 )
+offset = Vector2( 47, 12.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-21" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1461, 6144 )
 texture = ExtResource( 194 )
-offset = Vector2( 0, -11 )
+offset = Vector2( 15, -11.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1598, 6144 )
 texture = ExtResource( 195 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 6.5, -3.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1752, 6144 )
 texture = ExtResource( 196 )
-offset = Vector2( 0, 11 )
+offset = Vector2( 42, 11.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1835, 6144 )
 texture = ExtResource( 197 )
-offset = Vector2( 0, 7 )
+offset = Vector2( 23, 7 )
 
 [node name="NATURE-SMALL_FOLIAGE-24" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1956, 6144 )
 texture = ExtResource( 198 )
+offset = Vector2( 6.5, 0.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 6656 )
 texture = ExtResource( 199 )
-offset = Vector2( 0, 24 )
+offset = Vector2( 61, 24.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-20" type="Sprite" parent="."]
 
 transform/pos = Vector2( 45, 6656 )
 texture = ExtResource( 200 )
-offset = Vector2( 0, -12 )
+offset = Vector2( 42.5, -12 )
 
 [node name="NATURE-SMALL_FOLIAGE-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 127, 6656 )
 texture = ExtResource( 201 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 19.5, -3.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-22" type="Sprite" parent="."]
 
 transform/pos = Vector2( 255, 6656 )
 texture = ExtResource( 202 )
-offset = Vector2( 0, -5 )
+offset = Vector2( 23.5, -5.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 375, 6656 )
 texture = ExtResource( 203 )
+offset = Vector2( 4.5, 0 )
 
 [node name="NATURE-SMALL_FOLIAGE-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 533, 6656 )
 texture = ExtResource( 204 )
-offset = Vector2( 0, 14 )
+offset = Vector2( 12.5, 14 )
 
 [node name="NATURE-SMALL_FOLIAGE-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 675, 6656 )
 texture = ExtResource( 205 )
-offset = Vector2( 0, 24 )
+offset = Vector2( 61, 24.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 720, 6656 )
 texture = ExtResource( 206 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 6.5, -3.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-23" type="Sprite" parent="."]
 
 transform/pos = Vector2( 874, 6656 )
 texture = ExtResource( 207 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 17.5, -13 )
 
 [node name="NATURE-SMALL_FOLIAGE-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1006, 6656 )
 texture = ExtResource( 208 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 6.5, -3.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1160, 6656 )
 texture = ExtResource( 209 )
-offset = Vector2( 0, 26 )
+offset = Vector2( 13.5, 26 )
 
 [node name="NATURE-SMALL_FOLIAGE-25" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1300, 6656 )
 texture = ExtResource( 210 )
-offset = Vector2( 0, -25 )
+offset = Vector2( 6, -25 )
 
 [node name="NATURE-SMALL_FOLIAGE-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1455, 6656 )
 texture = ExtResource( 211 )
-offset = Vector2( 0, 2 )
+offset = Vector2( 39.5, 2.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1543, 6656 )
 texture = ExtResource( 212 )
-offset = Vector2( 0, 14 )
+offset = Vector2( 33, 14.5 )
 
 [node name="NATURE-SMALL_FOLIAGE-19" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1644, 6656 )
 texture = ExtResource( 213 )
-offset = Vector2( 0, -14 )
+offset = Vector2( 34, -14 )
 
 [node name="NATURE-SMALL_FOLIAGE-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1743, 6656 )
 texture = ExtResource( 214 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 17, 9 )
 
 [node name="NATURE-SMALL_FOLIAGE-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1876, 6656 )
 texture = ExtResource( 215 )
-offset = Vector2( 0, 26 )
+offset = Vector2( 13.5, 26 )
 
 [node name="NATURE-SMALL_FOLIAGE-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2016, 6656 )
 texture = ExtResource( 216 )
-offset = Vector2( 0, 9 )
+offset = Vector2( 17, 9 )
 
 [node name="NATURE-SMALL_FOLIAGE-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 7168 )
 texture = ExtResource( 217 )
-offset = Vector2( 0, -3 )
+offset = Vector2( 19.5, -3.5 )
 
 [node name="NATURE-TREE-TYPE0-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 128, 7168 )
 texture = ExtResource( 218 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 20, -37 )
 
 [node name="NATURE-TREE-TYPE0-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 255, 7168 )
 texture = ExtResource( 219 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 16.5, -35 )
 
 [node name="NATURE-TREE-TYPE0-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 389, 7168 )
 texture = ExtResource( 220 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 16.5, -35 )
 
 [node name="NATURE-TREE-TYPE0-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 523, 7168 )
 texture = ExtResource( 221 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 16.5, -35 )
 
 [node name="NATURE-TREE-TYPE1-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 657, 7168 )
 texture = ExtResource( 222 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE1-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 795, 7168 )
 texture = ExtResource( 223 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE1-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 933, 7168 )
 texture = ExtResource( 224 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE1-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1071, 7168 )
 texture = ExtResource( 225 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE1-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1209, 7168 )
 texture = ExtResource( 226 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE1-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1347, 7168 )
 texture = ExtResource( 227 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 14.5, -37 )
 
 [node name="NATURE-TREE-TYPE2-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1485, 7168 )
 texture = ExtResource( 228 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 18, -31.5 )
 
 [node name="NATURE-TREE-TYPE2-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1616, 7168 )
 texture = ExtResource( 229 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 18, -31.5 )
 
 [node name="NATURE-TREE-TYPE2-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1747, 7168 )
 texture = ExtResource( 230 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 18, -31.5 )
 
 [node name="NATURE-TREE-TYPE2-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1878, 7168 )
 texture = ExtResource( 231 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 17.5, -31.5 )
 
 [node name="NATURE-TREE-TYPE2-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2010, 7168 )
 texture = ExtResource( 232 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 18, -31.5 )
 
 [node name="NATURE-TREE-TYPE2-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 7680 )
 texture = ExtResource( 233 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 18, -31.5 )
 
 [node name="NATURE-TREE-TYPE3-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 131, 7680 )
 texture = ExtResource( 234 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 238, 7680 )
 texture = ExtResource( 235 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 345, 7680 )
 texture = ExtResource( 236 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 463, 7680 )
 texture = ExtResource( 237 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 570, 7680 )
 texture = ExtResource( 238 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 688, 7680 )
 texture = ExtResource( 239 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 795, 7680 )
 texture = ExtResource( 240 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 902, 7680 )
 texture = ExtResource( 241 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 29.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1010, 7680 )
 texture = ExtResource( 242 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 30, -35.5 )
 
 [node name="NATURE-TREE-TYPE3-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1117, 7680 )
 texture = ExtResource( 243 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1235, 7680 )
 texture = ExtResource( 244 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1353, 7680 )
 texture = ExtResource( 245 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE3-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1471, 7680 )
 texture = ExtResource( 246 )
-offset = Vector2( 0, -35 )
+offset = Vector2( 24.5, -35 )
 
 [node name="NATURE-TREE-TYPE4-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1589, 7680 )
 texture = ExtResource( 247 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 34.5, -31.5 )
 
 [node name="NATURE-TREE-TYPE4-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1687, 7680 )
 texture = ExtResource( 248 )
-offset = Vector2( 0, -29 )
+offset = Vector2( 6, -29 )
 
 [node name="NATURE-TREE-TYPE4-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1842, 7680 )
 texture = ExtResource( 249 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 22.5, -30.5 )
 
 [node name="NATURE-TREE-TYPE5-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1964, 7680 )
 texture = ExtResource( 250 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 40, -13 )
 
 [node name="NATURE-TREE-TYPE5-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 8192 )
 texture = ExtResource( 251 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 40, -13 )
 
 [node name="NATURE-TREE-TYPE5-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 87, 8192 )
 texture = ExtResource( 252 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 40, -13 )
 
 [node name="NATURE-TREE-TYPE5-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 174, 8192 )
 texture = ExtResource( 253 )
-offset = Vector2( 0, -13 )
+offset = Vector2( 40, -13 )
 
 [node name="NATURE-TREE-TYPE6-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 261, 8192 )
 texture = ExtResource( 254 )
-offset = Vector2( 0, -9 )
+offset = Vector2( 25.5, -9 )
 
 [node name="NATURE-TREE-TYPE6-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 377, 8192 )
 texture = ExtResource( 255 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 21, -31 )
 
 [node name="NATURE-TREE-TYPE6-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 502, 8192 )
 texture = ExtResource( 256 )
-offset = Vector2( 0, -18 )
+offset = Vector2( 29.5, -18 )
 
 [node name="NATURE-TREE-TYPE6-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 610, 8192 )
 texture = ExtResource( 257 )
-offset = Vector2( 0, -28 )
+offset = Vector2( 23.5, -28.5 )
 
 [node name="NATURE-TREE-TYPE6-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 730, 8192 )
 texture = ExtResource( 258 )
-offset = Vector2( 0, -29 )
+offset = Vector2( 1, -29 )
 
 [node name="NATURE-TREE-TYPE6-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 895, 8192 )
 texture = ExtResource( 259 )
-offset = Vector2( 0, -30 )
+offset = Vector2( 28, -30 )
 
 [node name="NATURE-TREE-TYPE6-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1006, 8192 )
 texture = ExtResource( 260 )
-offset = Vector2( 0, -31 )
+offset = Vector2( 7.5, -31.5 )
 
 [node name="NATURE-TREE-TYPE8-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1158, 8192 )
 texture = ExtResource( 261 )
-offset = Vector2( 0, -60 )
+offset = Vector2( -15, -60.5 )
 
 [node name="NATURE-TREE-TYPE8-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1355, 8192 )
 texture = ExtResource( 262 )
-offset = Vector2( 0, -67 )
+offset = Vector2( -14.5, -67 )
 
 [node name="NATURE-TREE-TYPE8-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1551, 8192 )
 texture = ExtResource( 263 )
-offset = Vector2( 0, -67 )
+offset = Vector2( -14.5, -67 )
 
 [node name="NATURE-TREE-TYPE8-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1747, 8192 )
 texture = ExtResource( 264 )
-offset = Vector2( 0, -67 )
+offset = Vector2( -14.5, -67 )
 
 [node name="NATURE-TREE-TYPE9-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1943, 8192 )
 texture = ExtResource( 265 )
-offset = Vector2( 0, -56 )
+offset = Vector2( 13, -56 )
 
 [node name="NATURE-TREE-TYPE9-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 8704 )
 texture = ExtResource( 266 )
-offset = Vector2( 0, -80 )
+offset = Vector2( -1, -80.5 )
 
 [node name="NATURE-TREE-TYPE9-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 169, 8704 )
 texture = ExtResource( 267 )
-offset = Vector2( 0, -80 )
+offset = Vector2( -1, -80.5 )
 
 [node name="NATURE-TREE-TYPE10-12" type="Sprite" parent="."]
 
 transform/pos = Vector2( 338, 8704 )
 texture = ExtResource( 268 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-18" type="Sprite" parent="."]
 
 transform/pos = Vector2( 437, 8704 )
 texture = ExtResource( 269 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19.5, -22 )
 
 [node name="NATURE-TREE-TYPE10-15" type="Sprite" parent="."]
 
 transform/pos = Vector2( 565, 8704 )
 texture = ExtResource( 270 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19, -22 )
 
 [node name="NATURE-TREE-TYPE10-10" type="Sprite" parent="."]
 
 transform/pos = Vector2( 694, 8704 )
 texture = ExtResource( 271 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-5" type="Sprite" parent="."]
 
 transform/pos = Vector2( 793, 8704 )
 texture = ExtResource( 272 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 [node name="NATURE-TREE-TYPE10-8" type="Sprite" parent="."]
 
 transform/pos = Vector2( 913, 8704 )
 texture = ExtResource( 273 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1012, 8704 )
 texture = ExtResource( 274 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 [node name="NATURE-TREE-TYPE10-11" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1132, 8704 )
 texture = ExtResource( 275 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-9" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1231, 8704 )
 texture = ExtResource( 276 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-16" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1330, 8704 )
 texture = ExtResource( 277 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19, -22 )
 
 [node name="NATURE-TREE-TYPE10-17" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1459, 8704 )
 texture = ExtResource( 278 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19, -22 )
 
 [node name="NATURE-TREE-TYPE10-2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1588, 8704 )
 texture = ExtResource( 279 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 [node name="NATURE-TREE-TYPE10-13" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1708, 8704 )
 texture = ExtResource( 280 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19, -22 )
 
 [node name="NATURE-TREE-TYPE10-14" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1837, 8704 )
 texture = ExtResource( 281 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 19.5, -22 )
 
 [node name="NATURE-TREE-TYPE10-7" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1965, 8704 )
 texture = ExtResource( 282 )
-offset = Vector2( 0, -22 )
+offset = Vector2( 34, -22 )
 
 [node name="NATURE-TREE-TYPE10-6" type="Sprite" parent="."]
 
 transform/pos = Vector2( 0, 9216 )
 texture = ExtResource( 283 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 [node name="NATURE-TREE-TYPE10-3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 120, 9216 )
 texture = ExtResource( 284 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 [node name="NATURE-TREE-TYPE10-4" type="Sprite" parent="."]
 
 transform/pos = Vector2( 240, 9216 )
 texture = ExtResource( 285 )
-offset = Vector2( 0, -37 )
+offset = Vector2( 23.5, -37.5 )
 
 

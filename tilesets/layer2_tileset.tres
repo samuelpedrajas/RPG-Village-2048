@@ -290,7 +290,7 @@
 
 0/name = "BUILDING-BIG-1"
 0/texture = ExtResource( 1 )
-0/tex_offset = Vector2( 0, -181 )
+0/tex_offset = Vector2( -199, -181 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 549, 438 )
 0/occluder_offset = Vector2( 274.5, 219 )
@@ -299,7 +299,7 @@
 0/shapes = [  ]
 1/name = "BUILDING-BIG-2"
 1/texture = ExtResource( 2 )
-1/tex_offset = Vector2( 0, -211 )
+1/tex_offset = Vector2( -187.5, -211 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 0, 0, 526, 498 )
 1/occluder_offset = Vector2( 263, 249 )
@@ -308,7 +308,7 @@
 1/shapes = [  ]
 2/name = "BUILDING-BIG-3"
 2/texture = ExtResource( 113 )
-2/tex_offset = Vector2( 0, -232 )
+2/tex_offset = Vector2( -184.5, -232.5 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 0, 520, 541 )
 2/occluder_offset = Vector2( 260, 270.5 )
@@ -317,7 +317,7 @@
 2/shapes = [  ]
 3/name = "BUILDING-MEDIUM-12"
 3/texture = ExtResource( 209 )
-3/tex_offset = Vector2( 0, -66 )
+3/tex_offset = Vector2( -70.5, -66.5 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 292, 209 )
 3/occluder_offset = Vector2( 146, 104.5 )
@@ -326,7 +326,7 @@
 3/shapes = [  ]
 4/name = "BUILDING-MEDIUM-21"
 4/texture = ExtResource( 220 )
-4/tex_offset = Vector2( 0, -82 )
+4/tex_offset = Vector2( -45.5, -82 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 242, 240 )
 4/occluder_offset = Vector2( 121, 120 )
@@ -335,7 +335,7 @@
 4/shapes = [  ]
 5/name = "BUILDING-MEDIUM-18"
 5/texture = ExtResource( 231 )
-5/tex_offset = Vector2( 0, -107 )
+5/tex_offset = Vector2( -62.5, -107.5 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 276, 291 )
 5/occluder_offset = Vector2( 138, 145.5 )
@@ -344,7 +344,7 @@
 5/shapes = [  ]
 6/name = "BUILDING-MEDIUM-26"
 6/texture = ExtResource( 242 )
-6/tex_offset = Vector2( 0, -80 )
+6/tex_offset = Vector2( -58, -80 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 267, 236 )
 6/occluder_offset = Vector2( 133.5, 118 )
@@ -353,7 +353,7 @@
 6/shapes = [  ]
 7/name = "BUILDING-MEDIUM-15"
 7/texture = ExtResource( 253 )
-7/tex_offset = Vector2( 0, -74 )
+7/tex_offset = Vector2( -72, -74.5 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 295, 225 )
 7/occluder_offset = Vector2( 147.5, 112.5 )
@@ -362,7 +362,7 @@
 7/shapes = [  ]
 8/name = "BUILDING-MEDIUM-28"
 8/texture = ExtResource( 264 )
-8/tex_offset = Vector2( 0, -79 )
+8/tex_offset = Vector2( -67, -79 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 0, 285, 234 )
 8/occluder_offset = Vector2( 142.5, 117 )
@@ -371,7 +371,7 @@
 8/shapes = [  ]
 9/name = "BUILDING-MEDIUM-10"
 9/texture = ExtResource( 275 )
-9/tex_offset = Vector2( 0, -69 )
+9/tex_offset = Vector2( -67.5, -69.5 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 0, 0, 286, 215 )
 9/occluder_offset = Vector2( 143, 107.5 )
@@ -380,7 +380,7 @@
 9/shapes = [  ]
 10/name = "BUILDING-MEDIUM-24"
 10/texture = ExtResource( 3 )
-10/tex_offset = Vector2( 0, -46 )
+10/tex_offset = Vector2( -18.5, -46.5 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 0, 0, 188, 169 )
 10/occluder_offset = Vector2( 94, 84.5 )
@@ -389,7 +389,7 @@
 10/shapes = [  ]
 11/name = "BUILDING-MEDIUM-5"
 11/texture = ExtResource( 14 )
-11/tex_offset = Vector2( 0, -37 )
+11/tex_offset = Vector2( -23, -37.5 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 0, 0, 197, 151 )
 11/occluder_offset = Vector2( 98.5, 75.5 )
@@ -398,7 +398,7 @@
 11/shapes = [  ]
 12/name = "BUILDING-MEDIUM-20"
 12/texture = ExtResource( 25 )
-12/tex_offset = Vector2( 0, -51 )
+12/tex_offset = Vector2( -21, -51 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 0, 0, 193, 178 )
 12/occluder_offset = Vector2( 96.5, 89 )
@@ -407,7 +407,7 @@
 12/shapes = [  ]
 13/name = "BUILDING-MEDIUM-8"
 13/texture = ExtResource( 36 )
-13/tex_offset = Vector2( 0, -91 )
+13/tex_offset = Vector2( -24, -91 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 0, 0, 199, 258 )
 13/occluder_offset = Vector2( 99.5, 129 )
@@ -416,7 +416,7 @@
 13/shapes = [  ]
 14/name = "BUILDING-MEDIUM-22"
 14/texture = ExtResource( 47 )
-14/tex_offset = Vector2( 0, -69 )
+14/tex_offset = Vector2( -50.5, -69.5 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 0, 0, 252, 215 )
 14/occluder_offset = Vector2( 126, 107.5 )
@@ -425,7 +425,7 @@
 14/shapes = [  ]
 15/name = "BUILDING-MEDIUM-1"
 15/texture = ExtResource( 58 )
-15/tex_offset = Vector2( 0, -58 )
+15/tex_offset = Vector2( -59.5, -58 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 0, 0, 270, 192 )
 15/occluder_offset = Vector2( 135, 96 )
@@ -434,7 +434,7 @@
 15/shapes = [  ]
 16/name = "BUILDING-MEDIUM-11"
 16/texture = ExtResource( 69 )
-16/tex_offset = Vector2( 0, -78 )
+16/tex_offset = Vector2( -38, -78 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 0, 0, 227, 232 )
 16/occluder_offset = Vector2( 113.5, 116 )
@@ -443,7 +443,7 @@
 16/shapes = [  ]
 17/name = "BUILDING-MEDIUM-9"
 17/texture = ExtResource( 80 )
-17/tex_offset = Vector2( 0, -105 )
+17/tex_offset = Vector2( -39, -105 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 0, 0, 229, 286 )
 17/occluder_offset = Vector2( 114.5, 143 )
@@ -452,7 +452,7 @@
 17/shapes = [  ]
 18/name = "BUILDING-MEDIUM-16"
 18/texture = ExtResource( 91 )
-18/tex_offset = Vector2( 0, -53 )
+18/tex_offset = Vector2( -55, -53 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 0, 261, 182 )
 18/occluder_offset = Vector2( 130.5, 91 )
@@ -461,7 +461,7 @@
 18/shapes = [  ]
 19/name = "BUILDING-MEDIUM-23"
 19/texture = ExtResource( 102 )
-19/tex_offset = Vector2( 0, -37 )
+19/tex_offset = Vector2( -17.5, -37 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 0, 0, 186, 150 )
 19/occluder_offset = Vector2( 93, 75 )
@@ -470,7 +470,7 @@
 19/shapes = [  ]
 20/name = "BUILDING-MEDIUM-17"
 20/texture = ExtResource( 114 )
-20/tex_offset = Vector2( 0, -51 )
+20/tex_offset = Vector2( -49, -51 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, 0, 249, 178 )
 20/occluder_offset = Vector2( 124.5, 89 )
@@ -479,7 +479,7 @@
 20/shapes = [  ]
 21/name = "BUILDING-MEDIUM-2"
 21/texture = ExtResource( 125 )
-21/tex_offset = Vector2( 0, -54 )
+21/tex_offset = Vector2( -52.5, -54 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 0, 0, 256, 184 )
 21/occluder_offset = Vector2( 128, 92 )
@@ -488,7 +488,7 @@
 21/shapes = [  ]
 22/name = "BUILDING-MEDIUM-27"
 22/texture = ExtResource( 136 )
-22/tex_offset = Vector2( 0, -74 )
+22/tex_offset = Vector2( -42, -74 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 0, 235, 224 )
 22/occluder_offset = Vector2( 117.5, 112 )
@@ -497,7 +497,7 @@
 22/shapes = [  ]
 23/name = "BUILDING-MEDIUM-25"
 23/texture = ExtResource( 147 )
-23/tex_offset = Vector2( 0, -65 )
+23/tex_offset = Vector2( -25.5, -65.5 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 0, 0, 202, 207 )
 23/occluder_offset = Vector2( 101, 103.5 )
@@ -506,7 +506,7 @@
 23/shapes = [  ]
 24/name = "BUILDING-MEDIUM-13"
 24/texture = ExtResource( 158 )
-24/tex_offset = Vector2( 0, -68 )
+24/tex_offset = Vector2( -66.5, -68.5 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 0, 0, 284, 213 )
 24/occluder_offset = Vector2( 142, 106.5 )
@@ -515,7 +515,7 @@
 24/shapes = [  ]
 25/name = "BUILDING-MEDIUM-14"
 25/texture = ExtResource( 169 )
-25/tex_offset = Vector2( 0, -88 )
+25/tex_offset = Vector2( -64, -88 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 0, 0, 279, 252 )
 25/occluder_offset = Vector2( 139.5, 126 )
@@ -524,7 +524,7 @@
 25/shapes = [  ]
 26/name = "BUILDING-MEDIUM-19"
 26/texture = ExtResource( 180 )
-26/tex_offset = Vector2( 0, -111 )
+26/tex_offset = Vector2( -43, -111 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 0, 0, 237, 298 )
 26/occluder_offset = Vector2( 118.5, 149 )
@@ -533,7 +533,7 @@
 26/shapes = [  ]
 27/name = "BUILDING-MEDIUM-7"
 27/texture = ExtResource( 191 )
-27/tex_offset = Vector2( 0, -71 )
+27/tex_offset = Vector2( -29, -71.5 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 0, 0, 209, 219 )
 27/occluder_offset = Vector2( 104.5, 109.5 )
@@ -542,7 +542,7 @@
 27/shapes = [  ]
 28/name = "BUILDING-MEDIUM-6"
 28/texture = ExtResource( 202 )
-28/tex_offset = Vector2( 0, -60 )
+28/tex_offset = Vector2( -50, -60 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 0, 0, 251, 196 )
 28/occluder_offset = Vector2( 125.5, 98 )
@@ -551,7 +551,7 @@
 28/shapes = [  ]
 29/name = "BUILDING-MEDIUM-3"
 29/texture = ExtResource( 208 )
-29/tex_offset = Vector2( 0, -57 )
+29/tex_offset = Vector2( -29.5, -57 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 0, 0, 210, 190 )
 29/occluder_offset = Vector2( 105, 95 )
@@ -560,7 +560,7 @@
 29/shapes = [  ]
 30/name = "BUILDING-MEDIUM-4"
 30/texture = ExtResource( 210 )
-30/tex_offset = Vector2( 0, -81 )
+30/tex_offset = Vector2( -19.5, -81 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 0, 0, 190, 238 )
 30/occluder_offset = Vector2( 95, 119 )
@@ -569,7 +569,7 @@
 30/shapes = [  ]
 31/name = "BUILDING-SMALL-12"
 31/texture = ExtResource( 211 )
-31/tex_offset = Vector2( 0, -25 )
+31/tex_offset = Vector2( 32, -25 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 0, 0, 87, 126 )
 31/occluder_offset = Vector2( 43.5, 63 )
@@ -578,7 +578,7 @@
 31/shapes = [  ]
 32/name = "BUILDING-SMALL-10"
 32/texture = ExtResource( 212 )
-32/tex_offset = Vector2( 0, -76 )
+32/tex_offset = Vector2( -5, -76 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 0, 0, 161, 228 )
 32/occluder_offset = Vector2( 80.5, 114 )
@@ -587,7 +587,7 @@
 32/shapes = [  ]
 33/name = "BUILDING-SMALL-5"
 33/texture = ExtResource( 213 )
-33/tex_offset = Vector2( 0, -37 )
+33/tex_offset = Vector2( 17, -37.5 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 0, 0, 117, 151 )
 33/occluder_offset = Vector2( 58.5, 75.5 )
@@ -596,7 +596,7 @@
 33/shapes = [  ]
 34/name = "BUILDING-SMALL-8"
 34/texture = ExtResource( 214 )
-34/tex_offset = Vector2( 0, -25 )
+34/tex_offset = Vector2( 27, -25.5 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 0, 0, 97, 127 )
 34/occluder_offset = Vector2( 48.5, 63.5 )
@@ -605,7 +605,7 @@
 34/shapes = [  ]
 35/name = "BUILDING-SMALL-1"
 35/texture = ExtResource( 215 )
-35/tex_offset = Vector2( 0, -21 )
+35/tex_offset = Vector2( 0, -21.5 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 0, 0, 151, 119 )
 35/occluder_offset = Vector2( 75.5, 59.5 )
@@ -614,7 +614,7 @@
 35/shapes = [  ]
 36/name = "BUILDING-SMALL-11"
 36/texture = ExtResource( 216 )
-36/tex_offset = Vector2( 0, -76 )
+36/tex_offset = Vector2( -5, -76 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 0, 0, 161, 228 )
 36/occluder_offset = Vector2( 80.5, 114 )
@@ -623,7 +623,7 @@
 36/shapes = [  ]
 37/name = "BUILDING-SMALL-9"
 37/texture = ExtResource( 217 )
-37/tex_offset = Vector2( 0, -12 )
+37/tex_offset = Vector2( 15, -12 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 0, 0, 121, 100 )
 37/occluder_offset = Vector2( 60.5, 50 )
@@ -632,7 +632,7 @@
 37/shapes = [  ]
 38/name = "BUILDING-SMALL-2"
 38/texture = ExtResource( 218 )
-38/tex_offset = Vector2( 0, -21 )
+38/tex_offset = Vector2( 2, -21.5 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 0, 0, 147, 119 )
 38/occluder_offset = Vector2( 73.5, 59.5 )
@@ -641,7 +641,7 @@
 38/shapes = [  ]
 39/name = "BUILDING-SMALL-13"
 39/texture = ExtResource( 219 )
-39/tex_offset = Vector2( 0, -24 )
+39/tex_offset = Vector2( 32, -24.5 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 0, 0, 87, 125 )
 39/occluder_offset = Vector2( 43.5, 62.5 )
@@ -650,7 +650,7 @@
 39/shapes = [  ]
 40/name = "BUILDING-SMALL-14"
 40/texture = ExtResource( 221 )
-40/tex_offset = Vector2( 0, -25 )
+40/tex_offset = Vector2( 32, -25.5 )
 40/modulate = Color( 1, 1, 1, 1 )
 40/region = Rect2( 0, 0, 87, 127 )
 40/occluder_offset = Vector2( 43.5, 63.5 )
@@ -659,7 +659,7 @@
 40/shapes = [  ]
 41/name = "BUILDING-SMALL-7"
 41/texture = ExtResource( 222 )
-41/tex_offset = Vector2( 0, -18 )
+41/tex_offset = Vector2( 25, -18.5 )
 41/modulate = Color( 1, 1, 1, 1 )
 41/region = Rect2( 0, 0, 101, 113 )
 41/occluder_offset = Vector2( 50.5, 56.5 )
@@ -668,7 +668,7 @@
 41/shapes = [  ]
 42/name = "BUILDING-SMALL-6"
 42/texture = ExtResource( 223 )
-42/tex_offset = Vector2( 0, -17 )
+42/tex_offset = Vector2( 20.5, -17.5 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 0, 0, 110, 111 )
 42/occluder_offset = Vector2( 55, 55.5 )
@@ -677,7 +677,7 @@
 42/shapes = [  ]
 43/name = "BUILDING-SMALL-3"
 43/texture = ExtResource( 224 )
-43/tex_offset = Vector2( 0, -15 )
+43/tex_offset = Vector2( 2, -15 )
 43/modulate = Color( 1, 1, 1, 1 )
 43/region = Rect2( 0, 0, 147, 106 )
 43/occluder_offset = Vector2( 73.5, 53 )
@@ -686,7 +686,7 @@
 43/shapes = [  ]
 44/name = "BUILDING-SMALL-4"
 44/texture = ExtResource( 225 )
-44/tex_offset = Vector2( 0, -32 )
+44/tex_offset = Vector2( 5.5, -32 )
 44/modulate = Color( 1, 1, 1, 1 )
 44/region = Rect2( 0, 0, 140, 140 )
 44/occluder_offset = Vector2( 70, 70 )
@@ -695,7 +695,7 @@
 44/shapes = [  ]
 45/name = "BUILDING-TOWER-1"
 45/texture = ExtResource( 226 )
-45/tex_offset = Vector2( 0, -69 )
+45/tex_offset = Vector2( 26, -69 )
 45/modulate = Color( 1, 1, 1, 1 )
 45/region = Rect2( 0, 0, 99, 214 )
 45/occluder_offset = Vector2( 49.5, 107 )
@@ -704,7 +704,7 @@
 45/shapes = [  ]
 46/name = "BUILDING-TOWER-2"
 46/texture = ExtResource( 227 )
-46/tex_offset = Vector2( 0, -66 )
+46/tex_offset = Vector2( -10, -66 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 0, 0, 171, 208 )
 46/occluder_offset = Vector2( 85.5, 104 )
@@ -713,7 +713,7 @@
 46/shapes = [  ]
 47/name = "BUILDING-TOWER-3"
 47/texture = ExtResource( 228 )
-47/tex_offset = Vector2( 0, -51 )
+47/tex_offset = Vector2( 18.5, -51.5 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 0, 0, 114, 179 )
 47/occluder_offset = Vector2( 57, 89.5 )
@@ -722,7 +722,7 @@
 47/shapes = [  ]
 48/name = "BUILDING-TOWER-4"
 48/texture = ExtResource( 229 )
-48/tex_offset = Vector2( 0, -61 )
+48/tex_offset = Vector2( 33, -61.5 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 0, 0, 85, 199 )
 48/occluder_offset = Vector2( 42.5, 99.5 )
@@ -731,7 +731,7 @@
 48/shapes = [  ]
 49/name = "LIVING-ANIMAL-5"
 49/texture = ExtResource( 230 )
-49/tex_offset = Vector2( 0, -37 )
+49/tex_offset = Vector2( 6.5, -37 )
 49/modulate = Color( 1, 1, 1, 1 )
 49/region = Rect2( 0, 0, 138, 150 )
 49/occluder_offset = Vector2( 69, 75 )
@@ -740,7 +740,7 @@
 49/shapes = [  ]
 50/name = "LIVING-ANIMAL-8"
 50/texture = ExtResource( 232 )
-50/tex_offset = Vector2( 0, -32 )
+50/tex_offset = Vector2( 6.5, -32 )
 50/modulate = Color( 1, 1, 1, 1 )
 50/region = Rect2( 0, 0, 138, 140 )
 50/occluder_offset = Vector2( 69, 70 )
@@ -749,7 +749,7 @@
 50/shapes = [  ]
 51/name = "LIVING-ANIMAL-1"
 51/texture = ExtResource( 233 )
-51/tex_offset = Vector2( 0, -1 )
+51/tex_offset = Vector2( 6.5, -1 )
 51/modulate = Color( 1, 1, 1, 1 )
 51/region = Rect2( 0, 0, 138, 78 )
 51/occluder_offset = Vector2( 69, 39 )
@@ -758,7 +758,7 @@
 51/shapes = [  ]
 52/name = "LIVING-ANIMAL-9"
 52/texture = ExtResource( 234 )
-52/tex_offset = Vector2( 0, -50 )
+52/tex_offset = Vector2( 6.5, -50.5 )
 52/modulate = Color( 1, 1, 1, 1 )
 52/region = Rect2( 0, 0, 138, 177 )
 52/occluder_offset = Vector2( 69, 88.5 )
@@ -767,7 +767,7 @@
 52/shapes = [  ]
 53/name = "LIVING-ANIMAL-2"
 53/texture = ExtResource( 235 )
-53/tex_offset = Vector2( 0, -33 )
+53/tex_offset = Vector2( 6.5, -33 )
 53/modulate = Color( 1, 1, 1, 1 )
 53/region = Rect2( 0, 0, 138, 142 )
 53/occluder_offset = Vector2( 69, 71 )
@@ -776,7 +776,7 @@
 53/shapes = [  ]
 54/name = "LIVING-ANIMAL-7"
 54/texture = ExtResource( 236 )
-54/tex_offset = Vector2( 0, -27 )
+54/tex_offset = Vector2( 6.5, -27 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 0, 0, 138, 130 )
 54/occluder_offset = Vector2( 69, 65 )
@@ -785,7 +785,7 @@
 54/shapes = [  ]
 55/name = "LIVING-ANIMAL-6"
 55/texture = ExtResource( 237 )
-55/tex_offset = Vector2( 0, -25 )
+55/tex_offset = Vector2( 6.5, -25 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 0, 0, 138, 126 )
 55/occluder_offset = Vector2( 69, 63 )
@@ -794,7 +794,7 @@
 55/shapes = [  ]
 56/name = "LIVING-ANIMAL-3"
 56/texture = ExtResource( 238 )
-56/tex_offset = Vector2( 0, -95 )
+56/tex_offset = Vector2( 6.5, -95.5 )
 56/modulate = Color( 1, 1, 1, 1 )
 56/region = Rect2( 0, 0, 138, 267 )
 56/occluder_offset = Vector2( 69, 133.5 )
@@ -803,7 +803,7 @@
 56/shapes = [  ]
 57/name = "LIVING-ANIMAL-4"
 57/texture = ExtResource( 239 )
-57/tex_offset = Vector2( 0, -23 )
+57/tex_offset = Vector2( 6.5, -23 )
 57/modulate = Color( 1, 1, 1, 1 )
 57/region = Rect2( 0, 0, 138, 122 )
 57/occluder_offset = Vector2( 69, 61 )
@@ -812,7 +812,7 @@
 57/shapes = [  ]
 58/name = "LIVING-ARCHER-5"
 58/texture = ExtResource( 240 )
-58/tex_offset = Vector2( 0, -26 )
+58/tex_offset = Vector2( 27.5, -26.5 )
 58/modulate = Color( 1, 1, 1, 1 )
 58/region = Rect2( 0, 0, 96, 129 )
 58/occluder_offset = Vector2( 48, 64.5 )
@@ -821,7 +821,7 @@
 58/shapes = [  ]
 59/name = "LIVING-ARCHER-1"
 59/texture = ExtResource( 241 )
-59/tex_offset = Vector2( 0, -24 )
+59/tex_offset = Vector2( 28, -24 )
 59/modulate = Color( 1, 1, 1, 1 )
 59/region = Rect2( 0, 0, 95, 124 )
 59/occluder_offset = Vector2( 47.5, 62 )
@@ -830,7 +830,7 @@
 59/shapes = [  ]
 60/name = "LIVING-ARCHER-2"
 60/texture = ExtResource( 243 )
-60/tex_offset = Vector2( 0, -25 )
+60/tex_offset = Vector2( 27.5, -25 )
 60/modulate = Color( 1, 1, 1, 1 )
 60/region = Rect2( 0, 0, 96, 126 )
 60/occluder_offset = Vector2( 48, 63 )
@@ -839,7 +839,7 @@
 60/shapes = [  ]
 61/name = "LIVING-ARCHER-7"
 61/texture = ExtResource( 244 )
-61/tex_offset = Vector2( 0, -13 )
+61/tex_offset = Vector2( 13.5, -13.5 )
 61/modulate = Color( 1, 1, 1, 1 )
 61/region = Rect2( 0, 0, 124, 103 )
 61/occluder_offset = Vector2( 62, 51.5 )
@@ -848,7 +848,7 @@
 61/shapes = [  ]
 62/name = "LIVING-ARCHER-6"
 62/texture = ExtResource( 245 )
-62/tex_offset = Vector2( 0, -29 )
+62/tex_offset = Vector2( 24.5, -29.5 )
 62/modulate = Color( 1, 1, 1, 1 )
 62/region = Rect2( 0, 0, 102, 135 )
 62/occluder_offset = Vector2( 51, 67.5 )
@@ -857,7 +857,7 @@
 62/shapes = [  ]
 63/name = "LIVING-ARCHER-3"
 63/texture = ExtResource( 246 )
-63/tex_offset = Vector2( 0, -10 )
+63/tex_offset = Vector2( 14.5, -10 )
 63/modulate = Color( 1, 1, 1, 1 )
 63/region = Rect2( 0, 0, 122, 96 )
 63/occluder_offset = Vector2( 61, 48 )
@@ -866,7 +866,7 @@
 63/shapes = [  ]
 64/name = "LIVING-ARCHER-4"
 64/texture = ExtResource( 247 )
-64/tex_offset = Vector2( 0, -26 )
+64/tex_offset = Vector2( 28, -26 )
 64/modulate = Color( 1, 1, 1, 1 )
 64/region = Rect2( 0, 0, 95, 128 )
 64/occluder_offset = Vector2( 47.5, 64 )
@@ -875,7 +875,7 @@
 64/shapes = [  ]
 65/name = "LIVING-HEALER-5"
 65/texture = ExtResource( 248 )
-65/tex_offset = Vector2( 0, -27 )
+65/tex_offset = Vector2( 21.5, -27 )
 65/modulate = Color( 1, 1, 1, 1 )
 65/region = Rect2( 0, 0, 108, 130 )
 65/occluder_offset = Vector2( 54, 65 )
@@ -884,7 +884,7 @@
 65/shapes = [  ]
 66/name = "LIVING-HEALER-1"
 66/texture = ExtResource( 249 )
-66/tex_offset = Vector2( 0, -26 )
+66/tex_offset = Vector2( 18, -26 )
 66/modulate = Color( 1, 1, 1, 1 )
 66/region = Rect2( 0, 0, 115, 128 )
 66/occluder_offset = Vector2( 57.5, 64 )
@@ -893,7 +893,7 @@
 66/shapes = [  ]
 67/name = "LIVING-HEALER-2"
 67/texture = ExtResource( 250 )
-67/tex_offset = Vector2( 0, -30 )
+67/tex_offset = Vector2( 14.5, -30.5 )
 67/modulate = Color( 1, 1, 1, 1 )
 67/region = Rect2( 0, 0, 122, 137 )
 67/occluder_offset = Vector2( 61, 68.5 )
@@ -902,7 +902,7 @@
 67/shapes = [  ]
 68/name = "LIVING-HEALER-7"
 68/texture = ExtResource( 251 )
-68/tex_offset = Vector2( 0, -19 )
+68/tex_offset = Vector2( 17.5, -19 )
 68/modulate = Color( 1, 1, 1, 1 )
 68/region = Rect2( 0, 0, 116, 114 )
 68/occluder_offset = Vector2( 58, 57 )
@@ -911,7 +911,7 @@
 68/shapes = [  ]
 69/name = "LIVING-HEALER-6"
 69/texture = ExtResource( 252 )
-69/tex_offset = Vector2( 0, -29 )
+69/tex_offset = Vector2( 30.5, -29 )
 69/modulate = Color( 1, 1, 1, 1 )
 69/region = Rect2( 0, 0, 90, 134 )
 69/occluder_offset = Vector2( 45, 67 )
@@ -920,7 +920,7 @@
 69/shapes = [  ]
 70/name = "LIVING-HEALER-3"
 70/texture = ExtResource( 254 )
-70/tex_offset = Vector2( 0, -25 )
+70/tex_offset = Vector2( 23.5, -25 )
 70/modulate = Color( 1, 1, 1, 1 )
 70/region = Rect2( 0, 0, 104, 126 )
 70/occluder_offset = Vector2( 52, 63 )
@@ -929,7 +929,7 @@
 70/shapes = [  ]
 71/name = "LIVING-HEALER-4"
 71/texture = ExtResource( 255 )
-71/tex_offset = Vector2( 0, -17 )
+71/tex_offset = Vector2( 18.5, -17 )
 71/modulate = Color( 1, 1, 1, 1 )
 71/region = Rect2( 0, 0, 114, 110 )
 71/occluder_offset = Vector2( 57, 55 )
@@ -938,7 +938,7 @@
 71/shapes = [  ]
 72/name = "LIVING-SWMAN-5"
 72/texture = ExtResource( 256 )
-72/tex_offset = Vector2( 0, -31 )
+72/tex_offset = Vector2( -1, -31.5 )
 72/modulate = Color( 1, 1, 1, 1 )
 72/region = Rect2( 0, 0, 153, 139 )
 72/occluder_offset = Vector2( 76.5, 69.5 )
@@ -947,7 +947,7 @@
 72/shapes = [  ]
 73/name = "LIVING-SWMAN-1"
 73/texture = ExtResource( 257 )
-73/tex_offset = Vector2( 0, -26 )
+73/tex_offset = Vector2( 14.5, -26.5 )
 73/modulate = Color( 1, 1, 1, 1 )
 73/region = Rect2( 0, 0, 122, 129 )
 73/occluder_offset = Vector2( 61, 64.5 )
@@ -956,7 +956,7 @@
 73/shapes = [  ]
 74/name = "LIVING-SWMAN-2"
 74/texture = ExtResource( 258 )
-74/tex_offset = Vector2( 0, -17 )
+74/tex_offset = Vector2( 13, -17.5 )
 74/modulate = Color( 1, 1, 1, 1 )
 74/region = Rect2( 0, 0, 125, 111 )
 74/occluder_offset = Vector2( 62.5, 55.5 )
@@ -965,7 +965,7 @@
 74/shapes = [  ]
 75/name = "LIVING-SWMAN-6"
 75/texture = ExtResource( 259 )
-75/tex_offset = Vector2( 0, -19 )
+75/tex_offset = Vector2( 16, -19 )
 75/modulate = Color( 1, 1, 1, 1 )
 75/region = Rect2( 0, 0, 119, 114 )
 75/occluder_offset = Vector2( 59.5, 57 )
@@ -974,7 +974,7 @@
 75/shapes = [  ]
 76/name = "LIVING-SWMAN-3"
 76/texture = ExtResource( 260 )
-76/tex_offset = Vector2( 0, -29 )
+76/tex_offset = Vector2( 26.5, -29 )
 76/modulate = Color( 1, 1, 1, 1 )
 76/region = Rect2( 0, 0, 98, 134 )
 76/occluder_offset = Vector2( 49, 67 )
@@ -992,7 +992,7 @@
 77/shapes = [  ]
 78/name = "MISC-ARROW-1"
 78/texture = ExtResource( 262 )
-78/tex_offset = Vector2( 0, -1 )
+78/tex_offset = Vector2( 49, -1 )
 78/modulate = Color( 1, 1, 1, 1 )
 78/region = Rect2( 0, 0, 53, 78 )
 78/occluder_offset = Vector2( 26.5, 39 )
@@ -1001,7 +1001,7 @@
 78/shapes = [  ]
 79/name = "MISC-ARROW-2"
 79/texture = ExtResource( 263 )
-79/tex_offset = Vector2( 0, -1 )
+79/tex_offset = Vector2( 49, -1 )
 79/modulate = Color( 1, 1, 1, 1 )
 79/region = Rect2( 0, 0, 53, 78 )
 79/occluder_offset = Vector2( 26.5, 39 )
@@ -1010,7 +1010,7 @@
 79/shapes = [  ]
 80/name = "MISC-ARROW-3"
 80/texture = ExtResource( 265 )
-80/tex_offset = Vector2( 0, -1 )
+80/tex_offset = Vector2( 46, -1 )
 80/modulate = Color( 1, 1, 1, 1 )
 80/region = Rect2( 0, 0, 59, 78 )
 80/occluder_offset = Vector2( 29.5, 39 )
@@ -1019,7 +1019,7 @@
 80/shapes = [  ]
 81/name = "MISC-ARROW-4"
 81/texture = ExtResource( 266 )
-81/tex_offset = Vector2( 0, -1 )
+81/tex_offset = Vector2( 46, -1 )
 81/modulate = Color( 1, 1, 1, 1 )
 81/region = Rect2( 0, 0, 59, 78 )
 81/occluder_offset = Vector2( 29.5, 39 )
@@ -1028,7 +1028,7 @@
 81/shapes = [  ]
 82/name = "MISC-FARMING-12"
 82/texture = ExtResource( 267 )
-82/tex_offset = Vector2( 0, 2 )
+82/tex_offset = Vector2( 5.5, 2.5 )
 82/modulate = Color( 1, 1, 1, 1 )
 82/region = Rect2( 0, 0, 140, 71 )
 82/occluder_offset = Vector2( 70, 35.5 )
@@ -1037,7 +1037,7 @@
 82/shapes = [  ]
 83/name = "MISC-FARMING-10"
 83/texture = ExtResource( 268 )
-83/tex_offset = Vector2( 0, -12 )
+83/tex_offset = Vector2( 5.5, -12 )
 83/modulate = Color( 1, 1, 1, 1 )
 83/region = Rect2( 0, 0, 140, 100 )
 83/occluder_offset = Vector2( 70, 50 )
@@ -1046,7 +1046,7 @@
 83/shapes = [  ]
 84/name = "MISC-FARMING-5"
 84/texture = ExtResource( 269 )
-84/tex_offset = Vector2( 0, -8 )
+84/tex_offset = Vector2( 5.5, -8.5 )
 84/modulate = Color( 1, 1, 1, 1 )
 84/region = Rect2( 0, 0, 140, 93 )
 84/occluder_offset = Vector2( 70, 46.5 )
@@ -1055,7 +1055,7 @@
 84/shapes = [  ]
 85/name = "MISC-FARMING-8"
 85/texture = ExtResource( 270 )
-85/tex_offset = Vector2( 0, 0 )
+85/tex_offset = Vector2( 5.5, -0.5 )
 85/modulate = Color( 1, 1, 1, 1 )
 85/region = Rect2( 0, 0, 140, 77 )
 85/occluder_offset = Vector2( 70, 38.5 )
@@ -1064,7 +1064,7 @@
 85/shapes = [  ]
 86/name = "MISC-FARMING-1"
 86/texture = ExtResource( 271 )
-86/tex_offset = Vector2( 0, 3 )
+86/tex_offset = Vector2( 5.5, 3 )
 86/modulate = Color( 1, 1, 1, 1 )
 86/region = Rect2( 0, 0, 140, 70 )
 86/occluder_offset = Vector2( 70, 35 )
@@ -1073,7 +1073,7 @@
 86/shapes = [  ]
 87/name = "MISC-FARMING-11"
 87/texture = ExtResource( 272 )
-87/tex_offset = Vector2( 0, 3 )
+87/tex_offset = Vector2( 5.5, 3 )
 87/modulate = Color( 1, 1, 1, 1 )
 87/region = Rect2( 0, 0, 140, 70 )
 87/occluder_offset = Vector2( 70, 35 )
@@ -1082,7 +1082,7 @@
 87/shapes = [  ]
 88/name = "MISC-FARMING-9"
 88/texture = ExtResource( 273 )
-88/tex_offset = Vector2( 0, -12 )
+88/tex_offset = Vector2( 5.5, -12 )
 88/modulate = Color( 1, 1, 1, 1 )
 88/region = Rect2( 0, 0, 140, 100 )
 88/occluder_offset = Vector2( 70, 50 )
@@ -1091,7 +1091,7 @@
 88/shapes = [  ]
 89/name = "MISC-FARMING-2"
 89/texture = ExtResource( 274 )
-89/tex_offset = Vector2( 0, -9 )
+89/tex_offset = Vector2( 5.5, -9 )
 89/modulate = Color( 1, 1, 1, 1 )
 89/region = Rect2( 0, 0, 140, 94 )
 89/occluder_offset = Vector2( 70, 47 )
@@ -1100,7 +1100,7 @@
 89/shapes = [  ]
 90/name = "MISC-FARMING-13"
 90/texture = ExtResource( 276 )
-90/tex_offset = Vector2( 0, 0 )
+90/tex_offset = Vector2( 5.5, -0.5 )
 90/modulate = Color( 1, 1, 1, 1 )
 90/region = Rect2( 0, 0, 140, 77 )
 90/occluder_offset = Vector2( 70, 38.5 )
@@ -1109,7 +1109,7 @@
 90/shapes = [  ]
 91/name = "MISC-FARMING-14"
 91/texture = ExtResource( 277 )
-91/tex_offset = Vector2( 0, -2 )
+91/tex_offset = Vector2( 5.5, -2 )
 91/modulate = Color( 1, 1, 1, 1 )
 91/region = Rect2( 0, 0, 140, 80 )
 91/occluder_offset = Vector2( 70, 40 )
@@ -1118,7 +1118,7 @@
 91/shapes = [  ]
 92/name = "MISC-FARMING-7"
 92/texture = ExtResource( 278 )
-92/tex_offset = Vector2( 0, 3 )
+92/tex_offset = Vector2( 5.5, 3 )
 92/modulate = Color( 1, 1, 1, 1 )
 92/region = Rect2( 0, 0, 140, 70 )
 92/occluder_offset = Vector2( 70, 35 )
@@ -1127,7 +1127,7 @@
 92/shapes = [  ]
 93/name = "MISC-FARMING-6"
 93/texture = ExtResource( 279 )
-93/tex_offset = Vector2( 0, 5 )
+93/tex_offset = Vector2( 9.5, 5.5 )
 93/modulate = Color( 1, 1, 1, 1 )
 93/region = Rect2( 0, 0, 132, 65 )
 93/occluder_offset = Vector2( 66, 32.5 )
@@ -1136,7 +1136,7 @@
 93/shapes = [  ]
 94/name = "MISC-FARMING-3"
 94/texture = ExtResource( 280 )
-94/tex_offset = Vector2( 0, -8 )
+94/tex_offset = Vector2( 5.5, -8.5 )
 94/modulate = Color( 1, 1, 1, 1 )
 94/region = Rect2( 0, 0, 140, 93 )
 94/occluder_offset = Vector2( 70, 46.5 )
@@ -1145,7 +1145,7 @@
 94/shapes = [  ]
 95/name = "MISC-FARMING-4"
 95/texture = ExtResource( 281 )
-95/tex_offset = Vector2( 0, -9 )
+95/tex_offset = Vector2( 5.5, -9 )
 95/modulate = Color( 1, 1, 1, 1 )
 95/region = Rect2( 0, 0, 140, 94 )
 95/occluder_offset = Vector2( 70, 47 )
@@ -1154,7 +1154,7 @@
 95/shapes = [  ]
 96/name = "MISC-OTHER-5"
 96/texture = ExtResource( 282 )
-96/tex_offset = Vector2( 0, -33 )
+96/tex_offset = Vector2( -2.5, -33 )
 96/modulate = Color( 1, 1, 1, 1 )
 96/region = Rect2( 0, 0, 156, 142 )
 96/occluder_offset = Vector2( 78, 71 )
@@ -1163,7 +1163,7 @@
 96/shapes = [  ]
 97/name = "MISC-OTHER-1"
 97/texture = ExtResource( 283 )
-97/tex_offset = Vector2( 0, -3 )
+97/tex_offset = Vector2( 34, -3.5 )
 97/modulate = Color( 1, 1, 1, 1 )
 97/region = Rect2( 0, 0, 83, 83 )
 97/occluder_offset = Vector2( 41.5, 41.5 )
@@ -1172,7 +1172,7 @@
 97/shapes = [  ]
 98/name = "MISC-OTHER-2"
 98/texture = ExtResource( 284 )
-98/tex_offset = Vector2( 0, 5 )
+98/tex_offset = Vector2( 41.5, 5 )
 98/modulate = Color( 1, 1, 1, 1 )
 98/region = Rect2( 0, 0, 68, 66 )
 98/occluder_offset = Vector2( 34, 33 )
@@ -1181,7 +1181,7 @@
 98/shapes = [  ]
 99/name = "MISC-OTHER-6"
 99/texture = ExtResource( 285 )
-99/tex_offset = Vector2( 0, -5 )
+99/tex_offset = Vector2( 34, -5 )
 99/modulate = Color( 1, 1, 1, 1 )
 99/region = Rect2( 0, 0, 83, 86 )
 99/occluder_offset = Vector2( 41.5, 43 )
@@ -1190,7 +1190,7 @@
 99/shapes = [  ]
 100/name = "MISC-OTHER-3"
 100/texture = ExtResource( 4 )
-100/tex_offset = Vector2( 0, -4 )
+100/tex_offset = Vector2( 53.5, -4 )
 100/modulate = Color( 1, 1, 1, 1 )
 100/region = Rect2( 0, 0, 44, 84 )
 100/occluder_offset = Vector2( 22, 42 )
@@ -1199,7 +1199,7 @@
 100/shapes = [  ]
 101/name = "MISC-OTHER-4"
 101/texture = ExtResource( 5 )
-101/tex_offset = Vector2( 0, -47 )
+101/tex_offset = Vector2( 4, -47.5 )
 101/modulate = Color( 1, 1, 1, 1 )
 101/region = Rect2( 0, 0, 143, 171 )
 101/occluder_offset = Vector2( 71.5, 85.5 )
@@ -1208,7 +1208,7 @@
 101/shapes = [  ]
 102/name = "MISC-ROCK-12"
 102/texture = ExtResource( 6 )
-102/tex_offset = Vector2( 0, 11 )
+102/tex_offset = Vector2( 34, 11 )
 102/modulate = Color( 1, 1, 1, 1 )
 102/region = Rect2( 0, 0, 83, 54 )
 102/occluder_offset = Vector2( 41.5, 27 )
@@ -1217,7 +1217,7 @@
 102/shapes = [  ]
 103/name = "MISC-ROCK-18"
 103/texture = ExtResource( 7 )
-103/tex_offset = Vector2( 0, -6 )
+103/tex_offset = Vector2( 12.5, -6.5 )
 103/modulate = Color( 1, 1, 1, 1 )
 103/region = Rect2( 0, 0, 126, 89 )
 103/occluder_offset = Vector2( 63, 44.5 )
@@ -1226,7 +1226,7 @@
 103/shapes = [  ]
 104/name = "MISC-ROCK-15"
 104/texture = ExtResource( 8 )
-104/tex_offset = Vector2( 0, 3 )
+104/tex_offset = Vector2( 25, 3.5 )
 104/modulate = Color( 1, 1, 1, 1 )
 104/region = Rect2( 0, 0, 101, 69 )
 104/occluder_offset = Vector2( 50.5, 34.5 )
@@ -1235,7 +1235,7 @@
 104/shapes = [  ]
 105/name = "MISC-ROCK-10"
 105/texture = ExtResource( 9 )
-105/tex_offset = Vector2( 0, 7 )
+105/tex_offset = Vector2( 41, 7.5 )
 105/modulate = Color( 1, 1, 1, 1 )
 105/region = Rect2( 0, 0, 69, 61 )
 105/occluder_offset = Vector2( 34.5, 30.5 )
@@ -1244,7 +1244,7 @@
 105/shapes = [  ]
 106/name = "MISC-ROCK-5"
 106/texture = ExtResource( 10 )
-106/tex_offset = Vector2( 0, 13 )
+106/tex_offset = Vector2( 34, 13 )
 106/modulate = Color( 1, 1, 1, 1 )
 106/region = Rect2( 0, 0, 83, 50 )
 106/occluder_offset = Vector2( 41.5, 25 )
@@ -1253,7 +1253,7 @@
 106/shapes = [  ]
 107/name = "MISC-ROCK-8"
 107/texture = ExtResource( 11 )
-107/tex_offset = Vector2( 0, 10 )
+107/tex_offset = Vector2( 35.5, 10.5 )
 107/modulate = Color( 1, 1, 1, 1 )
 107/region = Rect2( 0, 0, 80, 55 )
 107/occluder_offset = Vector2( 40, 27.5 )
@@ -1262,7 +1262,7 @@
 107/shapes = [  ]
 108/name = "MISC-ROCK-1"
 108/texture = ExtResource( 12 )
-108/tex_offset = Vector2( 0, 11 )
+108/tex_offset = Vector2( 38.5, 11 )
 108/modulate = Color( 1, 1, 1, 1 )
 108/region = Rect2( 0, 0, 74, 54 )
 108/occluder_offset = Vector2( 37, 27 )
@@ -1271,7 +1271,7 @@
 108/shapes = [  ]
 109/name = "MISC-ROCK-11"
 109/texture = ExtResource( 13 )
-109/tex_offset = Vector2( 0, 7 )
+109/tex_offset = Vector2( 41.5, 7.5 )
 109/modulate = Color( 1, 1, 1, 1 )
 109/region = Rect2( 0, 0, 68, 61 )
 109/occluder_offset = Vector2( 34, 30.5 )
@@ -1280,7 +1280,7 @@
 109/shapes = [  ]
 110/name = "MISC-ROCK-9"
 110/texture = ExtResource( 15 )
-110/tex_offset = Vector2( 0, 10 )
+110/tex_offset = Vector2( 35.5, 10.5 )
 110/modulate = Color( 1, 1, 1, 1 )
 110/region = Rect2( 0, 0, 80, 55 )
 110/occluder_offset = Vector2( 40, 27.5 )
@@ -1289,7 +1289,7 @@
 110/shapes = [  ]
 111/name = "MISC-ROCK-16"
 111/texture = ExtResource( 16 )
-111/tex_offset = Vector2( 0, 5 )
+111/tex_offset = Vector2( 19.5, 5 )
 111/modulate = Color( 1, 1, 1, 1 )
 111/region = Rect2( 0, 0, 112, 66 )
 111/occluder_offset = Vector2( 56, 33 )
@@ -1298,7 +1298,7 @@
 111/shapes = [  ]
 112/name = "MISC-ROCK-17"
 112/texture = ExtResource( 17 )
-112/tex_offset = Vector2( 0, -1 )
+112/tex_offset = Vector2( 9.5, -1 )
 112/modulate = Color( 1, 1, 1, 1 )
 112/region = Rect2( 0, 0, 132, 78 )
 112/occluder_offset = Vector2( 66, 39 )
@@ -1307,7 +1307,7 @@
 112/shapes = [  ]
 113/name = "MISC-ROCK-2"
 113/texture = ExtResource( 18 )
-113/tex_offset = Vector2( 0, 11 )
+113/tex_offset = Vector2( 34, 11 )
 113/modulate = Color( 1, 1, 1, 1 )
 113/region = Rect2( 0, 0, 83, 54 )
 113/occluder_offset = Vector2( 41.5, 27 )
@@ -1316,7 +1316,7 @@
 113/shapes = [  ]
 114/name = "MISC-ROCK-13"
 114/texture = ExtResource( 19 )
-114/tex_offset = Vector2( 0, 4 )
+114/tex_offset = Vector2( 35.5, 4.5 )
 114/modulate = Color( 1, 1, 1, 1 )
 114/region = Rect2( 0, 0, 80, 67 )
 114/occluder_offset = Vector2( 40, 33.5 )
@@ -1325,7 +1325,7 @@
 114/shapes = [  ]
 115/name = "MISC-ROCK-14"
 115/texture = ExtResource( 20 )
-115/tex_offset = Vector2( 0, 11 )
+115/tex_offset = Vector2( 30, 11 )
 115/modulate = Color( 1, 1, 1, 1 )
 115/region = Rect2( 0, 0, 91, 54 )
 115/occluder_offset = Vector2( 45.5, 27 )
@@ -1334,7 +1334,7 @@
 115/shapes = [  ]
 116/name = "MISC-ROCK-7"
 116/texture = ExtResource( 21 )
-116/tex_offset = Vector2( 0, 11 )
+116/tex_offset = Vector2( 38.5, 11 )
 116/modulate = Color( 1, 1, 1, 1 )
 116/region = Rect2( 0, 0, 74, 54 )
 116/occluder_offset = Vector2( 37, 27 )
@@ -1343,7 +1343,7 @@
 116/shapes = [  ]
 117/name = "MISC-ROCK-6"
 117/texture = ExtResource( 22 )
-117/tex_offset = Vector2( 0, 13 )
+117/tex_offset = Vector2( 34, 13 )
 117/modulate = Color( 1, 1, 1, 1 )
 117/region = Rect2( 0, 0, 83, 50 )
 117/occluder_offset = Vector2( 41.5, 25 )
@@ -1352,7 +1352,7 @@
 117/shapes = [  ]
 118/name = "MISC-ROCK-3"
 118/texture = ExtResource( 23 )
-118/tex_offset = Vector2( 0, 11 )
+118/tex_offset = Vector2( 31, 11 )
 118/modulate = Color( 1, 1, 1, 1 )
 118/region = Rect2( 0, 0, 89, 54 )
 118/occluder_offset = Vector2( 44.5, 27 )
@@ -1361,7 +1361,7 @@
 118/shapes = [  ]
 119/name = "MISC-ROCK-4"
 119/texture = ExtResource( 24 )
-119/tex_offset = Vector2( 0, 11 )
+119/tex_offset = Vector2( 31.5, 11 )
 119/modulate = Color( 1, 1, 1, 1 )
 119/region = Rect2( 0, 0, 88, 54 )
 119/occluder_offset = Vector2( 44, 27 )
@@ -1370,7 +1370,7 @@
 119/shapes = [  ]
 120/name = "MISC-WOOD-12"
 120/texture = ExtResource( 26 )
-120/tex_offset = Vector2( 0, 17 )
+120/tex_offset = Vector2( 61, 17.5 )
 120/modulate = Color( 1, 1, 1, 1 )
 120/region = Rect2( 0, 0, 29, 41 )
 120/occluder_offset = Vector2( 14.5, 20.5 )
@@ -1379,7 +1379,7 @@
 120/shapes = [  ]
 121/name = "MISC-WOOD-21"
 121/texture = ExtResource( 27 )
-121/tex_offset = Vector2( 0, 17 )
+121/tex_offset = Vector2( 37, 17 )
 121/modulate = Color( 1, 1, 1, 1 )
 121/region = Rect2( 0, 0, 77, 42 )
 121/occluder_offset = Vector2( 38.5, 21 )
@@ -1388,7 +1388,7 @@
 121/shapes = [  ]
 122/name = "MISC-WOOD-18"
 122/texture = ExtResource( 28 )
-122/tex_offset = Vector2( 0, 14 )
+122/tex_offset = Vector2( 48, 14 )
 122/modulate = Color( 1, 1, 1, 1 )
 122/region = Rect2( 0, 0, 55, 48 )
 122/occluder_offset = Vector2( 27.5, 24 )
@@ -1397,7 +1397,7 @@
 122/shapes = [  ]
 123/name = "MISC-WOOD-26"
 123/texture = ExtResource( 29 )
-123/tex_offset = Vector2( 0, 9 )
+123/tex_offset = Vector2( 40, 9 )
 123/modulate = Color( 1, 1, 1, 1 )
 123/region = Rect2( 0, 0, 71, 58 )
 123/occluder_offset = Vector2( 35.5, 29 )
@@ -1406,7 +1406,7 @@
 123/shapes = [  ]
 124/name = "MISC-WOOD-15"
 124/texture = ExtResource( 30 )
-124/tex_offset = Vector2( 0, 14 )
+124/tex_offset = Vector2( 37, 14 )
 124/modulate = Color( 1, 1, 1, 1 )
 124/region = Rect2( 0, 0, 77, 48 )
 124/occluder_offset = Vector2( 38.5, 24 )
@@ -1415,7 +1415,7 @@
 124/shapes = [  ]
 125/name = "MISC-WOOD-28"
 125/texture = ExtResource( 31 )
-125/tex_offset = Vector2( 0, 17 )
+125/tex_offset = Vector2( 47, 17.5 )
 125/modulate = Color( 1, 1, 1, 1 )
 125/region = Rect2( 0, 0, 57, 41 )
 125/occluder_offset = Vector2( 28.5, 20.5 )
@@ -1424,7 +1424,7 @@
 125/shapes = [  ]
 126/name = "MISC-WOOD-10"
 126/texture = ExtResource( 32 )
-126/tex_offset = Vector2( 0, 5 )
+126/tex_offset = Vector2( 37, 5.5 )
 126/modulate = Color( 1, 1, 1, 1 )
 126/region = Rect2( 0, 0, 77, 65 )
 126/occluder_offset = Vector2( 38.5, 32.5 )
@@ -1433,7 +1433,7 @@
 126/shapes = [  ]
 127/name = "MISC-WOOD-24"
 127/texture = ExtResource( 33 )
-127/tex_offset = Vector2( 0, 5 )
+127/tex_offset = Vector2( 39, 5.5 )
 127/modulate = Color( 1, 1, 1, 1 )
 127/region = Rect2( 0, 0, 73, 65 )
 127/occluder_offset = Vector2( 36.5, 32.5 )
@@ -1442,7 +1442,7 @@
 127/shapes = [  ]
 128/name = "MISC-WOOD-5"
 128/texture = ExtResource( 34 )
-128/tex_offset = Vector2( 0, 13 )
+128/tex_offset = Vector2( 61, 13 )
 128/modulate = Color( 1, 1, 1, 1 )
 128/region = Rect2( 0, 0, 29, 50 )
 128/occluder_offset = Vector2( 14.5, 25 )
@@ -1451,7 +1451,7 @@
 128/shapes = [  ]
 129/name = "MISC-WOOD-20"
 129/texture = ExtResource( 35 )
-129/tex_offset = Vector2( 0, 15 )
+129/tex_offset = Vector2( 35.5, 15.5 )
 129/modulate = Color( 1, 1, 1, 1 )
 129/region = Rect2( 0, 0, 80, 45 )
 129/occluder_offset = Vector2( 40, 22.5 )
@@ -1460,7 +1460,7 @@
 129/shapes = [  ]
 130/name = "MISC-WOOD-8"
 130/texture = ExtResource( 37 )
-130/tex_offset = Vector2( 0, 9 )
+130/tex_offset = Vector2( 37, 9.5 )
 130/modulate = Color( 1, 1, 1, 1 )
 130/region = Rect2( 0, 0, 77, 57 )
 130/occluder_offset = Vector2( 38.5, 28.5 )
@@ -1469,7 +1469,7 @@
 130/shapes = [  ]
 131/name = "MISC-WOOD-22"
 131/texture = ExtResource( 38 )
-131/tex_offset = Vector2( 0, 17 )
+131/tex_offset = Vector2( 37, 17 )
 131/modulate = Color( 1, 1, 1, 1 )
 131/region = Rect2( 0, 0, 77, 42 )
 131/occluder_offset = Vector2( 38.5, 21 )
@@ -1478,7 +1478,7 @@
 131/shapes = [  ]
 132/name = "MISC-WOOD-1"
 132/texture = ExtResource( 39 )
-132/tex_offset = Vector2( 0, 12 )
+132/tex_offset = Vector2( 40, 12.5 )
 132/modulate = Color( 1, 1, 1, 1 )
 132/region = Rect2( 0, 0, 71, 51 )
 132/occluder_offset = Vector2( 35.5, 25.5 )
@@ -1487,7 +1487,7 @@
 132/shapes = [  ]
 133/name = "MISC-WOOD-11"
 133/texture = ExtResource( 40 )
-133/tex_offset = Vector2( 0, 19 )
+133/tex_offset = Vector2( 58, 19 )
 133/modulate = Color( 1, 1, 1, 1 )
 133/region = Rect2( 0, 0, 35, 38 )
 133/occluder_offset = Vector2( 17.5, 19 )
@@ -1496,7 +1496,7 @@
 133/shapes = [  ]
 134/name = "MISC-WOOD-9"
 134/texture = ExtResource( 41 )
-134/tex_offset = Vector2( 0, 9 )
+134/tex_offset = Vector2( 37, 9 )
 134/modulate = Color( 1, 1, 1, 1 )
 134/region = Rect2( 0, 0, 77, 58 )
 134/occluder_offset = Vector2( 38.5, 29 )
@@ -1505,7 +1505,7 @@
 134/shapes = [  ]
 135/name = "MISC-WOOD-16"
 135/texture = ExtResource( 42 )
-135/tex_offset = Vector2( 0, 14 )
+135/tex_offset = Vector2( 37, 14 )
 135/modulate = Color( 1, 1, 1, 1 )
 135/region = Rect2( 0, 0, 77, 48 )
 135/occluder_offset = Vector2( 38.5, 24 )
@@ -1514,7 +1514,7 @@
 135/shapes = [  ]
 136/name = "MISC-WOOD-23"
 136/texture = ExtResource( 43 )
-136/tex_offset = Vector2( 0, 11 )
+136/tex_offset = Vector2( 37, 11 )
 136/modulate = Color( 1, 1, 1, 1 )
 136/region = Rect2( 0, 0, 77, 54 )
 136/occluder_offset = Vector2( 38.5, 27 )
@@ -1523,7 +1523,7 @@
 136/shapes = [  ]
 137/name = "MISC-WOOD-17"
 137/texture = ExtResource( 44 )
-137/tex_offset = Vector2( 0, 6 )
+137/tex_offset = Vector2( 37, 6 )
 137/modulate = Color( 1, 1, 1, 1 )
 137/region = Rect2( 0, 0, 77, 64 )
 137/occluder_offset = Vector2( 38.5, 32 )
@@ -1532,7 +1532,7 @@
 137/shapes = [  ]
 138/name = "MISC-WOOD-2"
 138/texture = ExtResource( 45 )
-138/tex_offset = Vector2( 0, 15 )
+138/tex_offset = Vector2( 61, 15.5 )
 138/modulate = Color( 1, 1, 1, 1 )
 138/region = Rect2( 0, 0, 29, 45 )
 138/occluder_offset = Vector2( 14.5, 22.5 )
@@ -1541,7 +1541,7 @@
 138/shapes = [  ]
 139/name = "MISC-WOOD-27"
 139/texture = ExtResource( 46 )
-139/tex_offset = Vector2( 0, 19 )
+139/tex_offset = Vector2( 61, 19.5 )
 139/modulate = Color( 1, 1, 1, 1 )
 139/region = Rect2( 0, 0, 29, 37 )
 139/occluder_offset = Vector2( 14.5, 18.5 )
@@ -1550,7 +1550,7 @@
 139/shapes = [  ]
 140/name = "MISC-WOOD-25"
 140/texture = ExtResource( 48 )
-140/tex_offset = Vector2( 0, 9 )
+140/tex_offset = Vector2( 46, 9.5 )
 140/modulate = Color( 1, 1, 1, 1 )
 140/region = Rect2( 0, 0, 59, 57 )
 140/occluder_offset = Vector2( 29.5, 28.5 )
@@ -1559,7 +1559,7 @@
 140/shapes = [  ]
 141/name = "MISC-WOOD-13"
 141/texture = ExtResource( 49 )
-141/tex_offset = Vector2( 0, 4 )
+141/tex_offset = Vector2( 15.5, 4.5 )
 141/modulate = Color( 1, 1, 1, 1 )
 141/region = Rect2( 0, 0, 120, 67 )
 141/occluder_offset = Vector2( 60, 33.5 )
@@ -1568,7 +1568,7 @@
 141/shapes = [  ]
 142/name = "MISC-WOOD-14"
 142/texture = ExtResource( 50 )
-142/tex_offset = Vector2( 0, 9 )
+142/tex_offset = Vector2( 35, 9.5 )
 142/modulate = Color( 1, 1, 1, 1 )
 142/region = Rect2( 0, 0, 81, 57 )
 142/occluder_offset = Vector2( 40.5, 28.5 )
@@ -1577,7 +1577,7 @@
 142/shapes = [  ]
 143/name = "MISC-WOOD-19"
 143/texture = ExtResource( 51 )
-143/tex_offset = Vector2( 0, 19 )
+143/tex_offset = Vector2( 61, 19 )
 143/modulate = Color( 1, 1, 1, 1 )
 143/region = Rect2( 0, 0, 29, 38 )
 143/occluder_offset = Vector2( 14.5, 19 )
@@ -1586,7 +1586,7 @@
 143/shapes = [  ]
 144/name = "MISC-WOOD-7"
 144/texture = ExtResource( 52 )
-144/tex_offset = Vector2( 0, 10 )
+144/tex_offset = Vector2( 36.5, 10 )
 144/modulate = Color( 1, 1, 1, 1 )
 144/region = Rect2( 0, 0, 78, 56 )
 144/occluder_offset = Vector2( 39, 28 )
@@ -1595,7 +1595,7 @@
 144/shapes = [  ]
 145/name = "MISC-WOOD-6"
 145/texture = ExtResource( 53 )
-145/tex_offset = Vector2( 0, 7 )
+145/tex_offset = Vector2( 30.5, 7.5 )
 145/modulate = Color( 1, 1, 1, 1 )
 145/region = Rect2( 0, 0, 90, 61 )
 145/occluder_offset = Vector2( 45, 30.5 )
@@ -1604,7 +1604,7 @@
 145/shapes = [  ]
 146/name = "MISC-WOOD-3"
 146/texture = ExtResource( 54 )
-146/tex_offset = Vector2( 0, 7 )
+146/tex_offset = Vector2( 46.5, 7.5 )
 146/modulate = Color( 1, 1, 1, 1 )
 146/region = Rect2( 0, 0, 58, 61 )
 146/occluder_offset = Vector2( 29, 30.5 )
@@ -1613,7 +1613,7 @@
 146/shapes = [  ]
 147/name = "MISC-WOOD-4"
 147/texture = ExtResource( 55 )
-147/tex_offset = Vector2( 0, 17 )
+147/tex_offset = Vector2( 40, 17.5 )
 147/modulate = Color( 1, 1, 1, 1 )
 147/region = Rect2( 0, 0, 71, 41 )
 147/occluder_offset = Vector2( 35.5, 20.5 )
@@ -1622,7 +1622,7 @@
 147/shapes = [  ]
 148/name = "NATURE-MULTIPLE_BUSH-5"
 148/texture = ExtResource( 56 )
-148/tex_offset = Vector2( 0, -2 )
+148/tex_offset = Vector2( 17, -2 )
 148/modulate = Color( 1, 1, 1, 1 )
 148/region = Rect2( 0, 0, 117, 80 )
 148/occluder_offset = Vector2( 58.5, 40 )
@@ -1631,7 +1631,7 @@
 148/shapes = [  ]
 149/name = "NATURE-MULTIPLE_BUSH-1"
 149/texture = ExtResource( 57 )
-149/tex_offset = Vector2( 0, -4 )
+149/tex_offset = Vector2( 11, -4 )
 149/modulate = Color( 1, 1, 1, 1 )
 149/region = Rect2( 0, 0, 129, 84 )
 149/occluder_offset = Vector2( 64.5, 42 )
@@ -1640,7 +1640,7 @@
 149/shapes = [  ]
 150/name = "NATURE-MULTIPLE_BUSH-2"
 150/texture = ExtResource( 59 )
-150/tex_offset = Vector2( 0, -2 )
+150/tex_offset = Vector2( 17, -2 )
 150/modulate = Color( 1, 1, 1, 1 )
 150/region = Rect2( 0, 0, 117, 80 )
 150/occluder_offset = Vector2( 58.5, 40 )
@@ -1649,7 +1649,7 @@
 150/shapes = [  ]
 151/name = "NATURE-MULTIPLE_BUSH-6"
 151/texture = ExtResource( 60 )
-151/tex_offset = Vector2( 0, -2 )
+151/tex_offset = Vector2( 28.5, -2 )
 151/modulate = Color( 1, 1, 1, 1 )
 151/region = Rect2( 0, 0, 94, 80 )
 151/occluder_offset = Vector2( 47, 40 )
@@ -1658,7 +1658,7 @@
 151/shapes = [  ]
 152/name = "NATURE-MULTIPLE_BUSH-3"
 152/texture = ExtResource( 61 )
-152/tex_offset = Vector2( 0, -2 )
+152/tex_offset = Vector2( 28.5, -2 )
 152/modulate = Color( 1, 1, 1, 1 )
 152/region = Rect2( 0, 0, 94, 80 )
 152/occluder_offset = Vector2( 47, 40 )
@@ -1667,7 +1667,7 @@
 152/shapes = [  ]
 153/name = "NATURE-MULTIPLE_BUSH-4"
 153/texture = ExtResource( 62 )
-153/tex_offset = Vector2( 0, -4 )
+153/tex_offset = Vector2( 11, -4 )
 153/modulate = Color( 1, 1, 1, 1 )
 153/region = Rect2( 0, 0, 129, 84 )
 153/occluder_offset = Vector2( 64.5, 42 )
@@ -1676,7 +1676,7 @@
 153/shapes = [  ]
 154/name = "NATURE-PLANT-12"
 154/texture = ExtResource( 63 )
-154/tex_offset = Vector2( 0, -31 )
+154/tex_offset = Vector2( 44, -31 )
 154/modulate = Color( 1, 1, 1, 1 )
 154/region = Rect2( 0, 0, 63, 138 )
 154/occluder_offset = Vector2( 31.5, 69 )
@@ -1685,7 +1685,7 @@
 154/shapes = [  ]
 155/name = "NATURE-PLANT-18"
 155/texture = ExtResource( 64 )
-155/tex_offset = Vector2( 0, -25 )
+155/tex_offset = Vector2( 28, -25.5 )
 155/modulate = Color( 1, 1, 1, 1 )
 155/region = Rect2( 0, 0, 95, 127 )
 155/occluder_offset = Vector2( 47.5, 63.5 )
@@ -1694,7 +1694,7 @@
 155/shapes = [  ]
 156/name = "NATURE-PLANT-15"
 156/texture = ExtResource( 65 )
-156/tex_offset = Vector2( 0, -5 )
+156/tex_offset = Vector2( 15.5, -5 )
 156/modulate = Color( 1, 1, 1, 1 )
 156/region = Rect2( 0, 0, 120, 86 )
 156/occluder_offset = Vector2( 60, 43 )
@@ -1703,7 +1703,7 @@
 156/shapes = [  ]
 157/name = "NATURE-PLANT-10"
 157/texture = ExtResource( 66 )
-157/tex_offset = Vector2( 0, -30 )
+157/tex_offset = Vector2( 20.5, -30.5 )
 157/modulate = Color( 1, 1, 1, 1 )
 157/region = Rect2( 0, 0, 110, 137 )
 157/occluder_offset = Vector2( 55, 68.5 )
@@ -1712,7 +1712,7 @@
 157/shapes = [  ]
 158/name = "NATURE-PLANT-5"
 158/texture = ExtResource( 67 )
-158/tex_offset = Vector2( 0, -30 )
+158/tex_offset = Vector2( 23.5, -30 )
 158/modulate = Color( 1, 1, 1, 1 )
 158/region = Rect2( 0, 0, 104, 136 )
 158/occluder_offset = Vector2( 52, 68 )
@@ -1721,7 +1721,7 @@
 158/shapes = [  ]
 159/name = "NATURE-PLANT-8"
 159/texture = ExtResource( 68 )
-159/tex_offset = Vector2( 0, 0 )
+159/tex_offset = Vector2( 45.5, 0.5 )
 159/modulate = Color( 1, 1, 1, 1 )
 159/region = Rect2( 0, 0, 60, 75 )
 159/occluder_offset = Vector2( 30, 37.5 )
@@ -1730,7 +1730,7 @@
 159/shapes = [  ]
 160/name = "NATURE-PLANT-1"
 160/texture = ExtResource( 70 )
-160/tex_offset = Vector2( 0, -11 )
+160/tex_offset = Vector2( 37.5, -11 )
 160/modulate = Color( 1, 1, 1, 1 )
 160/region = Rect2( 0, 0, 76, 98 )
 160/occluder_offset = Vector2( 38, 49 )
@@ -1739,7 +1739,7 @@
 160/shapes = [  ]
 161/name = "NATURE-PLANT-11"
 161/texture = ExtResource( 71 )
-161/tex_offset = Vector2( 0, -25 )
+161/tex_offset = Vector2( 48, -25.5 )
 161/modulate = Color( 1, 1, 1, 1 )
 161/region = Rect2( 0, 0, 55, 127 )
 161/occluder_offset = Vector2( 27.5, 63.5 )
@@ -1748,7 +1748,7 @@
 161/shapes = [  ]
 162/name = "NATURE-PLANT-9"
 162/texture = ExtResource( 72 )
-162/tex_offset = Vector2( 0, -5 )
+162/tex_offset = Vector2( 38.5, -5.5 )
 162/modulate = Color( 1, 1, 1, 1 )
 162/region = Rect2( 0, 0, 74, 87 )
 162/occluder_offset = Vector2( 37, 43.5 )
@@ -1757,7 +1757,7 @@
 162/shapes = [  ]
 163/name = "NATURE-PLANT-16"
 163/texture = ExtResource( 73 )
-163/tex_offset = Vector2( 0, -30 )
+163/tex_offset = Vector2( 12.5, -30 )
 163/modulate = Color( 1, 1, 1, 1 )
 163/region = Rect2( 0, 0, 126, 136 )
 163/occluder_offset = Vector2( 63, 68 )
@@ -1766,7 +1766,7 @@
 163/shapes = [  ]
 164/name = "NATURE-PLANT-17"
 164/texture = ExtResource( 74 )
-164/tex_offset = Vector2( 0, -34 )
+164/tex_offset = Vector2( 5, -34.5 )
 164/modulate = Color( 1, 1, 1, 1 )
 164/region = Rect2( 0, 0, 141, 145 )
 164/occluder_offset = Vector2( 70.5, 72.5 )
@@ -1775,7 +1775,7 @@
 164/shapes = [  ]
 165/name = "NATURE-PLANT-2"
 165/texture = ExtResource( 75 )
-165/tex_offset = Vector2( 0, 3 )
+165/tex_offset = Vector2( 43, 3.5 )
 165/modulate = Color( 1, 1, 1, 1 )
 165/region = Rect2( 0, 0, 65, 69 )
 165/occluder_offset = Vector2( 32.5, 34.5 )
@@ -1784,7 +1784,7 @@
 165/shapes = [  ]
 166/name = "NATURE-PLANT-13"
 166/texture = ExtResource( 76 )
-166/tex_offset = Vector2( 0, 3 )
+166/tex_offset = Vector2( 47, 3 )
 166/modulate = Color( 1, 1, 1, 1 )
 166/region = Rect2( 0, 0, 57, 70 )
 166/occluder_offset = Vector2( 28.5, 35 )
@@ -1793,7 +1793,7 @@
 166/shapes = [  ]
 167/name = "NATURE-PLANT-14"
 167/texture = ExtResource( 77 )
-167/tex_offset = Vector2( 0, -35 )
+167/tex_offset = Vector2( 3.5, -35 )
 167/modulate = Color( 1, 1, 1, 1 )
 167/region = Rect2( 0, 0, 144, 146 )
 167/occluder_offset = Vector2( 72, 73 )
@@ -1802,7 +1802,7 @@
 167/shapes = [  ]
 168/name = "NATURE-PLANT-7"
 168/texture = ExtResource( 78 )
-168/tex_offset = Vector2( 0, -10 )
+168/tex_offset = Vector2( 44, -10 )
 168/modulate = Color( 1, 1, 1, 1 )
 168/region = Rect2( 0, 0, 63, 96 )
 168/occluder_offset = Vector2( 31.5, 48 )
@@ -1811,7 +1811,7 @@
 168/shapes = [  ]
 169/name = "NATURE-PLANT-6"
 169/texture = ExtResource( 79 )
-169/tex_offset = Vector2( 0, -31 )
+169/tex_offset = Vector2( 17.5, -31.5 )
 169/modulate = Color( 1, 1, 1, 1 )
 169/region = Rect2( 0, 0, 116, 139 )
 169/occluder_offset = Vector2( 58, 69.5 )
@@ -1820,7 +1820,7 @@
 169/shapes = [  ]
 170/name = "NATURE-PLANT-3"
 170/texture = ExtResource( 81 )
-170/tex_offset = Vector2( 0, -11 )
+170/tex_offset = Vector2( 46.5, -11.5 )
 170/modulate = Color( 1, 1, 1, 1 )
 170/region = Rect2( 0, 0, 58, 99 )
 170/occluder_offset = Vector2( 29, 49.5 )
@@ -1829,7 +1829,7 @@
 170/shapes = [  ]
 171/name = "NATURE-PLANT-4"
 171/texture = ExtResource( 82 )
-171/tex_offset = Vector2( 0, -26 )
+171/tex_offset = Vector2( 33, -26.5 )
 171/modulate = Color( 1, 1, 1, 1 )
 171/region = Rect2( 0, 0, 85, 129 )
 171/occluder_offset = Vector2( 42.5, 64.5 )
@@ -1838,7 +1838,7 @@
 171/shapes = [  ]
 172/name = "NATURE-SINGLE_BUSH-12"
 172/texture = ExtResource( 83 )
-172/tex_offset = Vector2( 0, 15 )
+172/tex_offset = Vector2( 48.5, 15 )
 172/modulate = Color( 1, 1, 1, 1 )
 172/region = Rect2( 0, 0, 54, 46 )
 172/occluder_offset = Vector2( 27, 23 )
@@ -1847,7 +1847,7 @@
 172/shapes = [  ]
 173/name = "NATURE-SINGLE_BUSH-18"
 173/texture = ExtResource( 84 )
-173/tex_offset = Vector2( 0, 16 )
+173/tex_offset = Vector2( 45.5, 16 )
 173/modulate = Color( 1, 1, 1, 1 )
 173/region = Rect2( 0, 0, 60, 44 )
 173/occluder_offset = Vector2( 30, 22 )
@@ -1856,7 +1856,7 @@
 173/shapes = [  ]
 174/name = "NATURE-SINGLE_BUSH-15"
 174/texture = ExtResource( 85 )
-174/tex_offset = Vector2( 0, 4 )
+174/tex_offset = Vector2( 38.5, 4.5 )
 174/modulate = Color( 1, 1, 1, 1 )
 174/region = Rect2( 0, 0, 74, 67 )
 174/occluder_offset = Vector2( 37, 33.5 )
@@ -1865,7 +1865,7 @@
 174/shapes = [  ]
 175/name = "NATURE-SINGLE_BUSH-10"
 175/texture = ExtResource( 86 )
-175/tex_offset = Vector2( 0, 3 )
+175/tex_offset = Vector2( 45.5, 3 )
 175/modulate = Color( 1, 1, 1, 1 )
 175/region = Rect2( 0, 0, 60, 70 )
 175/occluder_offset = Vector2( 30, 35 )
@@ -1874,7 +1874,7 @@
 175/shapes = [  ]
 176/name = "NATURE-SINGLE_BUSH-5"
 176/texture = ExtResource( 87 )
-176/tex_offset = Vector2( 0, 1 )
+176/tex_offset = Vector2( 27, 1.5 )
 176/modulate = Color( 1, 1, 1, 1 )
 176/region = Rect2( 0, 0, 97, 73 )
 176/occluder_offset = Vector2( 48.5, 36.5 )
@@ -1883,7 +1883,7 @@
 176/shapes = [  ]
 177/name = "NATURE-SINGLE_BUSH-20"
 177/texture = ExtResource( 88 )
-177/tex_offset = Vector2( 0, 16 )
+177/tex_offset = Vector2( 45.5, 16 )
 177/modulate = Color( 1, 1, 1, 1 )
 177/region = Rect2( 0, 0, 60, 44 )
 177/occluder_offset = Vector2( 30, 22 )
@@ -1892,7 +1892,7 @@
 177/shapes = [  ]
 178/name = "NATURE-SINGLE_BUSH-8"
 178/texture = ExtResource( 89 )
-178/tex_offset = Vector2( 0, 4 )
+178/tex_offset = Vector2( 38.5, 4.5 )
 178/modulate = Color( 1, 1, 1, 1 )
 178/region = Rect2( 0, 0, 74, 67 )
 178/occluder_offset = Vector2( 37, 33.5 )
@@ -1901,7 +1901,7 @@
 178/shapes = [  ]
 179/name = "NATURE-SINGLE_BUSH-1"
 179/texture = ExtResource( 90 )
-179/tex_offset = Vector2( 0, -9 )
+179/tex_offset = Vector2( 31.5, -9.5 )
 179/modulate = Color( 1, 1, 1, 1 )
 179/region = Rect2( 0, 0, 88, 95 )
 179/occluder_offset = Vector2( 44, 47.5 )
@@ -1910,7 +1910,7 @@
 179/shapes = [  ]
 180/name = "NATURE-SINGLE_BUSH-11"
 180/texture = ExtResource( 92 )
-180/tex_offset = Vector2( 0, 16 )
+180/tex_offset = Vector2( 45.5, 16 )
 180/modulate = Color( 1, 1, 1, 1 )
 180/region = Rect2( 0, 0, 60, 44 )
 180/occluder_offset = Vector2( 30, 22 )
@@ -1919,7 +1919,7 @@
 180/shapes = [  ]
 181/name = "NATURE-SINGLE_BUSH-9"
 181/texture = ExtResource( 93 )
-181/tex_offset = Vector2( 0, 7 )
+181/tex_offset = Vector2( 39.5, 7 )
 181/modulate = Color( 1, 1, 1, 1 )
 181/region = Rect2( 0, 0, 72, 62 )
 181/occluder_offset = Vector2( 36, 31 )
@@ -1928,7 +1928,7 @@
 181/shapes = [  ]
 182/name = "NATURE-SINGLE_BUSH-16"
 182/texture = ExtResource( 94 )
-182/tex_offset = Vector2( 0, 7 )
+182/tex_offset = Vector2( 39.5, 7 )
 182/modulate = Color( 1, 1, 1, 1 )
 182/region = Rect2( 0, 0, 72, 62 )
 182/occluder_offset = Vector2( 36, 31 )
@@ -1937,7 +1937,7 @@
 182/shapes = [  ]
 183/name = "NATURE-SINGLE_BUSH-17"
 183/texture = ExtResource( 95 )
-183/tex_offset = Vector2( 0, 3 )
+183/tex_offset = Vector2( 45.5, 3 )
 183/modulate = Color( 1, 1, 1, 1 )
 183/region = Rect2( 0, 0, 60, 70 )
 183/occluder_offset = Vector2( 30, 35 )
@@ -1946,7 +1946,7 @@
 183/shapes = [  ]
 184/name = "NATURE-SINGLE_BUSH-2"
 184/texture = ExtResource( 96 )
-184/tex_offset = Vector2( 0, -13 )
+184/tex_offset = Vector2( 19.5, -13 )
 184/modulate = Color( 1, 1, 1, 1 )
 184/region = Rect2( 0, 0, 112, 102 )
 184/occluder_offset = Vector2( 56, 51 )
@@ -1955,7 +1955,7 @@
 184/shapes = [  ]
 185/name = "NATURE-SINGLE_BUSH-13"
 185/texture = ExtResource( 97 )
-185/tex_offset = Vector2( 0, 16 )
+185/tex_offset = Vector2( 45.5, 16 )
 185/modulate = Color( 1, 1, 1, 1 )
 185/region = Rect2( 0, 0, 60, 44 )
 185/occluder_offset = Vector2( 30, 22 )
@@ -1964,7 +1964,7 @@
 185/shapes = [  ]
 186/name = "NATURE-SINGLE_BUSH-14"
 186/texture = ExtResource( 98 )
-186/tex_offset = Vector2( 0, 6 )
+186/tex_offset = Vector2( 37.5, 6 )
 186/modulate = Color( 1, 1, 1, 1 )
 186/region = Rect2( 0, 0, 76, 64 )
 186/occluder_offset = Vector2( 38, 32 )
@@ -1973,7 +1973,7 @@
 186/shapes = [  ]
 187/name = "NATURE-SINGLE_BUSH-19"
 187/texture = ExtResource( 99 )
-187/tex_offset = Vector2( 0, 15 )
+187/tex_offset = Vector2( 48.5, 15 )
 187/modulate = Color( 1, 1, 1, 1 )
 187/region = Rect2( 0, 0, 54, 46 )
 187/occluder_offset = Vector2( 27, 23 )
@@ -1982,7 +1982,7 @@
 187/shapes = [  ]
 188/name = "NATURE-SINGLE_BUSH-7"
 188/texture = ExtResource( 100 )
-188/tex_offset = Vector2( 0, 6 )
+188/tex_offset = Vector2( 37.5, 6 )
 188/modulate = Color( 1, 1, 1, 1 )
 188/region = Rect2( 0, 0, 76, 64 )
 188/occluder_offset = Vector2( 38, 32 )
@@ -1991,7 +1991,7 @@
 188/shapes = [  ]
 189/name = "NATURE-SINGLE_BUSH-6"
 189/texture = ExtResource( 101 )
-189/tex_offset = Vector2( 0, 3 )
+189/tex_offset = Vector2( 27, 3.5 )
 189/modulate = Color( 1, 1, 1, 1 )
 189/region = Rect2( 0, 0, 97, 69 )
 189/occluder_offset = Vector2( 48.5, 34.5 )
@@ -2000,7 +2000,7 @@
 189/shapes = [  ]
 190/name = "NATURE-SINGLE_BUSH-3"
 190/texture = ExtResource( 103 )
-190/tex_offset = Vector2( 0, 0 )
+190/tex_offset = Vector2( 30.5, 0 )
 190/modulate = Color( 1, 1, 1, 1 )
 190/region = Rect2( 0, 0, 90, 76 )
 190/occluder_offset = Vector2( 45, 38 )
@@ -2009,7 +2009,7 @@
 190/shapes = [  ]
 191/name = "NATURE-SINGLE_BUSH-4"
 191/texture = ExtResource( 104 )
-191/tex_offset = Vector2( 0, 5 )
+191/tex_offset = Vector2( 27, 5.5 )
 191/modulate = Color( 1, 1, 1, 1 )
 191/region = Rect2( 0, 0, 97, 65 )
 191/occluder_offset = Vector2( 48.5, 32.5 )
@@ -2018,7 +2018,7 @@
 191/shapes = [  ]
 192/name = "NATURE-SMALL_FOLIAGE-12"
 192/texture = ExtResource( 105 )
-192/tex_offset = Vector2( 0, 12 )
+192/tex_offset = Vector2( 47, 12.5 )
 192/modulate = Color( 1, 1, 1, 1 )
 192/region = Rect2( 0, 0, 57, 51 )
 192/occluder_offset = Vector2( 28.5, 25.5 )
@@ -2027,7 +2027,7 @@
 192/shapes = [  ]
 193/name = "NATURE-SMALL_FOLIAGE-21"
 193/texture = ExtResource( 106 )
-193/tex_offset = Vector2( 0, -11 )
+193/tex_offset = Vector2( 15, -11.5 )
 193/modulate = Color( 1, 1, 1, 1 )
 193/region = Rect2( 0, 0, 121, 99 )
 193/occluder_offset = Vector2( 60.5, 49.5 )
@@ -2036,7 +2036,7 @@
 193/shapes = [  ]
 194/name = "NATURE-SMALL_FOLIAGE-18"
 194/texture = ExtResource( 107 )
-194/tex_offset = Vector2( 0, -3 )
+194/tex_offset = Vector2( 6.5, -3.5 )
 194/modulate = Color( 1, 1, 1, 1 )
 194/region = Rect2( 0, 0, 138, 83 )
 194/occluder_offset = Vector2( 69, 41.5 )
@@ -2045,7 +2045,7 @@
 194/shapes = [  ]
 195/name = "NATURE-SMALL_FOLIAGE-15"
 195/texture = ExtResource( 108 )
-195/tex_offset = Vector2( 0, 11 )
+195/tex_offset = Vector2( 42, 11.5 )
 195/modulate = Color( 1, 1, 1, 1 )
 195/region = Rect2( 0, 0, 67, 53 )
 195/occluder_offset = Vector2( 33.5, 26.5 )
@@ -2054,7 +2054,7 @@
 195/shapes = [  ]
 196/name = "NATURE-SMALL_FOLIAGE-10"
 196/texture = ExtResource( 109 )
-196/tex_offset = Vector2( 0, 7 )
+196/tex_offset = Vector2( 23, 7 )
 196/modulate = Color( 1, 1, 1, 1 )
 196/region = Rect2( 0, 0, 105, 62 )
 196/occluder_offset = Vector2( 52.5, 31 )
@@ -2063,7 +2063,7 @@
 196/shapes = [  ]
 197/name = "NATURE-SMALL_FOLIAGE-24"
 197/texture = ExtResource( 110 )
-197/tex_offset = Vector2( 0, 0 )
+197/tex_offset = Vector2( 6.5, 0.5 )
 197/modulate = Color( 1, 1, 1, 1 )
 197/region = Rect2( 0, 0, 138, 75 )
 197/occluder_offset = Vector2( 69, 37.5 )
@@ -2072,7 +2072,7 @@
 197/shapes = [  ]
 198/name = "NATURE-SMALL_FOLIAGE-5"
 198/texture = ExtResource( 111 )
-198/tex_offset = Vector2( 0, 24 )
+198/tex_offset = Vector2( 61, 24.5 )
 198/modulate = Color( 1, 1, 1, 1 )
 198/region = Rect2( 0, 0, 29, 27 )
 198/occluder_offset = Vector2( 14.5, 13.5 )
@@ -2081,7 +2081,7 @@
 198/shapes = [  ]
 199/name = "NATURE-SMALL_FOLIAGE-20"
 199/texture = ExtResource( 112 )
-199/tex_offset = Vector2( 0, -12 )
+199/tex_offset = Vector2( 42.5, -12 )
 199/modulate = Color( 1, 1, 1, 1 )
 199/region = Rect2( 0, 0, 66, 100 )
 199/occluder_offset = Vector2( 33, 50 )
@@ -2090,7 +2090,7 @@
 199/shapes = [  ]
 200/name = "NATURE-SMALL_FOLIAGE-8"
 200/texture = ExtResource( 115 )
-200/tex_offset = Vector2( 0, -3 )
+200/tex_offset = Vector2( 19.5, -3.5 )
 200/modulate = Color( 1, 1, 1, 1 )
 200/region = Rect2( 0, 0, 112, 83 )
 200/occluder_offset = Vector2( 56, 41.5 )
@@ -2099,7 +2099,7 @@
 200/shapes = [  ]
 201/name = "NATURE-SMALL_FOLIAGE-22"
 201/texture = ExtResource( 116 )
-201/tex_offset = Vector2( 0, -5 )
+201/tex_offset = Vector2( 23.5, -5.5 )
 201/modulate = Color( 1, 1, 1, 1 )
 201/region = Rect2( 0, 0, 104, 87 )
 201/occluder_offset = Vector2( 52, 43.5 )
@@ -2108,7 +2108,7 @@
 201/shapes = [  ]
 202/name = "NATURE-SMALL_FOLIAGE-1"
 202/texture = ExtResource( 117 )
-202/tex_offset = Vector2( 0, 0 )
+202/tex_offset = Vector2( 4.5, 0 )
 202/modulate = Color( 1, 1, 1, 1 )
 202/region = Rect2( 0, 0, 142, 76 )
 202/occluder_offset = Vector2( 71, 38 )
@@ -2117,7 +2117,7 @@
 202/shapes = [  ]
 203/name = "NATURE-SMALL_FOLIAGE-11"
 203/texture = ExtResource( 118 )
-203/tex_offset = Vector2( 0, 14 )
+203/tex_offset = Vector2( 12.5, 14 )
 203/modulate = Color( 1, 1, 1, 1 )
 203/region = Rect2( 0, 0, 126, 48 )
 203/occluder_offset = Vector2( 63, 24 )
@@ -2126,7 +2126,7 @@
 203/shapes = [  ]
 204/name = "NATURE-SMALL_FOLIAGE-9"
 204/texture = ExtResource( 119 )
-204/tex_offset = Vector2( 0, 24 )
+204/tex_offset = Vector2( 61, 24.5 )
 204/modulate = Color( 1, 1, 1, 1 )
 204/region = Rect2( 0, 0, 29, 27 )
 204/occluder_offset = Vector2( 14.5, 13.5 )
@@ -2135,7 +2135,7 @@
 204/shapes = [  ]
 205/name = "NATURE-SMALL_FOLIAGE-16"
 205/texture = ExtResource( 120 )
-205/tex_offset = Vector2( 0, -3 )
+205/tex_offset = Vector2( 6.5, -3.5 )
 205/modulate = Color( 1, 1, 1, 1 )
 205/region = Rect2( 0, 0, 138, 83 )
 205/occluder_offset = Vector2( 69, 41.5 )
@@ -2144,7 +2144,7 @@
 205/shapes = [  ]
 206/name = "NATURE-SMALL_FOLIAGE-23"
 206/texture = ExtResource( 121 )
-206/tex_offset = Vector2( 0, -13 )
+206/tex_offset = Vector2( 17.5, -13 )
 206/modulate = Color( 1, 1, 1, 1 )
 206/region = Rect2( 0, 0, 116, 102 )
 206/occluder_offset = Vector2( 58, 51 )
@@ -2153,7 +2153,7 @@
 206/shapes = [  ]
 207/name = "NATURE-SMALL_FOLIAGE-17"
 207/texture = ExtResource( 122 )
-207/tex_offset = Vector2( 0, -3 )
+207/tex_offset = Vector2( 6.5, -3.5 )
 207/modulate = Color( 1, 1, 1, 1 )
 207/region = Rect2( 0, 0, 138, 83 )
 207/occluder_offset = Vector2( 69, 41.5 )
@@ -2162,7 +2162,7 @@
 207/shapes = [  ]
 208/name = "NATURE-SMALL_FOLIAGE-2"
 208/texture = ExtResource( 123 )
-208/tex_offset = Vector2( 0, 26 )
+208/tex_offset = Vector2( 13.5, 26 )
 208/modulate = Color( 1, 1, 1, 1 )
 208/region = Rect2( 0, 0, 124, 24 )
 208/occluder_offset = Vector2( 62, 12 )
@@ -2171,7 +2171,7 @@
 208/shapes = [  ]
 209/name = "NATURE-SMALL_FOLIAGE-25"
 209/texture = ExtResource( 124 )
-209/tex_offset = Vector2( 0, -25 )
+209/tex_offset = Vector2( 6, -25 )
 209/modulate = Color( 1, 1, 1, 1 )
 209/region = Rect2( 0, 0, 139, 126 )
 209/occluder_offset = Vector2( 69.5, 63 )
@@ -2180,7 +2180,7 @@
 209/shapes = [  ]
 210/name = "NATURE-SMALL_FOLIAGE-13"
 210/texture = ExtResource( 126 )
-210/tex_offset = Vector2( 0, 2 )
+210/tex_offset = Vector2( 39.5, 2.5 )
 210/modulate = Color( 1, 1, 1, 1 )
 210/region = Rect2( 0, 0, 72, 71 )
 210/occluder_offset = Vector2( 36, 35.5 )
@@ -2189,7 +2189,7 @@
 210/shapes = [  ]
 211/name = "NATURE-SMALL_FOLIAGE-14"
 211/texture = ExtResource( 127 )
-211/tex_offset = Vector2( 0, 14 )
+211/tex_offset = Vector2( 33, 14.5 )
 211/modulate = Color( 1, 1, 1, 1 )
 211/region = Rect2( 0, 0, 85, 47 )
 211/occluder_offset = Vector2( 42.5, 23.5 )
@@ -2198,7 +2198,7 @@
 211/shapes = [  ]
 212/name = "NATURE-SMALL_FOLIAGE-19"
 212/texture = ExtResource( 128 )
-212/tex_offset = Vector2( 0, -14 )
+212/tex_offset = Vector2( 34, -14 )
 212/modulate = Color( 1, 1, 1, 1 )
 212/region = Rect2( 0, 0, 83, 104 )
 212/occluder_offset = Vector2( 41.5, 52 )
@@ -2207,7 +2207,7 @@
 212/shapes = [  ]
 213/name = "NATURE-SMALL_FOLIAGE-7"
 213/texture = ExtResource( 129 )
-213/tex_offset = Vector2( 0, 9 )
+213/tex_offset = Vector2( 17, 9 )
 213/modulate = Color( 1, 1, 1, 1 )
 213/region = Rect2( 0, 0, 117, 58 )
 213/occluder_offset = Vector2( 58.5, 29 )
@@ -2216,7 +2216,7 @@
 213/shapes = [  ]
 214/name = "NATURE-SMALL_FOLIAGE-6"
 214/texture = ExtResource( 130 )
-214/tex_offset = Vector2( 0, 26 )
+214/tex_offset = Vector2( 13.5, 26 )
 214/modulate = Color( 1, 1, 1, 1 )
 214/region = Rect2( 0, 0, 124, 24 )
 214/occluder_offset = Vector2( 62, 12 )
@@ -2225,7 +2225,7 @@
 214/shapes = [  ]
 215/name = "NATURE-SMALL_FOLIAGE-3"
 215/texture = ExtResource( 131 )
-215/tex_offset = Vector2( 0, 9 )
+215/tex_offset = Vector2( 17, 9 )
 215/modulate = Color( 1, 1, 1, 1 )
 215/region = Rect2( 0, 0, 117, 58 )
 215/occluder_offset = Vector2( 58.5, 29 )
@@ -2234,7 +2234,7 @@
 215/shapes = [  ]
 216/name = "NATURE-SMALL_FOLIAGE-4"
 216/texture = ExtResource( 132 )
-216/tex_offset = Vector2( 0, -3 )
+216/tex_offset = Vector2( 19.5, -3.5 )
 216/modulate = Color( 1, 1, 1, 1 )
 216/region = Rect2( 0, 0, 112, 83 )
 216/occluder_offset = Vector2( 56, 41.5 )
@@ -2243,7 +2243,7 @@
 216/shapes = [  ]
 217/name = "NATURE-TREE-TYPE0-1"
 217/texture = ExtResource( 133 )
-217/tex_offset = Vector2( 0, -37 )
+217/tex_offset = Vector2( 20, -37 )
 217/modulate = Color( 1, 1, 1, 1 )
 217/region = Rect2( 0, 0, 111, 150 )
 217/occluder_offset = Vector2( 55.5, 75 )
@@ -2252,7 +2252,7 @@
 217/shapes = [  ]
 218/name = "NATURE-TREE-TYPE0-2"
 218/texture = ExtResource( 134 )
-218/tex_offset = Vector2( 0, -35 )
+218/tex_offset = Vector2( 16.5, -35 )
 218/modulate = Color( 1, 1, 1, 1 )
 218/region = Rect2( 0, 0, 118, 146 )
 218/occluder_offset = Vector2( 59, 73 )
@@ -2261,7 +2261,7 @@
 218/shapes = [  ]
 219/name = "NATURE-TREE-TYPE0-3"
 219/texture = ExtResource( 135 )
-219/tex_offset = Vector2( 0, -35 )
+219/tex_offset = Vector2( 16.5, -35 )
 219/modulate = Color( 1, 1, 1, 1 )
 219/region = Rect2( 0, 0, 118, 146 )
 219/occluder_offset = Vector2( 59, 73 )
@@ -2270,7 +2270,7 @@
 219/shapes = [  ]
 220/name = "NATURE-TREE-TYPE0-4"
 220/texture = ExtResource( 137 )
-220/tex_offset = Vector2( 0, -35 )
+220/tex_offset = Vector2( 16.5, -35 )
 220/modulate = Color( 1, 1, 1, 1 )
 220/region = Rect2( 0, 0, 118, 146 )
 220/occluder_offset = Vector2( 59, 73 )
@@ -2279,7 +2279,7 @@
 220/shapes = [  ]
 221/name = "NATURE-TREE-TYPE1-5"
 221/texture = ExtResource( 138 )
-221/tex_offset = Vector2( 0, -37 )
+221/tex_offset = Vector2( 14.5, -37 )
 221/modulate = Color( 1, 1, 1, 1 )
 221/region = Rect2( 0, 0, 122, 150 )
 221/occluder_offset = Vector2( 61, 75 )
@@ -2288,7 +2288,7 @@
 221/shapes = [  ]
 222/name = "NATURE-TREE-TYPE1-1"
 222/texture = ExtResource( 139 )
-222/tex_offset = Vector2( 0, -37 )
+222/tex_offset = Vector2( 14.5, -37 )
 222/modulate = Color( 1, 1, 1, 1 )
 222/region = Rect2( 0, 0, 122, 150 )
 222/occluder_offset = Vector2( 61, 75 )
@@ -2297,7 +2297,7 @@
 222/shapes = [  ]
 223/name = "NATURE-TREE-TYPE1-2"
 223/texture = ExtResource( 140 )
-223/tex_offset = Vector2( 0, -37 )
+223/tex_offset = Vector2( 14.5, -37 )
 223/modulate = Color( 1, 1, 1, 1 )
 223/region = Rect2( 0, 0, 122, 150 )
 223/occluder_offset = Vector2( 61, 75 )
@@ -2306,7 +2306,7 @@
 223/shapes = [  ]
 224/name = "NATURE-TREE-TYPE1-6"
 224/texture = ExtResource( 141 )
-224/tex_offset = Vector2( 0, -37 )
+224/tex_offset = Vector2( 14.5, -37 )
 224/modulate = Color( 1, 1, 1, 1 )
 224/region = Rect2( 0, 0, 122, 150 )
 224/occluder_offset = Vector2( 61, 75 )
@@ -2315,7 +2315,7 @@
 224/shapes = [  ]
 225/name = "NATURE-TREE-TYPE1-3"
 225/texture = ExtResource( 142 )
-225/tex_offset = Vector2( 0, -37 )
+225/tex_offset = Vector2( 14.5, -37 )
 225/modulate = Color( 1, 1, 1, 1 )
 225/region = Rect2( 0, 0, 122, 150 )
 225/occluder_offset = Vector2( 61, 75 )
@@ -2324,7 +2324,7 @@
 225/shapes = [  ]
 226/name = "NATURE-TREE-TYPE1-4"
 226/texture = ExtResource( 143 )
-226/tex_offset = Vector2( 0, -37 )
+226/tex_offset = Vector2( 14.5, -37 )
 226/modulate = Color( 1, 1, 1, 1 )
 226/region = Rect2( 0, 0, 122, 150 )
 226/occluder_offset = Vector2( 61, 75 )
@@ -2333,7 +2333,7 @@
 226/shapes = [  ]
 227/name = "NATURE-TREE-TYPE2-5"
 227/texture = ExtResource( 144 )
-227/tex_offset = Vector2( 0, -31 )
+227/tex_offset = Vector2( 18, -31.5 )
 227/modulate = Color( 1, 1, 1, 1 )
 227/region = Rect2( 0, 0, 115, 139 )
 227/occluder_offset = Vector2( 57.5, 69.5 )
@@ -2342,7 +2342,7 @@
 227/shapes = [  ]
 228/name = "NATURE-TREE-TYPE2-1"
 228/texture = ExtResource( 145 )
-228/tex_offset = Vector2( 0, -31 )
+228/tex_offset = Vector2( 18, -31.5 )
 228/modulate = Color( 1, 1, 1, 1 )
 228/region = Rect2( 0, 0, 115, 139 )
 228/occluder_offset = Vector2( 57.5, 69.5 )
@@ -2351,7 +2351,7 @@
 228/shapes = [  ]
 229/name = "NATURE-TREE-TYPE2-2"
 229/texture = ExtResource( 146 )
-229/tex_offset = Vector2( 0, -31 )
+229/tex_offset = Vector2( 18, -31.5 )
 229/modulate = Color( 1, 1, 1, 1 )
 229/region = Rect2( 0, 0, 115, 139 )
 229/occluder_offset = Vector2( 57.5, 69.5 )
@@ -2360,7 +2360,7 @@
 229/shapes = [  ]
 230/name = "NATURE-TREE-TYPE2-6"
 230/texture = ExtResource( 148 )
-230/tex_offset = Vector2( 0, -31 )
+230/tex_offset = Vector2( 17.5, -31.5 )
 230/modulate = Color( 1, 1, 1, 1 )
 230/region = Rect2( 0, 0, 116, 139 )
 230/occluder_offset = Vector2( 58, 69.5 )
@@ -2369,7 +2369,7 @@
 230/shapes = [  ]
 231/name = "NATURE-TREE-TYPE2-3"
 231/texture = ExtResource( 149 )
-231/tex_offset = Vector2( 0, -31 )
+231/tex_offset = Vector2( 18, -31.5 )
 231/modulate = Color( 1, 1, 1, 1 )
 231/region = Rect2( 0, 0, 115, 139 )
 231/occluder_offset = Vector2( 57.5, 69.5 )
@@ -2378,7 +2378,7 @@
 231/shapes = [  ]
 232/name = "NATURE-TREE-TYPE2-4"
 232/texture = ExtResource( 150 )
-232/tex_offset = Vector2( 0, -31 )
+232/tex_offset = Vector2( 18, -31.5 )
 232/modulate = Color( 1, 1, 1, 1 )
 232/region = Rect2( 0, 0, 115, 139 )
 232/occluder_offset = Vector2( 57.5, 69.5 )
@@ -2387,7 +2387,7 @@
 232/shapes = [  ]
 233/name = "NATURE-TREE-TYPE3-12"
 233/texture = ExtResource( 151 )
-233/tex_offset = Vector2( 0, -35 )
+233/tex_offset = Vector2( 30, -35.5 )
 233/modulate = Color( 1, 1, 1, 1 )
 233/region = Rect2( 0, 0, 91, 147 )
 233/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2396,7 +2396,7 @@
 233/shapes = [  ]
 234/name = "NATURE-TREE-TYPE3-10"
 234/texture = ExtResource( 152 )
-234/tex_offset = Vector2( 0, -35 )
+234/tex_offset = Vector2( 30, -35.5 )
 234/modulate = Color( 1, 1, 1, 1 )
 234/region = Rect2( 0, 0, 91, 147 )
 234/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2405,7 +2405,7 @@
 234/shapes = [  ]
 235/name = "NATURE-TREE-TYPE3-5"
 235/texture = ExtResource( 153 )
-235/tex_offset = Vector2( 0, -35 )
+235/tex_offset = Vector2( 24.5, -35 )
 235/modulate = Color( 1, 1, 1, 1 )
 235/region = Rect2( 0, 0, 102, 146 )
 235/occluder_offset = Vector2( 51, 73 )
@@ -2414,7 +2414,7 @@
 235/shapes = [  ]
 236/name = "NATURE-TREE-TYPE3-8"
 236/texture = ExtResource( 154 )
-236/tex_offset = Vector2( 0, -35 )
+236/tex_offset = Vector2( 30, -35.5 )
 236/modulate = Color( 1, 1, 1, 1 )
 236/region = Rect2( 0, 0, 91, 147 )
 236/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2423,7 +2423,7 @@
 236/shapes = [  ]
 237/name = "NATURE-TREE-TYPE3-1"
 237/texture = ExtResource( 155 )
-237/tex_offset = Vector2( 0, -35 )
+237/tex_offset = Vector2( 24.5, -35 )
 237/modulate = Color( 1, 1, 1, 1 )
 237/region = Rect2( 0, 0, 102, 146 )
 237/occluder_offset = Vector2( 51, 73 )
@@ -2432,7 +2432,7 @@
 237/shapes = [  ]
 238/name = "NATURE-TREE-TYPE3-11"
 238/texture = ExtResource( 156 )
-238/tex_offset = Vector2( 0, -35 )
+238/tex_offset = Vector2( 30, -35.5 )
 238/modulate = Color( 1, 1, 1, 1 )
 238/region = Rect2( 0, 0, 91, 147 )
 238/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2441,7 +2441,7 @@
 238/shapes = [  ]
 239/name = "NATURE-TREE-TYPE3-9"
 239/texture = ExtResource( 157 )
-239/tex_offset = Vector2( 0, -35 )
+239/tex_offset = Vector2( 30, -35.5 )
 239/modulate = Color( 1, 1, 1, 1 )
 239/region = Rect2( 0, 0, 91, 147 )
 239/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2450,7 +2450,7 @@
 239/shapes = [  ]
 240/name = "NATURE-TREE-TYPE3-2"
 240/texture = ExtResource( 159 )
-240/tex_offset = Vector2( 0, -35 )
+240/tex_offset = Vector2( 29.5, -35 )
 240/modulate = Color( 1, 1, 1, 1 )
 240/region = Rect2( 0, 0, 92, 146 )
 240/occluder_offset = Vector2( 46, 73 )
@@ -2459,7 +2459,7 @@
 240/shapes = [  ]
 241/name = "NATURE-TREE-TYPE3-13"
 241/texture = ExtResource( 160 )
-241/tex_offset = Vector2( 0, -35 )
+241/tex_offset = Vector2( 30, -35.5 )
 241/modulate = Color( 1, 1, 1, 1 )
 241/region = Rect2( 0, 0, 91, 147 )
 241/occluder_offset = Vector2( 45.5, 73.5 )
@@ -2468,7 +2468,7 @@
 241/shapes = [  ]
 242/name = "NATURE-TREE-TYPE3-7"
 242/texture = ExtResource( 161 )
-242/tex_offset = Vector2( 0, -35 )
+242/tex_offset = Vector2( 24.5, -35 )
 242/modulate = Color( 1, 1, 1, 1 )
 242/region = Rect2( 0, 0, 102, 146 )
 242/occluder_offset = Vector2( 51, 73 )
@@ -2477,7 +2477,7 @@
 242/shapes = [  ]
 243/name = "NATURE-TREE-TYPE3-6"
 243/texture = ExtResource( 162 )
-243/tex_offset = Vector2( 0, -35 )
+243/tex_offset = Vector2( 24.5, -35 )
 243/modulate = Color( 1, 1, 1, 1 )
 243/region = Rect2( 0, 0, 102, 146 )
 243/occluder_offset = Vector2( 51, 73 )
@@ -2486,7 +2486,7 @@
 243/shapes = [  ]
 244/name = "NATURE-TREE-TYPE3-3"
 244/texture = ExtResource( 163 )
-244/tex_offset = Vector2( 0, -35 )
+244/tex_offset = Vector2( 24.5, -35 )
 244/modulate = Color( 1, 1, 1, 1 )
 244/region = Rect2( 0, 0, 102, 146 )
 244/occluder_offset = Vector2( 51, 73 )
@@ -2495,7 +2495,7 @@
 244/shapes = [  ]
 245/name = "NATURE-TREE-TYPE3-4"
 245/texture = ExtResource( 164 )
-245/tex_offset = Vector2( 0, -35 )
+245/tex_offset = Vector2( 24.5, -35 )
 245/modulate = Color( 1, 1, 1, 1 )
 245/region = Rect2( 0, 0, 102, 146 )
 245/occluder_offset = Vector2( 51, 73 )
@@ -2504,7 +2504,7 @@
 245/shapes = [  ]
 246/name = "NATURE-TREE-TYPE4-1"
 246/texture = ExtResource( 165 )
-246/tex_offset = Vector2( 0, -31 )
+246/tex_offset = Vector2( 34.5, -31.5 )
 246/modulate = Color( 1, 1, 1, 1 )
 246/region = Rect2( 0, 0, 82, 139 )
 246/occluder_offset = Vector2( 41, 69.5 )
@@ -2513,7 +2513,7 @@
 246/shapes = [  ]
 247/name = "NATURE-TREE-TYPE4-2"
 247/texture = ExtResource( 166 )
-247/tex_offset = Vector2( 0, -29 )
+247/tex_offset = Vector2( 6, -29 )
 247/modulate = Color( 1, 1, 1, 1 )
 247/region = Rect2( 0, 0, 139, 134 )
 247/occluder_offset = Vector2( 69.5, 67 )
@@ -2522,7 +2522,7 @@
 247/shapes = [  ]
 248/name = "NATURE-TREE-TYPE4-3"
 248/texture = ExtResource( 167 )
-248/tex_offset = Vector2( 0, -30 )
+248/tex_offset = Vector2( 22.5, -30.5 )
 248/modulate = Color( 1, 1, 1, 1 )
 248/region = Rect2( 0, 0, 106, 137 )
 248/occluder_offset = Vector2( 53, 68.5 )
@@ -2531,7 +2531,7 @@
 248/shapes = [  ]
 249/name = "NATURE-TREE-TYPE5-1"
 249/texture = ExtResource( 168 )
-249/tex_offset = Vector2( 0, -13 )
+249/tex_offset = Vector2( 40, -13 )
 249/modulate = Color( 1, 1, 1, 1 )
 249/region = Rect2( 0, 0, 71, 102 )
 249/occluder_offset = Vector2( 35.5, 51 )
@@ -2540,7 +2540,7 @@
 249/shapes = [  ]
 250/name = "NATURE-TREE-TYPE5-2"
 250/texture = ExtResource( 170 )
-250/tex_offset = Vector2( 0, -13 )
+250/tex_offset = Vector2( 40, -13 )
 250/modulate = Color( 1, 1, 1, 1 )
 250/region = Rect2( 0, 0, 71, 102 )
 250/occluder_offset = Vector2( 35.5, 51 )
@@ -2549,7 +2549,7 @@
 250/shapes = [  ]
 251/name = "NATURE-TREE-TYPE5-3"
 251/texture = ExtResource( 171 )
-251/tex_offset = Vector2( 0, -13 )
+251/tex_offset = Vector2( 40, -13 )
 251/modulate = Color( 1, 1, 1, 1 )
 251/region = Rect2( 0, 0, 71, 102 )
 251/occluder_offset = Vector2( 35.5, 51 )
@@ -2558,7 +2558,7 @@
 251/shapes = [  ]
 252/name = "NATURE-TREE-TYPE5-4"
 252/texture = ExtResource( 172 )
-252/tex_offset = Vector2( 0, -13 )
+252/tex_offset = Vector2( 40, -13 )
 252/modulate = Color( 1, 1, 1, 1 )
 252/region = Rect2( 0, 0, 71, 102 )
 252/occluder_offset = Vector2( 35.5, 51 )
@@ -2567,7 +2567,7 @@
 252/shapes = [  ]
 253/name = "NATURE-TREE-TYPE6-5"
 253/texture = ExtResource( 173 )
-253/tex_offset = Vector2( 0, -9 )
+253/tex_offset = Vector2( 25.5, -9 )
 253/modulate = Color( 1, 1, 1, 1 )
 253/region = Rect2( 0, 0, 100, 94 )
 253/occluder_offset = Vector2( 50, 47 )
@@ -2576,7 +2576,7 @@
 253/shapes = [  ]
 254/name = "NATURE-TREE-TYPE6-1"
 254/texture = ExtResource( 174 )
-254/tex_offset = Vector2( 0, -31 )
+254/tex_offset = Vector2( 21, -31 )
 254/modulate = Color( 1, 1, 1, 1 )
 254/region = Rect2( 0, 0, 109, 138 )
 254/occluder_offset = Vector2( 54.5, 69 )
@@ -2585,7 +2585,7 @@
 254/shapes = [  ]
 255/name = "NATURE-TREE-TYPE6-2"
 255/texture = ExtResource( 175 )
-255/tex_offset = Vector2( 0, -18 )
+255/tex_offset = Vector2( 29.5, -18 )
 255/modulate = Color( 1, 1, 1, 1 )
 255/region = Rect2( 0, 0, 92, 112 )
 255/occluder_offset = Vector2( 46, 56 )
@@ -2594,7 +2594,7 @@
 255/shapes = [  ]
 256/name = "NATURE-TREE-TYPE6-7"
 256/texture = ExtResource( 176 )
-256/tex_offset = Vector2( 0, -28 )
+256/tex_offset = Vector2( 23.5, -28.5 )
 256/modulate = Color( 1, 1, 1, 1 )
 256/region = Rect2( 0, 0, 104, 133 )
 256/occluder_offset = Vector2( 52, 66.5 )
@@ -2603,7 +2603,7 @@
 256/shapes = [  ]
 257/name = "NATURE-TREE-TYPE6-6"
 257/texture = ExtResource( 177 )
-257/tex_offset = Vector2( 0, -29 )
+257/tex_offset = Vector2( 1, -29 )
 257/modulate = Color( 1, 1, 1, 1 )
 257/region = Rect2( 0, 0, 149, 134 )
 257/occluder_offset = Vector2( 74.5, 67 )
@@ -2612,7 +2612,7 @@
 257/shapes = [  ]
 258/name = "NATURE-TREE-TYPE6-3"
 258/texture = ExtResource( 178 )
-258/tex_offset = Vector2( 0, -30 )
+258/tex_offset = Vector2( 28, -30 )
 258/modulate = Color( 1, 1, 1, 1 )
 258/region = Rect2( 0, 0, 95, 136 )
 258/occluder_offset = Vector2( 47.5, 68 )
@@ -2621,7 +2621,7 @@
 258/shapes = [  ]
 259/name = "NATURE-TREE-TYPE6-4"
 259/texture = ExtResource( 179 )
-259/tex_offset = Vector2( 0, -31 )
+259/tex_offset = Vector2( 7.5, -31.5 )
 259/modulate = Color( 1, 1, 1, 1 )
 259/region = Rect2( 0, 0, 136, 139 )
 259/occluder_offset = Vector2( 68, 69.5 )
@@ -2630,7 +2630,7 @@
 259/shapes = [  ]
 260/name = "NATURE-TREE-TYPE8-1"
 260/texture = ExtResource( 181 )
-260/tex_offset = Vector2( 0, -60 )
+260/tex_offset = Vector2( -15, -60.5 )
 260/modulate = Color( 1, 1, 1, 1 )
 260/region = Rect2( 0, 0, 181, 197 )
 260/occluder_offset = Vector2( 90.5, 98.5 )
@@ -2639,7 +2639,7 @@
 260/shapes = [  ]
 261/name = "NATURE-TREE-TYPE8-2"
 261/texture = ExtResource( 182 )
-261/tex_offset = Vector2( 0, -67 )
+261/tex_offset = Vector2( -14.5, -67 )
 261/modulate = Color( 1, 1, 1, 1 )
 261/region = Rect2( 0, 0, 180, 210 )
 261/occluder_offset = Vector2( 90, 105 )
@@ -2648,7 +2648,7 @@
 261/shapes = [  ]
 262/name = "NATURE-TREE-TYPE8-3"
 262/texture = ExtResource( 183 )
-262/tex_offset = Vector2( 0, -67 )
+262/tex_offset = Vector2( -14.5, -67 )
 262/modulate = Color( 1, 1, 1, 1 )
 262/region = Rect2( 0, 0, 180, 210 )
 262/occluder_offset = Vector2( 90, 105 )
@@ -2657,7 +2657,7 @@
 262/shapes = [  ]
 263/name = "NATURE-TREE-TYPE8-4"
 263/texture = ExtResource( 184 )
-263/tex_offset = Vector2( 0, -67 )
+263/tex_offset = Vector2( -14.5, -67 )
 263/modulate = Color( 1, 1, 1, 1 )
 263/region = Rect2( 0, 0, 180, 210 )
 263/occluder_offset = Vector2( 90, 105 )
@@ -2666,7 +2666,7 @@
 263/shapes = [  ]
 264/name = "NATURE-TREE-TYPE9-1"
 264/texture = ExtResource( 185 )
-264/tex_offset = Vector2( 0, -56 )
+264/tex_offset = Vector2( 13, -56 )
 264/modulate = Color( 1, 1, 1, 1 )
 264/region = Rect2( 0, 0, 125, 188 )
 264/occluder_offset = Vector2( 62.5, 94 )
@@ -2675,7 +2675,7 @@
 264/shapes = [  ]
 265/name = "NATURE-TREE-TYPE9-2"
 265/texture = ExtResource( 186 )
-265/tex_offset = Vector2( 0, -80 )
+265/tex_offset = Vector2( -1, -80.5 )
 265/modulate = Color( 1, 1, 1, 1 )
 265/region = Rect2( 0, 0, 153, 237 )
 265/occluder_offset = Vector2( 76.5, 118.5 )
@@ -2684,7 +2684,7 @@
 265/shapes = [  ]
 266/name = "NATURE-TREE-TYPE9-3"
 266/texture = ExtResource( 187 )
-266/tex_offset = Vector2( 0, -80 )
+266/tex_offset = Vector2( -1, -80.5 )
 266/modulate = Color( 1, 1, 1, 1 )
 266/region = Rect2( 0, 0, 153, 237 )
 266/occluder_offset = Vector2( 76.5, 118.5 )
@@ -2693,7 +2693,7 @@
 266/shapes = [  ]
 267/name = "NATURE-TREE-TYPE10-12"
 267/texture = ExtResource( 188 )
-267/tex_offset = Vector2( 0, -22 )
+267/tex_offset = Vector2( 34, -22 )
 267/modulate = Color( 1, 1, 1, 1 )
 267/region = Rect2( 0, 0, 83, 120 )
 267/occluder_offset = Vector2( 41.5, 60 )
@@ -2702,7 +2702,7 @@
 267/shapes = [  ]
 268/name = "NATURE-TREE-TYPE10-18"
 268/texture = ExtResource( 189 )
-268/tex_offset = Vector2( 0, -22 )
+268/tex_offset = Vector2( 19.5, -22 )
 268/modulate = Color( 1, 1, 1, 1 )
 268/region = Rect2( 0, 0, 112, 120 )
 268/occluder_offset = Vector2( 56, 60 )
@@ -2711,7 +2711,7 @@
 268/shapes = [  ]
 269/name = "NATURE-TREE-TYPE10-15"
 269/texture = ExtResource( 190 )
-269/tex_offset = Vector2( 0, -22 )
+269/tex_offset = Vector2( 19, -22 )
 269/modulate = Color( 1, 1, 1, 1 )
 269/region = Rect2( 0, 0, 113, 120 )
 269/occluder_offset = Vector2( 56.5, 60 )
@@ -2720,7 +2720,7 @@
 269/shapes = [  ]
 270/name = "NATURE-TREE-TYPE10-10"
 270/texture = ExtResource( 192 )
-270/tex_offset = Vector2( 0, -22 )
+270/tex_offset = Vector2( 34, -22 )
 270/modulate = Color( 1, 1, 1, 1 )
 270/region = Rect2( 0, 0, 83, 120 )
 270/occluder_offset = Vector2( 41.5, 60 )
@@ -2729,7 +2729,7 @@
 270/shapes = [  ]
 271/name = "NATURE-TREE-TYPE10-5"
 271/texture = ExtResource( 193 )
-271/tex_offset = Vector2( 0, -37 )
+271/tex_offset = Vector2( 23.5, -37.5 )
 271/modulate = Color( 1, 1, 1, 1 )
 271/region = Rect2( 0, 0, 104, 151 )
 271/occluder_offset = Vector2( 52, 75.5 )
@@ -2738,7 +2738,7 @@
 271/shapes = [  ]
 272/name = "NATURE-TREE-TYPE10-8"
 272/texture = ExtResource( 194 )
-272/tex_offset = Vector2( 0, -22 )
+272/tex_offset = Vector2( 34, -22 )
 272/modulate = Color( 1, 1, 1, 1 )
 272/region = Rect2( 0, 0, 83, 120 )
 272/occluder_offset = Vector2( 41.5, 60 )
@@ -2747,7 +2747,7 @@
 272/shapes = [  ]
 273/name = "NATURE-TREE-TYPE10-1"
 273/texture = ExtResource( 195 )
-273/tex_offset = Vector2( 0, -37 )
+273/tex_offset = Vector2( 23.5, -37.5 )
 273/modulate = Color( 1, 1, 1, 1 )
 273/region = Rect2( 0, 0, 104, 151 )
 273/occluder_offset = Vector2( 52, 75.5 )
@@ -2756,7 +2756,7 @@
 273/shapes = [  ]
 274/name = "NATURE-TREE-TYPE10-11"
 274/texture = ExtResource( 196 )
-274/tex_offset = Vector2( 0, -22 )
+274/tex_offset = Vector2( 34, -22 )
 274/modulate = Color( 1, 1, 1, 1 )
 274/region = Rect2( 0, 0, 83, 120 )
 274/occluder_offset = Vector2( 41.5, 60 )
@@ -2765,7 +2765,7 @@
 274/shapes = [  ]
 275/name = "NATURE-TREE-TYPE10-9"
 275/texture = ExtResource( 197 )
-275/tex_offset = Vector2( 0, -22 )
+275/tex_offset = Vector2( 34, -22 )
 275/modulate = Color( 1, 1, 1, 1 )
 275/region = Rect2( 0, 0, 83, 120 )
 275/occluder_offset = Vector2( 41.5, 60 )
@@ -2774,7 +2774,7 @@
 275/shapes = [  ]
 276/name = "NATURE-TREE-TYPE10-16"
 276/texture = ExtResource( 198 )
-276/tex_offset = Vector2( 0, -22 )
+276/tex_offset = Vector2( 19, -22 )
 276/modulate = Color( 1, 1, 1, 1 )
 276/region = Rect2( 0, 0, 113, 120 )
 276/occluder_offset = Vector2( 56.5, 60 )
@@ -2783,7 +2783,7 @@
 276/shapes = [  ]
 277/name = "NATURE-TREE-TYPE10-17"
 277/texture = ExtResource( 199 )
-277/tex_offset = Vector2( 0, -22 )
+277/tex_offset = Vector2( 19, -22 )
 277/modulate = Color( 1, 1, 1, 1 )
 277/region = Rect2( 0, 0, 113, 120 )
 277/occluder_offset = Vector2( 56.5, 60 )
@@ -2792,7 +2792,7 @@
 277/shapes = [  ]
 278/name = "NATURE-TREE-TYPE10-2"
 278/texture = ExtResource( 200 )
-278/tex_offset = Vector2( 0, -37 )
+278/tex_offset = Vector2( 23.5, -37.5 )
 278/modulate = Color( 1, 1, 1, 1 )
 278/region = Rect2( 0, 0, 104, 151 )
 278/occluder_offset = Vector2( 52, 75.5 )
@@ -2801,7 +2801,7 @@
 278/shapes = [  ]
 279/name = "NATURE-TREE-TYPE10-13"
 279/texture = ExtResource( 201 )
-279/tex_offset = Vector2( 0, -22 )
+279/tex_offset = Vector2( 19, -22 )
 279/modulate = Color( 1, 1, 1, 1 )
 279/region = Rect2( 0, 0, 113, 120 )
 279/occluder_offset = Vector2( 56.5, 60 )
@@ -2810,7 +2810,7 @@
 279/shapes = [  ]
 280/name = "NATURE-TREE-TYPE10-14"
 280/texture = ExtResource( 203 )
-280/tex_offset = Vector2( 0, -22 )
+280/tex_offset = Vector2( 19.5, -22 )
 280/modulate = Color( 1, 1, 1, 1 )
 280/region = Rect2( 0, 0, 112, 120 )
 280/occluder_offset = Vector2( 56, 60 )
@@ -2819,7 +2819,7 @@
 280/shapes = [  ]
 281/name = "NATURE-TREE-TYPE10-7"
 281/texture = ExtResource( 204 )
-281/tex_offset = Vector2( 0, -22 )
+281/tex_offset = Vector2( 34, -22 )
 281/modulate = Color( 1, 1, 1, 1 )
 281/region = Rect2( 0, 0, 83, 120 )
 281/occluder_offset = Vector2( 41.5, 60 )
@@ -2828,7 +2828,7 @@
 281/shapes = [  ]
 282/name = "NATURE-TREE-TYPE10-6"
 282/texture = ExtResource( 205 )
-282/tex_offset = Vector2( 0, -37 )
+282/tex_offset = Vector2( 23.5, -37.5 )
 282/modulate = Color( 1, 1, 1, 1 )
 282/region = Rect2( 0, 0, 104, 151 )
 282/occluder_offset = Vector2( 52, 75.5 )
@@ -2837,7 +2837,7 @@
 282/shapes = [  ]
 283/name = "NATURE-TREE-TYPE10-3"
 283/texture = ExtResource( 206 )
-283/tex_offset = Vector2( 0, -37 )
+283/tex_offset = Vector2( 23.5, -37.5 )
 283/modulate = Color( 1, 1, 1, 1 )
 283/region = Rect2( 0, 0, 104, 151 )
 283/occluder_offset = Vector2( 52, 75.5 )
@@ -2846,7 +2846,7 @@
 283/shapes = [  ]
 284/name = "NATURE-TREE-TYPE10-4"
 284/texture = ExtResource( 207 )
-284/tex_offset = Vector2( 0, -37 )
+284/tex_offset = Vector2( 23.5, -37.5 )
 284/modulate = Color( 1, 1, 1, 1 )
 284/region = Rect2( 0, 0, 104, 151 )
 284/occluder_offset = Vector2( 52, 75.5 )
