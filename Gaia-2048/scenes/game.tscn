@@ -7,8 +7,6 @@
 [ext_resource path="res://tilesets/board_tile.tres" type="TileSet" id=5]
 [ext_resource path="res://audio/tribes_joining.ogg" type="AudioStream" id=6]
 
-
-
 [sub_resource type="SampleLibrary" id=1]
 
 samples/merge = {

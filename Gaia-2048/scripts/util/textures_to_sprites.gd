@@ -20,7 +20,9 @@ func _get_full_path(categories):
 
 
 func _get_file_name(file_path):
-	return file_path.replace(TILES_PATH, "").replace("/", "-").replace(".tex", "")
+	var file_name = file_path.substr(0, file_path.length() - 1)
+
+	return file_name.replace(TILES_PATH, "").replace("/", "-").replace(".tex", "")
 
 func _recursive_import(dir_path, categories):
 	var d = Directory.new()
@@ -32,14 +34,16 @@ func _recursive_import(dir_path, categories):
 	d.list_dir_begin()
 	name = d.get_next()
 
-	while (name != ""):
-		categories.append(name)
+	while name != "":
+		if name in [".", ".."]:
+			name = d.get_next()
+			continue
 
 		if d.current_is_dir():
-			var new_dir_path = _get_full_path(categories)
-			_recursive_import(new_dir_path, categories)
+			var new_dir_path = _get_full_path(categories + [name])
+			_recursive_import(new_dir_path, categories + [name])
 		else:
-			var file_path = _get_full_path(categories)
+			var file_path = _get_full_path(categories + [name])
 			_create_sprite(file_path)
 		
 		name = d.get_next()
