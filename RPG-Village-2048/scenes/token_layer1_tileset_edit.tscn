@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://tiles/human/street/road/left.tex" type="Texture" id=1]
+[ext_resource path="res://tiles/human/street/road/up.tex" type="Texture" id=2]
+[ext_resource path="res://tiles/human/street/road/right.tex" type="Texture" id=3]
+[ext_resource path="res://tiles/human/street/road/down.tex" type="Texture" id=4]
+[ext_resource path="res://tiles/human/street/road/road.tex" type="Texture" id=5]
+
+[node name="layer1_tileset_edit" type="Node"]
+
+[node name="human-street-road-left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1692, 9216 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 1.5 )
+
+[node name="human-street-road-up" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1859, 9216 )
+texture = ExtResource( 2 )
+
+[node name="human-street-road-right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2026, 9216 )
+texture = ExtResource( 3 )
+
+[node name="human-street-road-down" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 9728 )
+texture = ExtResource( 4 )
+offset = Vector2( 0, 0.5 )
+
+[node name="human-street-road-road" type="Sprite" parent="."]
+
+transform/pos = Vector2( 167, 9728 )
+texture = ExtResource( 5 )
+
+
