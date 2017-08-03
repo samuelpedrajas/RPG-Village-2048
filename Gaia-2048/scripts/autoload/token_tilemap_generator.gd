@@ -67,14 +67,15 @@ func _get_tile_dimensions(tile_id, tileset):
 
 	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
 
-func _even_spread(t, p):
+func _even_spread(t):
 	var keys = t.keys()
+	var p = (1.0 / keys.size()) * 100
 
 	for key in keys:
 		var c = t[key]
 		c.p = p
 		if "d" in c.keys():
-			_even_spread(c.d, (1.0 / keys.size()) * 100)
+			_even_spread(c.d)
 
 func _build_tree(d, tile_name, tileset, tile_id):
 	var c = tile_name[0]
@@ -101,26 +102,25 @@ func _init_probabilities():
 
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
-			var first_probabilities = (1.0 / default_probabilities[i].keys().size()) * 100
 			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
-			_even_spread(default_probabilities[i], first_probabilities)
+
+		_even_spread(default_probabilities[i])
 
 func _pick_random_tile(t):
 	var acc = 0.0
+	var r = randi() % 100
 
 	for key in t.keys():
 		var c = t[key]
 		var p = c.p
-		var r = randi() % 100
-
 		acc += p
-		if !acc > r:
+
+		if acc < r:
 			continue
 
 		if "d" in c.keys():
 			return _pick_random_tile(c.d)
-		else:
-			return c
+		return c
 
 func _pick_random_pos(i):
 	var m = MATRIX
@@ -225,27 +225,27 @@ func _put_floor(layer, level):
 	for i in range(total_size.x):
 		for j in range(total_size.y):
 			var cell_pos = Vector2(i, j)
-			var tile = name2id["TILE-WATER-13"]
+			var tile = name2id["floor-water-water"]
 
 			if center.has_point(cell_pos):
-				tile = name2id["TILE-GRASS-1"]
+				tile = name2id["floor-grass-grass"]
 			elif cell_pos == Vector2(bounds.down, bounds.left):
-				tile = name2id["TILE-WATER-9"]
+				tile = name2id["floor-water-out_corner-right"]
 			elif cell_pos == Vector2(bounds.down, bounds.right):
-				tile = name2id["TILE-WATER-10"]
+				tile = name2id["floor-water-out_corner-down"]
 			elif cell_pos == Vector2(bounds.up, bounds.right):
-				tile = name2id["TILE-WATER-11"]
+				tile = name2id["floor-water-out_corner-left"]
 			elif cell_pos == Vector2(bounds.up, bounds.left):
-				tile = name2id["TILE-WATER-12"]
+				tile = name2id["floor-water-out_corner-up"]
 			elif big_center.has_point(cell_pos): 
 				if cell_pos.x == bounds.right:
-					tile = name2id["TILE-WATER-1"]
+					tile = name2id["floor-water-borders-right"]
 				elif cell_pos.y == bounds.down:
-					tile = name2id["TILE-WATER-2"]
+					tile = name2id["floor-water-borders-down"]
 				elif cell_pos.x == bounds.left:
-					tile = name2id["TILE-WATER-3"]
+					tile = name2id["floor-water-borders-left"]
 				elif cell_pos.y == bounds.up:
-					tile = name2id["TILE-WATER-4"]
+					tile = name2id["floor-water-borders-up"]
 
 			layer.set_cell(i, j, tile)
 

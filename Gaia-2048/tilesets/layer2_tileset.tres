@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=314 format=1]
+[gd_resource type="TileSet" load_steps=294 format=1]
 
 [ext_resource path="res://tiles/nature/grass/tall/5.tex" type="Texture" id=1]
 [ext_resource path="res://tiles/nature/grass/tall/1.tex" type="Texture" id=2]
@@ -76,243 +76,223 @@
 [ext_resource path="res://tiles/nature/resources/stone/6.tex" type="Texture" id=74]
 [ext_resource path="res://tiles/nature/resources/stone/3.tex" type="Texture" id=75]
 [ext_resource path="res://tiles/nature/resources/stone/4.tex" type="Texture" id=76]
-[ext_resource path="res://tiles/floor/water/water.tex" type="Texture" id=77]
-[ext_resource path="res://tiles/floor/water/borders/left.tex" type="Texture" id=78]
-[ext_resource path="res://tiles/floor/water/borders/up.tex" type="Texture" id=79]
+[ext_resource path="res://tiles/human/characters/sword_man/attacking2.tex" type="Texture" id=77]
+[ext_resource path="res://tiles/human/characters/sword_man/defending.tex" type="Texture" id=78]
+[ext_resource path="res://tiles/human/characters/sword_man/walking.tex" type="Texture" id=79]
 [ext_resource path="res://tiles/nature/grass/plants/disperse/4.tex" type="Texture" id=80]
-[ext_resource path="res://tiles/floor/water/borders/right.tex" type="Texture" id=81]
-[ext_resource path="res://tiles/floor/water/borders/down.tex" type="Texture" id=82]
-[ext_resource path="res://tiles/floor/water/in_corners/left.tex" type="Texture" id=83]
-[ext_resource path="res://tiles/floor/water/in_corners/up.tex" type="Texture" id=84]
-[ext_resource path="res://tiles/floor/water/in_corners/right.tex" type="Texture" id=85]
-[ext_resource path="res://tiles/floor/water/in_corners/down.tex" type="Texture" id=86]
-[ext_resource path="res://tiles/floor/water/out_corner/left.tex" type="Texture" id=87]
-[ext_resource path="res://tiles/floor/water/out_corner/up.tex" type="Texture" id=88]
-[ext_resource path="res://tiles/floor/water/out_corner/right.tex" type="Texture" id=89]
-[ext_resource path="res://tiles/floor/water/out_corner/down.tex" type="Texture" id=90]
+[ext_resource path="res://tiles/human/characters/sword_man/dying.tex" type="Texture" id=81]
+[ext_resource path="res://tiles/human/characters/sword_man/sliding.tex" type="Texture" id=82]
+[ext_resource path="res://tiles/human/characters/sword_man/attacking.tex" type="Texture" id=83]
+[ext_resource path="res://tiles/human/characters/healer/attacking2.tex" type="Texture" id=84]
+[ext_resource path="res://tiles/human/characters/healer/defending.tex" type="Texture" id=85]
+[ext_resource path="res://tiles/human/characters/healer/walking.tex" type="Texture" id=86]
+[ext_resource path="res://tiles/human/characters/healer/dying.tex" type="Texture" id=87]
+[ext_resource path="res://tiles/human/characters/healer/healing.tex" type="Texture" id=88]
+[ext_resource path="res://tiles/human/characters/healer/sliding.tex" type="Texture" id=89]
+[ext_resource path="res://tiles/human/characters/healer/attacking.tex" type="Texture" id=90]
 [ext_resource path="res://tiles/nature/grass/plants/floor/1.tex" type="Texture" id=91]
-[ext_resource path="res://tiles/floor/grass/tall_grass.tex" type="Texture" id=92]
-[ext_resource path="res://tiles/floor/grass/grass.tex" type="Texture" id=93]
-[ext_resource path="res://tiles/floor/grass/flower_grass.tex" type="Texture" id=94]
-[ext_resource path="res://tiles/human/characters/sword_man/attacking2.tex" type="Texture" id=95]
-[ext_resource path="res://tiles/human/characters/sword_man/defending.tex" type="Texture" id=96]
-[ext_resource path="res://tiles/human/characters/sword_man/walking.tex" type="Texture" id=97]
-[ext_resource path="res://tiles/human/characters/sword_man/dying.tex" type="Texture" id=98]
-[ext_resource path="res://tiles/human/characters/sword_man/sliding.tex" type="Texture" id=99]
-[ext_resource path="res://tiles/human/characters/sword_man/attacking.tex" type="Texture" id=100]
-[ext_resource path="res://tiles/human/characters/healer/attacking2.tex" type="Texture" id=101]
+[ext_resource path="res://tiles/human/characters/archer/dying2.tex" type="Texture" id=92]
+[ext_resource path="res://tiles/human/characters/archer/defending.tex" type="Texture" id=93]
+[ext_resource path="res://tiles/human/characters/archer/walking.tex" type="Texture" id=94]
+[ext_resource path="res://tiles/human/characters/archer/dying.tex" type="Texture" id=95]
+[ext_resource path="res://tiles/human/characters/archer/falling.tex" type="Texture" id=96]
+[ext_resource path="res://tiles/human/characters/archer/sliding.tex" type="Texture" id=97]
+[ext_resource path="res://tiles/human/characters/archer/attacking.tex" type="Texture" id=98]
+[ext_resource path="res://tiles/human/forest/houses/double.tex" type="Texture" id=99]
+[ext_resource path="res://tiles/human/forest/houses/tend.tex" type="Texture" id=100]
+[ext_resource path="res://tiles/human/forest/houses/regular.tex" type="Texture" id=101]
 [ext_resource path="res://tiles/nature/grass/flowers/dispersed/5.tex" type="Texture" id=102]
-[ext_resource path="res://tiles/human/characters/healer/defending.tex" type="Texture" id=103]
-[ext_resource path="res://tiles/human/characters/healer/walking.tex" type="Texture" id=104]
-[ext_resource path="res://tiles/human/characters/healer/dying.tex" type="Texture" id=105]
-[ext_resource path="res://tiles/human/characters/healer/healing.tex" type="Texture" id=106]
-[ext_resource path="res://tiles/human/characters/healer/sliding.tex" type="Texture" id=107]
-[ext_resource path="res://tiles/human/characters/healer/attacking.tex" type="Texture" id=108]
-[ext_resource path="res://tiles/human/characters/archer/dying2.tex" type="Texture" id=109]
-[ext_resource path="res://tiles/human/characters/archer/defending.tex" type="Texture" id=110]
-[ext_resource path="res://tiles/human/characters/archer/walking.tex" type="Texture" id=111]
-[ext_resource path="res://tiles/human/characters/archer/dying.tex" type="Texture" id=112]
+[ext_resource path="res://tiles/human/forest/caves/gold.tex" type="Texture" id=103]
+[ext_resource path="res://tiles/human/forest/caves/stone.tex" type="Texture" id=104]
+[ext_resource path="res://tiles/human/forest/caves/silver.tex" type="Texture" id=105]
+[ext_resource path="res://tiles/human/forest/wood/working_place.tex" type="Texture" id=106]
+[ext_resource path="res://tiles/human/forest/wood/wall.tex" type="Texture" id=107]
+[ext_resource path="res://tiles/human/forest/wood/post.tex" type="Texture" id=108]
+[ext_resource path="res://tiles/human/street/misc/walls/1.tex" type="Texture" id=109]
+[ext_resource path="res://tiles/human/street/misc/walls/2.tex" type="Texture" id=110]
+[ext_resource path="res://tiles/human/street/misc/walls/3.tex" type="Texture" id=111]
+[ext_resource path="res://tiles/human/street/misc/other/fountain.tex" type="Texture" id=112]
 [ext_resource path="res://tiles/nature/grass/tall/2.tex" type="Texture" id=113]
 [ext_resource path="res://tiles/nature/grass/flowers/dispersed/1.tex" type="Texture" id=114]
-[ext_resource path="res://tiles/human/characters/archer/falling.tex" type="Texture" id=115]
-[ext_resource path="res://tiles/human/characters/archer/sliding.tex" type="Texture" id=116]
-[ext_resource path="res://tiles/human/characters/archer/attacking.tex" type="Texture" id=117]
-[ext_resource path="res://tiles/human/forest/houses/double.tex" type="Texture" id=118]
-[ext_resource path="res://tiles/human/forest/houses/tend.tex" type="Texture" id=119]
-[ext_resource path="res://tiles/human/forest/houses/regular.tex" type="Texture" id=120]
-[ext_resource path="res://tiles/human/forest/caves/gold.tex" type="Texture" id=121]
-[ext_resource path="res://tiles/human/forest/caves/stone.tex" type="Texture" id=122]
-[ext_resource path="res://tiles/human/forest/caves/silver.tex" type="Texture" id=123]
-[ext_resource path="res://tiles/human/forest/wood/working_place.tex" type="Texture" id=124]
+[ext_resource path="res://tiles/human/street/misc/other/light_post.tex" type="Texture" id=115]
+[ext_resource path="res://tiles/human/street/misc/other/well.tex" type="Texture" id=116]
+[ext_resource path="res://tiles/human/street/misc/other/magic_tower.tex" type="Texture" id=117]
+[ext_resource path="res://tiles/human/street/misc/other/portal.tex" type="Texture" id=118]
+[ext_resource path="res://tiles/human/street/misc/arrows/1.tex" type="Texture" id=119]
+[ext_resource path="res://tiles/human/street/misc/arrows/2.tex" type="Texture" id=120]
+[ext_resource path="res://tiles/human/street/misc/arrows/3.tex" type="Texture" id=121]
+[ext_resource path="res://tiles/human/street/misc/arrows/4.tex" type="Texture" id=122]
+[ext_resource path="res://tiles/human/street/misc/gates/1.tex" type="Texture" id=123]
+[ext_resource path="res://tiles/human/street/misc/gates/2.tex" type="Texture" id=124]
 [ext_resource path="res://tiles/nature/grass/flowers/dispersed/2.tex" type="Texture" id=125]
-[ext_resource path="res://tiles/human/forest/wood/wall.tex" type="Texture" id=126]
-[ext_resource path="res://tiles/human/forest/wood/post.tex" type="Texture" id=127]
-[ext_resource path="res://tiles/human/street/misc/walls/1.tex" type="Texture" id=128]
-[ext_resource path="res://tiles/human/street/misc/walls/2.tex" type="Texture" id=129]
-[ext_resource path="res://tiles/human/street/misc/walls/3.tex" type="Texture" id=130]
-[ext_resource path="res://tiles/human/street/misc/other/fountain.tex" type="Texture" id=131]
-[ext_resource path="res://tiles/human/street/misc/other/light_post.tex" type="Texture" id=132]
-[ext_resource path="res://tiles/human/street/misc/other/well.tex" type="Texture" id=133]
-[ext_resource path="res://tiles/human/street/misc/other/magic_tower.tex" type="Texture" id=134]
-[ext_resource path="res://tiles/human/street/misc/other/portal.tex" type="Texture" id=135]
+[ext_resource path="res://tiles/human/street/misc/chests/1.tex" type="Texture" id=126]
+[ext_resource path="res://tiles/human/street/misc/chests/2.tex" type="Texture" id=127]
+[ext_resource path="res://tiles/human/street/misc/trees/1.tex" type="Texture" id=128]
+[ext_resource path="res://tiles/human/street/misc/trees/2.tex" type="Texture" id=129]
+[ext_resource path="res://tiles/human/street/misc/trees/apple_tree.tex" type="Texture" id=130]
+[ext_resource path="res://tiles/human/street/buildings/12.tex" type="Texture" id=131]
+[ext_resource path="res://tiles/human/street/buildings/21.tex" type="Texture" id=132]
+[ext_resource path="res://tiles/human/street/buildings/18.tex" type="Texture" id=133]
+[ext_resource path="res://tiles/human/street/buildings/26.tex" type="Texture" id=134]
+[ext_resource path="res://tiles/human/street/buildings/15.tex" type="Texture" id=135]
 [ext_resource path="res://tiles/nature/grass/flowers/dispersed/3.tex" type="Texture" id=136]
-[ext_resource path="res://tiles/human/street/misc/arrows/1.tex" type="Texture" id=137]
-[ext_resource path="res://tiles/human/street/misc/arrows/2.tex" type="Texture" id=138]
-[ext_resource path="res://tiles/human/street/misc/arrows/3.tex" type="Texture" id=139]
-[ext_resource path="res://tiles/human/street/misc/arrows/4.tex" type="Texture" id=140]
-[ext_resource path="res://tiles/human/street/misc/gates/1.tex" type="Texture" id=141]
-[ext_resource path="res://tiles/human/street/misc/gates/2.tex" type="Texture" id=142]
-[ext_resource path="res://tiles/human/street/misc/chests/1.tex" type="Texture" id=143]
-[ext_resource path="res://tiles/human/street/misc/chests/2.tex" type="Texture" id=144]
-[ext_resource path="res://tiles/human/street/misc/trees/1.tex" type="Texture" id=145]
-[ext_resource path="res://tiles/human/street/misc/trees/2.tex" type="Texture" id=146]
+[ext_resource path="res://tiles/human/street/buildings/28.tex" type="Texture" id=137]
+[ext_resource path="res://tiles/human/street/buildings/10.tex" type="Texture" id=138]
+[ext_resource path="res://tiles/human/street/buildings/24.tex" type="Texture" id=139]
+[ext_resource path="res://tiles/human/street/buildings/5.tex" type="Texture" id=140]
+[ext_resource path="res://tiles/human/street/buildings/20.tex" type="Texture" id=141]
+[ext_resource path="res://tiles/human/street/buildings/8.tex" type="Texture" id=142]
+[ext_resource path="res://tiles/human/street/buildings/22.tex" type="Texture" id=143]
+[ext_resource path="res://tiles/human/street/buildings/1.tex" type="Texture" id=144]
+[ext_resource path="res://tiles/human/street/buildings/11.tex" type="Texture" id=145]
+[ext_resource path="res://tiles/human/street/buildings/9.tex" type="Texture" id=146]
 [ext_resource path="res://tiles/nature/grass/flowers/dispersed/4.tex" type="Texture" id=147]
-[ext_resource path="res://tiles/human/street/misc/trees/apple_tree.tex" type="Texture" id=148]
-[ext_resource path="res://tiles/human/street/buildings/12.tex" type="Texture" id=149]
-[ext_resource path="res://tiles/human/street/buildings/21.tex" type="Texture" id=150]
-[ext_resource path="res://tiles/human/street/buildings/18.tex" type="Texture" id=151]
-[ext_resource path="res://tiles/human/street/buildings/26.tex" type="Texture" id=152]
-[ext_resource path="res://tiles/human/street/buildings/15.tex" type="Texture" id=153]
-[ext_resource path="res://tiles/human/street/buildings/28.tex" type="Texture" id=154]
-[ext_resource path="res://tiles/human/street/buildings/10.tex" type="Texture" id=155]
-[ext_resource path="res://tiles/human/street/buildings/24.tex" type="Texture" id=156]
-[ext_resource path="res://tiles/human/street/buildings/5.tex" type="Texture" id=157]
+[ext_resource path="res://tiles/human/street/buildings/16.tex" type="Texture" id=148]
+[ext_resource path="res://tiles/human/street/buildings/23.tex" type="Texture" id=149]
+[ext_resource path="res://tiles/human/street/buildings/17.tex" type="Texture" id=150]
+[ext_resource path="res://tiles/human/street/buildings/2.tex" type="Texture" id=151]
+[ext_resource path="res://tiles/human/street/buildings/27.tex" type="Texture" id=152]
+[ext_resource path="res://tiles/human/street/buildings/25.tex" type="Texture" id=153]
+[ext_resource path="res://tiles/human/street/buildings/13.tex" type="Texture" id=154]
+[ext_resource path="res://tiles/human/street/buildings/14.tex" type="Texture" id=155]
+[ext_resource path="res://tiles/human/street/buildings/19.tex" type="Texture" id=156]
+[ext_resource path="res://tiles/human/street/buildings/7.tex" type="Texture" id=157]
 [ext_resource path="res://tiles/nature/grass/flowers/floor/1.tex" type="Texture" id=158]
-[ext_resource path="res://tiles/human/street/buildings/20.tex" type="Texture" id=159]
-[ext_resource path="res://tiles/human/street/buildings/8.tex" type="Texture" id=160]
-[ext_resource path="res://tiles/human/street/buildings/22.tex" type="Texture" id=161]
-[ext_resource path="res://tiles/human/street/buildings/1.tex" type="Texture" id=162]
-[ext_resource path="res://tiles/human/street/buildings/11.tex" type="Texture" id=163]
-[ext_resource path="res://tiles/human/street/buildings/9.tex" type="Texture" id=164]
-[ext_resource path="res://tiles/human/street/buildings/16.tex" type="Texture" id=165]
-[ext_resource path="res://tiles/human/street/buildings/23.tex" type="Texture" id=166]
-[ext_resource path="res://tiles/human/street/buildings/17.tex" type="Texture" id=167]
-[ext_resource path="res://tiles/human/street/buildings/2.tex" type="Texture" id=168]
+[ext_resource path="res://tiles/human/street/buildings/6.tex" type="Texture" id=159]
+[ext_resource path="res://tiles/human/street/buildings/3.tex" type="Texture" id=160]
+[ext_resource path="res://tiles/human/street/buildings/4.tex" type="Texture" id=161]
+[ext_resource path="res://tiles/human/street/road/left.tex" type="Texture" id=162]
+[ext_resource path="res://tiles/human/street/towers/1.tex" type="Texture" id=163]
+[ext_resource path="res://tiles/human/street/towers/2.tex" type="Texture" id=164]
+[ext_resource path="res://tiles/human/street/towers/3.tex" type="Texture" id=165]
+[ext_resource path="res://tiles/human/street/castles/1.tex" type="Texture" id=166]
+[ext_resource path="res://tiles/human/street/castles/2.tex" type="Texture" id=167]
+[ext_resource path="res://tiles/human/street/castles/3.tex" type="Texture" id=168]
 [ext_resource path="res://tiles/nature/grass/flowers/floor/2.tex" type="Texture" id=169]
-[ext_resource path="res://tiles/human/street/buildings/27.tex" type="Texture" id=170]
-[ext_resource path="res://tiles/human/street/buildings/25.tex" type="Texture" id=171]
-[ext_resource path="res://tiles/human/street/buildings/13.tex" type="Texture" id=172]
-[ext_resource path="res://tiles/human/street/buildings/14.tex" type="Texture" id=173]
-[ext_resource path="res://tiles/human/street/buildings/19.tex" type="Texture" id=174]
-[ext_resource path="res://tiles/human/street/buildings/7.tex" type="Texture" id=175]
-[ext_resource path="res://tiles/human/street/buildings/6.tex" type="Texture" id=176]
-[ext_resource path="res://tiles/human/street/buildings/3.tex" type="Texture" id=177]
-[ext_resource path="res://tiles/human/street/buildings/4.tex" type="Texture" id=178]
-[ext_resource path="res://tiles/human/street/road/left.tex" type="Texture" id=179]
+[ext_resource path="res://tiles/human/street/castles/4.tex" type="Texture" id=170]
+[ext_resource path="res://tiles/human/resources/containers/empty/1.tex" type="Texture" id=171]
+[ext_resource path="res://tiles/human/resources/containers/empty/2.tex" type="Texture" id=172]
+[ext_resource path="res://tiles/human/resources/containers/empty/3.tex" type="Texture" id=173]
+[ext_resource path="res://tiles/human/resources/containers/full/1.tex" type="Texture" id=174]
+[ext_resource path="res://tiles/human/resources/containers/full/2.tex" type="Texture" id=175]
+[ext_resource path="res://tiles/human/resources/containers/full/3.tex" type="Texture" id=176]
+[ext_resource path="res://tiles/human/resources/containers/full/4.tex" type="Texture" id=177]
+[ext_resource path="res://tiles/human/resources/containers/closed/1.tex" type="Texture" id=178]
+[ext_resource path="res://tiles/human/resources/containers/closed/2.tex" type="Texture" id=179]
 [ext_resource path="res://tiles/nature/grass/flowers/floor/3.tex" type="Texture" id=180]
-[ext_resource path="res://tiles/human/street/road/up.tex" type="Texture" id=181]
-[ext_resource path="res://tiles/human/street/road/right.tex" type="Texture" id=182]
-[ext_resource path="res://tiles/human/street/road/down.tex" type="Texture" id=183]
-[ext_resource path="res://tiles/human/street/road/road.tex" type="Texture" id=184]
-[ext_resource path="res://tiles/human/street/towers/1.tex" type="Texture" id=185]
-[ext_resource path="res://tiles/human/street/towers/2.tex" type="Texture" id=186]
-[ext_resource path="res://tiles/human/street/towers/3.tex" type="Texture" id=187]
-[ext_resource path="res://tiles/human/street/castles/1.tex" type="Texture" id=188]
-[ext_resource path="res://tiles/human/street/castles/2.tex" type="Texture" id=189]
-[ext_resource path="res://tiles/human/street/castles/3.tex" type="Texture" id=190]
+[ext_resource path="res://tiles/human/resources/containers/closed/3.tex" type="Texture" id=181]
+[ext_resource path="res://tiles/human/resources/containers/closed/4.tex" type="Texture" id=182]
+[ext_resource path="res://tiles/human/resources/bronze/1.tex" type="Texture" id=183]
+[ext_resource path="res://tiles/human/resources/bronze/2.tex" type="Texture" id=184]
+[ext_resource path="res://tiles/human/resources/bronze/3.tex" type="Texture" id=185]
+[ext_resource path="res://tiles/human/resources/farming/12.tex" type="Texture" id=186]
+[ext_resource path="res://tiles/human/resources/farming/10.tex" type="Texture" id=187]
+[ext_resource path="res://tiles/human/resources/farming/5.tex" type="Texture" id=188]
+[ext_resource path="res://tiles/human/resources/farming/8.tex" type="Texture" id=189]
+[ext_resource path="res://tiles/human/resources/farming/1.tex" type="Texture" id=190]
 [ext_resource path="res://tiles/nature/trees/palm_trees/10.tex" type="Texture" id=191]
-[ext_resource path="res://tiles/human/street/castles/4.tex" type="Texture" id=192]
-[ext_resource path="res://tiles/human/resources/containers/empty/1.tex" type="Texture" id=193]
-[ext_resource path="res://tiles/human/resources/containers/empty/2.tex" type="Texture" id=194]
-[ext_resource path="res://tiles/human/resources/containers/empty/3.tex" type="Texture" id=195]
-[ext_resource path="res://tiles/human/resources/containers/full/1.tex" type="Texture" id=196]
-[ext_resource path="res://tiles/human/resources/containers/full/2.tex" type="Texture" id=197]
-[ext_resource path="res://tiles/human/resources/containers/full/3.tex" type="Texture" id=198]
-[ext_resource path="res://tiles/human/resources/containers/full/4.tex" type="Texture" id=199]
-[ext_resource path="res://tiles/human/resources/containers/closed/1.tex" type="Texture" id=200]
-[ext_resource path="res://tiles/human/resources/containers/closed/2.tex" type="Texture" id=201]
+[ext_resource path="res://tiles/human/resources/farming/11.tex" type="Texture" id=192]
+[ext_resource path="res://tiles/human/resources/farming/9.tex" type="Texture" id=193]
+[ext_resource path="res://tiles/human/resources/farming/2.tex" type="Texture" id=194]
+[ext_resource path="res://tiles/human/resources/farming/13.tex" type="Texture" id=195]
+[ext_resource path="res://tiles/human/resources/farming/14.tex" type="Texture" id=196]
+[ext_resource path="res://tiles/human/resources/farming/7.tex" type="Texture" id=197]
+[ext_resource path="res://tiles/human/resources/farming/6.tex" type="Texture" id=198]
+[ext_resource path="res://tiles/human/resources/farming/3.tex" type="Texture" id=199]
+[ext_resource path="res://tiles/human/resources/farming/4.tex" type="Texture" id=200]
+[ext_resource path="res://tiles/human/resources/gold/1.tex" type="Texture" id=201]
 [ext_resource path="res://tiles/nature/trees/palm_trees/5.tex" type="Texture" id=202]
-[ext_resource path="res://tiles/human/resources/containers/closed/3.tex" type="Texture" id=203]
-[ext_resource path="res://tiles/human/resources/containers/closed/4.tex" type="Texture" id=204]
-[ext_resource path="res://tiles/human/resources/bronze/1.tex" type="Texture" id=205]
-[ext_resource path="res://tiles/human/resources/bronze/2.tex" type="Texture" id=206]
-[ext_resource path="res://tiles/human/resources/bronze/3.tex" type="Texture" id=207]
-[ext_resource path="res://tiles/human/resources/farming/12.tex" type="Texture" id=208]
-[ext_resource path="res://tiles/human/resources/farming/10.tex" type="Texture" id=209]
-[ext_resource path="res://tiles/human/resources/farming/5.tex" type="Texture" id=210]
-[ext_resource path="res://tiles/human/resources/farming/8.tex" type="Texture" id=211]
-[ext_resource path="res://tiles/human/resources/farming/1.tex" type="Texture" id=212]
+[ext_resource path="res://tiles/human/resources/gold/2.tex" type="Texture" id=203]
+[ext_resource path="res://tiles/human/resources/gold/3.tex" type="Texture" id=204]
+[ext_resource path="res://tiles/human/resources/silver/1.tex" type="Texture" id=205]
+[ext_resource path="res://tiles/human/resources/silver/2.tex" type="Texture" id=206]
+[ext_resource path="res://tiles/human/resources/silver/3.tex" type="Texture" id=207]
+[ext_resource path="res://tiles/human/resources/wood/1.tex" type="Texture" id=208]
+[ext_resource path="res://tiles/human/resources/wood/2.tex" type="Texture" id=209]
+[ext_resource path="res://tiles/human/resources/wood/3.tex" type="Texture" id=210]
+[ext_resource path="res://tiles/human/resources/wood/4.tex" type="Texture" id=211]
+[ext_resource path="res://tiles/human/resources/stone/1.tex" type="Texture" id=212]
 [ext_resource path="res://tiles/nature/trees/palm_trees/8.tex" type="Texture" id=213]
-[ext_resource path="res://tiles/human/resources/farming/11.tex" type="Texture" id=214]
-[ext_resource path="res://tiles/human/resources/farming/9.tex" type="Texture" id=215]
-[ext_resource path="res://tiles/human/resources/farming/2.tex" type="Texture" id=216]
-[ext_resource path="res://tiles/human/resources/farming/13.tex" type="Texture" id=217]
-[ext_resource path="res://tiles/human/resources/farming/14.tex" type="Texture" id=218]
-[ext_resource path="res://tiles/human/resources/farming/7.tex" type="Texture" id=219]
-[ext_resource path="res://tiles/human/resources/farming/6.tex" type="Texture" id=220]
-[ext_resource path="res://tiles/human/resources/farming/3.tex" type="Texture" id=221]
-[ext_resource path="res://tiles/human/resources/farming/4.tex" type="Texture" id=222]
-[ext_resource path="res://tiles/human/resources/gold/1.tex" type="Texture" id=223]
-[ext_resource path="res://tiles/nature/grass/tall/7.tex" type="Texture" id=224]
-[ext_resource path="res://tiles/nature/trees/palm_trees/1.tex" type="Texture" id=225]
-[ext_resource path="res://tiles/human/resources/gold/2.tex" type="Texture" id=226]
-[ext_resource path="res://tiles/human/resources/gold/3.tex" type="Texture" id=227]
-[ext_resource path="res://tiles/human/resources/silver/1.tex" type="Texture" id=228]
-[ext_resource path="res://tiles/human/resources/silver/2.tex" type="Texture" id=229]
-[ext_resource path="res://tiles/human/resources/silver/3.tex" type="Texture" id=230]
-[ext_resource path="res://tiles/human/resources/wood/1.tex" type="Texture" id=231]
-[ext_resource path="res://tiles/human/resources/wood/2.tex" type="Texture" id=232]
-[ext_resource path="res://tiles/human/resources/wood/3.tex" type="Texture" id=233]
-[ext_resource path="res://tiles/human/resources/wood/4.tex" type="Texture" id=234]
-[ext_resource path="res://tiles/human/resources/stone/1.tex" type="Texture" id=235]
-[ext_resource path="res://tiles/nature/trees/palm_trees/9.tex" type="Texture" id=236]
-[ext_resource path="res://tiles/human/resources/stone/2.tex" type="Texture" id=237]
-[ext_resource path="res://tiles/human/resources/stone/3.tex" type="Texture" id=238]
-[ext_resource path="res://tiles/human/resources/stone/4.tex" type="Texture" id=239]
-[ext_resource path="res://tiles/nature/trees/palm_trees/2.tex" type="Texture" id=240]
-[ext_resource path="res://tiles/nature/trees/palm_trees/7.tex" type="Texture" id=241]
-[ext_resource path="res://tiles/nature/trees/palm_trees/6.tex" type="Texture" id=242]
-[ext_resource path="res://tiles/nature/trees/palm_trees/3.tex" type="Texture" id=243]
-[ext_resource path="res://tiles/nature/trees/palm_trees/4.tex" type="Texture" id=244]
-[ext_resource path="res://tiles/nature/trees/flower_trees/1.tex" type="Texture" id=245]
-[ext_resource path="res://tiles/nature/trees/flower_trees/2.tex" type="Texture" id=246]
-[ext_resource path="res://tiles/nature/trees/flower_trees/3.tex" type="Texture" id=247]
-[ext_resource path="res://tiles/nature/grass/tall/6.tex" type="Texture" id=248]
-[ext_resource path="res://tiles/nature/trees/flower_trees/4.tex" type="Texture" id=249]
-[ext_resource path="res://tiles/nature/trees/type6/12.tex" type="Texture" id=250]
-[ext_resource path="res://tiles/nature/trees/type6/10.tex" type="Texture" id=251]
-[ext_resource path="res://tiles/nature/trees/type6/5.tex" type="Texture" id=252]
-[ext_resource path="res://tiles/nature/trees/type6/8.tex" type="Texture" id=253]
-[ext_resource path="res://tiles/nature/trees/type6/1.tex" type="Texture" id=254]
-[ext_resource path="res://tiles/nature/trees/type6/11.tex" type="Texture" id=255]
-[ext_resource path="res://tiles/nature/trees/type6/9.tex" type="Texture" id=256]
-[ext_resource path="res://tiles/nature/trees/type6/2.tex" type="Texture" id=257]
-[ext_resource path="res://tiles/nature/trees/type6/13.tex" type="Texture" id=258]
-[ext_resource path="res://tiles/nature/grass/tall/3.tex" type="Texture" id=259]
-[ext_resource path="res://tiles/nature/trees/type6/7.tex" type="Texture" id=260]
-[ext_resource path="res://tiles/nature/trees/type6/6.tex" type="Texture" id=261]
-[ext_resource path="res://tiles/nature/trees/type6/3.tex" type="Texture" id=262]
-[ext_resource path="res://tiles/nature/trees/type6/4.tex" type="Texture" id=263]
-[ext_resource path="res://tiles/nature/trees/type5/1.tex" type="Texture" id=264]
-[ext_resource path="res://tiles/nature/trees/type5/2.tex" type="Texture" id=265]
-[ext_resource path="res://tiles/nature/trees/type5/3.tex" type="Texture" id=266]
-[ext_resource path="res://tiles/nature/trees/type5/4.tex" type="Texture" id=267]
-[ext_resource path="res://tiles/nature/trees/type4/12.tex" type="Texture" id=268]
-[ext_resource path="res://tiles/nature/trees/type4/18.tex" type="Texture" id=269]
-[ext_resource path="res://tiles/nature/grass/tall/4.tex" type="Texture" id=270]
-[ext_resource path="res://tiles/nature/trees/type4/15.tex" type="Texture" id=271]
-[ext_resource path="res://tiles/nature/trees/type4/10.tex" type="Texture" id=272]
-[ext_resource path="res://tiles/nature/trees/type4/5.tex" type="Texture" id=273]
-[ext_resource path="res://tiles/nature/trees/type4/8.tex" type="Texture" id=274]
-[ext_resource path="res://tiles/nature/trees/type4/1.tex" type="Texture" id=275]
-[ext_resource path="res://tiles/nature/trees/type4/11.tex" type="Texture" id=276]
-[ext_resource path="res://tiles/nature/trees/type4/9.tex" type="Texture" id=277]
-[ext_resource path="res://tiles/nature/trees/type4/16.tex" type="Texture" id=278]
-[ext_resource path="res://tiles/nature/trees/type4/17.tex" type="Texture" id=279]
-[ext_resource path="res://tiles/nature/trees/type4/2.tex" type="Texture" id=280]
-[ext_resource path="res://tiles/nature/grass/plants/disperse/10.tex" type="Texture" id=281]
-[ext_resource path="res://tiles/nature/trees/type4/13.tex" type="Texture" id=282]
-[ext_resource path="res://tiles/nature/trees/type4/14.tex" type="Texture" id=283]
-[ext_resource path="res://tiles/nature/trees/type4/7.tex" type="Texture" id=284]
-[ext_resource path="res://tiles/nature/trees/type4/6.tex" type="Texture" id=285]
-[ext_resource path="res://tiles/nature/trees/type4/3.tex" type="Texture" id=286]
-[ext_resource path="res://tiles/nature/trees/type4/4.tex" type="Texture" id=287]
-[ext_resource path="res://tiles/nature/trees/type2/5.tex" type="Texture" id=288]
-[ext_resource path="res://tiles/nature/trees/type2/1.tex" type="Texture" id=289]
-[ext_resource path="res://tiles/nature/trees/type2/2.tex" type="Texture" id=290]
-[ext_resource path="res://tiles/nature/trees/type2/6.tex" type="Texture" id=291]
-[ext_resource path="res://tiles/nature/grass/plants/disperse/5.tex" type="Texture" id=292]
-[ext_resource path="res://tiles/nature/trees/type2/3.tex" type="Texture" id=293]
-[ext_resource path="res://tiles/nature/trees/type2/4.tex" type="Texture" id=294]
-[ext_resource path="res://tiles/nature/trees/pine_trees/5.tex" type="Texture" id=295]
-[ext_resource path="res://tiles/nature/trees/pine_trees/1.tex" type="Texture" id=296]
-[ext_resource path="res://tiles/nature/trees/pine_trees/2.tex" type="Texture" id=297]
-[ext_resource path="res://tiles/nature/trees/pine_trees/6.tex" type="Texture" id=298]
-[ext_resource path="res://tiles/nature/trees/pine_trees/3.tex" type="Texture" id=299]
-[ext_resource path="res://tiles/nature/trees/pine_trees/4.tex" type="Texture" id=300]
-[ext_resource path="res://tiles/nature/trees/type3/5.tex" type="Texture" id=301]
-[ext_resource path="res://tiles/nature/trees/type3/1.tex" type="Texture" id=302]
-[ext_resource path="res://tiles/nature/grass/plants/disperse/8.tex" type="Texture" id=303]
-[ext_resource path="res://tiles/nature/trees/type3/2.tex" type="Texture" id=304]
-[ext_resource path="res://tiles/nature/trees/type3/6.tex" type="Texture" id=305]
-[ext_resource path="res://tiles/nature/trees/type3/3.tex" type="Texture" id=306]
-[ext_resource path="res://tiles/nature/trees/type3/4.tex" type="Texture" id=307]
-[ext_resource path="res://tiles/nature/trees/type1/1.tex" type="Texture" id=308]
-[ext_resource path="res://tiles/nature/trees/type1/2.tex" type="Texture" id=309]
-[ext_resource path="res://tiles/nature/trees/type1/3.tex" type="Texture" id=310]
-[ext_resource path="res://tiles/nature/trees/type1/4.tex" type="Texture" id=311]
-[ext_resource path="res://tiles/nature/plants/carnivour/5.tex" type="Texture" id=312]
-[ext_resource path="res://tiles/nature/plants/carnivour/1.tex" type="Texture" id=313]
+[ext_resource path="res://tiles/human/resources/stone/2.tex" type="Texture" id=214]
+[ext_resource path="res://tiles/human/resources/stone/3.tex" type="Texture" id=215]
+[ext_resource path="res://tiles/human/resources/stone/4.tex" type="Texture" id=216]
+[ext_resource path="res://tiles/nature/grass/tall/7.tex" type="Texture" id=217]
+[ext_resource path="res://tiles/nature/trees/palm_trees/1.tex" type="Texture" id=218]
+[ext_resource path="res://tiles/nature/trees/palm_trees/9.tex" type="Texture" id=219]
+[ext_resource path="res://tiles/nature/trees/palm_trees/2.tex" type="Texture" id=220]
+[ext_resource path="res://tiles/nature/trees/palm_trees/7.tex" type="Texture" id=221]
+[ext_resource path="res://tiles/nature/trees/palm_trees/6.tex" type="Texture" id=222]
+[ext_resource path="res://tiles/nature/trees/palm_trees/3.tex" type="Texture" id=223]
+[ext_resource path="res://tiles/nature/trees/palm_trees/4.tex" type="Texture" id=224]
+[ext_resource path="res://tiles/nature/trees/flower_trees/1.tex" type="Texture" id=225]
+[ext_resource path="res://tiles/nature/trees/flower_trees/2.tex" type="Texture" id=226]
+[ext_resource path="res://tiles/nature/trees/flower_trees/3.tex" type="Texture" id=227]
+[ext_resource path="res://tiles/nature/grass/tall/6.tex" type="Texture" id=228]
+[ext_resource path="res://tiles/nature/trees/flower_trees/4.tex" type="Texture" id=229]
+[ext_resource path="res://tiles/nature/trees/type6/12.tex" type="Texture" id=230]
+[ext_resource path="res://tiles/nature/trees/type6/10.tex" type="Texture" id=231]
+[ext_resource path="res://tiles/nature/trees/type6/5.tex" type="Texture" id=232]
+[ext_resource path="res://tiles/nature/trees/type6/8.tex" type="Texture" id=233]
+[ext_resource path="res://tiles/nature/trees/type6/1.tex" type="Texture" id=234]
+[ext_resource path="res://tiles/nature/trees/type6/11.tex" type="Texture" id=235]
+[ext_resource path="res://tiles/nature/trees/type6/9.tex" type="Texture" id=236]
+[ext_resource path="res://tiles/nature/trees/type6/2.tex" type="Texture" id=237]
+[ext_resource path="res://tiles/nature/trees/type6/13.tex" type="Texture" id=238]
+[ext_resource path="res://tiles/nature/grass/tall/3.tex" type="Texture" id=239]
+[ext_resource path="res://tiles/nature/trees/type6/7.tex" type="Texture" id=240]
+[ext_resource path="res://tiles/nature/trees/type6/6.tex" type="Texture" id=241]
+[ext_resource path="res://tiles/nature/trees/type6/3.tex" type="Texture" id=242]
+[ext_resource path="res://tiles/nature/trees/type6/4.tex" type="Texture" id=243]
+[ext_resource path="res://tiles/nature/trees/type5/1.tex" type="Texture" id=244]
+[ext_resource path="res://tiles/nature/trees/type5/2.tex" type="Texture" id=245]
+[ext_resource path="res://tiles/nature/trees/type5/3.tex" type="Texture" id=246]
+[ext_resource path="res://tiles/nature/trees/type5/4.tex" type="Texture" id=247]
+[ext_resource path="res://tiles/nature/trees/type4/12.tex" type="Texture" id=248]
+[ext_resource path="res://tiles/nature/trees/type4/18.tex" type="Texture" id=249]
+[ext_resource path="res://tiles/nature/grass/tall/4.tex" type="Texture" id=250]
+[ext_resource path="res://tiles/nature/trees/type4/15.tex" type="Texture" id=251]
+[ext_resource path="res://tiles/nature/trees/type4/10.tex" type="Texture" id=252]
+[ext_resource path="res://tiles/nature/trees/type4/5.tex" type="Texture" id=253]
+[ext_resource path="res://tiles/nature/trees/type4/8.tex" type="Texture" id=254]
+[ext_resource path="res://tiles/nature/trees/type4/1.tex" type="Texture" id=255]
+[ext_resource path="res://tiles/nature/trees/type4/11.tex" type="Texture" id=256]
+[ext_resource path="res://tiles/nature/trees/type4/9.tex" type="Texture" id=257]
+[ext_resource path="res://tiles/nature/trees/type4/16.tex" type="Texture" id=258]
+[ext_resource path="res://tiles/nature/trees/type4/17.tex" type="Texture" id=259]
+[ext_resource path="res://tiles/nature/trees/type4/2.tex" type="Texture" id=260]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/10.tex" type="Texture" id=261]
+[ext_resource path="res://tiles/nature/trees/type4/13.tex" type="Texture" id=262]
+[ext_resource path="res://tiles/nature/trees/type4/14.tex" type="Texture" id=263]
+[ext_resource path="res://tiles/nature/trees/type4/7.tex" type="Texture" id=264]
+[ext_resource path="res://tiles/nature/trees/type4/6.tex" type="Texture" id=265]
+[ext_resource path="res://tiles/nature/trees/type4/3.tex" type="Texture" id=266]
+[ext_resource path="res://tiles/nature/trees/type4/4.tex" type="Texture" id=267]
+[ext_resource path="res://tiles/nature/trees/type2/5.tex" type="Texture" id=268]
+[ext_resource path="res://tiles/nature/trees/type2/1.tex" type="Texture" id=269]
+[ext_resource path="res://tiles/nature/trees/type2/2.tex" type="Texture" id=270]
+[ext_resource path="res://tiles/nature/trees/type2/6.tex" type="Texture" id=271]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/5.tex" type="Texture" id=272]
+[ext_resource path="res://tiles/nature/trees/type2/3.tex" type="Texture" id=273]
+[ext_resource path="res://tiles/nature/trees/type2/4.tex" type="Texture" id=274]
+[ext_resource path="res://tiles/nature/trees/pine_trees/5.tex" type="Texture" id=275]
+[ext_resource path="res://tiles/nature/trees/pine_trees/1.tex" type="Texture" id=276]
+[ext_resource path="res://tiles/nature/trees/pine_trees/2.tex" type="Texture" id=277]
+[ext_resource path="res://tiles/nature/trees/pine_trees/6.tex" type="Texture" id=278]
+[ext_resource path="res://tiles/nature/trees/pine_trees/3.tex" type="Texture" id=279]
+[ext_resource path="res://tiles/nature/trees/pine_trees/4.tex" type="Texture" id=280]
+[ext_resource path="res://tiles/nature/trees/type3/5.tex" type="Texture" id=281]
+[ext_resource path="res://tiles/nature/trees/type3/1.tex" type="Texture" id=282]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/8.tex" type="Texture" id=283]
+[ext_resource path="res://tiles/nature/trees/type3/2.tex" type="Texture" id=284]
+[ext_resource path="res://tiles/nature/trees/type3/6.tex" type="Texture" id=285]
+[ext_resource path="res://tiles/nature/trees/type3/3.tex" type="Texture" id=286]
+[ext_resource path="res://tiles/nature/trees/type3/4.tex" type="Texture" id=287]
+[ext_resource path="res://tiles/nature/trees/type1/1.tex" type="Texture" id=288]
+[ext_resource path="res://tiles/nature/trees/type1/2.tex" type="Texture" id=289]
+[ext_resource path="res://tiles/nature/trees/type1/3.tex" type="Texture" id=290]
+[ext_resource path="res://tiles/nature/trees/type1/4.tex" type="Texture" id=291]
+[ext_resource path="res://tiles/nature/plants/carnivour/5.tex" type="Texture" id=292]
+[ext_resource path="res://tiles/nature/plants/carnivour/1.tex" type="Texture" id=293]
 
 [resource]
 
@@ -344,7 +324,7 @@
 2/shape_offset = Vector2( 0, 0 )
 2/shapes = [  ]
 3/name = "nature-grass-tall-7"
-3/texture = ExtResource( 224 )
+3/texture = ExtResource( 217 )
 3/tex_offset = Vector2( 6, -25 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 0, 0, 139, 126 )
@@ -353,7 +333,7 @@
 3/shape_offset = Vector2( 0, 0 )
 3/shapes = [  ]
 4/name = "nature-grass-tall-6"
-4/texture = ExtResource( 248 )
+4/texture = ExtResource( 228 )
 4/tex_offset = Vector2( 6.5, 0.5 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 0, 138, 75 )
@@ -362,7 +342,7 @@
 4/shape_offset = Vector2( 0, 0 )
 4/shapes = [  ]
 5/name = "nature-grass-tall-3"
-5/texture = ExtResource( 259 )
+5/texture = ExtResource( 239 )
 5/tex_offset = Vector2( 15, -11.5 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 0, 121, 99 )
@@ -371,7 +351,7 @@
 5/shape_offset = Vector2( 0, 0 )
 5/shapes = [  ]
 6/name = "nature-grass-tall-4"
-6/texture = ExtResource( 270 )
+6/texture = ExtResource( 250 )
 6/tex_offset = Vector2( 23.5, -5.5 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 104, 87 )
@@ -380,7 +360,7 @@
 6/shape_offset = Vector2( 0, 0 )
 6/shapes = [  ]
 7/name = "nature-grass-plants-disperse-10"
-7/texture = ExtResource( 281 )
+7/texture = ExtResource( 261 )
 7/tex_offset = Vector2( 19.5, -3.5 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 0, 0, 112, 83 )
@@ -389,7 +369,7 @@
 7/shape_offset = Vector2( 0, 0 )
 7/shapes = [  ]
 8/name = "nature-grass-plants-disperse-5"
-8/texture = ExtResource( 292 )
+8/texture = ExtResource( 272 )
 8/tex_offset = Vector2( 19.5, -3.5 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 0, 112, 83 )
@@ -398,7 +378,7 @@
 8/shape_offset = Vector2( 0, 0 )
 8/shapes = [  ]
 9/name = "nature-grass-plants-disperse-8"
-9/texture = ExtResource( 303 )
+9/texture = ExtResource( 283 )
 9/tex_offset = Vector2( 13.5, 26 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 0, 0, 124, 24 )
@@ -587,7 +567,7 @@
 29/shape_offset = Vector2( 0, 0 )
 29/shapes = [  ]
 30/name = "nature-trees-palm_trees-1"
-30/texture = ExtResource( 225 )
+30/texture = ExtResource( 218 )
 30/tex_offset = Vector2( 21, -31 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 0, 0, 109, 138 )
@@ -596,7 +576,7 @@
 30/shape_offset = Vector2( 0, 0 )
 30/shapes = [  ]
 31/name = "nature-trees-palm_trees-9"
-31/texture = ExtResource( 236 )
+31/texture = ExtResource( 219 )
 31/tex_offset = Vector2( 6, -29 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 0, 0, 139, 134 )
@@ -605,7 +585,7 @@
 31/shape_offset = Vector2( 0, 0 )
 31/shapes = [  ]
 32/name = "nature-trees-palm_trees-2"
-32/texture = ExtResource( 240 )
+32/texture = ExtResource( 220 )
 32/tex_offset = Vector2( 29.5, -18 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 0, 0, 92, 112 )
@@ -614,7 +594,7 @@
 32/shape_offset = Vector2( 0, 0 )
 32/shapes = [  ]
 33/name = "nature-trees-palm_trees-7"
-33/texture = ExtResource( 241 )
+33/texture = ExtResource( 221 )
 33/tex_offset = Vector2( 23.5, -28.5 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 0, 0, 104, 133 )
@@ -623,7 +603,7 @@
 33/shape_offset = Vector2( 0, 0 )
 33/shapes = [  ]
 34/name = "nature-trees-palm_trees-6"
-34/texture = ExtResource( 242 )
+34/texture = ExtResource( 222 )
 34/tex_offset = Vector2( 1, -29 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 0, 0, 149, 134 )
@@ -632,7 +612,7 @@
 34/shape_offset = Vector2( 0, 0 )
 34/shapes = [  ]
 35/name = "nature-trees-palm_trees-3"
-35/texture = ExtResource( 243 )
+35/texture = ExtResource( 223 )
 35/tex_offset = Vector2( 28, -30 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 0, 0, 95, 136 )
@@ -641,7 +621,7 @@
 35/shape_offset = Vector2( 0, 0 )
 35/shapes = [  ]
 36/name = "nature-trees-palm_trees-4"
-36/texture = ExtResource( 244 )
+36/texture = ExtResource( 224 )
 36/tex_offset = Vector2( 7.5, -31.5 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 0, 0, 136, 139 )
@@ -650,7 +630,7 @@
 36/shape_offset = Vector2( 0, 0 )
 36/shapes = [  ]
 37/name = "nature-trees-flower_trees-1"
-37/texture = ExtResource( 245 )
+37/texture = ExtResource( 225 )
 37/tex_offset = Vector2( 40, -13 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 0, 0, 71, 102 )
@@ -659,7 +639,7 @@
 37/shape_offset = Vector2( 0, 0 )
 37/shapes = [  ]
 38/name = "nature-trees-flower_trees-2"
-38/texture = ExtResource( 246 )
+38/texture = ExtResource( 226 )
 38/tex_offset = Vector2( 40, -13 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 0, 0, 71, 102 )
@@ -668,7 +648,7 @@
 38/shape_offset = Vector2( 0, 0 )
 38/shapes = [  ]
 39/name = "nature-trees-flower_trees-3"
-39/texture = ExtResource( 247 )
+39/texture = ExtResource( 227 )
 39/tex_offset = Vector2( 40, -13 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 0, 0, 71, 102 )
@@ -677,7 +657,7 @@
 39/shape_offset = Vector2( 0, 0 )
 39/shapes = [  ]
 40/name = "nature-trees-flower_trees-4"
-40/texture = ExtResource( 249 )
+40/texture = ExtResource( 229 )
 40/tex_offset = Vector2( 40, -13 )
 40/modulate = Color( 1, 1, 1, 1 )
 40/region = Rect2( 0, 0, 71, 102 )
@@ -686,7 +666,7 @@
 40/shape_offset = Vector2( 0, 0 )
 40/shapes = [  ]
 41/name = "nature-trees-type6-12"
-41/texture = ExtResource( 250 )
+41/texture = ExtResource( 230 )
 41/tex_offset = Vector2( 30, -35.5 )
 41/modulate = Color( 1, 1, 1, 1 )
 41/region = Rect2( 0, 0, 91, 147 )
@@ -695,7 +675,7 @@
 41/shape_offset = Vector2( 0, 0 )
 41/shapes = [  ]
 42/name = "nature-trees-type6-10"
-42/texture = ExtResource( 251 )
+42/texture = ExtResource( 231 )
 42/tex_offset = Vector2( 30, -35.5 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 0, 0, 91, 147 )
@@ -704,7 +684,7 @@
 42/shape_offset = Vector2( 0, 0 )
 42/shapes = [  ]
 43/name = "nature-trees-type6-5"
-43/texture = ExtResource( 252 )
+43/texture = ExtResource( 232 )
 43/tex_offset = Vector2( 24.5, -35 )
 43/modulate = Color( 1, 1, 1, 1 )
 43/region = Rect2( 0, 0, 102, 146 )
@@ -713,7 +693,7 @@
 43/shape_offset = Vector2( 0, 0 )
 43/shapes = [  ]
 44/name = "nature-trees-type6-8"
-44/texture = ExtResource( 253 )
+44/texture = ExtResource( 233 )
 44/tex_offset = Vector2( 30, -35.5 )
 44/modulate = Color( 1, 1, 1, 1 )
 44/region = Rect2( 0, 0, 91, 147 )
@@ -722,7 +702,7 @@
 44/shape_offset = Vector2( 0, 0 )
 44/shapes = [  ]
 45/name = "nature-trees-type6-1"
-45/texture = ExtResource( 254 )
+45/texture = ExtResource( 234 )
 45/tex_offset = Vector2( 24.5, -35 )
 45/modulate = Color( 1, 1, 1, 1 )
 45/region = Rect2( 0, 0, 102, 146 )
@@ -731,7 +711,7 @@
 45/shape_offset = Vector2( 0, 0 )
 45/shapes = [  ]
 46/name = "nature-trees-type6-11"
-46/texture = ExtResource( 255 )
+46/texture = ExtResource( 235 )
 46/tex_offset = Vector2( 30, -35.5 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 0, 0, 91, 147 )
@@ -740,7 +720,7 @@
 46/shape_offset = Vector2( 0, 0 )
 46/shapes = [  ]
 47/name = "nature-trees-type6-9"
-47/texture = ExtResource( 256 )
+47/texture = ExtResource( 236 )
 47/tex_offset = Vector2( 30, -35.5 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 0, 0, 91, 147 )
@@ -749,7 +729,7 @@
 47/shape_offset = Vector2( 0, 0 )
 47/shapes = [  ]
 48/name = "nature-trees-type6-2"
-48/texture = ExtResource( 257 )
+48/texture = ExtResource( 237 )
 48/tex_offset = Vector2( 29.5, -35 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 0, 0, 92, 146 )
@@ -758,7 +738,7 @@
 48/shape_offset = Vector2( 0, 0 )
 48/shapes = [  ]
 49/name = "nature-trees-type6-13"
-49/texture = ExtResource( 258 )
+49/texture = ExtResource( 238 )
 49/tex_offset = Vector2( 30, -35.5 )
 49/modulate = Color( 1, 1, 1, 1 )
 49/region = Rect2( 0, 0, 91, 147 )
@@ -767,7 +747,7 @@
 49/shape_offset = Vector2( 0, 0 )
 49/shapes = [  ]
 50/name = "nature-trees-type6-7"
-50/texture = ExtResource( 260 )
+50/texture = ExtResource( 240 )
 50/tex_offset = Vector2( 24.5, -35 )
 50/modulate = Color( 1, 1, 1, 1 )
 50/region = Rect2( 0, 0, 102, 146 )
@@ -776,7 +756,7 @@
 50/shape_offset = Vector2( 0, 0 )
 50/shapes = [  ]
 51/name = "nature-trees-type6-6"
-51/texture = ExtResource( 261 )
+51/texture = ExtResource( 241 )
 51/tex_offset = Vector2( 24.5, -35 )
 51/modulate = Color( 1, 1, 1, 1 )
 51/region = Rect2( 0, 0, 102, 146 )
@@ -785,7 +765,7 @@
 51/shape_offset = Vector2( 0, 0 )
 51/shapes = [  ]
 52/name = "nature-trees-type6-3"
-52/texture = ExtResource( 262 )
+52/texture = ExtResource( 242 )
 52/tex_offset = Vector2( 24.5, -35 )
 52/modulate = Color( 1, 1, 1, 1 )
 52/region = Rect2( 0, 0, 102, 146 )
@@ -794,7 +774,7 @@
 52/shape_offset = Vector2( 0, 0 )
 52/shapes = [  ]
 53/name = "nature-trees-type6-4"
-53/texture = ExtResource( 263 )
+53/texture = ExtResource( 243 )
 53/tex_offset = Vector2( 24.5, -35 )
 53/modulate = Color( 1, 1, 1, 1 )
 53/region = Rect2( 0, 0, 102, 146 )
@@ -803,7 +783,7 @@
 53/shape_offset = Vector2( 0, 0 )
 53/shapes = [  ]
 54/name = "nature-trees-type5-1"
-54/texture = ExtResource( 264 )
+54/texture = ExtResource( 244 )
 54/tex_offset = Vector2( 20, -37 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 0, 0, 111, 150 )
@@ -812,7 +792,7 @@
 54/shape_offset = Vector2( 0, 0 )
 54/shapes = [  ]
 55/name = "nature-trees-type5-2"
-55/texture = ExtResource( 265 )
+55/texture = ExtResource( 245 )
 55/tex_offset = Vector2( 16.5, -35 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 0, 0, 118, 146 )
@@ -821,7 +801,7 @@
 55/shape_offset = Vector2( 0, 0 )
 55/shapes = [  ]
 56/name = "nature-trees-type5-3"
-56/texture = ExtResource( 266 )
+56/texture = ExtResource( 246 )
 56/tex_offset = Vector2( 16.5, -35 )
 56/modulate = Color( 1, 1, 1, 1 )
 56/region = Rect2( 0, 0, 118, 146 )
@@ -830,7 +810,7 @@
 56/shape_offset = Vector2( 0, 0 )
 56/shapes = [  ]
 57/name = "nature-trees-type5-4"
-57/texture = ExtResource( 267 )
+57/texture = ExtResource( 247 )
 57/tex_offset = Vector2( 16.5, -35 )
 57/modulate = Color( 1, 1, 1, 1 )
 57/region = Rect2( 0, 0, 118, 146 )
@@ -839,7 +819,7 @@
 57/shape_offset = Vector2( 0, 0 )
 57/shapes = [  ]
 58/name = "nature-trees-type4-12"
-58/texture = ExtResource( 268 )
+58/texture = ExtResource( 248 )
 58/tex_offset = Vector2( 34, -22 )
 58/modulate = Color( 1, 1, 1, 1 )
 58/region = Rect2( 0, 0, 83, 120 )
@@ -848,7 +828,7 @@
 58/shape_offset = Vector2( 0, 0 )
 58/shapes = [  ]
 59/name = "nature-trees-type4-18"
-59/texture = ExtResource( 269 )
+59/texture = ExtResource( 249 )
 59/tex_offset = Vector2( 19.5, -22 )
 59/modulate = Color( 1, 1, 1, 1 )
 59/region = Rect2( 0, 0, 112, 120 )
@@ -857,7 +837,7 @@
 59/shape_offset = Vector2( 0, 0 )
 59/shapes = [  ]
 60/name = "nature-trees-type4-15"
-60/texture = ExtResource( 271 )
+60/texture = ExtResource( 251 )
 60/tex_offset = Vector2( 19, -22 )
 60/modulate = Color( 1, 1, 1, 1 )
 60/region = Rect2( 0, 0, 113, 120 )
@@ -866,7 +846,7 @@
 60/shape_offset = Vector2( 0, 0 )
 60/shapes = [  ]
 61/name = "nature-trees-type4-10"
-61/texture = ExtResource( 272 )
+61/texture = ExtResource( 252 )
 61/tex_offset = Vector2( 34, -22 )
 61/modulate = Color( 1, 1, 1, 1 )
 61/region = Rect2( 0, 0, 83, 120 )
@@ -875,7 +855,7 @@
 61/shape_offset = Vector2( 0, 0 )
 61/shapes = [  ]
 62/name = "nature-trees-type4-5"
-62/texture = ExtResource( 273 )
+62/texture = ExtResource( 253 )
 62/tex_offset = Vector2( 23.5, -37.5 )
 62/modulate = Color( 1, 1, 1, 1 )
 62/region = Rect2( 0, 0, 104, 151 )
@@ -884,7 +864,7 @@
 62/shape_offset = Vector2( 0, 0 )
 62/shapes = [  ]
 63/name = "nature-trees-type4-8"
-63/texture = ExtResource( 274 )
+63/texture = ExtResource( 254 )
 63/tex_offset = Vector2( 34, -22 )
 63/modulate = Color( 1, 1, 1, 1 )
 63/region = Rect2( 0, 0, 83, 120 )
@@ -893,7 +873,7 @@
 63/shape_offset = Vector2( 0, 0 )
 63/shapes = [  ]
 64/name = "nature-trees-type4-1"
-64/texture = ExtResource( 275 )
+64/texture = ExtResource( 255 )
 64/tex_offset = Vector2( 23.5, -37.5 )
 64/modulate = Color( 1, 1, 1, 1 )
 64/region = Rect2( 0, 0, 104, 151 )
@@ -902,7 +882,7 @@
 64/shape_offset = Vector2( 0, 0 )
 64/shapes = [  ]
 65/name = "nature-trees-type4-11"
-65/texture = ExtResource( 276 )
+65/texture = ExtResource( 256 )
 65/tex_offset = Vector2( 34, -22 )
 65/modulate = Color( 1, 1, 1, 1 )
 65/region = Rect2( 0, 0, 83, 120 )
@@ -911,7 +891,7 @@
 65/shape_offset = Vector2( 0, 0 )
 65/shapes = [  ]
 66/name = "nature-trees-type4-9"
-66/texture = ExtResource( 277 )
+66/texture = ExtResource( 257 )
 66/tex_offset = Vector2( 34, -22 )
 66/modulate = Color( 1, 1, 1, 1 )
 66/region = Rect2( 0, 0, 83, 120 )
@@ -920,7 +900,7 @@
 66/shape_offset = Vector2( 0, 0 )
 66/shapes = [  ]
 67/name = "nature-trees-type4-16"
-67/texture = ExtResource( 278 )
+67/texture = ExtResource( 258 )
 67/tex_offset = Vector2( 19, -22 )
 67/modulate = Color( 1, 1, 1, 1 )
 67/region = Rect2( 0, 0, 113, 120 )
@@ -929,7 +909,7 @@
 67/shape_offset = Vector2( 0, 0 )
 67/shapes = [  ]
 68/name = "nature-trees-type4-17"
-68/texture = ExtResource( 279 )
+68/texture = ExtResource( 259 )
 68/tex_offset = Vector2( 19, -22 )
 68/modulate = Color( 1, 1, 1, 1 )
 68/region = Rect2( 0, 0, 113, 120 )
@@ -938,7 +918,7 @@
 68/shape_offset = Vector2( 0, 0 )
 68/shapes = [  ]
 69/name = "nature-trees-type4-2"
-69/texture = ExtResource( 280 )
+69/texture = ExtResource( 260 )
 69/tex_offset = Vector2( 23.5, -37.5 )
 69/modulate = Color( 1, 1, 1, 1 )
 69/region = Rect2( 0, 0, 104, 151 )
@@ -947,7 +927,7 @@
 69/shape_offset = Vector2( 0, 0 )
 69/shapes = [  ]
 70/name = "nature-trees-type4-13"
-70/texture = ExtResource( 282 )
+70/texture = ExtResource( 262 )
 70/tex_offset = Vector2( 19, -22 )
 70/modulate = Color( 1, 1, 1, 1 )
 70/region = Rect2( 0, 0, 113, 120 )
@@ -956,7 +936,7 @@
 70/shape_offset = Vector2( 0, 0 )
 70/shapes = [  ]
 71/name = "nature-trees-type4-14"
-71/texture = ExtResource( 283 )
+71/texture = ExtResource( 263 )
 71/tex_offset = Vector2( 19.5, -22 )
 71/modulate = Color( 1, 1, 1, 1 )
 71/region = Rect2( 0, 0, 112, 120 )
@@ -965,7 +945,7 @@
 71/shape_offset = Vector2( 0, 0 )
 71/shapes = [  ]
 72/name = "nature-trees-type4-7"
-72/texture = ExtResource( 284 )
+72/texture = ExtResource( 264 )
 72/tex_offset = Vector2( 34, -22 )
 72/modulate = Color( 1, 1, 1, 1 )
 72/region = Rect2( 0, 0, 83, 120 )
@@ -974,7 +954,7 @@
 72/shape_offset = Vector2( 0, 0 )
 72/shapes = [  ]
 73/name = "nature-trees-type4-6"
-73/texture = ExtResource( 285 )
+73/texture = ExtResource( 265 )
 73/tex_offset = Vector2( 23.5, -37.5 )
 73/modulate = Color( 1, 1, 1, 1 )
 73/region = Rect2( 0, 0, 104, 151 )
@@ -983,7 +963,7 @@
 73/shape_offset = Vector2( 0, 0 )
 73/shapes = [  ]
 74/name = "nature-trees-type4-3"
-74/texture = ExtResource( 286 )
+74/texture = ExtResource( 266 )
 74/tex_offset = Vector2( 23.5, -37.5 )
 74/modulate = Color( 1, 1, 1, 1 )
 74/region = Rect2( 0, 0, 104, 151 )
@@ -992,7 +972,7 @@
 74/shape_offset = Vector2( 0, 0 )
 74/shapes = [  ]
 75/name = "nature-trees-type4-4"
-75/texture = ExtResource( 287 )
+75/texture = ExtResource( 267 )
 75/tex_offset = Vector2( 23.5, -37.5 )
 75/modulate = Color( 1, 1, 1, 1 )
 75/region = Rect2( 0, 0, 104, 151 )
@@ -1001,7 +981,7 @@
 75/shape_offset = Vector2( 0, 0 )
 75/shapes = [  ]
 76/name = "nature-trees-type2-5"
-76/texture = ExtResource( 288 )
+76/texture = ExtResource( 268 )
 76/tex_offset = Vector2( 14.5, -37 )
 76/modulate = Color( 1, 1, 1, 1 )
 76/region = Rect2( 0, 0, 122, 150 )
@@ -1010,7 +990,7 @@
 76/shape_offset = Vector2( 0, 0 )
 76/shapes = [  ]
 77/name = "nature-trees-type2-1"
-77/texture = ExtResource( 289 )
+77/texture = ExtResource( 269 )
 77/tex_offset = Vector2( 14.5, -37 )
 77/modulate = Color( 1, 1, 1, 1 )
 77/region = Rect2( 0, 0, 122, 150 )
@@ -1019,7 +999,7 @@
 77/shape_offset = Vector2( 0, 0 )
 77/shapes = [  ]
 78/name = "nature-trees-type2-2"
-78/texture = ExtResource( 290 )
+78/texture = ExtResource( 270 )
 78/tex_offset = Vector2( 14.5, -37 )
 78/modulate = Color( 1, 1, 1, 1 )
 78/region = Rect2( 0, 0, 122, 150 )
@@ -1028,7 +1008,7 @@
 78/shape_offset = Vector2( 0, 0 )
 78/shapes = [  ]
 79/name = "nature-trees-type2-6"
-79/texture = ExtResource( 291 )
+79/texture = ExtResource( 271 )
 79/tex_offset = Vector2( 14.5, -37 )
 79/modulate = Color( 1, 1, 1, 1 )
 79/region = Rect2( 0, 0, 122, 150 )
@@ -1037,7 +1017,7 @@
 79/shape_offset = Vector2( 0, 0 )
 79/shapes = [  ]
 80/name = "nature-trees-type2-3"
-80/texture = ExtResource( 293 )
+80/texture = ExtResource( 273 )
 80/tex_offset = Vector2( 14.5, -37 )
 80/modulate = Color( 1, 1, 1, 1 )
 80/region = Rect2( 0, 0, 122, 150 )
@@ -1046,7 +1026,7 @@
 80/shape_offset = Vector2( 0, 0 )
 80/shapes = [  ]
 81/name = "nature-trees-type2-4"
-81/texture = ExtResource( 294 )
+81/texture = ExtResource( 274 )
 81/tex_offset = Vector2( 14.5, -37 )
 81/modulate = Color( 1, 1, 1, 1 )
 81/region = Rect2( 0, 0, 122, 150 )
@@ -1055,7 +1035,7 @@
 81/shape_offset = Vector2( 0, 0 )
 81/shapes = [  ]
 82/name = "nature-trees-pine_trees-5"
-82/texture = ExtResource( 295 )
+82/texture = ExtResource( 275 )
 82/tex_offset = Vector2( 3.5, -66.5 )
 82/modulate = Color( 1, 1, 1, 1 )
 82/region = Rect2( 0, 0, 144, 209 )
@@ -1064,7 +1044,7 @@
 82/shape_offset = Vector2( 0, 0 )
 82/shapes = [  ]
 83/name = "nature-trees-pine_trees-1"
-83/texture = ExtResource( 296 )
+83/texture = ExtResource( 276 )
 83/tex_offset = Vector2( 3.5, -66.5 )
 83/modulate = Color( 1, 1, 1, 1 )
 83/region = Rect2( 0, 0, 144, 209 )
@@ -1073,7 +1053,7 @@
 83/shape_offset = Vector2( 0, 0 )
 83/shapes = [  ]
 84/name = "nature-trees-pine_trees-2"
-84/texture = ExtResource( 297 )
+84/texture = ExtResource( 277 )
 84/tex_offset = Vector2( 3.5, -66.5 )
 84/modulate = Color( 1, 1, 1, 1 )
 84/region = Rect2( 0, 0, 144, 209 )
@@ -1082,7 +1062,7 @@
 84/shape_offset = Vector2( 0, 0 )
 84/shapes = [  ]
 85/name = "nature-trees-pine_trees-6"
-85/texture = ExtResource( 298 )
+85/texture = ExtResource( 278 )
 85/tex_offset = Vector2( 3.5, -66.5 )
 85/modulate = Color( 1, 1, 1, 1 )
 85/region = Rect2( 0, 0, 144, 209 )
@@ -1091,7 +1071,7 @@
 85/shape_offset = Vector2( 0, 0 )
 85/shapes = [  ]
 86/name = "nature-trees-pine_trees-3"
-86/texture = ExtResource( 299 )
+86/texture = ExtResource( 279 )
 86/tex_offset = Vector2( 3.5, -66.5 )
 86/modulate = Color( 1, 1, 1, 1 )
 86/region = Rect2( 0, 0, 144, 209 )
@@ -1100,7 +1080,7 @@
 86/shape_offset = Vector2( 0, 0 )
 86/shapes = [  ]
 87/name = "nature-trees-pine_trees-4"
-87/texture = ExtResource( 300 )
+87/texture = ExtResource( 280 )
 87/tex_offset = Vector2( 3.5, -66.5 )
 87/modulate = Color( 1, 1, 1, 1 )
 87/region = Rect2( 0, 0, 144, 209 )
@@ -1109,7 +1089,7 @@
 87/shape_offset = Vector2( 0, 0 )
 87/shapes = [  ]
 88/name = "nature-trees-type3-5"
-88/texture = ExtResource( 301 )
+88/texture = ExtResource( 281 )
 88/tex_offset = Vector2( 18, -31.5 )
 88/modulate = Color( 1, 1, 1, 1 )
 88/region = Rect2( 0, 0, 115, 139 )
@@ -1118,7 +1098,7 @@
 88/shape_offset = Vector2( 0, 0 )
 88/shapes = [  ]
 89/name = "nature-trees-type3-1"
-89/texture = ExtResource( 302 )
+89/texture = ExtResource( 282 )
 89/tex_offset = Vector2( 18, -31.5 )
 89/modulate = Color( 1, 1, 1, 1 )
 89/region = Rect2( 0, 0, 115, 139 )
@@ -1127,7 +1107,7 @@
 89/shape_offset = Vector2( 0, 0 )
 89/shapes = [  ]
 90/name = "nature-trees-type3-2"
-90/texture = ExtResource( 304 )
+90/texture = ExtResource( 284 )
 90/tex_offset = Vector2( 18, -31.5 )
 90/modulate = Color( 1, 1, 1, 1 )
 90/region = Rect2( 0, 0, 115, 139 )
@@ -1136,7 +1116,7 @@
 90/shape_offset = Vector2( 0, 0 )
 90/shapes = [  ]
 91/name = "nature-trees-type3-6"
-91/texture = ExtResource( 305 )
+91/texture = ExtResource( 285 )
 91/tex_offset = Vector2( 17.5, -31.5 )
 91/modulate = Color( 1, 1, 1, 1 )
 91/region = Rect2( 0, 0, 116, 139 )
@@ -1145,7 +1125,7 @@
 91/shape_offset = Vector2( 0, 0 )
 91/shapes = [  ]
 92/name = "nature-trees-type3-3"
-92/texture = ExtResource( 306 )
+92/texture = ExtResource( 286 )
 92/tex_offset = Vector2( 18, -31.5 )
 92/modulate = Color( 1, 1, 1, 1 )
 92/region = Rect2( 0, 0, 115, 139 )
@@ -1154,7 +1134,7 @@
 92/shape_offset = Vector2( 0, 0 )
 92/shapes = [  ]
 93/name = "nature-trees-type3-4"
-93/texture = ExtResource( 307 )
+93/texture = ExtResource( 287 )
 93/tex_offset = Vector2( 18, -31.5 )
 93/modulate = Color( 1, 1, 1, 1 )
 93/region = Rect2( 0, 0, 115, 139 )
@@ -1163,7 +1143,7 @@
 93/shape_offset = Vector2( 0, 0 )
 93/shapes = [  ]
 94/name = "nature-trees-type1-1"
-94/texture = ExtResource( 308 )
+94/texture = ExtResource( 288 )
 94/tex_offset = Vector2( -15, -60.5 )
 94/modulate = Color( 1, 1, 1, 1 )
 94/region = Rect2( 0, 0, 181, 197 )
@@ -1172,7 +1152,7 @@
 94/shape_offset = Vector2( 0, 0 )
 94/shapes = [  ]
 95/name = "nature-trees-type1-2"
-95/texture = ExtResource( 309 )
+95/texture = ExtResource( 289 )
 95/tex_offset = Vector2( -14.5, -67 )
 95/modulate = Color( 1, 1, 1, 1 )
 95/region = Rect2( 0, 0, 180, 210 )
@@ -1181,7 +1161,7 @@
 95/shape_offset = Vector2( 0, 0 )
 95/shapes = [  ]
 96/name = "nature-trees-type1-3"
-96/texture = ExtResource( 310 )
+96/texture = ExtResource( 290 )
 96/tex_offset = Vector2( -14.5, -67 )
 96/modulate = Color( 1, 1, 1, 1 )
 96/region = Rect2( 0, 0, 180, 210 )
@@ -1190,7 +1170,7 @@
 96/shape_offset = Vector2( 0, 0 )
 96/shapes = [  ]
 97/name = "nature-trees-type1-4"
-97/texture = ExtResource( 311 )
+97/texture = ExtResource( 291 )
 97/tex_offset = Vector2( -14.5, -67 )
 97/modulate = Color( 1, 1, 1, 1 )
 97/region = Rect2( 0, 0, 180, 210 )
@@ -1199,7 +1179,7 @@
 97/shape_offset = Vector2( 0, 0 )
 97/shapes = [  ]
 98/name = "nature-plants-carnivour-5"
-98/texture = ExtResource( 312 )
+98/texture = ExtResource( 292 )
 98/tex_offset = Vector2( 47, 3 )
 98/modulate = Color( 1, 1, 1, 1 )
 98/region = Rect2( 0, 0, 57, 70 )
@@ -1208,7 +1188,7 @@
 98/shape_offset = Vector2( 0, 0 )
 98/shapes = [  ]
 99/name = "nature-plants-carnivour-1"
-99/texture = ExtResource( 313 )
+99/texture = ExtResource( 293 )
 99/tex_offset = Vector2( 23.5, -30 )
 99/modulate = Color( 1, 1, 1, 1 )
 99/region = Rect2( 0, 0, 104, 136 )
@@ -1819,1318 +1799,1138 @@
 166/navigation_offset = Vector2( 56, 33 )
 166/shape_offset = Vector2( 0, 0 )
 166/shapes = [  ]
-167/name = "floor-water-water"
+167/name = "human-characters-sword_man-attacking2"
 167/texture = ExtResource( 77 )
-167/tex_offset = Vector2( 0, 0 )
+167/tex_offset = Vector2( -115, -136 )
 167/modulate = Color( 1, 1, 1, 1 )
-167/region = Rect2( 0, 0, 151, 76 )
-167/occluder_offset = Vector2( 75.5, 38 )
-167/navigation_offset = Vector2( 75.5, 38 )
+167/region = Rect2( 0, 0, 381, 348 )
+167/occluder_offset = Vector2( 190.5, 174 )
+167/navigation_offset = Vector2( 190.5, 174 )
 167/shape_offset = Vector2( 0, 0 )
 167/shapes = [  ]
-168/name = "floor-water-borders-left"
+168/name = "human-characters-sword_man-defending"
 168/texture = ExtResource( 78 )
-168/tex_offset = Vector2( 0, 0 )
+168/tex_offset = Vector2( -76.5, -123 )
 168/modulate = Color( 1, 1, 1, 1 )
-168/region = Rect2( 0, 0, 151, 76 )
-168/occluder_offset = Vector2( 75.5, 38 )
-168/navigation_offset = Vector2( 75.5, 38 )
+168/region = Rect2( 0, 0, 304, 322 )
+168/occluder_offset = Vector2( 152, 161 )
+168/navigation_offset = Vector2( 152, 161 )
 168/shape_offset = Vector2( 0, 0 )
 168/shapes = [  ]
-169/name = "floor-water-borders-up"
+169/name = "human-characters-sword_man-walking"
 169/texture = ExtResource( 79 )
-169/tex_offset = Vector2( 0, 0 )
+169/tex_offset = Vector2( -47.5, -129 )
 169/modulate = Color( 1, 1, 1, 1 )
-169/region = Rect2( 0, 0, 151, 76 )
-169/occluder_offset = Vector2( 75.5, 38 )
-169/navigation_offset = Vector2( 75.5, 38 )
+169/region = Rect2( 0, 0, 246, 334 )
+169/occluder_offset = Vector2( 123, 167 )
+169/navigation_offset = Vector2( 123, 167 )
 169/shape_offset = Vector2( 0, 0 )
 169/shapes = [  ]
-170/name = "floor-water-borders-right"
+170/name = "human-characters-sword_man-dying"
 170/texture = ExtResource( 81 )
-170/tex_offset = Vector2( 0, 0 )
+170/tex_offset = Vector2( -80, -101 )
 170/modulate = Color( 1, 1, 1, 1 )
-170/region = Rect2( 0, 0, 151, 76 )
-170/occluder_offset = Vector2( 75.5, 38 )
-170/navigation_offset = Vector2( 75.5, 38 )
+170/region = Rect2( 0, 0, 311, 278 )
+170/occluder_offset = Vector2( 155.5, 139 )
+170/navigation_offset = Vector2( 155.5, 139 )
 170/shape_offset = Vector2( 0, 0 )
 170/shapes = [  ]
-171/name = "floor-water-borders-down"
+171/name = "human-characters-sword_man-sliding"
 171/texture = ExtResource( 82 )
-171/tex_offset = Vector2( 0, 0 )
+171/tex_offset = Vector2( -73, -105 )
 171/modulate = Color( 1, 1, 1, 1 )
-171/region = Rect2( 0, 0, 151, 76 )
-171/occluder_offset = Vector2( 75.5, 38 )
-171/navigation_offset = Vector2( 75.5, 38 )
+171/region = Rect2( 0, 0, 297, 286 )
+171/occluder_offset = Vector2( 148.5, 143 )
+171/navigation_offset = Vector2( 148.5, 143 )
 171/shape_offset = Vector2( 0, 0 )
 171/shapes = [  ]
-172/name = "floor-water-in_corners-left"
+172/name = "human-characters-sword_man-attacking"
 172/texture = ExtResource( 83 )
-172/tex_offset = Vector2( 0, 0 )
+172/tex_offset = Vector2( -113.5, -128.5 )
 172/modulate = Color( 1, 1, 1, 1 )
-172/region = Rect2( 0, 0, 151, 76 )
-172/occluder_offset = Vector2( 75.5, 38 )
-172/navigation_offset = Vector2( 75.5, 38 )
+172/region = Rect2( 0, 0, 378, 333 )
+172/occluder_offset = Vector2( 189, 166.5 )
+172/navigation_offset = Vector2( 189, 166.5 )
 172/shape_offset = Vector2( 0, 0 )
 172/shapes = [  ]
-173/name = "floor-water-in_corners-up"
+173/name = "human-characters-healer-attacking2"
 173/texture = ExtResource( 84 )
-173/tex_offset = Vector2( 0, 0 )
+173/tex_offset = Vector2( -77, -132.5 )
 173/modulate = Color( 1, 1, 1, 1 )
-173/region = Rect2( 0, 0, 151, 76 )
-173/occluder_offset = Vector2( 75.5, 38 )
-173/navigation_offset = Vector2( 75.5, 38 )
+173/region = Rect2( 0, 0, 305, 341 )
+173/occluder_offset = Vector2( 152.5, 170.5 )
+173/navigation_offset = Vector2( 152.5, 170.5 )
 173/shape_offset = Vector2( 0, 0 )
 173/shapes = [  ]
-174/name = "floor-water-in_corners-right"
+174/name = "human-characters-healer-defending"
 174/texture = ExtResource( 85 )
-174/tex_offset = Vector2( 0, 0 )
+174/tex_offset = Vector2( -54.5, -120 )
 174/modulate = Color( 1, 1, 1, 1 )
-174/region = Rect2( 0, 0, 151, 76 )
-174/occluder_offset = Vector2( 75.5, 38 )
-174/navigation_offset = Vector2( 75.5, 38 )
+174/region = Rect2( 0, 0, 260, 316 )
+174/occluder_offset = Vector2( 130, 158 )
+174/navigation_offset = Vector2( 130, 158 )
 174/shape_offset = Vector2( 0, 0 )
 174/shapes = [  ]
-175/name = "floor-water-in_corners-down"
+175/name = "human-characters-healer-walking"
 175/texture = ExtResource( 86 )
-175/tex_offset = Vector2( 0, 0 )
+175/tex_offset = Vector2( -36.5, -129.5 )
 175/modulate = Color( 1, 1, 1, 1 )
-175/region = Rect2( 0, 0, 151, 76 )
-175/occluder_offset = Vector2( 75.5, 38 )
-175/navigation_offset = Vector2( 75.5, 38 )
+175/region = Rect2( 0, 0, 224, 335 )
+175/occluder_offset = Vector2( 112, 167.5 )
+175/navigation_offset = Vector2( 112, 167.5 )
 175/shape_offset = Vector2( 0, 0 )
 175/shapes = [  ]
-176/name = "floor-water-out_corner-left"
+176/name = "human-characters-healer-dying"
 176/texture = ExtResource( 87 )
-176/tex_offset = Vector2( 0, 0 )
+176/tex_offset = Vector2( -67, -100 )
 176/modulate = Color( 1, 1, 1, 1 )
-176/region = Rect2( 0, 0, 151, 76 )
-176/occluder_offset = Vector2( 75.5, 38 )
-176/navigation_offset = Vector2( 75.5, 38 )
+176/region = Rect2( 0, 0, 285, 276 )
+176/occluder_offset = Vector2( 142.5, 138 )
+176/navigation_offset = Vector2( 142.5, 138 )
 176/shape_offset = Vector2( 0, 0 )
 176/shapes = [  ]
-177/name = "floor-water-out_corner-up"
+177/name = "human-characters-healer-healing"
 177/texture = ExtResource( 88 )
-177/tex_offset = Vector2( 0, 0 )
+177/tex_offset = Vector2( -59, -125 )
 177/modulate = Color( 1, 1, 1, 1 )
-177/region = Rect2( 0, 0, 151, 76 )
-177/occluder_offset = Vector2( 75.5, 38 )
-177/navigation_offset = Vector2( 75.5, 38 )
+177/region = Rect2( 0, 0, 269, 326 )
+177/occluder_offset = Vector2( 134.5, 163 )
+177/navigation_offset = Vector2( 134.5, 163 )
 177/shape_offset = Vector2( 0, 0 )
 177/shapes = [  ]
-178/name = "floor-water-out_corner-right"
+178/name = "human-characters-healer-sliding"
 178/texture = ExtResource( 89 )
-178/tex_offset = Vector2( 0, 0 )
+178/tex_offset = Vector2( -69, -104.5 )
 178/modulate = Color( 1, 1, 1, 1 )
-178/region = Rect2( 0, 0, 151, 76 )
-178/occluder_offset = Vector2( 75.5, 38 )
-178/navigation_offset = Vector2( 75.5, 38 )
+178/region = Rect2( 0, 0, 289, 285 )
+178/occluder_offset = Vector2( 144.5, 142.5 )
+178/navigation_offset = Vector2( 144.5, 142.5 )
 178/shape_offset = Vector2( 0, 0 )
 178/shapes = [  ]
-179/name = "floor-water-out_corner-down"
+179/name = "human-characters-healer-attacking"
 179/texture = ExtResource( 90 )
-179/tex_offset = Vector2( 0, 0 )
+179/tex_offset = Vector2( -68.5, -122 )
 179/modulate = Color( 1, 1, 1, 1 )
-179/region = Rect2( 0, 0, 151, 76 )
-179/occluder_offset = Vector2( 75.5, 38 )
-179/navigation_offset = Vector2( 75.5, 38 )
+179/region = Rect2( 0, 0, 288, 320 )
+179/occluder_offset = Vector2( 144, 160 )
+179/navigation_offset = Vector2( 144, 160 )
 179/shape_offset = Vector2( 0, 0 )
 179/shapes = [  ]
-180/name = "floor-grass-tall_grass"
+180/name = "human-characters-archer-dying2"
 180/texture = ExtResource( 92 )
-180/tex_offset = Vector2( 0, 0 )
+180/tex_offset = Vector2( -76, -81.5 )
 180/modulate = Color( 1, 1, 1, 1 )
-180/region = Rect2( 0, 0, 151, 76 )
-180/occluder_offset = Vector2( 75.5, 38 )
-180/navigation_offset = Vector2( 75.5, 38 )
+180/region = Rect2( 0, 0, 303, 239 )
+180/occluder_offset = Vector2( 151.5, 119.5 )
+180/navigation_offset = Vector2( 151.5, 119.5 )
 180/shape_offset = Vector2( 0, 0 )
 180/shapes = [  ]
-181/name = "floor-grass-grass"
+181/name = "human-characters-archer-defending"
 181/texture = ExtResource( 93 )
-181/tex_offset = Vector2( 0, 0 )
+181/tex_offset = Vector2( -43.5, -117 )
 181/modulate = Color( 1, 1, 1, 1 )
-181/region = Rect2( 0, 0, 151, 76 )
-181/occluder_offset = Vector2( 75.5, 38 )
-181/navigation_offset = Vector2( 75.5, 38 )
+181/region = Rect2( 0, 0, 238, 310 )
+181/occluder_offset = Vector2( 119, 155 )
+181/navigation_offset = Vector2( 119, 155 )
 181/shape_offset = Vector2( 0, 0 )
 181/shapes = [  ]
-182/name = "floor-grass-flower_grass"
+182/name = "human-characters-archer-walking"
 182/texture = ExtResource( 94 )
-182/tex_offset = Vector2( 0, 0 )
+182/tex_offset = Vector2( -44, -122.5 )
 182/modulate = Color( 1, 1, 1, 1 )
-182/region = Rect2( 0, 0, 151, 76 )
-182/occluder_offset = Vector2( 75.5, 38 )
-182/navigation_offset = Vector2( 75.5, 38 )
+182/region = Rect2( 0, 0, 239, 321 )
+182/occluder_offset = Vector2( 119.5, 160.5 )
+182/navigation_offset = Vector2( 119.5, 160.5 )
 182/shape_offset = Vector2( 0, 0 )
 182/shapes = [  ]
-183/name = "human-characters-sword_man-attacking2"
+183/name = "human-characters-archer-dying"
 183/texture = ExtResource( 95 )
-183/tex_offset = Vector2( -115, -136 )
+183/tex_offset = Vector2( -44, -119.5 )
 183/modulate = Color( 1, 1, 1, 1 )
-183/region = Rect2( 0, 0, 381, 348 )
-183/occluder_offset = Vector2( 190.5, 174 )
-183/navigation_offset = Vector2( 190.5, 174 )
+183/region = Rect2( 0, 0, 239, 315 )
+183/occluder_offset = Vector2( 119.5, 157.5 )
+183/navigation_offset = Vector2( 119.5, 157.5 )
 183/shape_offset = Vector2( 0, 0 )
 183/shapes = [  ]
-184/name = "human-characters-sword_man-defending"
+184/name = "human-characters-archer-falling"
 184/texture = ExtResource( 96 )
-184/tex_offset = Vector2( -76.5, -123 )
+184/tex_offset = Vector2( -43.5, -122 )
 184/modulate = Color( 1, 1, 1, 1 )
-184/region = Rect2( 0, 0, 304, 322 )
-184/occluder_offset = Vector2( 152, 161 )
-184/navigation_offset = Vector2( 152, 161 )
+184/region = Rect2( 0, 0, 238, 320 )
+184/occluder_offset = Vector2( 119, 160 )
+184/navigation_offset = Vector2( 119, 160 )
 184/shape_offset = Vector2( 0, 0 )
 184/shapes = [  ]
-185/name = "human-characters-sword_man-walking"
+185/name = "human-characters-archer-sliding"
 185/texture = ExtResource( 97 )
-185/tex_offset = Vector2( -47.5, -129 )
+185/tex_offset = Vector2( -79, -90.5 )
 185/modulate = Color( 1, 1, 1, 1 )
-185/region = Rect2( 0, 0, 246, 334 )
-185/occluder_offset = Vector2( 123, 167 )
-185/navigation_offset = Vector2( 123, 167 )
+185/region = Rect2( 0, 0, 309, 257 )
+185/occluder_offset = Vector2( 154.5, 128.5 )
+185/navigation_offset = Vector2( 154.5, 128.5 )
 185/shape_offset = Vector2( 0, 0 )
 185/shapes = [  ]
-186/name = "human-characters-sword_man-dying"
+186/name = "human-characters-archer-attacking"
 186/texture = ExtResource( 98 )
-186/tex_offset = Vector2( -80, -101 )
+186/tex_offset = Vector2( -52.5, -131 )
 186/modulate = Color( 1, 1, 1, 1 )
-186/region = Rect2( 0, 0, 311, 278 )
-186/occluder_offset = Vector2( 155.5, 139 )
-186/navigation_offset = Vector2( 155.5, 139 )
+186/region = Rect2( 0, 0, 256, 338 )
+186/occluder_offset = Vector2( 128, 169 )
+186/navigation_offset = Vector2( 128, 169 )
 186/shape_offset = Vector2( 0, 0 )
 186/shapes = [  ]
-187/name = "human-characters-sword_man-sliding"
+187/name = "human-forest-houses-double"
 187/texture = ExtResource( 99 )
-187/tex_offset = Vector2( -73, -105 )
+187/tex_offset = Vector2( 17, -37.5 )
 187/modulate = Color( 1, 1, 1, 1 )
-187/region = Rect2( 0, 0, 297, 286 )
-187/occluder_offset = Vector2( 148.5, 143 )
-187/navigation_offset = Vector2( 148.5, 143 )
+187/region = Rect2( 0, 0, 117, 151 )
+187/occluder_offset = Vector2( 58.5, 75.5 )
+187/navigation_offset = Vector2( 58.5, 75.5 )
 187/shape_offset = Vector2( 0, 0 )
 187/shapes = [  ]
-188/name = "human-characters-sword_man-attacking"
+188/name = "human-forest-houses-tend"
 188/texture = ExtResource( 100 )
-188/tex_offset = Vector2( -113.5, -128.5 )
+188/tex_offset = Vector2( 15, -12 )
 188/modulate = Color( 1, 1, 1, 1 )
-188/region = Rect2( 0, 0, 378, 333 )
-188/occluder_offset = Vector2( 189, 166.5 )
-188/navigation_offset = Vector2( 189, 166.5 )
+188/region = Rect2( 0, 0, 121, 100 )
+188/occluder_offset = Vector2( 60.5, 50 )
+188/navigation_offset = Vector2( 60.5, 50 )
 188/shape_offset = Vector2( 0, 0 )
 188/shapes = [  ]
-189/name = "human-characters-healer-attacking2"
+189/name = "human-forest-houses-regular"
 189/texture = ExtResource( 101 )
-189/tex_offset = Vector2( -77, -132.5 )
+189/tex_offset = Vector2( 5.5, -32 )
 189/modulate = Color( 1, 1, 1, 1 )
-189/region = Rect2( 0, 0, 305, 341 )
-189/occluder_offset = Vector2( 152.5, 170.5 )
-189/navigation_offset = Vector2( 152.5, 170.5 )
+189/region = Rect2( 0, 0, 140, 140 )
+189/occluder_offset = Vector2( 70, 70 )
+189/navigation_offset = Vector2( 70, 70 )
 189/shape_offset = Vector2( 0, 0 )
 189/shapes = [  ]
-190/name = "human-characters-healer-defending"
+190/name = "human-forest-caves-gold"
 190/texture = ExtResource( 103 )
-190/tex_offset = Vector2( -54.5, -120 )
+190/tex_offset = Vector2( 2, -21.5 )
 190/modulate = Color( 1, 1, 1, 1 )
-190/region = Rect2( 0, 0, 260, 316 )
-190/occluder_offset = Vector2( 130, 158 )
-190/navigation_offset = Vector2( 130, 158 )
+190/region = Rect2( 0, 0, 147, 119 )
+190/occluder_offset = Vector2( 73.5, 59.5 )
+190/navigation_offset = Vector2( 73.5, 59.5 )
 190/shape_offset = Vector2( 0, 0 )
 190/shapes = [  ]
-191/name = "human-characters-healer-walking"
+191/name = "human-forest-caves-stone"
 191/texture = ExtResource( 104 )
-191/tex_offset = Vector2( -36.5, -129.5 )
+191/tex_offset = Vector2( 2, -15 )
 191/modulate = Color( 1, 1, 1, 1 )
-191/region = Rect2( 0, 0, 224, 335 )
-191/occluder_offset = Vector2( 112, 167.5 )
-191/navigation_offset = Vector2( 112, 167.5 )
+191/region = Rect2( 0, 0, 147, 106 )
+191/occluder_offset = Vector2( 73.5, 53 )
+191/navigation_offset = Vector2( 73.5, 53 )
 191/shape_offset = Vector2( 0, 0 )
 191/shapes = [  ]
-192/name = "human-characters-healer-dying"
+192/name = "human-forest-caves-silver"
 192/texture = ExtResource( 105 )
-192/tex_offset = Vector2( -67, -100 )
+192/tex_offset = Vector2( 0, -21.5 )
 192/modulate = Color( 1, 1, 1, 1 )
-192/region = Rect2( 0, 0, 285, 276 )
-192/occluder_offset = Vector2( 142.5, 138 )
-192/navigation_offset = Vector2( 142.5, 138 )
+192/region = Rect2( 0, 0, 151, 119 )
+192/occluder_offset = Vector2( 75.5, 59.5 )
+192/navigation_offset = Vector2( 75.5, 59.5 )
 192/shape_offset = Vector2( 0, 0 )
 192/shapes = [  ]
-193/name = "human-characters-healer-healing"
+193/name = "human-forest-wood-working_place"
 193/texture = ExtResource( 106 )
-193/tex_offset = Vector2( -59, -125 )
+193/tex_offset = Vector2( 20.5, -17.5 )
 193/modulate = Color( 1, 1, 1, 1 )
-193/region = Rect2( 0, 0, 269, 326 )
-193/occluder_offset = Vector2( 134.5, 163 )
-193/navigation_offset = Vector2( 134.5, 163 )
+193/region = Rect2( 0, 0, 110, 111 )
+193/occluder_offset = Vector2( 55, 55.5 )
+193/navigation_offset = Vector2( 55, 55.5 )
 193/shape_offset = Vector2( 0, 0 )
 193/shapes = [  ]
-194/name = "human-characters-healer-sliding"
+194/name = "human-forest-wood-wall"
 194/texture = ExtResource( 107 )
-194/tex_offset = Vector2( -69, -104.5 )
+194/tex_offset = Vector2( 25, -18.5 )
 194/modulate = Color( 1, 1, 1, 1 )
-194/region = Rect2( 0, 0, 289, 285 )
-194/occluder_offset = Vector2( 144.5, 142.5 )
-194/navigation_offset = Vector2( 144.5, 142.5 )
+194/region = Rect2( 0, 0, 101, 113 )
+194/occluder_offset = Vector2( 50.5, 56.5 )
+194/navigation_offset = Vector2( 50.5, 56.5 )
 194/shape_offset = Vector2( 0, 0 )
 194/shapes = [  ]
-195/name = "human-characters-healer-attacking"
+195/name = "human-forest-wood-post"
 195/texture = ExtResource( 108 )
-195/tex_offset = Vector2( -68.5, -122 )
+195/tex_offset = Vector2( 27, -25.5 )
 195/modulate = Color( 1, 1, 1, 1 )
-195/region = Rect2( 0, 0, 288, 320 )
-195/occluder_offset = Vector2( 144, 160 )
-195/navigation_offset = Vector2( 144, 160 )
+195/region = Rect2( 0, 0, 97, 127 )
+195/occluder_offset = Vector2( 48.5, 63.5 )
+195/navigation_offset = Vector2( 48.5, 63.5 )
 195/shape_offset = Vector2( 0, 0 )
 195/shapes = [  ]
-196/name = "human-characters-archer-dying2"
+196/name = "human-street-misc-walls-1"
 196/texture = ExtResource( 109 )
-196/tex_offset = Vector2( -76, -81.5 )
+196/tex_offset = Vector2( 32, -25 )
 196/modulate = Color( 1, 1, 1, 1 )
-196/region = Rect2( 0, 0, 303, 239 )
-196/occluder_offset = Vector2( 151.5, 119.5 )
-196/navigation_offset = Vector2( 151.5, 119.5 )
+196/region = Rect2( 0, 0, 87, 126 )
+196/occluder_offset = Vector2( 43.5, 63 )
+196/navigation_offset = Vector2( 43.5, 63 )
 196/shape_offset = Vector2( 0, 0 )
 196/shapes = [  ]
-197/name = "human-characters-archer-defending"
+197/name = "human-street-misc-walls-2"
 197/texture = ExtResource( 110 )
-197/tex_offset = Vector2( -43.5, -117 )
+197/tex_offset = Vector2( 32, -24.5 )
 197/modulate = Color( 1, 1, 1, 1 )
-197/region = Rect2( 0, 0, 238, 310 )
-197/occluder_offset = Vector2( 119, 155 )
-197/navigation_offset = Vector2( 119, 155 )
+197/region = Rect2( 0, 0, 87, 125 )
+197/occluder_offset = Vector2( 43.5, 62.5 )
+197/navigation_offset = Vector2( 43.5, 62.5 )
 197/shape_offset = Vector2( 0, 0 )
 197/shapes = [  ]
-198/name = "human-characters-archer-walking"
+198/name = "human-street-misc-walls-3"
 198/texture = ExtResource( 111 )
-198/tex_offset = Vector2( -44, -122.5 )
+198/tex_offset = Vector2( 32, -25.5 )
 198/modulate = Color( 1, 1, 1, 1 )
-198/region = Rect2( 0, 0, 239, 321 )
-198/occluder_offset = Vector2( 119.5, 160.5 )
-198/navigation_offset = Vector2( 119.5, 160.5 )
+198/region = Rect2( 0, 0, 87, 127 )
+198/occluder_offset = Vector2( 43.5, 63.5 )
+198/navigation_offset = Vector2( 43.5, 63.5 )
 198/shape_offset = Vector2( 0, 0 )
 198/shapes = [  ]
-199/name = "human-characters-archer-dying"
+199/name = "human-street-misc-other-fountain"
 199/texture = ExtResource( 112 )
-199/tex_offset = Vector2( -44, -119.5 )
+199/tex_offset = Vector2( -2.5, -33 )
 199/modulate = Color( 1, 1, 1, 1 )
-199/region = Rect2( 0, 0, 239, 315 )
-199/occluder_offset = Vector2( 119.5, 157.5 )
-199/navigation_offset = Vector2( 119.5, 157.5 )
+199/region = Rect2( 0, 0, 156, 142 )
+199/occluder_offset = Vector2( 78, 71 )
+199/navigation_offset = Vector2( 78, 71 )
 199/shape_offset = Vector2( 0, 0 )
 199/shapes = [  ]
-200/name = "human-characters-archer-falling"
+200/name = "human-street-misc-other-light_post"
 200/texture = ExtResource( 115 )
-200/tex_offset = Vector2( -43.5, -122 )
+200/tex_offset = Vector2( 53.5, -4 )
 200/modulate = Color( 1, 1, 1, 1 )
-200/region = Rect2( 0, 0, 238, 320 )
-200/occluder_offset = Vector2( 119, 160 )
-200/navigation_offset = Vector2( 119, 160 )
+200/region = Rect2( 0, 0, 44, 84 )
+200/occluder_offset = Vector2( 22, 42 )
+200/navigation_offset = Vector2( 22, 42 )
 200/shape_offset = Vector2( 0, 0 )
 200/shapes = [  ]
-201/name = "human-characters-archer-sliding"
+201/name = "human-street-misc-other-well"
 201/texture = ExtResource( 116 )
-201/tex_offset = Vector2( -79, -90.5 )
+201/tex_offset = Vector2( 34, -5 )
 201/modulate = Color( 1, 1, 1, 1 )
-201/region = Rect2( 0, 0, 309, 257 )
-201/occluder_offset = Vector2( 154.5, 128.5 )
-201/navigation_offset = Vector2( 154.5, 128.5 )
+201/region = Rect2( 0, 0, 83, 86 )
+201/occluder_offset = Vector2( 41.5, 43 )
+201/navigation_offset = Vector2( 41.5, 43 )
 201/shape_offset = Vector2( 0, 0 )
 201/shapes = [  ]
-202/name = "human-characters-archer-attacking"
+202/name = "human-street-misc-other-magic_tower"
 202/texture = ExtResource( 117 )
-202/tex_offset = Vector2( -52.5, -131 )
+202/tex_offset = Vector2( 33, -61.5 )
 202/modulate = Color( 1, 1, 1, 1 )
-202/region = Rect2( 0, 0, 256, 338 )
-202/occluder_offset = Vector2( 128, 169 )
-202/navigation_offset = Vector2( 128, 169 )
+202/region = Rect2( 0, 0, 85, 199 )
+202/occluder_offset = Vector2( 42.5, 99.5 )
+202/navigation_offset = Vector2( 42.5, 99.5 )
 202/shape_offset = Vector2( 0, 0 )
 202/shapes = [  ]
-203/name = "human-forest-houses-double"
+203/name = "human-street-misc-other-portal"
 203/texture = ExtResource( 118 )
-203/tex_offset = Vector2( 17, -37.5 )
+203/tex_offset = Vector2( 4, -47.5 )
 203/modulate = Color( 1, 1, 1, 1 )
-203/region = Rect2( 0, 0, 117, 151 )
-203/occluder_offset = Vector2( 58.5, 75.5 )
-203/navigation_offset = Vector2( 58.5, 75.5 )
+203/region = Rect2( 0, 0, 143, 171 )
+203/occluder_offset = Vector2( 71.5, 85.5 )
+203/navigation_offset = Vector2( 71.5, 85.5 )
 203/shape_offset = Vector2( 0, 0 )
 203/shapes = [  ]
-204/name = "human-forest-houses-tend"
+204/name = "human-street-misc-arrows-1"
 204/texture = ExtResource( 119 )
-204/tex_offset = Vector2( 15, -12 )
+204/tex_offset = Vector2( 49, -1 )
 204/modulate = Color( 1, 1, 1, 1 )
-204/region = Rect2( 0, 0, 121, 100 )
-204/occluder_offset = Vector2( 60.5, 50 )
-204/navigation_offset = Vector2( 60.5, 50 )
+204/region = Rect2( 0, 0, 53, 78 )
+204/occluder_offset = Vector2( 26.5, 39 )
+204/navigation_offset = Vector2( 26.5, 39 )
 204/shape_offset = Vector2( 0, 0 )
 204/shapes = [  ]
-205/name = "human-forest-houses-regular"
+205/name = "human-street-misc-arrows-2"
 205/texture = ExtResource( 120 )
-205/tex_offset = Vector2( 5.5, -32 )
+205/tex_offset = Vector2( 49, -1 )
 205/modulate = Color( 1, 1, 1, 1 )
-205/region = Rect2( 0, 0, 140, 140 )
-205/occluder_offset = Vector2( 70, 70 )
-205/navigation_offset = Vector2( 70, 70 )
+205/region = Rect2( 0, 0, 53, 78 )
+205/occluder_offset = Vector2( 26.5, 39 )
+205/navigation_offset = Vector2( 26.5, 39 )
 205/shape_offset = Vector2( 0, 0 )
 205/shapes = [  ]
-206/name = "human-forest-caves-gold"
+206/name = "human-street-misc-arrows-3"
 206/texture = ExtResource( 121 )
-206/tex_offset = Vector2( 2, -21.5 )
+206/tex_offset = Vector2( 46, -1 )
 206/modulate = Color( 1, 1, 1, 1 )
-206/region = Rect2( 0, 0, 147, 119 )
-206/occluder_offset = Vector2( 73.5, 59.5 )
-206/navigation_offset = Vector2( 73.5, 59.5 )
+206/region = Rect2( 0, 0, 59, 78 )
+206/occluder_offset = Vector2( 29.5, 39 )
+206/navigation_offset = Vector2( 29.5, 39 )
 206/shape_offset = Vector2( 0, 0 )
 206/shapes = [  ]
-207/name = "human-forest-caves-stone"
+207/name = "human-street-misc-arrows-4"
 207/texture = ExtResource( 122 )
-207/tex_offset = Vector2( 2, -15 )
+207/tex_offset = Vector2( 46, -1 )
 207/modulate = Color( 1, 1, 1, 1 )
-207/region = Rect2( 0, 0, 147, 106 )
-207/occluder_offset = Vector2( 73.5, 53 )
-207/navigation_offset = Vector2( 73.5, 53 )
+207/region = Rect2( 0, 0, 59, 78 )
+207/occluder_offset = Vector2( 29.5, 39 )
+207/navigation_offset = Vector2( 29.5, 39 )
 207/shape_offset = Vector2( 0, 0 )
 207/shapes = [  ]
-208/name = "human-forest-caves-silver"
+208/name = "human-street-misc-gates-1"
 208/texture = ExtResource( 123 )
-208/tex_offset = Vector2( 0, -21.5 )
+208/tex_offset = Vector2( -5, -76 )
 208/modulate = Color( 1, 1, 1, 1 )
-208/region = Rect2( 0, 0, 151, 119 )
-208/occluder_offset = Vector2( 75.5, 59.5 )
-208/navigation_offset = Vector2( 75.5, 59.5 )
+208/region = Rect2( 0, 0, 161, 228 )
+208/occluder_offset = Vector2( 80.5, 114 )
+208/navigation_offset = Vector2( 80.5, 114 )
 208/shape_offset = Vector2( 0, 0 )
 208/shapes = [  ]
-209/name = "human-forest-wood-working_place"
+209/name = "human-street-misc-gates-2"
 209/texture = ExtResource( 124 )
-209/tex_offset = Vector2( 20.5, -17.5 )
+209/tex_offset = Vector2( -5, -76 )
 209/modulate = Color( 1, 1, 1, 1 )
-209/region = Rect2( 0, 0, 110, 111 )
-209/occluder_offset = Vector2( 55, 55.5 )
-209/navigation_offset = Vector2( 55, 55.5 )
+209/region = Rect2( 0, 0, 161, 228 )
+209/occluder_offset = Vector2( 80.5, 114 )
+209/navigation_offset = Vector2( 80.5, 114 )
 209/shape_offset = Vector2( 0, 0 )
 209/shapes = [  ]
-210/name = "human-forest-wood-wall"
+210/name = "human-street-misc-chests-1"
 210/texture = ExtResource( 126 )
-210/tex_offset = Vector2( 25, -18.5 )
+210/tex_offset = Vector2( 34, -3.5 )
 210/modulate = Color( 1, 1, 1, 1 )
-210/region = Rect2( 0, 0, 101, 113 )
-210/occluder_offset = Vector2( 50.5, 56.5 )
-210/navigation_offset = Vector2( 50.5, 56.5 )
+210/region = Rect2( 0, 0, 83, 83 )
+210/occluder_offset = Vector2( 41.5, 41.5 )
+210/navigation_offset = Vector2( 41.5, 41.5 )
 210/shape_offset = Vector2( 0, 0 )
 210/shapes = [  ]
-211/name = "human-forest-wood-post"
+211/name = "human-street-misc-chests-2"
 211/texture = ExtResource( 127 )
-211/tex_offset = Vector2( 27, -25.5 )
+211/tex_offset = Vector2( 41.5, 5 )
 211/modulate = Color( 1, 1, 1, 1 )
-211/region = Rect2( 0, 0, 97, 127 )
-211/occluder_offset = Vector2( 48.5, 63.5 )
-211/navigation_offset = Vector2( 48.5, 63.5 )
+211/region = Rect2( 0, 0, 68, 66 )
+211/occluder_offset = Vector2( 34, 33 )
+211/navigation_offset = Vector2( 34, 33 )
 211/shape_offset = Vector2( 0, 0 )
 211/shapes = [  ]
-212/name = "human-street-misc-walls-1"
+212/name = "human-street-misc-trees-1"
 212/texture = ExtResource( 128 )
-212/tex_offset = Vector2( 32, -25 )
+212/tex_offset = Vector2( -1, -80.5 )
 212/modulate = Color( 1, 1, 1, 1 )
-212/region = Rect2( 0, 0, 87, 126 )
-212/occluder_offset = Vector2( 43.5, 63 )
-212/navigation_offset = Vector2( 43.5, 63 )
+212/region = Rect2( 0, 0, 153, 237 )
+212/occluder_offset = Vector2( 76.5, 118.5 )
+212/navigation_offset = Vector2( 76.5, 118.5 )
 212/shape_offset = Vector2( 0, 0 )
 212/shapes = [  ]
-213/name = "human-street-misc-walls-2"
+213/name = "human-street-misc-trees-2"
 213/texture = ExtResource( 129 )
-213/tex_offset = Vector2( 32, -24.5 )
+213/tex_offset = Vector2( -1, -80.5 )
 213/modulate = Color( 1, 1, 1, 1 )
-213/region = Rect2( 0, 0, 87, 125 )
-213/occluder_offset = Vector2( 43.5, 62.5 )
-213/navigation_offset = Vector2( 43.5, 62.5 )
+213/region = Rect2( 0, 0, 153, 237 )
+213/occluder_offset = Vector2( 76.5, 118.5 )
+213/navigation_offset = Vector2( 76.5, 118.5 )
 213/shape_offset = Vector2( 0, 0 )
 213/shapes = [  ]
-214/name = "human-street-misc-walls-3"
+214/name = "human-street-misc-trees-apple_tree"
 214/texture = ExtResource( 130 )
-214/tex_offset = Vector2( 32, -25.5 )
+214/tex_offset = Vector2( 13, -56 )
 214/modulate = Color( 1, 1, 1, 1 )
-214/region = Rect2( 0, 0, 87, 127 )
-214/occluder_offset = Vector2( 43.5, 63.5 )
-214/navigation_offset = Vector2( 43.5, 63.5 )
+214/region = Rect2( 0, 0, 125, 188 )
+214/occluder_offset = Vector2( 62.5, 94 )
+214/navigation_offset = Vector2( 62.5, 94 )
 214/shape_offset = Vector2( 0, 0 )
 214/shapes = [  ]
-215/name = "human-street-misc-other-fountain"
+215/name = "human-street-buildings-12"
 215/texture = ExtResource( 131 )
-215/tex_offset = Vector2( -2.5, -33 )
+215/tex_offset = Vector2( -29.5, -57 )
 215/modulate = Color( 1, 1, 1, 1 )
-215/region = Rect2( 0, 0, 156, 142 )
-215/occluder_offset = Vector2( 78, 71 )
-215/navigation_offset = Vector2( 78, 71 )
+215/region = Rect2( 0, 0, 210, 190 )
+215/occluder_offset = Vector2( 105, 95 )
+215/navigation_offset = Vector2( 105, 95 )
 215/shape_offset = Vector2( 0, 0 )
 215/shapes = [  ]
-216/name = "human-street-misc-other-light_post"
+216/name = "human-street-buildings-21"
 216/texture = ExtResource( 132 )
-216/tex_offset = Vector2( 53.5, -4 )
+216/tex_offset = Vector2( -66.5, -68.5 )
 216/modulate = Color( 1, 1, 1, 1 )
-216/region = Rect2( 0, 0, 44, 84 )
-216/occluder_offset = Vector2( 22, 42 )
-216/navigation_offset = Vector2( 22, 42 )
+216/region = Rect2( 0, 0, 284, 213 )
+216/occluder_offset = Vector2( 142, 106.5 )
+216/navigation_offset = Vector2( 142, 106.5 )
 216/shape_offset = Vector2( 0, 0 )
 216/shapes = [  ]
-217/name = "human-street-misc-other-well"
+217/name = "human-street-buildings-18"
 217/texture = ExtResource( 133 )
-217/tex_offset = Vector2( 34, -5 )
+217/tex_offset = Vector2( -39, -105 )
 217/modulate = Color( 1, 1, 1, 1 )
-217/region = Rect2( 0, 0, 83, 86 )
-217/occluder_offset = Vector2( 41.5, 43 )
-217/navigation_offset = Vector2( 41.5, 43 )
+217/region = Rect2( 0, 0, 229, 286 )
+217/occluder_offset = Vector2( 114.5, 143 )
+217/navigation_offset = Vector2( 114.5, 143 )
 217/shape_offset = Vector2( 0, 0 )
 217/shapes = [  ]
-218/name = "human-street-misc-other-magic_tower"
+218/name = "human-street-buildings-26"
 218/texture = ExtResource( 134 )
-218/tex_offset = Vector2( 33, -61.5 )
+218/tex_offset = Vector2( -62.5, -107.5 )
 218/modulate = Color( 1, 1, 1, 1 )
-218/region = Rect2( 0, 0, 85, 199 )
-218/occluder_offset = Vector2( 42.5, 99.5 )
-218/navigation_offset = Vector2( 42.5, 99.5 )
+218/region = Rect2( 0, 0, 276, 291 )
+218/occluder_offset = Vector2( 138, 145.5 )
+218/navigation_offset = Vector2( 138, 145.5 )
 218/shape_offset = Vector2( 0, 0 )
 218/shapes = [  ]
-219/name = "human-street-misc-other-portal"
+219/name = "human-street-buildings-15"
 219/texture = ExtResource( 135 )
-219/tex_offset = Vector2( 4, -47.5 )
+219/tex_offset = Vector2( -50, -60 )
 219/modulate = Color( 1, 1, 1, 1 )
-219/region = Rect2( 0, 0, 143, 171 )
-219/occluder_offset = Vector2( 71.5, 85.5 )
-219/navigation_offset = Vector2( 71.5, 85.5 )
+219/region = Rect2( 0, 0, 251, 196 )
+219/occluder_offset = Vector2( 125.5, 98 )
+219/navigation_offset = Vector2( 125.5, 98 )
 219/shape_offset = Vector2( 0, 0 )
 219/shapes = [  ]
-220/name = "human-street-misc-arrows-1"
+220/name = "human-street-buildings-28"
 220/texture = ExtResource( 137 )
-220/tex_offset = Vector2( 49, -1 )
+220/tex_offset = Vector2( -21, -51 )
 220/modulate = Color( 1, 1, 1, 1 )
-220/region = Rect2( 0, 0, 53, 78 )
-220/occluder_offset = Vector2( 26.5, 39 )
-220/navigation_offset = Vector2( 26.5, 39 )
+220/region = Rect2( 0, 0, 193, 178 )
+220/occluder_offset = Vector2( 96.5, 89 )
+220/navigation_offset = Vector2( 96.5, 89 )
 220/shape_offset = Vector2( 0, 0 )
 220/shapes = [  ]
-221/name = "human-street-misc-arrows-2"
+221/name = "human-street-buildings-10"
 221/texture = ExtResource( 138 )
-221/tex_offset = Vector2( 49, -1 )
+221/tex_offset = Vector2( -59.5, -58 )
 221/modulate = Color( 1, 1, 1, 1 )
-221/region = Rect2( 0, 0, 53, 78 )
-221/occluder_offset = Vector2( 26.5, 39 )
-221/navigation_offset = Vector2( 26.5, 39 )
+221/region = Rect2( 0, 0, 270, 192 )
+221/occluder_offset = Vector2( 135, 96 )
+221/navigation_offset = Vector2( 135, 96 )
 221/shape_offset = Vector2( 0, 0 )
 221/shapes = [  ]
-222/name = "human-street-misc-arrows-3"
+222/name = "human-street-buildings-24"
 222/texture = ExtResource( 139 )
-222/tex_offset = Vector2( 46, -1 )
+222/tex_offset = Vector2( -55, -53 )
 222/modulate = Color( 1, 1, 1, 1 )
-222/region = Rect2( 0, 0, 59, 78 )
-222/occluder_offset = Vector2( 29.5, 39 )
-222/navigation_offset = Vector2( 29.5, 39 )
+222/region = Rect2( 0, 0, 261, 182 )
+222/occluder_offset = Vector2( 130.5, 91 )
+222/navigation_offset = Vector2( 130.5, 91 )
 222/shape_offset = Vector2( 0, 0 )
 222/shapes = [  ]
-223/name = "human-street-misc-arrows-4"
+223/name = "human-street-buildings-5"
 223/texture = ExtResource( 140 )
-223/tex_offset = Vector2( 46, -1 )
+223/tex_offset = Vector2( -18.5, -46.5 )
 223/modulate = Color( 1, 1, 1, 1 )
-223/region = Rect2( 0, 0, 59, 78 )
-223/occluder_offset = Vector2( 29.5, 39 )
-223/navigation_offset = Vector2( 29.5, 39 )
+223/region = Rect2( 0, 0, 188, 169 )
+223/occluder_offset = Vector2( 94, 84.5 )
+223/navigation_offset = Vector2( 94, 84.5 )
 223/shape_offset = Vector2( 0, 0 )
 223/shapes = [  ]
-224/name = "human-street-misc-gates-1"
+224/name = "human-street-buildings-20"
 224/texture = ExtResource( 141 )
-224/tex_offset = Vector2( -5, -76 )
+224/tex_offset = Vector2( -70.5, -66.5 )
 224/modulate = Color( 1, 1, 1, 1 )
-224/region = Rect2( 0, 0, 161, 228 )
-224/occluder_offset = Vector2( 80.5, 114 )
-224/navigation_offset = Vector2( 80.5, 114 )
+224/region = Rect2( 0, 0, 292, 209 )
+224/occluder_offset = Vector2( 146, 104.5 )
+224/navigation_offset = Vector2( 146, 104.5 )
 224/shape_offset = Vector2( 0, 0 )
 224/shapes = [  ]
-225/name = "human-street-misc-gates-2"
+225/name = "human-street-buildings-8"
 225/texture = ExtResource( 142 )
-225/tex_offset = Vector2( -5, -76 )
+225/tex_offset = Vector2( -42, -74 )
 225/modulate = Color( 1, 1, 1, 1 )
-225/region = Rect2( 0, 0, 161, 228 )
-225/occluder_offset = Vector2( 80.5, 114 )
-225/navigation_offset = Vector2( 80.5, 114 )
+225/region = Rect2( 0, 0, 235, 224 )
+225/occluder_offset = Vector2( 117.5, 112 )
+225/navigation_offset = Vector2( 117.5, 112 )
 225/shape_offset = Vector2( 0, 0 )
 225/shapes = [  ]
-226/name = "human-street-misc-chests-1"
+226/name = "human-street-buildings-22"
 226/texture = ExtResource( 143 )
-226/tex_offset = Vector2( 34, -3.5 )
+226/tex_offset = Vector2( -64, -88 )
 226/modulate = Color( 1, 1, 1, 1 )
-226/region = Rect2( 0, 0, 83, 83 )
-226/occluder_offset = Vector2( 41.5, 41.5 )
-226/navigation_offset = Vector2( 41.5, 41.5 )
+226/region = Rect2( 0, 0, 279, 252 )
+226/occluder_offset = Vector2( 139.5, 126 )
+226/navigation_offset = Vector2( 139.5, 126 )
 226/shape_offset = Vector2( 0, 0 )
 226/shapes = [  ]
-227/name = "human-street-misc-chests-2"
+227/name = "human-street-buildings-1"
 227/texture = ExtResource( 144 )
-227/tex_offset = Vector2( 41.5, 5 )
+227/tex_offset = Vector2( -38, -78 )
 227/modulate = Color( 1, 1, 1, 1 )
-227/region = Rect2( 0, 0, 68, 66 )
-227/occluder_offset = Vector2( 34, 33 )
-227/navigation_offset = Vector2( 34, 33 )
+227/region = Rect2( 0, 0, 227, 232 )
+227/occluder_offset = Vector2( 113.5, 116 )
+227/navigation_offset = Vector2( 113.5, 116 )
 227/shape_offset = Vector2( 0, 0 )
 227/shapes = [  ]
-228/name = "human-street-misc-trees-1"
+228/name = "human-street-buildings-11"
 228/texture = ExtResource( 145 )
-228/tex_offset = Vector2( -1, -80.5 )
+228/tex_offset = Vector2( -52.5, -54 )
 228/modulate = Color( 1, 1, 1, 1 )
-228/region = Rect2( 0, 0, 153, 237 )
-228/occluder_offset = Vector2( 76.5, 118.5 )
-228/navigation_offset = Vector2( 76.5, 118.5 )
+228/region = Rect2( 0, 0, 256, 184 )
+228/occluder_offset = Vector2( 128, 92 )
+228/navigation_offset = Vector2( 128, 92 )
 228/shape_offset = Vector2( 0, 0 )
 228/shapes = [  ]
-229/name = "human-street-misc-trees-2"
+229/name = "human-street-buildings-9"
 229/texture = ExtResource( 146 )
-229/tex_offset = Vector2( -1, -80.5 )
+229/tex_offset = Vector2( -67, -79 )
 229/modulate = Color( 1, 1, 1, 1 )
-229/region = Rect2( 0, 0, 153, 237 )
-229/occluder_offset = Vector2( 76.5, 118.5 )
-229/navigation_offset = Vector2( 76.5, 118.5 )
+229/region = Rect2( 0, 0, 285, 234 )
+229/occluder_offset = Vector2( 142.5, 117 )
+229/navigation_offset = Vector2( 142.5, 117 )
 229/shape_offset = Vector2( 0, 0 )
 229/shapes = [  ]
-230/name = "human-street-misc-trees-apple_tree"
+230/name = "human-street-buildings-16"
 230/texture = ExtResource( 148 )
-230/tex_offset = Vector2( 13, -56 )
+230/tex_offset = Vector2( -29, -71.5 )
 230/modulate = Color( 1, 1, 1, 1 )
-230/region = Rect2( 0, 0, 125, 188 )
-230/occluder_offset = Vector2( 62.5, 94 )
-230/navigation_offset = Vector2( 62.5, 94 )
+230/region = Rect2( 0, 0, 209, 219 )
+230/occluder_offset = Vector2( 104.5, 109.5 )
+230/navigation_offset = Vector2( 104.5, 109.5 )
 230/shape_offset = Vector2( 0, 0 )
 230/shapes = [  ]
-231/name = "human-street-buildings-12"
+231/name = "human-street-buildings-23"
 231/texture = ExtResource( 149 )
-231/tex_offset = Vector2( -29.5, -57 )
+231/tex_offset = Vector2( -72, -74.5 )
 231/modulate = Color( 1, 1, 1, 1 )
-231/region = Rect2( 0, 0, 210, 190 )
-231/occluder_offset = Vector2( 105, 95 )
-231/navigation_offset = Vector2( 105, 95 )
+231/region = Rect2( 0, 0, 295, 225 )
+231/occluder_offset = Vector2( 147.5, 112.5 )
+231/navigation_offset = Vector2( 147.5, 112.5 )
 231/shape_offset = Vector2( 0, 0 )
 231/shapes = [  ]
-232/name = "human-street-buildings-21"
+232/name = "human-street-buildings-17"
 232/texture = ExtResource( 150 )
-232/tex_offset = Vector2( -66.5, -68.5 )
+232/tex_offset = Vector2( -24, -91 )
 232/modulate = Color( 1, 1, 1, 1 )
-232/region = Rect2( 0, 0, 284, 213 )
-232/occluder_offset = Vector2( 142, 106.5 )
-232/navigation_offset = Vector2( 142, 106.5 )
+232/region = Rect2( 0, 0, 199, 258 )
+232/occluder_offset = Vector2( 99.5, 129 )
+232/navigation_offset = Vector2( 99.5, 129 )
 232/shape_offset = Vector2( 0, 0 )
 232/shapes = [  ]
-233/name = "human-street-buildings-18"
+233/name = "human-street-buildings-2"
 233/texture = ExtResource( 151 )
-233/tex_offset = Vector2( -39, -105 )
+233/tex_offset = Vector2( -45.5, -82 )
 233/modulate = Color( 1, 1, 1, 1 )
-233/region = Rect2( 0, 0, 229, 286 )
-233/occluder_offset = Vector2( 114.5, 143 )
-233/navigation_offset = Vector2( 114.5, 143 )
+233/region = Rect2( 0, 0, 242, 240 )
+233/occluder_offset = Vector2( 121, 120 )
+233/navigation_offset = Vector2( 121, 120 )
 233/shape_offset = Vector2( 0, 0 )
 233/shapes = [  ]
-234/name = "human-street-buildings-26"
+234/name = "human-street-buildings-27"
 234/texture = ExtResource( 152 )
-234/tex_offset = Vector2( -62.5, -107.5 )
+234/tex_offset = Vector2( -43, -111 )
 234/modulate = Color( 1, 1, 1, 1 )
-234/region = Rect2( 0, 0, 276, 291 )
-234/occluder_offset = Vector2( 138, 145.5 )
-234/navigation_offset = Vector2( 138, 145.5 )
+234/region = Rect2( 0, 0, 237, 298 )
+234/occluder_offset = Vector2( 118.5, 149 )
+234/navigation_offset = Vector2( 118.5, 149 )
 234/shape_offset = Vector2( 0, 0 )
 234/shapes = [  ]
-235/name = "human-street-buildings-15"
+235/name = "human-street-buildings-25"
 235/texture = ExtResource( 153 )
-235/tex_offset = Vector2( -50, -60 )
+235/tex_offset = Vector2( -49, -51 )
 235/modulate = Color( 1, 1, 1, 1 )
-235/region = Rect2( 0, 0, 251, 196 )
-235/occluder_offset = Vector2( 125.5, 98 )
-235/navigation_offset = Vector2( 125.5, 98 )
+235/region = Rect2( 0, 0, 249, 178 )
+235/occluder_offset = Vector2( 124.5, 89 )
+235/navigation_offset = Vector2( 124.5, 89 )
 235/shape_offset = Vector2( 0, 0 )
 235/shapes = [  ]
-236/name = "human-street-buildings-28"
+236/name = "human-street-buildings-13"
 236/texture = ExtResource( 154 )
-236/tex_offset = Vector2( -21, -51 )
+236/tex_offset = Vector2( -19.5, -81 )
 236/modulate = Color( 1, 1, 1, 1 )
-236/region = Rect2( 0, 0, 193, 178 )
-236/occluder_offset = Vector2( 96.5, 89 )
-236/navigation_offset = Vector2( 96.5, 89 )
+236/region = Rect2( 0, 0, 190, 238 )
+236/occluder_offset = Vector2( 95, 119 )
+236/navigation_offset = Vector2( 95, 119 )
 236/shape_offset = Vector2( 0, 0 )
 236/shapes = [  ]
-237/name = "human-street-buildings-10"
+237/name = "human-street-buildings-14"
 237/texture = ExtResource( 155 )
-237/tex_offset = Vector2( -59.5, -58 )
+237/tex_offset = Vector2( -23, -37.5 )
 237/modulate = Color( 1, 1, 1, 1 )
-237/region = Rect2( 0, 0, 270, 192 )
-237/occluder_offset = Vector2( 135, 96 )
-237/navigation_offset = Vector2( 135, 96 )
+237/region = Rect2( 0, 0, 197, 151 )
+237/occluder_offset = Vector2( 98.5, 75.5 )
+237/navigation_offset = Vector2( 98.5, 75.5 )
 237/shape_offset = Vector2( 0, 0 )
 237/shapes = [  ]
-238/name = "human-street-buildings-24"
+238/name = "human-street-buildings-19"
 238/texture = ExtResource( 156 )
-238/tex_offset = Vector2( -55, -53 )
+238/tex_offset = Vector2( -67.5, -69.5 )
 238/modulate = Color( 1, 1, 1, 1 )
-238/region = Rect2( 0, 0, 261, 182 )
-238/occluder_offset = Vector2( 130.5, 91 )
-238/navigation_offset = Vector2( 130.5, 91 )
+238/region = Rect2( 0, 0, 286, 215 )
+238/occluder_offset = Vector2( 143, 107.5 )
+238/navigation_offset = Vector2( 143, 107.5 )
 238/shape_offset = Vector2( 0, 0 )
 238/shapes = [  ]
-239/name = "human-street-buildings-5"
+239/name = "human-street-buildings-7"
 239/texture = ExtResource( 157 )
-239/tex_offset = Vector2( -18.5, -46.5 )
+239/tex_offset = Vector2( -58, -80 )
 239/modulate = Color( 1, 1, 1, 1 )
-239/region = Rect2( 0, 0, 188, 169 )
-239/occluder_offset = Vector2( 94, 84.5 )
-239/navigation_offset = Vector2( 94, 84.5 )
+239/region = Rect2( 0, 0, 267, 236 )
+239/occluder_offset = Vector2( 133.5, 118 )
+239/navigation_offset = Vector2( 133.5, 118 )
 239/shape_offset = Vector2( 0, 0 )
 239/shapes = [  ]
-240/name = "human-street-buildings-20"
+240/name = "human-street-buildings-6"
 240/texture = ExtResource( 159 )
-240/tex_offset = Vector2( -70.5, -66.5 )
+240/tex_offset = Vector2( -25.5, -65.5 )
 240/modulate = Color( 1, 1, 1, 1 )
-240/region = Rect2( 0, 0, 292, 209 )
-240/occluder_offset = Vector2( 146, 104.5 )
-240/navigation_offset = Vector2( 146, 104.5 )
+240/region = Rect2( 0, 0, 202, 207 )
+240/occluder_offset = Vector2( 101, 103.5 )
+240/navigation_offset = Vector2( 101, 103.5 )
 240/shape_offset = Vector2( 0, 0 )
 240/shapes = [  ]
-241/name = "human-street-buildings-8"
+241/name = "human-street-buildings-3"
 241/texture = ExtResource( 160 )
-241/tex_offset = Vector2( -42, -74 )
+241/tex_offset = Vector2( -50.5, -69.5 )
 241/modulate = Color( 1, 1, 1, 1 )
-241/region = Rect2( 0, 0, 235, 224 )
-241/occluder_offset = Vector2( 117.5, 112 )
-241/navigation_offset = Vector2( 117.5, 112 )
+241/region = Rect2( 0, 0, 252, 215 )
+241/occluder_offset = Vector2( 126, 107.5 )
+241/navigation_offset = Vector2( 126, 107.5 )
 241/shape_offset = Vector2( 0, 0 )
 241/shapes = [  ]
-242/name = "human-street-buildings-22"
+242/name = "human-street-buildings-4"
 242/texture = ExtResource( 161 )
-242/tex_offset = Vector2( -64, -88 )
+242/tex_offset = Vector2( -17.5, -37 )
 242/modulate = Color( 1, 1, 1, 1 )
-242/region = Rect2( 0, 0, 279, 252 )
-242/occluder_offset = Vector2( 139.5, 126 )
-242/navigation_offset = Vector2( 139.5, 126 )
+242/region = Rect2( 0, 0, 186, 150 )
+242/occluder_offset = Vector2( 93, 75 )
+242/navigation_offset = Vector2( 93, 75 )
 242/shape_offset = Vector2( 0, 0 )
 242/shapes = [  ]
-243/name = "human-street-buildings-1"
+243/name = "human-street-road-left"
 243/texture = ExtResource( 162 )
-243/tex_offset = Vector2( -38, -78 )
+243/tex_offset = Vector2( 0, 1.5 )
 243/modulate = Color( 1, 1, 1, 1 )
-243/region = Rect2( 0, 0, 227, 232 )
-243/occluder_offset = Vector2( 113.5, 116 )
-243/navigation_offset = Vector2( 113.5, 116 )
+243/region = Rect2( 0, 0, 151, 73 )
+243/occluder_offset = Vector2( 75.5, 36.5 )
+243/navigation_offset = Vector2( 75.5, 36.5 )
 243/shape_offset = Vector2( 0, 0 )
 243/shapes = [  ]
-244/name = "human-street-buildings-11"
+244/name = "human-street-towers-1"
 244/texture = ExtResource( 163 )
-244/tex_offset = Vector2( -52.5, -54 )
+244/tex_offset = Vector2( 26, -69 )
 244/modulate = Color( 1, 1, 1, 1 )
-244/region = Rect2( 0, 0, 256, 184 )
-244/occluder_offset = Vector2( 128, 92 )
-244/navigation_offset = Vector2( 128, 92 )
+244/region = Rect2( 0, 0, 99, 214 )
+244/occluder_offset = Vector2( 49.5, 107 )
+244/navigation_offset = Vector2( 49.5, 107 )
 244/shape_offset = Vector2( 0, 0 )
 244/shapes = [  ]
-245/name = "human-street-buildings-9"
+245/name = "human-street-towers-2"
 245/texture = ExtResource( 164 )
-245/tex_offset = Vector2( -67, -79 )
+245/tex_offset = Vector2( -10, -66 )
 245/modulate = Color( 1, 1, 1, 1 )
-245/region = Rect2( 0, 0, 285, 234 )
-245/occluder_offset = Vector2( 142.5, 117 )
-245/navigation_offset = Vector2( 142.5, 117 )
+245/region = Rect2( 0, 0, 171, 208 )
+245/occluder_offset = Vector2( 85.5, 104 )
+245/navigation_offset = Vector2( 85.5, 104 )
 245/shape_offset = Vector2( 0, 0 )
 245/shapes = [  ]
-246/name = "human-street-buildings-16"
+246/name = "human-street-towers-3"
 246/texture = ExtResource( 165 )
-246/tex_offset = Vector2( -29, -71.5 )
+246/tex_offset = Vector2( 18.5, -51.5 )
 246/modulate = Color( 1, 1, 1, 1 )
-246/region = Rect2( 0, 0, 209, 219 )
-246/occluder_offset = Vector2( 104.5, 109.5 )
-246/navigation_offset = Vector2( 104.5, 109.5 )
+246/region = Rect2( 0, 0, 114, 179 )
+246/occluder_offset = Vector2( 57, 89.5 )
+246/navigation_offset = Vector2( 57, 89.5 )
 246/shape_offset = Vector2( 0, 0 )
 246/shapes = [  ]
-247/name = "human-street-buildings-23"
+247/name = "human-street-castles-1"
 247/texture = ExtResource( 166 )
-247/tex_offset = Vector2( -72, -74.5 )
+247/tex_offset = Vector2( 49, -1 )
 247/modulate = Color( 1, 1, 1, 1 )
-247/region = Rect2( 0, 0, 295, 225 )
-247/occluder_offset = Vector2( 147.5, 112.5 )
-247/navigation_offset = Vector2( 147.5, 112.5 )
+247/region = Rect2( 0, 0, 53, 78 )
+247/occluder_offset = Vector2( 26.5, 39 )
+247/navigation_offset = Vector2( 26.5, 39 )
 247/shape_offset = Vector2( 0, 0 )
 247/shapes = [  ]
-248/name = "human-street-buildings-17"
+248/name = "human-street-castles-2"
 248/texture = ExtResource( 167 )
-248/tex_offset = Vector2( -24, -91 )
+248/tex_offset = Vector2( 49, -1 )
 248/modulate = Color( 1, 1, 1, 1 )
-248/region = Rect2( 0, 0, 199, 258 )
-248/occluder_offset = Vector2( 99.5, 129 )
-248/navigation_offset = Vector2( 99.5, 129 )
+248/region = Rect2( 0, 0, 53, 78 )
+248/occluder_offset = Vector2( 26.5, 39 )
+248/navigation_offset = Vector2( 26.5, 39 )
 248/shape_offset = Vector2( 0, 0 )
 248/shapes = [  ]
-249/name = "human-street-buildings-2"
+249/name = "human-street-castles-3"
 249/texture = ExtResource( 168 )
-249/tex_offset = Vector2( -45.5, -82 )
+249/tex_offset = Vector2( 46, -1 )
 249/modulate = Color( 1, 1, 1, 1 )
-249/region = Rect2( 0, 0, 242, 240 )
-249/occluder_offset = Vector2( 121, 120 )
-249/navigation_offset = Vector2( 121, 120 )
+249/region = Rect2( 0, 0, 59, 78 )
+249/occluder_offset = Vector2( 29.5, 39 )
+249/navigation_offset = Vector2( 29.5, 39 )
 249/shape_offset = Vector2( 0, 0 )
 249/shapes = [  ]
-250/name = "human-street-buildings-27"
+250/name = "human-street-castles-4"
 250/texture = ExtResource( 170 )
-250/tex_offset = Vector2( -43, -111 )
+250/tex_offset = Vector2( 46, -1 )
 250/modulate = Color( 1, 1, 1, 1 )
-250/region = Rect2( 0, 0, 237, 298 )
-250/occluder_offset = Vector2( 118.5, 149 )
-250/navigation_offset = Vector2( 118.5, 149 )
+250/region = Rect2( 0, 0, 59, 78 )
+250/occluder_offset = Vector2( 29.5, 39 )
+250/navigation_offset = Vector2( 29.5, 39 )
 250/shape_offset = Vector2( 0, 0 )
 250/shapes = [  ]
-251/name = "human-street-buildings-25"
+251/name = "human-resources-containers-empty-1"
 251/texture = ExtResource( 171 )
-251/tex_offset = Vector2( -49, -51 )
+251/tex_offset = Vector2( 61, 19.5 )
 251/modulate = Color( 1, 1, 1, 1 )
-251/region = Rect2( 0, 0, 249, 178 )
-251/occluder_offset = Vector2( 124.5, 89 )
-251/navigation_offset = Vector2( 124.5, 89 )
+251/region = Rect2( 0, 0, 29, 37 )
+251/occluder_offset = Vector2( 14.5, 18.5 )
+251/navigation_offset = Vector2( 14.5, 18.5 )
 251/shape_offset = Vector2( 0, 0 )
 251/shapes = [  ]
-252/name = "human-street-buildings-13"
+252/name = "human-resources-containers-empty-2"
 252/texture = ExtResource( 172 )
-252/tex_offset = Vector2( -19.5, -81 )
+252/tex_offset = Vector2( 61, 19 )
 252/modulate = Color( 1, 1, 1, 1 )
-252/region = Rect2( 0, 0, 190, 238 )
-252/occluder_offset = Vector2( 95, 119 )
-252/navigation_offset = Vector2( 95, 119 )
+252/region = Rect2( 0, 0, 29, 38 )
+252/occluder_offset = Vector2( 14.5, 19 )
+252/navigation_offset = Vector2( 14.5, 19 )
 252/shape_offset = Vector2( 0, 0 )
 252/shapes = [  ]
-253/name = "human-street-buildings-14"
+253/name = "human-resources-containers-empty-3"
 253/texture = ExtResource( 173 )
-253/tex_offset = Vector2( -23, -37.5 )
+253/tex_offset = Vector2( 46, 9.5 )
 253/modulate = Color( 1, 1, 1, 1 )
-253/region = Rect2( 0, 0, 197, 151 )
-253/occluder_offset = Vector2( 98.5, 75.5 )
-253/navigation_offset = Vector2( 98.5, 75.5 )
+253/region = Rect2( 0, 0, 59, 57 )
+253/occluder_offset = Vector2( 29.5, 28.5 )
+253/navigation_offset = Vector2( 29.5, 28.5 )
 253/shape_offset = Vector2( 0, 0 )
 253/shapes = [  ]
-254/name = "human-street-buildings-19"
+254/name = "human-resources-containers-full-1"
 254/texture = ExtResource( 174 )
-254/tex_offset = Vector2( -67.5, -69.5 )
+254/tex_offset = Vector2( 61, 15.5 )
 254/modulate = Color( 1, 1, 1, 1 )
-254/region = Rect2( 0, 0, 286, 215 )
-254/occluder_offset = Vector2( 143, 107.5 )
-254/navigation_offset = Vector2( 143, 107.5 )
+254/region = Rect2( 0, 0, 29, 45 )
+254/occluder_offset = Vector2( 14.5, 22.5 )
+254/navigation_offset = Vector2( 14.5, 22.5 )
 254/shape_offset = Vector2( 0, 0 )
 254/shapes = [  ]
-255/name = "human-street-buildings-7"
+255/name = "human-resources-containers-full-2"
 255/texture = ExtResource( 175 )
-255/tex_offset = Vector2( -58, -80 )
+255/tex_offset = Vector2( 46.5, 7.5 )
 255/modulate = Color( 1, 1, 1, 1 )
-255/region = Rect2( 0, 0, 267, 236 )
-255/occluder_offset = Vector2( 133.5, 118 )
-255/navigation_offset = Vector2( 133.5, 118 )
+255/region = Rect2( 0, 0, 58, 61 )
+255/occluder_offset = Vector2( 29, 30.5 )
+255/navigation_offset = Vector2( 29, 30.5 )
 255/shape_offset = Vector2( 0, 0 )
 255/shapes = [  ]
-256/name = "human-street-buildings-6"
+256/name = "human-resources-containers-full-3"
 256/texture = ExtResource( 176 )
-256/tex_offset = Vector2( -25.5, -65.5 )
+256/tex_offset = Vector2( 61, 13 )
 256/modulate = Color( 1, 1, 1, 1 )
-256/region = Rect2( 0, 0, 202, 207 )
-256/occluder_offset = Vector2( 101, 103.5 )
-256/navigation_offset = Vector2( 101, 103.5 )
+256/region = Rect2( 0, 0, 29, 50 )
+256/occluder_offset = Vector2( 14.5, 25 )
+256/navigation_offset = Vector2( 14.5, 25 )
 256/shape_offset = Vector2( 0, 0 )
 256/shapes = [  ]
-257/name = "human-street-buildings-3"
+257/name = "human-resources-containers-full-4"
 257/texture = ExtResource( 177 )
-257/tex_offset = Vector2( -50.5, -69.5 )
+257/tex_offset = Vector2( 61, 17.5 )
 257/modulate = Color( 1, 1, 1, 1 )
-257/region = Rect2( 0, 0, 252, 215 )
-257/occluder_offset = Vector2( 126, 107.5 )
-257/navigation_offset = Vector2( 126, 107.5 )
+257/region = Rect2( 0, 0, 29, 41 )
+257/occluder_offset = Vector2( 14.5, 20.5 )
+257/navigation_offset = Vector2( 14.5, 20.5 )
 257/shape_offset = Vector2( 0, 0 )
 257/shapes = [  ]
-258/name = "human-street-buildings-4"
+258/name = "human-resources-containers-closed-1"
 258/texture = ExtResource( 178 )
-258/tex_offset = Vector2( -17.5, -37 )
+258/tex_offset = Vector2( 47, 17.5 )
 258/modulate = Color( 1, 1, 1, 1 )
-258/region = Rect2( 0, 0, 186, 150 )
-258/occluder_offset = Vector2( 93, 75 )
-258/navigation_offset = Vector2( 93, 75 )
+258/region = Rect2( 0, 0, 57, 41 )
+258/occluder_offset = Vector2( 28.5, 20.5 )
+258/navigation_offset = Vector2( 28.5, 20.5 )
 258/shape_offset = Vector2( 0, 0 )
 258/shapes = [  ]
-259/name = "human-street-road-left"
+259/name = "human-resources-containers-closed-2"
 259/texture = ExtResource( 179 )
-259/tex_offset = Vector2( 0, 1.5 )
+259/tex_offset = Vector2( 58, 19 )
 259/modulate = Color( 1, 1, 1, 1 )
-259/region = Rect2( 0, 0, 151, 73 )
-259/occluder_offset = Vector2( 75.5, 36.5 )
-259/navigation_offset = Vector2( 75.5, 36.5 )
+259/region = Rect2( 0, 0, 35, 38 )
+259/occluder_offset = Vector2( 17.5, 19 )
+259/navigation_offset = Vector2( 17.5, 19 )
 259/shape_offset = Vector2( 0, 0 )
 259/shapes = [  ]
-260/name = "human-street-road-up"
+260/name = "human-resources-containers-closed-3"
 260/texture = ExtResource( 181 )
-260/tex_offset = Vector2( 0, 0 )
+260/tex_offset = Vector2( 48, 14 )
 260/modulate = Color( 1, 1, 1, 1 )
-260/region = Rect2( 0, 0, 151, 76 )
-260/occluder_offset = Vector2( 75.5, 38 )
-260/navigation_offset = Vector2( 75.5, 38 )
+260/region = Rect2( 0, 0, 55, 48 )
+260/occluder_offset = Vector2( 27.5, 24 )
+260/navigation_offset = Vector2( 27.5, 24 )
 260/shape_offset = Vector2( 0, 0 )
 260/shapes = [  ]
-261/name = "human-street-road-right"
+261/name = "human-resources-containers-closed-4"
 261/texture = ExtResource( 182 )
-261/tex_offset = Vector2( 0, 0 )
+261/tex_offset = Vector2( 39, 5.5 )
 261/modulate = Color( 1, 1, 1, 1 )
-261/region = Rect2( 0, 0, 151, 76 )
-261/occluder_offset = Vector2( 75.5, 38 )
-261/navigation_offset = Vector2( 75.5, 38 )
+261/region = Rect2( 0, 0, 73, 65 )
+261/occluder_offset = Vector2( 36.5, 32.5 )
+261/navigation_offset = Vector2( 36.5, 32.5 )
 261/shape_offset = Vector2( 0, 0 )
 261/shapes = [  ]
-262/name = "human-street-road-down"
+262/name = "human-resources-bronze-1"
 262/texture = ExtResource( 183 )
-262/tex_offset = Vector2( 0, 0.5 )
+262/tex_offset = Vector2( 37, 9 )
 262/modulate = Color( 1, 1, 1, 1 )
-262/region = Rect2( 0, 0, 151, 75 )
-262/occluder_offset = Vector2( 75.5, 37.5 )
-262/navigation_offset = Vector2( 75.5, 37.5 )
+262/region = Rect2( 0, 0, 77, 58 )
+262/occluder_offset = Vector2( 38.5, 29 )
+262/navigation_offset = Vector2( 38.5, 29 )
 262/shape_offset = Vector2( 0, 0 )
 262/shapes = [  ]
-263/name = "human-street-road-road"
+263/name = "human-resources-bronze-2"
 263/texture = ExtResource( 184 )
-263/tex_offset = Vector2( 0, 0 )
+263/tex_offset = Vector2( 37, 14 )
 263/modulate = Color( 1, 1, 1, 1 )
-263/region = Rect2( 0, 0, 151, 76 )
-263/occluder_offset = Vector2( 75.5, 38 )
-263/navigation_offset = Vector2( 75.5, 38 )
+263/region = Rect2( 0, 0, 77, 48 )
+263/occluder_offset = Vector2( 38.5, 24 )
+263/navigation_offset = Vector2( 38.5, 24 )
 263/shape_offset = Vector2( 0, 0 )
 263/shapes = [  ]
-264/name = "human-street-towers-1"
+264/name = "human-resources-bronze-3"
 264/texture = ExtResource( 185 )
-264/tex_offset = Vector2( 26, -69 )
+264/tex_offset = Vector2( 37, 17 )
 264/modulate = Color( 1, 1, 1, 1 )
-264/region = Rect2( 0, 0, 99, 214 )
-264/occluder_offset = Vector2( 49.5, 107 )
-264/navigation_offset = Vector2( 49.5, 107 )
+264/region = Rect2( 0, 0, 77, 42 )
+264/occluder_offset = Vector2( 38.5, 21 )
+264/navigation_offset = Vector2( 38.5, 21 )
 264/shape_offset = Vector2( 0, 0 )
 264/shapes = [  ]
-265/name = "human-street-towers-2"
+265/name = "human-resources-farming-12"
 265/texture = ExtResource( 186 )
-265/tex_offset = Vector2( -10, -66 )
+265/tex_offset = Vector2( 5.5, -8.5 )
 265/modulate = Color( 1, 1, 1, 1 )
-265/region = Rect2( 0, 0, 171, 208 )
-265/occluder_offset = Vector2( 85.5, 104 )
-265/navigation_offset = Vector2( 85.5, 104 )
+265/region = Rect2( 0, 0, 140, 93 )
+265/occluder_offset = Vector2( 70, 46.5 )
+265/navigation_offset = Vector2( 70, 46.5 )
 265/shape_offset = Vector2( 0, 0 )
 265/shapes = [  ]
-266/name = "human-street-towers-3"
+266/name = "human-resources-farming-10"
 266/texture = ExtResource( 187 )
-266/tex_offset = Vector2( 18.5, -51.5 )
+266/tex_offset = Vector2( 5.5, -2 )
 266/modulate = Color( 1, 1, 1, 1 )
-266/region = Rect2( 0, 0, 114, 179 )
-266/occluder_offset = Vector2( 57, 89.5 )
-266/navigation_offset = Vector2( 57, 89.5 )
+266/region = Rect2( 0, 0, 140, 80 )
+266/occluder_offset = Vector2( 70, 40 )
+266/navigation_offset = Vector2( 70, 40 )
 266/shape_offset = Vector2( 0, 0 )
 266/shapes = [  ]
-267/name = "human-street-castles-1"
+267/name = "human-resources-farming-5"
 267/texture = ExtResource( 188 )
-267/tex_offset = Vector2( 49, -1 )
+267/tex_offset = Vector2( 5.5, -12 )
 267/modulate = Color( 1, 1, 1, 1 )
-267/region = Rect2( 0, 0, 53, 78 )
-267/occluder_offset = Vector2( 26.5, 39 )
-267/navigation_offset = Vector2( 26.5, 39 )
+267/region = Rect2( 0, 0, 140, 100 )
+267/occluder_offset = Vector2( 70, 50 )
+267/navigation_offset = Vector2( 70, 50 )
 267/shape_offset = Vector2( 0, 0 )
 267/shapes = [  ]
-268/name = "human-street-castles-2"
+268/name = "human-resources-farming-8"
 268/texture = ExtResource( 189 )
-268/tex_offset = Vector2( 49, -1 )
+268/tex_offset = Vector2( 5.5, 2.5 )
 268/modulate = Color( 1, 1, 1, 1 )
-268/region = Rect2( 0, 0, 53, 78 )
-268/occluder_offset = Vector2( 26.5, 39 )
-268/navigation_offset = Vector2( 26.5, 39 )
+268/region = Rect2( 0, 0, 140, 71 )
+268/occluder_offset = Vector2( 70, 35.5 )
+268/navigation_offset = Vector2( 70, 35.5 )
 268/shape_offset = Vector2( 0, 0 )
 268/shapes = [  ]
-269/name = "human-street-castles-3"
+269/name = "human-resources-farming-1"
 269/texture = ExtResource( 190 )
-269/tex_offset = Vector2( 46, -1 )
+269/tex_offset = Vector2( 5.5, 3 )
 269/modulate = Color( 1, 1, 1, 1 )
-269/region = Rect2( 0, 0, 59, 78 )
-269/occluder_offset = Vector2( 29.5, 39 )
-269/navigation_offset = Vector2( 29.5, 39 )
+269/region = Rect2( 0, 0, 140, 70 )
+269/occluder_offset = Vector2( 70, 35 )
+269/navigation_offset = Vector2( 70, 35 )
 269/shape_offset = Vector2( 0, 0 )
 269/shapes = [  ]
-270/name = "human-street-castles-4"
+270/name = "human-resources-farming-11"
 270/texture = ExtResource( 192 )
-270/tex_offset = Vector2( 46, -1 )
+270/tex_offset = Vector2( 5.5, -9 )
 270/modulate = Color( 1, 1, 1, 1 )
-270/region = Rect2( 0, 0, 59, 78 )
-270/occluder_offset = Vector2( 29.5, 39 )
-270/navigation_offset = Vector2( 29.5, 39 )
+270/region = Rect2( 0, 0, 140, 94 )
+270/occluder_offset = Vector2( 70, 47 )
+270/navigation_offset = Vector2( 70, 47 )
 270/shape_offset = Vector2( 0, 0 )
 270/shapes = [  ]
-271/name = "human-resources-containers-empty-1"
+271/name = "human-resources-farming-9"
 271/texture = ExtResource( 193 )
-271/tex_offset = Vector2( 61, 19.5 )
+271/tex_offset = Vector2( 5.5, -0.5 )
 271/modulate = Color( 1, 1, 1, 1 )
-271/region = Rect2( 0, 0, 29, 37 )
-271/occluder_offset = Vector2( 14.5, 18.5 )
-271/navigation_offset = Vector2( 14.5, 18.5 )
+271/region = Rect2( 0, 0, 140, 77 )
+271/occluder_offset = Vector2( 70, 38.5 )
+271/navigation_offset = Vector2( 70, 38.5 )
 271/shape_offset = Vector2( 0, 0 )
 271/shapes = [  ]
-272/name = "human-resources-containers-empty-2"
+272/name = "human-resources-farming-2"
 272/texture = ExtResource( 194 )
-272/tex_offset = Vector2( 61, 19 )
+272/tex_offset = Vector2( 9.5, 5.5 )
 272/modulate = Color( 1, 1, 1, 1 )
-272/region = Rect2( 0, 0, 29, 38 )
-272/occluder_offset = Vector2( 14.5, 19 )
-272/navigation_offset = Vector2( 14.5, 19 )
+272/region = Rect2( 0, 0, 132, 65 )
+272/occluder_offset = Vector2( 66, 32.5 )
+272/navigation_offset = Vector2( 66, 32.5 )
 272/shape_offset = Vector2( 0, 0 )
 272/shapes = [  ]
-273/name = "human-resources-containers-empty-3"
+273/name = "human-resources-farming-13"
 273/texture = ExtResource( 195 )
-273/tex_offset = Vector2( 46, 9.5 )
+273/tex_offset = Vector2( 5.5, -9 )
 273/modulate = Color( 1, 1, 1, 1 )
-273/region = Rect2( 0, 0, 59, 57 )
-273/occluder_offset = Vector2( 29.5, 28.5 )
-273/navigation_offset = Vector2( 29.5, 28.5 )
+273/region = Rect2( 0, 0, 140, 94 )
+273/occluder_offset = Vector2( 70, 47 )
+273/navigation_offset = Vector2( 70, 47 )
 273/shape_offset = Vector2( 0, 0 )
 273/shapes = [  ]
-274/name = "human-resources-containers-full-1"
+274/name = "human-resources-farming-14"
 274/texture = ExtResource( 196 )
-274/tex_offset = Vector2( 61, 15.5 )
+274/tex_offset = Vector2( 5.5, -8.5 )
 274/modulate = Color( 1, 1, 1, 1 )
-274/region = Rect2( 0, 0, 29, 45 )
-274/occluder_offset = Vector2( 14.5, 22.5 )
-274/navigation_offset = Vector2( 14.5, 22.5 )
+274/region = Rect2( 0, 0, 140, 93 )
+274/occluder_offset = Vector2( 70, 46.5 )
+274/navigation_offset = Vector2( 70, 46.5 )
 274/shape_offset = Vector2( 0, 0 )
 274/shapes = [  ]
-275/name = "human-resources-containers-full-2"
+275/name = "human-resources-farming-7"
 275/texture = ExtResource( 197 )
-275/tex_offset = Vector2( 46.5, 7.5 )
+275/tex_offset = Vector2( 5.5, 3 )
 275/modulate = Color( 1, 1, 1, 1 )
-275/region = Rect2( 0, 0, 58, 61 )
-275/occluder_offset = Vector2( 29, 30.5 )
-275/navigation_offset = Vector2( 29, 30.5 )
+275/region = Rect2( 0, 0, 140, 70 )
+275/occluder_offset = Vector2( 70, 35 )
+275/navigation_offset = Vector2( 70, 35 )
 275/shape_offset = Vector2( 0, 0 )
 275/shapes = [  ]
-276/name = "human-resources-containers-full-3"
+276/name = "human-resources-farming-6"
 276/texture = ExtResource( 198 )
-276/tex_offset = Vector2( 61, 13 )
+276/tex_offset = Vector2( 5.5, -12 )
 276/modulate = Color( 1, 1, 1, 1 )
-276/region = Rect2( 0, 0, 29, 50 )
-276/occluder_offset = Vector2( 14.5, 25 )
-276/navigation_offset = Vector2( 14.5, 25 )
+276/region = Rect2( 0, 0, 140, 100 )
+276/occluder_offset = Vector2( 70, 50 )
+276/navigation_offset = Vector2( 70, 50 )
 276/shape_offset = Vector2( 0, 0 )
 276/shapes = [  ]
-277/name = "human-resources-containers-full-4"
+277/name = "human-resources-farming-3"
 277/texture = ExtResource( 199 )
-277/tex_offset = Vector2( 61, 17.5 )
+277/tex_offset = Vector2( 5.5, 3 )
 277/modulate = Color( 1, 1, 1, 1 )
-277/region = Rect2( 0, 0, 29, 41 )
-277/occluder_offset = Vector2( 14.5, 20.5 )
-277/navigation_offset = Vector2( 14.5, 20.5 )
+277/region = Rect2( 0, 0, 140, 70 )
+277/occluder_offset = Vector2( 70, 35 )
+277/navigation_offset = Vector2( 70, 35 )
 277/shape_offset = Vector2( 0, 0 )
 277/shapes = [  ]
-278/name = "human-resources-containers-closed-1"
+278/name = "human-resources-farming-4"
 278/texture = ExtResource( 200 )
-278/tex_offset = Vector2( 47, 17.5 )
+278/tex_offset = Vector2( 5.5, -0.5 )
 278/modulate = Color( 1, 1, 1, 1 )
-278/region = Rect2( 0, 0, 57, 41 )
-278/occluder_offset = Vector2( 28.5, 20.5 )
-278/navigation_offset = Vector2( 28.5, 20.5 )
+278/region = Rect2( 0, 0, 140, 77 )
+278/occluder_offset = Vector2( 70, 38.5 )
+278/navigation_offset = Vector2( 70, 38.5 )
 278/shape_offset = Vector2( 0, 0 )
 278/shapes = [  ]
-279/name = "human-resources-containers-closed-2"
+279/name = "human-resources-gold-1"
 279/texture = ExtResource( 201 )
-279/tex_offset = Vector2( 58, 19 )
+279/tex_offset = Vector2( 37, 9.5 )
 279/modulate = Color( 1, 1, 1, 1 )
-279/region = Rect2( 0, 0, 35, 38 )
-279/occluder_offset = Vector2( 17.5, 19 )
-279/navigation_offset = Vector2( 17.5, 19 )
+279/region = Rect2( 0, 0, 77, 57 )
+279/occluder_offset = Vector2( 38.5, 28.5 )
+279/navigation_offset = Vector2( 38.5, 28.5 )
 279/shape_offset = Vector2( 0, 0 )
 279/shapes = [  ]
-280/name = "human-resources-containers-closed-3"
+280/name = "human-resources-gold-2"
 280/texture = ExtResource( 203 )
-280/tex_offset = Vector2( 48, 14 )
+280/tex_offset = Vector2( 37, 14 )
 280/modulate = Color( 1, 1, 1, 1 )
-280/region = Rect2( 0, 0, 55, 48 )
-280/occluder_offset = Vector2( 27.5, 24 )
-280/navigation_offset = Vector2( 27.5, 24 )
+280/region = Rect2( 0, 0, 77, 48 )
+280/occluder_offset = Vector2( 38.5, 24 )
+280/navigation_offset = Vector2( 38.5, 24 )
 280/shape_offset = Vector2( 0, 0 )
 280/shapes = [  ]
-281/name = "human-resources-containers-closed-4"
+281/name = "human-resources-gold-3"
 281/texture = ExtResource( 204 )
-281/tex_offset = Vector2( 39, 5.5 )
+281/tex_offset = Vector2( 37, 17 )
 281/modulate = Color( 1, 1, 1, 1 )
-281/region = Rect2( 0, 0, 73, 65 )
-281/occluder_offset = Vector2( 36.5, 32.5 )
-281/navigation_offset = Vector2( 36.5, 32.5 )
+281/region = Rect2( 0, 0, 77, 42 )
+281/occluder_offset = Vector2( 38.5, 21 )
+281/navigation_offset = Vector2( 38.5, 21 )
 281/shape_offset = Vector2( 0, 0 )
 281/shapes = [  ]
-282/name = "human-resources-bronze-1"
+282/name = "human-resources-silver-1"
 282/texture = ExtResource( 205 )
-282/tex_offset = Vector2( 37, 9 )
+282/tex_offset = Vector2( 36.5, 10 )
 282/modulate = Color( 1, 1, 1, 1 )
-282/region = Rect2( 0, 0, 77, 58 )
-282/occluder_offset = Vector2( 38.5, 29 )
-282/navigation_offset = Vector2( 38.5, 29 )
+282/region = Rect2( 0, 0, 78, 56 )
+282/occluder_offset = Vector2( 39, 28 )
+282/navigation_offset = Vector2( 39, 28 )
 282/shape_offset = Vector2( 0, 0 )
 282/shapes = [  ]
-283/name = "human-resources-bronze-2"
+283/name = "human-resources-silver-2"
 283/texture = ExtResource( 206 )
-283/tex_offset = Vector2( 37, 14 )
+283/tex_offset = Vector2( 35, 9.5 )
 283/modulate = Color( 1, 1, 1, 1 )
-283/region = Rect2( 0, 0, 77, 48 )
-283/occluder_offset = Vector2( 38.5, 24 )
-283/navigation_offset = Vector2( 38.5, 24 )
+283/region = Rect2( 0, 0, 81, 57 )
+283/occluder_offset = Vector2( 40.5, 28.5 )
+283/navigation_offset = Vector2( 40.5, 28.5 )
 283/shape_offset = Vector2( 0, 0 )
 283/shapes = [  ]
-284/name = "human-resources-bronze-3"
+284/name = "human-resources-silver-3"
 284/texture = ExtResource( 207 )
-284/tex_offset = Vector2( 37, 17 )
+284/tex_offset = Vector2( 35.5, 15.5 )
 284/modulate = Color( 1, 1, 1, 1 )
-284/region = Rect2( 0, 0, 77, 42 )
-284/occluder_offset = Vector2( 38.5, 21 )
-284/navigation_offset = Vector2( 38.5, 21 )
+284/region = Rect2( 0, 0, 80, 45 )
+284/occluder_offset = Vector2( 40, 22.5 )
+284/navigation_offset = Vector2( 40, 22.5 )
 284/shape_offset = Vector2( 0, 0 )
 284/shapes = [  ]
-285/name = "human-resources-farming-12"
+285/name = "human-resources-wood-1"
 285/texture = ExtResource( 208 )
-285/tex_offset = Vector2( 5.5, -8.5 )
+285/tex_offset = Vector2( 40, 9 )
 285/modulate = Color( 1, 1, 1, 1 )
-285/region = Rect2( 0, 0, 140, 93 )
-285/occluder_offset = Vector2( 70, 46.5 )
-285/navigation_offset = Vector2( 70, 46.5 )
+285/region = Rect2( 0, 0, 71, 58 )
+285/occluder_offset = Vector2( 35.5, 29 )
+285/navigation_offset = Vector2( 35.5, 29 )
 285/shape_offset = Vector2( 0, 0 )
 285/shapes = [  ]
-286/name = "human-resources-farming-10"
+286/name = "human-resources-wood-2"
 286/texture = ExtResource( 209 )
-286/tex_offset = Vector2( 5.5, -2 )
+286/tex_offset = Vector2( 40, 12.5 )
 286/modulate = Color( 1, 1, 1, 1 )
-286/region = Rect2( 0, 0, 140, 80 )
-286/occluder_offset = Vector2( 70, 40 )
-286/navigation_offset = Vector2( 70, 40 )
+286/region = Rect2( 0, 0, 71, 51 )
+286/occluder_offset = Vector2( 35.5, 25.5 )
+286/navigation_offset = Vector2( 35.5, 25.5 )
 286/shape_offset = Vector2( 0, 0 )
 286/shapes = [  ]
-287/name = "human-resources-farming-5"
+287/name = "human-resources-wood-3"
 287/texture = ExtResource( 210 )
-287/tex_offset = Vector2( 5.5, -12 )
+287/tex_offset = Vector2( 40, 17.5 )
 287/modulate = Color( 1, 1, 1, 1 )
-287/region = Rect2( 0, 0, 140, 100 )
-287/occluder_offset = Vector2( 70, 50 )
-287/navigation_offset = Vector2( 70, 50 )
+287/region = Rect2( 0, 0, 71, 41 )
+287/occluder_offset = Vector2( 35.5, 20.5 )
+287/navigation_offset = Vector2( 35.5, 20.5 )
 287/shape_offset = Vector2( 0, 0 )
 287/shapes = [  ]
-288/name = "human-resources-farming-8"
+288/name = "human-resources-wood-4"
 288/texture = ExtResource( 211 )
-288/tex_offset = Vector2( 5.5, 2.5 )
+288/tex_offset = Vector2( 15.5, 4.5 )
 288/modulate = Color( 1, 1, 1, 1 )
-288/region = Rect2( 0, 0, 140, 71 )
-288/occluder_offset = Vector2( 70, 35.5 )
-288/navigation_offset = Vector2( 70, 35.5 )
+288/region = Rect2( 0, 0, 120, 67 )
+288/occluder_offset = Vector2( 60, 33.5 )
+288/navigation_offset = Vector2( 60, 33.5 )
 288/shape_offset = Vector2( 0, 0 )
 288/shapes = [  ]
-289/name = "human-resources-farming-1"
+289/name = "human-resources-stone-1"
 289/texture = ExtResource( 212 )
-289/tex_offset = Vector2( 5.5, 3 )
+289/tex_offset = Vector2( 30.5, 7.5 )
 289/modulate = Color( 1, 1, 1, 1 )
-289/region = Rect2( 0, 0, 140, 70 )
-289/occluder_offset = Vector2( 70, 35 )
-289/navigation_offset = Vector2( 70, 35 )
+289/region = Rect2( 0, 0, 90, 61 )
+289/occluder_offset = Vector2( 45, 30.5 )
+289/navigation_offset = Vector2( 45, 30.5 )
 289/shape_offset = Vector2( 0, 0 )
 289/shapes = [  ]
-290/name = "human-resources-farming-11"
+290/name = "human-resources-stone-2"
 290/texture = ExtResource( 214 )
-290/tex_offset = Vector2( 5.5, -9 )
+290/tex_offset = Vector2( 37, 5.5 )
 290/modulate = Color( 1, 1, 1, 1 )
-290/region = Rect2( 0, 0, 140, 94 )
-290/occluder_offset = Vector2( 70, 47 )
-290/navigation_offset = Vector2( 70, 47 )
+290/region = Rect2( 0, 0, 77, 65 )
+290/occluder_offset = Vector2( 38.5, 32.5 )
+290/navigation_offset = Vector2( 38.5, 32.5 )
 290/shape_offset = Vector2( 0, 0 )
 290/shapes = [  ]
-291/name = "human-resources-farming-9"
+291/name = "human-resources-stone-3"
 291/texture = ExtResource( 215 )
-291/tex_offset = Vector2( 5.5, -0.5 )
+291/tex_offset = Vector2( 37, 6 )
 291/modulate = Color( 1, 1, 1, 1 )
-291/region = Rect2( 0, 0, 140, 77 )
-291/occluder_offset = Vector2( 70, 38.5 )
-291/navigation_offset = Vector2( 70, 38.5 )
+291/region = Rect2( 0, 0, 77, 64 )
+291/occluder_offset = Vector2( 38.5, 32 )
+291/navigation_offset = Vector2( 38.5, 32 )
 291/shape_offset = Vector2( 0, 0 )
 291/shapes = [  ]
-292/name = "human-resources-farming-2"
+292/name = "human-resources-stone-4"
 292/texture = ExtResource( 216 )
-292/tex_offset = Vector2( 9.5, 5.5 )
+292/tex_offset = Vector2( 37, 11 )
 292/modulate = Color( 1, 1, 1, 1 )
-292/region = Rect2( 0, 0, 132, 65 )
-292/occluder_offset = Vector2( 66, 32.5 )
-292/navigation_offset = Vector2( 66, 32.5 )
+292/region = Rect2( 0, 0, 77, 54 )
+292/occluder_offset = Vector2( 38.5, 27 )
+292/navigation_offset = Vector2( 38.5, 27 )
 292/shape_offset = Vector2( 0, 0 )
 292/shapes = [  ]
-293/name = "human-resources-farming-13"
-293/texture = ExtResource( 217 )
-293/tex_offset = Vector2( 5.5, -9 )
-293/modulate = Color( 1, 1, 1, 1 )
-293/region = Rect2( 0, 0, 140, 94 )
-293/occluder_offset = Vector2( 70, 47 )
-293/navigation_offset = Vector2( 70, 47 )
-293/shape_offset = Vector2( 0, 0 )
-293/shapes = [  ]
-294/name = "human-resources-farming-14"
-294/texture = ExtResource( 218 )
-294/tex_offset = Vector2( 5.5, -8.5 )
-294/modulate = Color( 1, 1, 1, 1 )
-294/region = Rect2( 0, 0, 140, 93 )
-294/occluder_offset = Vector2( 70, 46.5 )
-294/navigation_offset = Vector2( 70, 46.5 )
-294/shape_offset = Vector2( 0, 0 )
-294/shapes = [  ]
-295/name = "human-resources-farming-7"
-295/texture = ExtResource( 219 )
-295/tex_offset = Vector2( 5.5, 3 )
-295/modulate = Color( 1, 1, 1, 1 )
-295/region = Rect2( 0, 0, 140, 70 )
-295/occluder_offset = Vector2( 70, 35 )
-295/navigation_offset = Vector2( 70, 35 )
-295/shape_offset = Vector2( 0, 0 )
-295/shapes = [  ]
-296/name = "human-resources-farming-6"
-296/texture = ExtResource( 220 )
-296/tex_offset = Vector2( 5.5, -12 )
-296/modulate = Color( 1, 1, 1, 1 )
-296/region = Rect2( 0, 0, 140, 100 )
-296/occluder_offset = Vector2( 70, 50 )
-296/navigation_offset = Vector2( 70, 50 )
-296/shape_offset = Vector2( 0, 0 )
-296/shapes = [  ]
-297/name = "human-resources-farming-3"
-297/texture = ExtResource( 221 )
-297/tex_offset = Vector2( 5.5, 3 )
-297/modulate = Color( 1, 1, 1, 1 )
-297/region = Rect2( 0, 0, 140, 70 )
-297/occluder_offset = Vector2( 70, 35 )
-297/navigation_offset = Vector2( 70, 35 )
-297/shape_offset = Vector2( 0, 0 )
-297/shapes = [  ]
-298/name = "human-resources-farming-4"
-298/texture = ExtResource( 222 )
-298/tex_offset = Vector2( 5.5, -0.5 )
-298/modulate = Color( 1, 1, 1, 1 )
-298/region = Rect2( 0, 0, 140, 77 )
-298/occluder_offset = Vector2( 70, 38.5 )
-298/navigation_offset = Vector2( 70, 38.5 )
-298/shape_offset = Vector2( 0, 0 )
-298/shapes = [  ]
-299/name = "human-resources-gold-1"
-299/texture = ExtResource( 223 )
-299/tex_offset = Vector2( 37, 9.5 )
-299/modulate = Color( 1, 1, 1, 1 )
-299/region = Rect2( 0, 0, 77, 57 )
-299/occluder_offset = Vector2( 38.5, 28.5 )
-299/navigation_offset = Vector2( 38.5, 28.5 )
-299/shape_offset = Vector2( 0, 0 )
-299/shapes = [  ]
-300/name = "human-resources-gold-2"
-300/texture = ExtResource( 226 )
-300/tex_offset = Vector2( 37, 14 )
-300/modulate = Color( 1, 1, 1, 1 )
-300/region = Rect2( 0, 0, 77, 48 )
-300/occluder_offset = Vector2( 38.5, 24 )
-300/navigation_offset = Vector2( 38.5, 24 )
-300/shape_offset = Vector2( 0, 0 )
-300/shapes = [  ]
-301/name = "human-resources-gold-3"
-301/texture = ExtResource( 227 )
-301/tex_offset = Vector2( 37, 17 )
-301/modulate = Color( 1, 1, 1, 1 )
-301/region = Rect2( 0, 0, 77, 42 )
-301/occluder_offset = Vector2( 38.5, 21 )
-301/navigation_offset = Vector2( 38.5, 21 )
-301/shape_offset = Vector2( 0, 0 )
-301/shapes = [  ]
-302/name = "human-resources-silver-1"
-302/texture = ExtResource( 228 )
-302/tex_offset = Vector2( 36.5, 10 )
-302/modulate = Color( 1, 1, 1, 1 )
-302/region = Rect2( 0, 0, 78, 56 )
-302/occluder_offset = Vector2( 39, 28 )
-302/navigation_offset = Vector2( 39, 28 )
-302/shape_offset = Vector2( 0, 0 )
-302/shapes = [  ]
-303/name = "human-resources-silver-2"
-303/texture = ExtResource( 229 )
-303/tex_offset = Vector2( 35, 9.5 )
-303/modulate = Color( 1, 1, 1, 1 )
-303/region = Rect2( 0, 0, 81, 57 )
-303/occluder_offset = Vector2( 40.5, 28.5 )
-303/navigation_offset = Vector2( 40.5, 28.5 )
-303/shape_offset = Vector2( 0, 0 )
-303/shapes = [  ]
-304/name = "human-resources-silver-3"
-304/texture = ExtResource( 230 )
-304/tex_offset = Vector2( 35.5, 15.5 )
-304/modulate = Color( 1, 1, 1, 1 )
-304/region = Rect2( 0, 0, 80, 45 )
-304/occluder_offset = Vector2( 40, 22.5 )
-304/navigation_offset = Vector2( 40, 22.5 )
-304/shape_offset = Vector2( 0, 0 )
-304/shapes = [  ]
-305/name = "human-resources-wood-1"
-305/texture = ExtResource( 231 )
-305/tex_offset = Vector2( 40, 9 )
-305/modulate = Color( 1, 1, 1, 1 )
-305/region = Rect2( 0, 0, 71, 58 )
-305/occluder_offset = Vector2( 35.5, 29 )
-305/navigation_offset = Vector2( 35.5, 29 )
-305/shape_offset = Vector2( 0, 0 )
-305/shapes = [  ]
-306/name = "human-resources-wood-2"
-306/texture = ExtResource( 232 )
-306/tex_offset = Vector2( 40, 12.5 )
-306/modulate = Color( 1, 1, 1, 1 )
-306/region = Rect2( 0, 0, 71, 51 )
-306/occluder_offset = Vector2( 35.5, 25.5 )
-306/navigation_offset = Vector2( 35.5, 25.5 )
-306/shape_offset = Vector2( 0, 0 )
-306/shapes = [  ]
-307/name = "human-resources-wood-3"
-307/texture = ExtResource( 233 )
-307/tex_offset = Vector2( 40, 17.5 )
-307/modulate = Color( 1, 1, 1, 1 )
-307/region = Rect2( 0, 0, 71, 41 )
-307/occluder_offset = Vector2( 35.5, 20.5 )
-307/navigation_offset = Vector2( 35.5, 20.5 )
-307/shape_offset = Vector2( 0, 0 )
-307/shapes = [  ]
-308/name = "human-resources-wood-4"
-308/texture = ExtResource( 234 )
-308/tex_offset = Vector2( 15.5, 4.5 )
-308/modulate = Color( 1, 1, 1, 1 )
-308/region = Rect2( 0, 0, 120, 67 )
-308/occluder_offset = Vector2( 60, 33.5 )
-308/navigation_offset = Vector2( 60, 33.5 )
-308/shape_offset = Vector2( 0, 0 )
-308/shapes = [  ]
-309/name = "human-resources-stone-1"
-309/texture = ExtResource( 235 )
-309/tex_offset = Vector2( 30.5, 7.5 )
-309/modulate = Color( 1, 1, 1, 1 )
-309/region = Rect2( 0, 0, 90, 61 )
-309/occluder_offset = Vector2( 45, 30.5 )
-309/navigation_offset = Vector2( 45, 30.5 )
-309/shape_offset = Vector2( 0, 0 )
-309/shapes = [  ]
-310/name = "human-resources-stone-2"
-310/texture = ExtResource( 237 )
-310/tex_offset = Vector2( 37, 5.5 )
-310/modulate = Color( 1, 1, 1, 1 )
-310/region = Rect2( 0, 0, 77, 65 )
-310/occluder_offset = Vector2( 38.5, 32.5 )
-310/navigation_offset = Vector2( 38.5, 32.5 )
-310/shape_offset = Vector2( 0, 0 )
-310/shapes = [  ]
-311/name = "human-resources-stone-3"
-311/texture = ExtResource( 238 )
-311/tex_offset = Vector2( 37, 6 )
-311/modulate = Color( 1, 1, 1, 1 )
-311/region = Rect2( 0, 0, 77, 64 )
-311/occluder_offset = Vector2( 38.5, 32 )
-311/navigation_offset = Vector2( 38.5, 32 )
-311/shape_offset = Vector2( 0, 0 )
-311/shapes = [  ]
-312/name = "human-resources-stone-4"
-312/texture = ExtResource( 239 )
-312/tex_offset = Vector2( 37, 11 )
-312/modulate = Color( 1, 1, 1, 1 )
-312/region = Rect2( 0, 0, 77, 54 )
-312/occluder_offset = Vector2( 38.5, 27 )
-312/navigation_offset = Vector2( 38.5, 27 )
-312/shape_offset = Vector2( 0, 0 )
-312/shapes = [  ]
 
