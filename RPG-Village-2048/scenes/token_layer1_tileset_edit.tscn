@@ -10,29 +10,29 @@
 
 [node name="human-street-road-left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1692, 9216 )
+transform/pos = Vector2( 688, 8192 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1.5 )
 
 [node name="human-street-road-up" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1859, 9216 )
+transform/pos = Vector2( 855, 8192 )
 texture = ExtResource( 2 )
 
 [node name="human-street-road-right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2026, 9216 )
+transform/pos = Vector2( 1022, 8192 )
 texture = ExtResource( 3 )
 
 [node name="human-street-road-down" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 9728 )
+transform/pos = Vector2( 1189, 8192 )
 texture = ExtResource( 4 )
 offset = Vector2( 0, 0.5 )
 
 [node name="human-street-road-road" type="Sprite" parent="."]
 
-transform/pos = Vector2( 167, 9728 )
+transform/pos = Vector2( 1356, 8192 )
 texture = ExtResource( 5 )
 
 

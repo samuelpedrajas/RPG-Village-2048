@@ -21,82 +21,82 @@
 
 [node name="floor-water-water" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1884, 4608 )
+transform/pos = Vector2( 465, 4608 )
 texture = ExtResource( 1 )
 
 [node name="floor-water-borders-left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 5120 )
+transform/pos = Vector2( 632, 4608 )
 texture = ExtResource( 2 )
 
 [node name="floor-water-borders-up" type="Sprite" parent="."]
 
-transform/pos = Vector2( 167, 5120 )
+transform/pos = Vector2( 799, 4608 )
 texture = ExtResource( 3 )
 
 [node name="floor-water-borders-right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 334, 5120 )
+transform/pos = Vector2( 966, 4608 )
 texture = ExtResource( 4 )
 
 [node name="floor-water-borders-down" type="Sprite" parent="."]
 
-transform/pos = Vector2( 501, 5120 )
+transform/pos = Vector2( 1133, 4608 )
 texture = ExtResource( 5 )
 
 [node name="floor-water-in_corners-left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 668, 5120 )
+transform/pos = Vector2( 1300, 4608 )
 texture = ExtResource( 6 )
 
 [node name="floor-water-in_corners-up" type="Sprite" parent="."]
 
-transform/pos = Vector2( 835, 5120 )
+transform/pos = Vector2( 1467, 4608 )
 texture = ExtResource( 7 )
 
 [node name="floor-water-in_corners-right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1002, 5120 )
+transform/pos = Vector2( 1634, 4608 )
 texture = ExtResource( 8 )
 
 [node name="floor-water-in_corners-down" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1169, 5120 )
+transform/pos = Vector2( 1801, 4608 )
 texture = ExtResource( 9 )
 
 [node name="floor-water-out_corner-left" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1336, 5120 )
+transform/pos = Vector2( 1968, 4608 )
 texture = ExtResource( 10 )
 
 [node name="floor-water-out_corner-up" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1503, 5120 )
+transform/pos = Vector2( 0, 5120 )
 texture = ExtResource( 11 )
 
 [node name="floor-water-out_corner-right" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1670, 5120 )
+transform/pos = Vector2( 167, 5120 )
 texture = ExtResource( 12 )
 
 [node name="floor-water-out_corner-down" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1837, 5120 )
+transform/pos = Vector2( 334, 5120 )
 texture = ExtResource( 13 )
 
 [node name="floor-grass-tall_grass" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2004, 5120 )
+transform/pos = Vector2( 501, 5120 )
 texture = ExtResource( 14 )
 
 [node name="floor-grass-grass" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 5632 )
+transform/pos = Vector2( 668, 5120 )
 texture = ExtResource( 15 )
 
 [node name="floor-grass-flower_grass" type="Sprite" parent="."]
 
-transform/pos = Vector2( 167, 5632 )
+transform/pos = Vector2( 835, 5120 )
 texture = ExtResource( 16 )
 
 
