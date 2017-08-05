@@ -13,8 +13,6 @@ WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 GRAY = (0,0,0,150)
 
-img_path = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/human/street/castles/2.png"
-
 def _draw_base(surface):
 	center = Point((BOARD_SIZE.x-1)/2,
 				   y=(BOARD_SIZE.y-1)/2)
@@ -30,9 +28,9 @@ def _draw_base(surface):
 				pygame.draw.polygon(surface, GRAY, [p1, p2, p3, p4])
 
 class Sprite(object):  # represents the sprite, not the game
-	def __init__(self):
+	def __init__(self, _path):
 		""" The constructor of the class """
-		self.image = pygame.image.load(img_path)
+		self.image = pygame.image.load(_path)
 		self.image.fill((255, 255, 255, 200),
 						None, pygame.BLEND_RGBA_MULT)
 		# to get the center
@@ -91,25 +89,35 @@ class Sprite(object):  # represents the sprite, not the game
 	def get_scale(self):
 		return self.scale
 
+def _main_loop(file_name, directory):
+	file_path = os.path.join(directory, file_name)
+	pygame.init()
+	screen = pygame.display.set_mode(IMAGE_SIZE)
 
-pygame.init()
-screen = pygame.display.set_mode(IMAGE_SIZE)
+	sprite = Sprite(file_path) # create an instance
+	clock = pygame.time.Clock()
 
-sprite = Sprite() # create an instance
-clock = pygame.time.Clock()
+	running = True
+	while running:
+		# handle every event since the last frame.
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				pygame.quit() # quit the screen
+				running = False
 
-running = True
-while running:
-	# handle every event since the last frame.
-	for event in pygame.event.get():
-		if event.type == pygame.QUIT:
-			pygame.quit() # quit the screen
-			running = False
+		sprite.handle_keys() # handle the keys
+		screen.fill(WHITE)
+		_draw_base(screen)
+		sprite.draw(screen) # draw the sprite to the screen
+		pygame.display.update() # update the screen
 
-	sprite.handle_keys() # handle the keys
-	screen.fill(WHITE)
-	_draw_base(screen)
-	sprite.draw(screen) # draw the sprite to the screen
-	pygame.display.update() # update the screen
+		clock.tick(40)
 
-	clock.tick(40)
+def _main(d):
+	for root, dirs, files in os.walk(d):
+		for file_name in files:
+			if file_name.endswith(".png"):
+				_main_loop(file_name, root)
+
+if __name__ == "__main__":
+    _main(TILES_PATH)
