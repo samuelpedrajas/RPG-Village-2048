@@ -37,6 +37,7 @@ class Sprite(object):  # represents the sprite, not the game
 						None, pygame.BLEND_RGBA_MULT)
 		# to get the center
 		self.w, self.h = self.image.get_rect().size
+		self.last_w, self.last_h = (self.w, self.h)
 		# the sprite's position
 		self.x = int(IMAGE_SIZE.x / 2 - self.w / 2)
 		self.y = int(IMAGE_SIZE.y / 2 - self.h / 2)
@@ -63,7 +64,6 @@ class Sprite(object):  # represents the sprite, not the game
 			self.scale += change # move up
 		self.scale = min(1.0, self.scale)
 		self.scale = max(0.0, self.scale)
-		print(self.scale)
 
 	def handle_keys(self):
 		""" Handles Keys """
@@ -78,8 +78,18 @@ class Sprite(object):  # represents the sprite, not the game
 		# blit yourself at your current position
 		w = int(self.w * self.scale)
 		h = int(self.h * self.scale)
+		# recalculate the center
+		self.x += (self.last_w / 2) - (w / 2)
+		self.y += (self.last_h / 2) - (h / 2)
+		self.last_w, self.last_h = (w, h)
 		surface.blit(pygame.transform.scale(self.image, (w, h)),
 					 (self.x + self.offset_x, self.y + self.offset_y))
+
+	def get_offset(self):
+		return self.offset_x, self.offset_y
+
+	def get_scale(self):
+		return self.scale
 
 
 pygame.init()
