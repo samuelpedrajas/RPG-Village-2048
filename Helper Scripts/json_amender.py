@@ -36,16 +36,15 @@ class Sprite(object):  # represents the sprite, not the game
 		self.image.fill((255, 255, 255, 200),
 						None, pygame.BLEND_RGBA_MULT)
 		# to get the center
-		w, h = self.image.get_rect().size
+		self.w, self.h = self.image.get_rect().size
 		# the sprite's position
-		self.x = int(IMAGE_SIZE.x / 2 - w / 2)
-		self.y = int(IMAGE_SIZE.y / 2 - h / 2)
+		self.x = int(IMAGE_SIZE.x / 2 - self.w / 2)
+		self.y = int(IMAGE_SIZE.y / 2 - self.h / 2)
 		self.offset_x = 0
 		self.offset_y = 0
+		self.scale = 1.0
 
-	def handle_keys(self):
-		""" Handles Keys """
-		key = pygame.key.get_pressed()
+	def _change_offset(self, key):
 		dist = 1 # distance moved in 1 frame, try changing it to 5
 		if key[pygame.K_DOWN]: # down key
 			self.offset_y += dist # move down
@@ -56,12 +55,30 @@ class Sprite(object):  # represents the sprite, not the game
 		elif key[pygame.K_LEFT]: # left key
 			self.offset_x -= dist # move left
 
-		return self.offset_x, self.offset_y
+	def _change_scale(self, key):
+		change = 0.01 # distance moved in 1 frame, try changing it to 5
+		if key[pygame.K_DOWN]: # down key
+			self.scale -= change # move down
+		elif key[pygame.K_UP]: # up key
+			self.scale += change # move up
+		self.scale = min(1.0, self.scale)
+		self.scale = max(0.0, self.scale)
+		print(self.scale)
+
+	def handle_keys(self):
+		""" Handles Keys """
+		key = pygame.key.get_pressed()
+		if key[pygame.K_LCTRL]:
+			self._change_scale(key)
+		else:
+			self._change_offset(key)
 
 	def draw(self, surface):
 		""" Draw on surface """
 		# blit yourself at your current position
-		surface.blit(self.image,
+		w = int(self.w * self.scale)
+		h = int(self.h * self.scale)
+		surface.blit(pygame.transform.scale(self.image, (w, h)),
 					 (self.x + self.offset_x, self.y + self.offset_y))
 
 
