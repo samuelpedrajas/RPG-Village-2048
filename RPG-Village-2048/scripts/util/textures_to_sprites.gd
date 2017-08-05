@@ -58,7 +58,7 @@ func _create_sprite(file_path):
 	s.set_texture(t)
 	s.set_name(_get_file_name(file_path))
 	s.set_pos(current_pos)
-	s.set_offset(Vector2((CELL_SIZE.x - t.get_width()) / 2, (CELL_SIZE.y - t.get_height()) / 2))
+	# s.set_offset(Vector2((CELL_SIZE.x - t.get_width()) / 2, (CELL_SIZE.y - t.get_height()) / 2))
 	get_scene().add_child(s)
 	s.set_owner(get_scene())
 	current_pos.x += t.get_width() + h_spacing

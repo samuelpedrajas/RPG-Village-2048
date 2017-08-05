@@ -10,19 +10,24 @@ BOARD_SIZE = Point(5, y=7)
 IMAGE_SIZE = Point(BOARD_SIZE.x * CELL_SIZE.x,
 				   y=BOARD_SIZE.y * CELL_SIZE.y)
 WHITE = (255,255,255,150)
+RED = (255,0,0,220)
 GRAY = (0,0,0,150)
 
 img_path = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/human/street/castles/2.png"
 
 def _draw_base(surface):
+	center = Point((BOARD_SIZE.x-1)/2,
+				   y=(BOARD_SIZE.y-1)/2)
 	for i in range(BOARD_SIZE.y):
 		for j in range(BOARD_SIZE.x):
 			p1 = (j * CELL_SIZE.x, CELL_SIZE.y / 2 + i * CELL_SIZE.y)
 			p2 = (p1[0] + CELL_SIZE.x / 2, p1[1] + CELL_SIZE.y / 2)
 			p3 = (p1[0] + CELL_SIZE.x, p1[1])
 			p4 = (p1[0] + CELL_SIZE.x / 2, p1[1] - CELL_SIZE.y / 2)
-
-			pygame.draw.polygon(surface, GRAY, [p1, p2, p3, p4])
+			if Point(j, i) == center:
+				pygame.draw.polygon(surface, RED, [p1, p2, p3, p4])
+			else:
+				pygame.draw.polygon(surface, GRAY, [p1, p2, p3, p4])
 
 class Sprite(object):  # represents the sprite, not the game
 	def __init__(self):
@@ -35,24 +40,29 @@ class Sprite(object):  # represents the sprite, not the game
 		# the sprite's position
 		self.x = int(IMAGE_SIZE.x / 2 - w / 2)
 		self.y = int(IMAGE_SIZE.y / 2 - h / 2)
+		self.offset_x = 0
+		self.offset_y = 0
 
 	def handle_keys(self):
 		""" Handles Keys """
 		key = pygame.key.get_pressed()
 		dist = 1 # distance moved in 1 frame, try changing it to 5
 		if key[pygame.K_DOWN]: # down key
-			self.y += dist # move down
+			self.offset_y += dist # move down
 		elif key[pygame.K_UP]: # up key
-			self.y -= dist # move up
+			self.offset_y -= dist # move up
 		if key[pygame.K_RIGHT]: # right key
-			self.x += dist # move right
+			self.offset_x += dist # move right
 		elif key[pygame.K_LEFT]: # left key
-			self.x -= dist # move left
+			self.offset_x -= dist # move left
+
+		return self.offset_x, self.offset_y
 
 	def draw(self, surface):
 		""" Draw on surface """
 		# blit yourself at your current position
-		surface.blit(self.image, (self.x, self.y))
+		surface.blit(self.image,
+					 (self.x + self.offset_x, self.y + self.offset_y))
 
 
 pygame.init()

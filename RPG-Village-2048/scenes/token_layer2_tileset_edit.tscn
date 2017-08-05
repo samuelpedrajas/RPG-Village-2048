@@ -688,7 +688,7 @@ offset = Vector2( 23.5, -37.5 )
 
 transform/pos = Vector2( 1323, 1536 )
 texture = ExtResource( 66 )
-offset = Vector2( 34, -22 )
+offset = Vector2( 0, -22 )
 
 [node name="nature-trees-type4-9" type="Sprite" parent="."]
 
@@ -1756,7 +1756,7 @@ offset = Vector2( -17.5, -37 )
 
 transform/pos = Vector2( 1523, 8192 )
 texture = ExtResource( 244 )
-offset = Vector2( 26, -69 )
+offset = Vector2( 0, -69 )
 
 [node name="human-street-towers-2" type="Sprite" parent="."]
 
