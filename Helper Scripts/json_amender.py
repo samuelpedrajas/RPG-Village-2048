@@ -51,7 +51,7 @@ def _draw_base(surface, state):
 			p = Point(i, y=j)
 			if p == state["cursor"] and sel_mode:
 				_paint_cell(surface, p, PINK)
-			elif p in state["sel_cells"] and sel_mode:
+			elif p in state["out"]["used_cells"] and sel_mode:
 				_paint_cell(surface, p, RED)
 			elif p == center:
 				_paint_cell(surface, p, BLUE)
@@ -104,7 +104,7 @@ class Sprite(object):  # represents the sprite, not the game
 		size = "(" + size_x_str + ", " + size_y_str + ")"
 		_print_message("Size  :", size, cursor=current_line+1)
 
-	def handle_keys(self, current_line):
+	def handle_keys(self, state):
 		""" Handles Keys """
 		key = pygame.key.get_pressed()
 
@@ -112,7 +112,7 @@ class Sprite(object):  # represents the sprite, not the game
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
-		self._print_status(current_line)
+		self._print_status(state["line_count"])
 
 	def draw(self, surface):
 		""" Draw on surface """
@@ -154,13 +154,13 @@ def _handle_flow(state):
 					_print_message("Cell selection mode ON")
 				else:
 					state["status"] = CONTINUE
-			elif state["sel_mode"]:
+			if state["sel_mode"]:
 				cursor = state["cursor"]
 				if event.key == pygame.K_SPACE: # down key
-					if cursor in state["sel_cells"]:
-						state["sel_cells"].remove(cursor)
+					if cursor in state["out"]["used_cells"]:
+						state["out"]["used_cells"].remove(cursor)
 					else:
-						state["sel_cells"].append(cursor)
+						state["out"]["used_cells"].append(cursor)
 				elif event.key == pygame.K_DOWN: # down key
 					cursor = Point(cursor.x, y=cursor.y+1)
 				elif event.key == pygame.K_UP: # up key
@@ -169,16 +169,29 @@ def _handle_flow(state):
 					cursor = Point(cursor.x+1, y=cursor.y)
 				elif event.key == pygame.K_LEFT: # left key
 					cursor = Point(cursor.x-1, y=cursor.y)
+				elif event.key == pygame.K_0: # down key
+					state["out"]["layer"] = 0
+				elif event.key == pygame.K_1: # up key
+					state["out"]["layer"] = 1
+				elif event.key == pygame.K_2: # right key
+					state["out"]["layer"] = 2
+				layer = str(state["out"]["layer"])
+				_print_message("Select layer (" + layer + ")",
+							   cursor=state["line_count"]+3)
 				state["cursor"] = cursor
 
-def _get_default_state():
+def _get_default_state(line_count):
 	center = Point((BOARD_SIZE.x-1)/2,
 				   y=(BOARD_SIZE.y-1)/2)
 	return {
 		"sel_mode": False,
-		"sel_cells": [center],
+		"out": {
+			"used_cells": [center],
+			"layer": 2
+		},
 		"cursor": center,
-		"status": OK
+		"status": OK,
+		"line_count": line_count
 	}
 
 def _write_changes():
@@ -191,8 +204,7 @@ def _main_loop(file_name, directory):
 	sprite = Sprite(file_path) # create an instance
 	clock = pygame.time.Clock()
 
-	current_line = line_count
-	state = _get_default_state()
+	state = _get_default_state(line_count)
 	while True:
 		_handle_flow(state)
 		_draw_base(screen, state)
@@ -201,7 +213,7 @@ def _main_loop(file_name, directory):
 		if state["status"] != OK:
 			return state["status"]
 		elif not state["sel_mode"]:
-			sprite.handle_keys(current_line)
+			sprite.handle_keys(state)
 
 		# Display section
 		sprite.draw(screen) # draw the sprite to the screen
