@@ -2,7 +2,18 @@ import pygame
 import os
 import shutil
 import sys
+import math
 from collections import namedtuple
+
+def _to_2d(i, j):
+	x = (j / CELL_SIZE.y + i) * CELL_SIZE.x
+	y = (j - i / CELL_SIZE.x) * CELL_SIZE.y
+	return (math.ceil(x), math.ceil(y))
+
+def _to_iso(i, j):
+	x = (i - j) * CELL_SIZE.x / 2.0
+	y = (j + i) * CELL_SIZE.y / 2.0
+	return (IMAGE_SIZE.x / 2.0 + x, y)
 
 PREVIOUS = -2
 RESET = -1
@@ -14,9 +25,8 @@ Point = namedtuple('Point', ['x', 'y'])
 
 TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
 CELL_SIZE = Point(151, y=76)
-BOARD_SIZE = Point(5, y=7)
-IMAGE_SIZE = Point(BOARD_SIZE.x * CELL_SIZE.x,
-				   y=BOARD_SIZE.y * CELL_SIZE.y)
+BOARD_SIZE = Point(5, y=5)
+IMAGE_SIZE = Point(*_to_2d(BOARD_SIZE.x, BOARD_SIZE.y))
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 BLUE = (0,0,255,220)
@@ -28,29 +38,29 @@ BACKUP_EXTENSION = ".backup"
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 line_count = 0
 
-def _paint_cell(surface, i, j, color):
-	p1 = (j * CELL_SIZE.x, CELL_SIZE.y / 2 + i * CELL_SIZE.y)
-	p2 = (p1[0] + CELL_SIZE.x / 2, p1[1] + CELL_SIZE.y / 2)
-	p3 = (p1[0] + CELL_SIZE.x, p1[1])
-	p4 = (p1[0] + CELL_SIZE.x / 2, p1[1] - CELL_SIZE.y / 2)
+def _paint_cell(surface, p, color):
+	i = p.x; j = p.y
+	p1 = _to_iso(i+1.0, j+1.0)
+	p2 = _to_iso(i+1.0, j)
+	p3 = _to_iso(i, j)
+	p4 = _to_iso(i, j+1.0)
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
 def _draw_base(surface, state):
 	surface.fill(WHITE)
-	center = Point((BOARD_SIZE.y-1)/2,
-				   y=(BOARD_SIZE.x-1)/2)
+	center = Point((BOARD_SIZE.x-1)/2, y=(BOARD_SIZE.y-1)/2)
 	sel_mode = state["sel_mode"]
-	for i in range(BOARD_SIZE.y):
-		for j in range(BOARD_SIZE.x):
-			p = Point(i, j)
+	for i in range(BOARD_SIZE.x):
+		for j in range(BOARD_SIZE.y):
+			p = Point(i, y=j)
 			if p == state["cursor"] and sel_mode:
-				_paint_cell(surface, i, j, PINK)
+				_paint_cell(surface, p, PINK)
 			elif p in state["sel_cells"] and sel_mode:
-				_paint_cell(surface, i, j, RED)
+				_paint_cell(surface, p, RED)
 			elif p == center:
-				_paint_cell(surface, i, j, BLUE)
-			else:
-				_paint_cell(surface, i, j, GRAY)
+				_paint_cell(surface, p, BLUE)
+			elif i % 2 == 0:
+				_paint_cell(surface, p, GRAY)
 
 class Sprite(object):  # represents the sprite, not the game
 	def __init__(self, _path):
@@ -158,7 +168,7 @@ def _handle_flow(state):
 				elif event.key == pygame.K_DOWN: # down key
 					cursor = Point(cursor.x, y=cursor.y+1)
 				elif event.key == pygame.K_UP: # up key
-					cursor = Point(cursor.y, y=cursor.y-1)
+					cursor = Point(cursor.x, y=cursor.y-1)
 				elif event.key == pygame.K_RIGHT: # right key
 					cursor = Point(cursor.x+1, y=cursor.y)
 				elif event.key == pygame.K_LEFT: # left key
@@ -166,8 +176,8 @@ def _handle_flow(state):
 				state["cursor"] = cursor
 
 def _get_default_state():
-	center = Point((BOARD_SIZE.y-1)/2,
-				   y=(BOARD_SIZE.x-1)/2)
+	center = Point((BOARD_SIZE.x-1)/2,
+				   y=(BOARD_SIZE.y-1)/2)
 	return {
 		"sel_mode": False,
 		"sel_cells": [center],
