@@ -1,6 +1,7 @@
 import pygame
 import os
 import shutil
+import sys
 from collections import namedtuple
 
 PREVIOUS = -2
@@ -20,10 +21,10 @@ WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 GRAY = (0,0,0,150)
 
-CURSOR_UP_ONE = '\x1b[1A'
-ERASE_LINE = '\x1b[2K'
-
 BACKUP_EXTENSION = ".backup"
+
+REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
+line_count = 0
 
 def _draw_base(surface):
 	center = Point((BOARD_SIZE.x-1)/2,
@@ -106,7 +107,6 @@ class Sprite(object):  # represents the sprite, not the game
 
 def _main_loop(file_name, directory):
 	file_path = os.path.join(directory, file_name)
-	pygame.init()
 	screen = pygame.display.set_mode(IMAGE_SIZE)
 
 	sprite = Sprite(file_path) # create an instance
@@ -139,7 +139,7 @@ def _main_loop(file_name, directory):
 		clock.tick(40)
 
 def _remove_backups(file_paths):
-	for (file_name, root) in file_paths:
+	for (file_name, root, _) in file_paths:
 		json_backup = file_name.replace(".png", ".json") + BACKUP_EXTENSION
 		png_backup = file_name + BACKUP_EXTENSION
 
@@ -148,10 +148,10 @@ def _remove_backups(file_paths):
 
 		if os.path.exists(json_backup_path):
 			os.remove(json_backup_path)
-			print(json_backup, "removed")
+			_print_message(json_backup, "removed")
 		if os.path.exists(png_backup_path):
 			os.remove(png_backup_path)
-			print(png_backup, "removed")
+			_print_message(png_backup, "removed")
 
 def _restore_backup(file_name, root):
 	file_path = os.path.join(root, file_name)
@@ -160,30 +160,41 @@ def _restore_backup(file_name, root):
 def _backup(file_name, root):
 	file_path = os.path.join(root, file_name)
 	shutil.copyfile(file_path, file_path + BACKUP_EXTENSION)
+	_print_message(file_name, "backed up")
 
-def _print_message(i, l, cursor):
-	print(cursor + "Image", i, "of", l)
-	cursor = ""
+	# backup json if exists
+	json_file = file_name.replace(".png", ".json")
+	json_file_path = os.path.join(root, json_file)
+	if os.path.exists(json_file_path):
+		shutil.copyfile(json_file_path, json_file_path + BACKUP_EXTENSION)
+		_print_message(json_file, "backed up")
+
+def _print_message(*message, cursor=None):
+	global line_count
+	if cursor is None:
+		cursor = line_count
+	sys.stdout.write((line_count - cursor) * REMOVE_PREVIOUS_LINE)
+	print(*message)
+	line_count = cursor + 1
 
 def _main(d):
 	file_paths = []
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
 			if file_name.endswith(".png"):
-				file_paths.append((file_name, root))
+				file_paths.append([file_name, root, False])
 
 	file_paths.sort(key=lambda t: t[1])
 
-	backup = True
 	i = 0
 	cursor = ""
+	pygame.init()
 	while i < len(file_paths):
-		_print_message(i, len(file_paths), cursor)
-		(file_name, root) = file_paths[i]
-		if backup:
+		_print_message("Image", i, "of", len(file_paths), cursor=0)
+		[file_name, root, backup] = file_paths[i]
+		if not backup:
 			_backup(file_name, root)
-		else:
-			backup = True
+			file_paths[i][2] = True # avoid backing up again
 
 		status = _main_loop(file_name, root)
 
@@ -191,17 +202,14 @@ def _main(d):
 			i += 1
 		elif status == RESET:
 			_restore_backup(file_name, root)
-			backup = False
 		elif status == PREVIOUS:
 			if i == 0:
 				_restore_backup(file_name, root)
 			else:
 				i -= 1
-			backup = False
 		elif status == QUIT:
-			print("Exiting...")
+			_print_message("Exiting...")
 			break
-		cursor = CURSOR_UP_ONE + ERASE_LINE
 	_remove_backups(file_paths)
 
 if __name__ == "__main__":
