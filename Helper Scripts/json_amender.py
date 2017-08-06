@@ -5,16 +5,6 @@ import sys
 import math
 from collections import namedtuple
 
-def _to_2d(i, j):
-	x = (j / CELL_SIZE.y + i) * CELL_SIZE.x
-	y = (j - i / CELL_SIZE.x) * CELL_SIZE.y
-	return (math.ceil(x), math.ceil(y))
-
-def _to_iso(i, j):
-	x = (i - j) * CELL_SIZE.x / 2.0
-	y = (j + i) * CELL_SIZE.y / 2.0
-	return (IMAGE_SIZE.x / 2.0 + x, y)
-
 PREVIOUS = -2
 RESET = -1
 CONTINUE = 2
@@ -26,17 +16,23 @@ Point = namedtuple('Point', ['x', 'y'])
 TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
 CELL_SIZE = Point(151, y=76)
 BOARD_SIZE = Point(5, y=5)
-IMAGE_SIZE = Point(*_to_2d(BOARD_SIZE.x, BOARD_SIZE.y))
+IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, y=BOARD_SIZE.y*CELL_SIZE.y)
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 BLUE = (0,0,255,220)
-GRAY = (0,0,0,150)
+BLACK = (0, 0, 0, 255)
+GRAY = (200,200,200,150)
 PINK = (255,80,80,255)
 
 BACKUP_EXTENSION = ".backup"
 
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 line_count = 0
+
+def _to_iso(i, j):
+	x = (i - j) * CELL_SIZE.x / 2.0
+	y = (j + i) * CELL_SIZE.y / 2.0
+	return (IMAGE_SIZE.x / 2.0 + x, y)
 
 def _paint_cell(surface, p, color):
 	i = p.x; j = p.y
@@ -47,7 +43,7 @@ def _paint_cell(surface, p, color):
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
 def _draw_base(surface, state):
-	surface.fill(WHITE)
+	surface.fill(GRAY)
 	center = Point((BOARD_SIZE.x-1)/2, y=(BOARD_SIZE.y-1)/2)
 	sel_mode = state["sel_mode"]
 	for i in range(BOARD_SIZE.x):
@@ -59,8 +55,8 @@ def _draw_base(surface, state):
 				_paint_cell(surface, p, RED)
 			elif p == center:
 				_paint_cell(surface, p, BLUE)
-			elif i % 2 == 0:
-				_paint_cell(surface, p, GRAY)
+			elif (i % 2 == 0 or j % 2 != 0) and (i % 2 != 0 or j % 2 == 0):
+				_paint_cell(surface, p, BLACK)
 
 class Sprite(object):  # represents the sprite, not the game
 	def __init__(self, _path):
@@ -72,8 +68,8 @@ class Sprite(object):  # represents the sprite, not the game
 		self.w, self.h = self.image.get_rect().size
 		self.last_w, self.last_h = (self.w, self.h)
 		# the sprite's position
-		self.x = int(IMAGE_SIZE.x / 2 - self.w / 2)
-		self.y = int(IMAGE_SIZE.y / 2 - self.h / 2)
+		self.x = IMAGE_SIZE.x / 2.0 - self.w / 2.0
+		self.y = IMAGE_SIZE.y / 2.0 - self.h / 2.0
 		self.offset_x = 0
 		self.offset_y = 0
 		self.scale = 1.0
@@ -124,8 +120,8 @@ class Sprite(object):  # represents the sprite, not the game
 		w = int(self.w * self.scale)
 		h = int(self.h * self.scale)
 		# recalculate the center
-		self.x += (self.last_w / 2) - (w / 2)
-		self.y += (self.last_h / 2) - (h / 2)
+		self.x += (self.last_w / 2.0) - (w / 2.0)
+		self.y += (self.last_h / 2.0) - (h / 2.0)
 		self.last_w, self.last_h = (w, h)
 		surface.blit(pygame.transform.scale(self.image, (w, h)),
 					 (self.x + self.offset_x, self.y + self.offset_y))
