@@ -21,6 +21,7 @@ WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 BLUE = (0,0,255,220)
 GRAY = (0,0,0,150)
+PINK = (255,80,80,255)
 
 BACKUP_EXTENSION = ".backup"
 
@@ -34,14 +35,19 @@ def _paint_cell(surface, i, j, color):
 	p4 = (p1[0] + CELL_SIZE.x / 2, p1[1] - CELL_SIZE.y / 2)
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
-def _draw_base(surface):
+def _draw_base(surface, state):
 	surface.fill(WHITE)
 	center = Point((BOARD_SIZE.y-1)/2,
 				   y=(BOARD_SIZE.x-1)/2)
+	sel_mode = state["sel_mode"]
 	for i in range(BOARD_SIZE.y):
 		for j in range(BOARD_SIZE.x):
-
-			if Point(i, j) == center:
+			p = Point(i, j)
+			if p == state["cursor"] and sel_mode:
+				_paint_cell(surface, i, j, PINK)
+			elif p in state["sel_cells"] and sel_mode:
+				_paint_cell(surface, i, j, RED)
+			elif p == center:
 				_paint_cell(surface, i, j, BLUE)
 			else:
 				_paint_cell(surface, i, j, GRAY)
@@ -120,46 +126,44 @@ class Sprite(object):  # represents the sprite, not the game
 	def get_scale(self):
 		return self.scale
 
-def _cell_selection(surface, state):
-	center = state["sel_cells"][0]
-	_paint_cell(surface, center.x, center.y, RED)
-	# selected_cells = [center]
-	# current_cell = center
-	# while True:
-	# 	key = pygame.key.get_pressed()
-
-	# 	if key[pygame.K_DOWN]: # down key
-	# 		self.offset_y += dist # move down
-	# 	elif key[pygame.K_UP]: # up key
-	# 		self.offset_y -= dist # move up
-	# 	if key[pygame.K_RIGHT]: # right key
-	# 		self.offset_x += dist # move right
-	# 	elif key[pygame.K_LEFT]: # left key
-	# 		self.offset_x -= dist # move left
-
 def _handle_flow(state):
 	# handle every event since the last frame.
 	state["status"] = OK
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
-			return QUIT
+			state["status"] = QUIT
 		elif event.type == pygame.KEYUP:
-			key = event.key
-			if key == pygame.K_q:
+			if event.key == pygame.K_q:
 				state["status"] = QUIT
-			elif key == pygame.K_r:
+			elif event.key == pygame.K_r:
 				state["status"] = RESET
-			elif key == pygame.K_BACKSPACE:
+			elif event.key == pygame.K_BACKSPACE:
 				if state["sel_mode"]:
 					state["sel_mode"] = False
 				else:
 					state["status"] = PREVIOUS
-			elif key == pygame.K_RETURN:
+			elif event.key == pygame.K_RETURN:
 				if not state["sel_mode"]:
 					state["sel_mode"] = True
 					_print_message("Cell selection mode ON")
 				else:
 					state["status"] = CONTINUE
+			elif state["sel_mode"]:
+				cursor = state["cursor"]
+				if event.key == pygame.K_SPACE: # down key
+					if cursor in state["sel_cells"]:
+						state["sel_cells"].remove(cursor)
+					else:
+						state["sel_cells"].append(cursor)
+				elif event.key == pygame.K_DOWN: # down key
+					cursor = Point(cursor.x, y=cursor.y+1)
+				elif event.key == pygame.K_UP: # up key
+					cursor = Point(cursor.y, y=cursor.y-1)
+				elif event.key == pygame.K_RIGHT: # right key
+					cursor = Point(cursor.x+1, y=cursor.y)
+				elif event.key == pygame.K_LEFT: # left key
+					cursor = Point(cursor.x-1, y=cursor.y)
+				state["cursor"] = cursor
 
 def _get_default_state():
 	center = Point((BOARD_SIZE.y-1)/2,
@@ -167,6 +171,7 @@ def _get_default_state():
 	return {
 		"sel_mode": False,
 		"sel_cells": [center],
+		"cursor": center,
 		"status": OK
 	}
 
@@ -184,17 +189,12 @@ def _main_loop(file_name, directory):
 	state = _get_default_state()
 	while True:
 		_handle_flow(state)
-		_draw_base(screen)
+		_draw_base(screen, state)
 
 		# Handle state
-		if state["status"] == CONTINUE:
-			_write_changes()
-			return CONTINUE
-		elif state["status"] != OK:
+		if state["status"] != OK:
 			return state["status"]
-		elif state["sel_mode"]:
-			_cell_selection(screen, state)
-		else:
+		elif not state["sel_mode"]:
 			sprite.handle_keys(current_line)
 
 		# Display section
@@ -263,6 +263,7 @@ def _main(d):
 		status = _main_loop(file_name, root)
 
 		if status == CONTINUE:
+			_write_changes()
 			i += 1
 		elif status == RESET:
 			_restore_backup(file_name, root)
