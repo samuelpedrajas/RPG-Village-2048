@@ -1,6 +1,12 @@
 import pygame
 import os
+import shutil
 from collections import namedtuple
+
+PREVIOUS = -2
+RESET = -1
+OK = 1
+QUIT = 0
 
 Point = namedtuple('Point', ['x', 'y'])
 
@@ -12,6 +18,9 @@ IMAGE_SIZE = Point(BOARD_SIZE.x * CELL_SIZE.x,
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 GRAY = (0,0,0,150)
+
+CURSOR_UP_ONE = '\x1b[1A'
+ERASE_LINE = '\x1b[2K'
 
 def _draw_base(surface):
 	center = Point((BOARD_SIZE.x-1)/2,
@@ -66,10 +75,18 @@ class Sprite(object):  # represents the sprite, not the game
 	def handle_keys(self):
 		""" Handles Keys """
 		key = pygame.key.get_pressed()
-		if key[pygame.K_LCTRL]:
+		if key[pygame.K_q]:
+			return QUIT
+		elif key[pygame.K_r]:
+			return RESET
+		elif key[pygame.K_BACKSPACE]:
+			return PREVIOUS
+		elif key[pygame.K_LCTRL]:
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
+
+		return OK
 
 	def draw(self, surface):
 		""" Draw on surface """
@@ -105,7 +122,8 @@ def _main_loop(file_name, directory):
 				pygame.quit() # quit the screen
 				running = False
 
-		sprite.handle_keys() # handle the keys
+		status = sprite.handle_keys() # handle the keys
+
 		screen.fill(WHITE)
 		_draw_base(screen)
 		sprite.draw(screen) # draw the sprite to the screen
@@ -113,11 +131,56 @@ def _main_loop(file_name, directory):
 
 		clock.tick(40)
 
+		if status != OK:
+			return status
+
+def _restore_backup(file_name, root):
+	file_path = os.path.join(root, file_name)
+	shutil.copyfile(file_path + ".backup", file_path)
+
+def _backup(file_name, root):
+	file_path = os.path.join(root, file_name)
+	shutil.copyfile(file_path, file_path + ".backup")
+
+def _print_message(i, l, cursor):
+	print(cursor, "Image", i, "of", l)
+	cursor = ""
+
 def _main(d):
+	file_paths = []
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
 			if file_name.endswith(".png"):
-				_main_loop(file_name, root)
+				file_paths.append((file_name, root))
+
+	backup = True
+
+	i = 0
+	cursor = ""
+	while i < len(file_paths):
+		_print_message(i, len(file_paths), cursor)
+		(file_name, root) = file_paths[i]
+		if backup:
+			_backup(file_name, root)
+			backup = True
+
+		status = _main_loop(file_name, root)
+
+		if status == OK:
+			i += 1
+		elif status == RESET:
+			_restore_backup(file_name, root)
+			backup = False
+		elif status == PREVIOUS:
+			if i == 0:
+				_restore_backup(file_name, root)
+			else:
+				i -= 1
+			backup = False
+		elif status == QUIT:
+			print("Exiting...")
+			return 1
+		cursor = CURSOR_UP_ONE + ERASE_LINE
 
 if __name__ == "__main__":
     _main(TILES_PATH)
