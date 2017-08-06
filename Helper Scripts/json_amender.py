@@ -23,6 +23,8 @@ GRAY = (0,0,0,150)
 CURSOR_UP_ONE = '\x1b[1A'
 ERASE_LINE = '\x1b[2K'
 
+BACKUP_EXTENSION = ".backup"
+
 def _draw_base(surface):
 	center = Point((BOARD_SIZE.x-1)/2,
 				   y=(BOARD_SIZE.y-1)/2)
@@ -136,13 +138,28 @@ def _main_loop(file_name, directory):
 
 		clock.tick(40)
 
+def _remove_backups(file_paths):
+	for (file_name, root) in file_paths:
+		json_backup = file_name.replace(".png", ".json") + BACKUP_EXTENSION
+		png_backup = file_name + BACKUP_EXTENSION
+
+		json_backup_path = os.path.join(root, json_backup)
+		png_backup_path = os.path.join(root, png_backup)
+
+		if os.path.exists(json_backup_path):
+			os.remove(json_backup_path)
+			print(json_backup, "removed")
+		if os.path.exists(png_backup_path):
+			os.remove(png_backup_path)
+			print(png_backup, "removed")
+
 def _restore_backup(file_name, root):
 	file_path = os.path.join(root, file_name)
-	shutil.copyfile(file_path + ".backup", file_path)
+	shutil.copyfile(file_path + BACKUP_EXTENSION, file_path)
 
 def _backup(file_name, root):
 	file_path = os.path.join(root, file_name)
-	shutil.copyfile(file_path, file_path + ".backup")
+	shutil.copyfile(file_path, file_path + BACKUP_EXTENSION)
 
 def _print_message(i, l, cursor):
 	print(cursor + "Image", i, "of", l)
@@ -155,8 +172,9 @@ def _main(d):
 			if file_name.endswith(".png"):
 				file_paths.append((file_name, root))
 
-	backup = True
+	file_paths.sort(key=lambda t: t[1])
 
+	backup = True
 	i = 0
 	cursor = ""
 	while i < len(file_paths):
@@ -164,6 +182,7 @@ def _main(d):
 		(file_name, root) = file_paths[i]
 		if backup:
 			_backup(file_name, root)
+		else:
 			backup = True
 
 		status = _main_loop(file_name, root)
@@ -181,8 +200,9 @@ def _main(d):
 			backup = False
 		elif status == QUIT:
 			print("Exiting...")
-			return 1
+			break
 		cursor = CURSOR_UP_ONE + ERASE_LINE
+	_remove_backups(file_paths)
 
 if __name__ == "__main__":
     _main(TILES_PATH)
