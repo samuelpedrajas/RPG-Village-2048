@@ -5,6 +5,7 @@ from collections import namedtuple
 
 PREVIOUS = -2
 RESET = -1
+CONTINUE = 2
 OK = 1
 QUIT = 0
 
@@ -75,13 +76,8 @@ class Sprite(object):  # represents the sprite, not the game
 	def handle_keys(self):
 		""" Handles Keys """
 		key = pygame.key.get_pressed()
-		if key[pygame.K_q]:
-			return QUIT
-		elif key[pygame.K_r]:
-			return RESET
-		elif key[pygame.K_BACKSPACE]:
-			return PREVIOUS
-		elif key[pygame.K_LCTRL]:
+
+		if key[pygame.K_LCTRL]:
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
@@ -121,8 +117,17 @@ def _main_loop(file_name, directory):
 			if event.type == pygame.QUIT:
 				pygame.quit() # quit the screen
 				running = False
+			elif event.type == pygame.KEYUP:
+				if event.key == pygame.K_q:
+					return QUIT
+				elif event.key == pygame.K_r:
+					return RESET
+				elif event.key == pygame.K_BACKSPACE:
+					return PREVIOUS
+				elif event.key == pygame.K_RETURN:
+					return CONTINUE
 
-		status = sprite.handle_keys() # handle the keys
+		sprite.handle_keys() # handle the keys
 
 		screen.fill(WHITE)
 		_draw_base(screen)
@@ -130,9 +135,6 @@ def _main_loop(file_name, directory):
 		pygame.display.update() # update the screen
 
 		clock.tick(40)
-
-		if status != OK:
-			return status
 
 def _restore_backup(file_name, root):
 	file_path = os.path.join(root, file_name)
@@ -143,7 +145,7 @@ def _backup(file_name, root):
 	shutil.copyfile(file_path, file_path + ".backup")
 
 def _print_message(i, l, cursor):
-	print(cursor, "Image", i, "of", l)
+	print(cursor + "Image", i, "of", l)
 	cursor = ""
 
 def _main(d):
@@ -166,7 +168,7 @@ def _main(d):
 
 		status = _main_loop(file_name, root)
 
-		if status == OK:
+		if status == CONTINUE:
 			i += 1
 		elif status == RESET:
 			_restore_backup(file_name, root)
