@@ -19,6 +19,7 @@ IMAGE_SIZE = Point(BOARD_SIZE.x * CELL_SIZE.x,
 				   y=BOARD_SIZE.y * CELL_SIZE.y)
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
+BLUE = (0,0,255,220)
 GRAY = (0,0,0,150)
 
 BACKUP_EXTENSION = ".backup"
@@ -26,19 +27,23 @@ BACKUP_EXTENSION = ".backup"
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 line_count = 0
 
+def _paint_cell(surface, i, j, color):
+	p1 = (j * CELL_SIZE.x, CELL_SIZE.y / 2 + i * CELL_SIZE.y)
+	p2 = (p1[0] + CELL_SIZE.x / 2, p1[1] + CELL_SIZE.y / 2)
+	p3 = (p1[0] + CELL_SIZE.x, p1[1])
+	p4 = (p1[0] + CELL_SIZE.x / 2, p1[1] - CELL_SIZE.y / 2)
+	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
+
 def _draw_base(surface):
 	center = Point((BOARD_SIZE.x-1)/2,
 				   y=(BOARD_SIZE.y-1)/2)
 	for i in range(BOARD_SIZE.y):
 		for j in range(BOARD_SIZE.x):
-			p1 = (j * CELL_SIZE.x, CELL_SIZE.y / 2 + i * CELL_SIZE.y)
-			p2 = (p1[0] + CELL_SIZE.x / 2, p1[1] + CELL_SIZE.y / 2)
-			p3 = (p1[0] + CELL_SIZE.x, p1[1])
-			p4 = (p1[0] + CELL_SIZE.x / 2, p1[1] - CELL_SIZE.y / 2)
+
 			if Point(j, i) == center:
-				pygame.draw.polygon(surface, RED, [p1, p2, p3, p4])
+				_paint_cell(surface, i, j, BLUE)
 			else:
-				pygame.draw.polygon(surface, GRAY, [p1, p2, p3, p4])
+				_paint_cell(surface, i, j, GRAY)
 
 class Sprite(object):  # represents the sprite, not the game
 	def __init__(self, _path):
@@ -114,6 +119,13 @@ class Sprite(object):  # represents the sprite, not the game
 	def get_scale(self):
 		return self.scale
 
+def _cell_selection(surface):
+	_print_message("Cell selection mode ON")
+	center = Point((BOARD_SIZE.x-1)/2,
+				   y=(BOARD_SIZE.y-1)/2)
+	_paint_cell(surface, center.y, center.x, RED)
+	selected_cells = [center]
+
 def _main_loop(file_name, directory):
 	file_path = os.path.join(directory, file_name)
 	screen = pygame.display.set_mode(IMAGE_SIZE)
@@ -122,6 +134,7 @@ def _main_loop(file_name, directory):
 	clock = pygame.time.Clock()
 
 	current_line = line_count
+	cell_selection_mode = False
 	while True:
 		# handle every event since the last frame.
 		for event in pygame.event.get():
@@ -135,14 +148,22 @@ def _main_loop(file_name, directory):
 				elif event.key == pygame.K_r:
 					return RESET
 				elif event.key == pygame.K_BACKSPACE:
-					return PREVIOUS
+					if cell_selection_mode:
+						cell_selection_mode = False
+					else:
+						return PREVIOUS
 				elif event.key == pygame.K_RETURN:
-					return CONTINUE
+					if not cell_selection_mode:
+						cell_selection_mode = True
+					else:
+						return CONTINUE
 
 		sprite.handle_keys(current_line) # handle the keys
 
 		screen.fill(WHITE)
 		_draw_base(screen)
+		if cell_selection_mode:
+			_cell_selection(screen)
 		sprite.draw(screen) # draw the sprite to the screen
 		pygame.display.update() # update the screen
 
