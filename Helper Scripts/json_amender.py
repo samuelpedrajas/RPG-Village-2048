@@ -76,7 +76,17 @@ class Sprite(object):  # represents the sprite, not the game
 		self.scale = min(1.0, self.scale)
 		self.scale = max(0.0, self.scale)
 
-	def handle_keys(self):
+	def _print_status(self, current_line):
+		offset_x_str = str(self.offset_x)
+		offset_y_str = str(self.offset_y)
+		offset = "(" + offset_x_str + ", " + offset_y_str + ")"
+		_print_message("Offset:", offset, cursor=current_line)
+		size_x_str = str(int(self.w * self.scale))
+		size_y_str = str(int(self.h * self.scale))
+		size = "(" + size_x_str + ", " + size_y_str + ")"
+		_print_message("Size  :", size, cursor=current_line+1)
+
+	def handle_keys(self, current_line):
 		""" Handles Keys """
 		key = pygame.key.get_pressed()
 
@@ -84,8 +94,7 @@ class Sprite(object):  # represents the sprite, not the game
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
-
-		return OK
+		self._print_status(current_line)
 
 	def draw(self, surface):
 		""" Draw on surface """
@@ -112,15 +121,16 @@ def _main_loop(file_name, directory):
 	sprite = Sprite(file_path) # create an instance
 	clock = pygame.time.Clock()
 
-	running = True
-	while running:
+	current_line = line_count
+	while True:
 		# handle every event since the last frame.
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				pygame.quit() # quit the screen
-				running = False
+				return QUIT
 			elif event.type == pygame.KEYUP:
 				if event.key == pygame.K_q:
+					pygame.quit() # quit the screen
 					return QUIT
 				elif event.key == pygame.K_r:
 					return RESET
@@ -129,7 +139,7 @@ def _main_loop(file_name, directory):
 				elif event.key == pygame.K_RETURN:
 					return CONTINUE
 
-		sprite.handle_keys() # handle the keys
+		sprite.handle_keys(current_line) # handle the keys
 
 		screen.fill(WHITE)
 		_draw_base(screen)
