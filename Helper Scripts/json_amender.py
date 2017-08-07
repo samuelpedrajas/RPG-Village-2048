@@ -3,6 +3,7 @@ import os
 import shutil
 import sys
 import math
+import json
 from collections import namedtuple
 
 PREVIOUS = -2
@@ -59,7 +60,7 @@ def _draw_base(surface, state):
 				_paint_cell(surface, p, BLACK)
 
 class Sprite(object):  # represents the sprite, not the game
-	def __init__(self, _path):
+	def __init__(self, _path, state):
 		""" The constructor of the class """
 		self.image = pygame.image.load(_path)
 		self.image.fill((255, 255, 255, 200),
@@ -70,8 +71,8 @@ class Sprite(object):  # represents the sprite, not the game
 		# the sprite's position
 		self.x = IMAGE_SIZE.x / 2.0 - self.w / 2.0
 		self.y = IMAGE_SIZE.y / 2.0 - self.h / 2.0
-		self.offset_x = 0
-		self.offset_y = 0
+		self.offset_x = state["out"]["offset"]["x"]
+		self.offset_y = state["out"]["offset"]["y"]
 		self.scale = 1.0
 
 	def _change_offset(self, key):
@@ -84,6 +85,7 @@ class Sprite(object):  # represents the sprite, not the game
 			self.offset_x += dist # move right
 		elif key[pygame.K_LEFT]: # left key
 			self.offset_x -= dist # move left
+		return {"x": self.offset_x, "y": self.offset_y}
 
 	def _change_scale(self, key):
 		change = 0.01 # distance moved in 1 frame, try changing it to 5
@@ -111,7 +113,7 @@ class Sprite(object):  # represents the sprite, not the game
 		if key[pygame.K_LCTRL]:
 			self._change_scale(key)
 		else:
-			self._change_offset(key)
+			state["out"]["offset"] = self._change_offset(key)
 		self._print_status(state["line_count"])
 
 	def draw(self, surface):
@@ -180,38 +182,73 @@ def _handle_flow(state):
 							   cursor=state["line_count"]+3)
 				state["cursor"] = cursor
 
-def _get_default_state(line_count):
+def _get_default_out():
 	center = Point((BOARD_SIZE.x-1)/2,
 				   y=(BOARD_SIZE.y-1)/2)
+	out = {
+		"used_cells": [{"x": center.x, "y": center.y}],
+		"offset": {
+			"x": 0,
+			"y": 0
+		},
+		"layer": 2,
+	}
+	return out
+
+def _get_state(line_count, cfg):
+	out = _get_default_out()
+	out = {**out, **cfg}
+	cells = []
+	for cell in out["used_cells"]:
+		cells.append((cell["x"], cell["y"]))
+	out["used_cells"] = cells
 	return {
 		"sel_mode": False,
-		"out": {
-			"used_cells": [center],
-			"layer": 2
-		},
-		"cursor": center,
+		"out": out,
+		"cursor": Point((BOARD_SIZE.x-1)/2, y=(BOARD_SIZE.y-1)/2),
 		"status": OK,
 		"line_count": line_count
 	}
 
-def _write_changes():
-	_print_message("WRITING...")
+def _get_json_data(file_name, directory):
+	file_path = os.path.join(directory, file_name).replace(".png", ".json")
+	if os.path.exists(file_path):
+		with open(file_path) as json_file:
+		    json_data = json.load(json_file)
+		    return json_data
+	return {}
 
-def _main_loop(file_name, directory):
+def _write_json_file(file_name, directory, d):
+	file_path = os.path.join(directory, file_name).replace(".png", ".json")
+	with open(file_path, 'w') as f:
+		s = json.dumps(d, indent=4, sort_keys=True)
+		f.write(s)
+
+def _write_changes(file_name, root, out):
+	cells = []
+	for p in out["used_cells"]:
+		d = {
+			"x": p[0],
+			"y": p[1]
+		}
+		cells.append(d)
+	out["used_cells"] = cells
+	_write_json_file(file_name, root, out)
+
+def _main_loop(file_name, directory, state):
 	file_path = os.path.join(directory, file_name)
 	screen = pygame.display.set_mode(IMAGE_SIZE)
 
-	sprite = Sprite(file_path) # create an instance
+	sprite = Sprite(file_path, state) # create an instance
 	clock = pygame.time.Clock()
 
-	state = _get_default_state(line_count)
 	while True:
 		_handle_flow(state)
 		_draw_base(screen, state)
 
 		# Handle state
 		if state["status"] != OK:
-			return state["status"]
+			return state
 		elif not state["sel_mode"]:
 			sprite.handle_keys(state)
 
@@ -238,6 +275,15 @@ def _remove_backups(file_paths):
 def _restore_backup(file_name, root):
 	file_path = os.path.join(root, file_name)
 	shutil.copyfile(file_path + BACKUP_EXTENSION, file_path)
+
+	# backup json if exists
+	json_file = file_name.replace(".png", ".json")
+	json_file_path = os.path.join(root, json_file)
+	if os.path.exists(json_file_path + BACKUP_EXTENSION):
+		shutil.copyfile(json_file_path + BACKUP_EXTENSION, json_file_path)
+	else:
+		out = _get_default_out()
+		_write_json_file(file_name, root, out)
 
 def _backup(file_name, root):
 	file_path = os.path.join(root, file_name)
@@ -273,15 +319,17 @@ def _main(d):
 	pygame.init()
 	while i < len(file_paths):
 		_print_message("Image", i, "of", len(file_paths), cursor=0)
-		[file_name, root, backup] = file_paths[i]
-		if not backup:
+		[file_name, root, backedup] = file_paths[i]
+		if not backedup:
 			_backup(file_name, root)
 			file_paths[i][2] = True # avoid backing up again
 
-		status = _main_loop(file_name, root)
-
+		cfg = _get_json_data(file_name, root)
+		state = _get_state(line_count, cfg)
+		state = _main_loop(file_name, root, state)
+		status = state["status"]
 		if status == CONTINUE:
-			_write_changes()
+			_write_changes(file_name, root, state["out"])
 			i += 1
 		elif status == RESET:
 			_restore_backup(file_name, root)
