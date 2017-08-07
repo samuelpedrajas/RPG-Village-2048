@@ -12,12 +12,34 @@ CONTINUE = 2
 OK = 1
 QUIT = 0
 
-Point = namedtuple('Point', ['x', 'y'])
+class Point():
+	def __init__(self, x, y):
+		self.x = float(x)
+		self.y = float(y)
+		self.x_int = int(x)
+		self.y_int = int(y)
+
+	def get_tuple(self):
+		return (self.x, self.y)
+
+	def get_tuple_int(self):
+		return (self.x_int, self.y_int)
+
+	def to_iso(self):
+		x = (self.x - self.y) * CELL_SIZE.x / 2.0
+		y = (self.y + self.x) * CELL_SIZE.y / 2.0
+		return (IMAGE_SIZE.x / 2.0 + x, y)
+
+	def __eq__(self, other):
+	    """Override the default Equals behavior"""
+	    if isinstance(other, self.__class__):
+	        return self.__dict__ == other.__dict__
+	    return False
 
 TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
-CELL_SIZE = Point(151, y=76)
-BOARD_SIZE = Point(5, y=5)
-IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, y=BOARD_SIZE.y*CELL_SIZE.y)
+CELL_SIZE = Point(151, 76)
+BOARD_SIZE = Point(5, 5)
+IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, BOARD_SIZE.y*CELL_SIZE.y)
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 BLUE = (0,0,255,220)
@@ -30,26 +52,21 @@ BACKUP_EXTENSION = ".backup"
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 line_count = 0
 
-def _to_iso(i, j):
-	x = (i - j) * CELL_SIZE.x / 2.0
-	y = (j + i) * CELL_SIZE.y / 2.0
-	return (IMAGE_SIZE.x / 2.0 + x, y)
-
 def _paint_cell(surface, p, color):
 	i = p.x; j = p.y
-	p1 = _to_iso(i+1.0, j+1.0)
-	p2 = _to_iso(i+1.0, j)
-	p3 = _to_iso(i, j)
-	p4 = _to_iso(i, j+1.0)
+	p1 = Point(i+1.0, j+1.0).to_iso()
+	p2 = Point(i+1.0, j).to_iso()
+	p3 = Point(i, j).to_iso()
+	p4 = Point(i, j+1.0).to_iso()
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
 def _draw_base(surface, state):
 	surface.fill(GRAY)
-	center = Point((BOARD_SIZE.x-1)/2, y=(BOARD_SIZE.y-1)/2)
+	center = Point((BOARD_SIZE.x-1)/2, (BOARD_SIZE.y-1)/2)
 	sel_mode = state["sel_mode"]
-	for i in range(BOARD_SIZE.x):
-		for j in range(BOARD_SIZE.y):
-			p = Point(i, y=j)
+	for i in range(BOARD_SIZE.x_int):
+		for j in range(BOARD_SIZE.y_int):
+			p = Point(i, j)
 			if p == state["cursor"] and sel_mode:
 				_paint_cell(surface, p, PINK)
 			elif p in state["out"]["used_cells"] and sel_mode:
@@ -164,13 +181,13 @@ def _handle_flow(state):
 					else:
 						state["out"]["used_cells"].append(cursor)
 				elif event.key == pygame.K_DOWN: # down key
-					cursor = Point(cursor.x, y=cursor.y+1)
+					cursor = Point(cursor.x, cursor.y+1)
 				elif event.key == pygame.K_UP: # up key
-					cursor = Point(cursor.x, y=cursor.y-1)
+					cursor = Point(cursor.x, cursor.y-1)
 				elif event.key == pygame.K_RIGHT: # right key
-					cursor = Point(cursor.x+1, y=cursor.y)
+					cursor = Point(cursor.x+1, cursor.y)
 				elif event.key == pygame.K_LEFT: # left key
-					cursor = Point(cursor.x-1, y=cursor.y)
+					cursor = Point(cursor.x-1, cursor.y)
 				elif event.key == pygame.K_0: # down key
 					state["out"]["layer"] = 0
 				elif event.key == pygame.K_1: # up key
@@ -184,7 +201,7 @@ def _handle_flow(state):
 
 def _get_default_out():
 	center = Point((BOARD_SIZE.x-1)/2,
-				   y=(BOARD_SIZE.y-1)/2)
+				   (BOARD_SIZE.y-1)/2)
 	out = {
 		"used_cells": [{"x": center.x, "y": center.y}],
 		"offset": {
@@ -195,7 +212,8 @@ def _get_default_out():
 	}
 	return out
 
-def _get_state(line_count, cfg):
+def _get_state(file_name, root):
+	cfg = _get_json_data(file_name, root)
 	out = _get_default_out()
 	out = {**out, **cfg}
 	cells = []
@@ -205,9 +223,9 @@ def _get_state(line_count, cfg):
 	return {
 		"sel_mode": False,
 		"out": out,
-		"cursor": Point((BOARD_SIZE.x-1)/2, y=(BOARD_SIZE.y-1)/2),
+		"cursor": Point((BOARD_SIZE.x-1)/2, (BOARD_SIZE.y-1)/2),
 		"status": OK,
-		"line_count": line_count
+		"line_count": 0
 	}
 
 def _get_json_data(file_name, directory):
@@ -237,7 +255,7 @@ def _write_changes(file_name, root, out):
 
 def _main_loop(file_name, directory, state):
 	file_path = os.path.join(directory, file_name)
-	screen = pygame.display.set_mode(IMAGE_SIZE)
+	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
 
 	sprite = Sprite(file_path, state) # create an instance
 	clock = pygame.time.Clock()
@@ -305,7 +323,7 @@ def _print_message(*message, cursor=None):
 	print(*message)
 	line_count = cursor + 1
 
-def _main(d):
+def _get_file_paths(d):
 	file_paths = []
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
@@ -313,19 +331,21 @@ def _main(d):
 				file_paths.append([file_name, root, False])
 
 	file_paths.sort(key=lambda t: t[1])
+	return file_paths
+
+def _main(d):
+	file_paths = _get_file_paths(d)
 
 	i = 0
-	cursor = ""
 	pygame.init()
 	while i < len(file_paths):
 		_print_message("Image", i, "of", len(file_paths), cursor=0)
-		[file_name, root, backedup] = file_paths[i]
-		if not backedup:
+		[file_name, root, backed_up] = file_paths[i]
+		if not backed_up:
 			_backup(file_name, root)
 			file_paths[i][2] = True # avoid backing up again
 
-		cfg = _get_json_data(file_name, root)
-		state = _get_state(line_count, cfg)
+		state = _get_state(file_name, root)
 		state = _main_loop(file_name, root, state)
 		status = state["status"]
 		if status == CONTINUE:
