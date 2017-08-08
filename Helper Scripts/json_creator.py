@@ -152,9 +152,8 @@ class Image(Sprite):
 		self.json_path = self.image_path.replace(".png", ".json")
 		self.image_backup_path = self.image_path + BACKUP_EXTENSION
 		self.json_backup_path = self.json_path + BACKUP_EXTENSION
-		self.backed_up = False
 		self.cursor = get_central_cell()
-		self.used_cells = [get_central_cell()]
+		self.used_cells = [self.cursor]
 		self.layer = 2
 		if not os.path.exists(self.json_path):
 			self.write_changes()
