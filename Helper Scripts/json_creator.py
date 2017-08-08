@@ -11,8 +11,6 @@ CONTINUE = 2
 EDIT_MODE = 1
 QUIT = 0
 
-TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
-
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
 BLUE = (0,0,255,220)
@@ -29,6 +27,17 @@ EDIT_KEYS = {
 	"left": pygame.K_LEFT,
 	"right": pygame.K_RIGHT
 }
+TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
+
+REFERENCE_KEYS = {
+	"mod": pygame.K_LCTRL,
+	"up": pygame.K_w,
+	"down": pygame.K_s,
+	"left": pygame.K_a,
+	"right": pygame.K_d
+}
+REFERENCE_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/human/characters/archer/defending.png"
+
 
 class Point():
 
@@ -79,15 +88,14 @@ class Point():
 	__floordiv__ = __truediv__
 
 
-class Sprite():  # represents the sprite, not the game
-	def __init__(self, image_path, keys):
+class Sprite():
+	def __init__(self, image_path, keys, pos):
 		self.image = pygame.image.load(image_path)
 		self.image.fill((255, 255, 255, 200),
 						None, pygame.BLEND_RGBA_MULT)
 		self.size = Point(*self.image.get_rect().size)
 		self.current_size = self.size
-		# the sprite's position
-		self.pos = get_central_cell() * CELL_SIZE
+		self.pos = pos
 		self.offset = Point(0, 0)
 		self.scale = 1.0
 		self._set_keys(keys)
@@ -125,7 +133,7 @@ class Sprite():  # represents the sprite, not the game
 		self.scale = max(0.0, self.scale)
 		self._recenter()
 
-	def _print_status(self):
+	def print_status(self):
 		offset_str = str(self.offset.get_tuple())
 		print_message("Offset:", offset_str, cursor=1)
 		size_str = str(self.size.get_tuple())
@@ -138,7 +146,6 @@ class Sprite():  # represents the sprite, not the game
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
-		self._print_status()
 
 	def draw(self, surface):
 		""" Draw on surface """
@@ -153,7 +160,8 @@ class Sprite():  # represents the sprite, not the game
 class Image(Sprite):
 	def __init__(self, image_name, directory, keys):
 		self.image_path = os.path.join(directory, image_name)
-		Sprite.__init__(self, self.image_path, keys)
+		screen_centre = get_central_cell() * CELL_SIZE  # default pos
+		Sprite.__init__(self, self.image_path, keys, screen_centre)
 		self.json_path = self.image_path.replace(".png", ".json")
 		self.image_backup_path = self.image_path + BACKUP_EXTENSION
 		self.json_backup_path = self.json_path + BACKUP_EXTENSION
@@ -293,9 +301,7 @@ def draw_base(surface, im, status):
 			elif chess_condition:
 				paint_cell(surface, p, BLACK)
 
-def main_loop(im):
-	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
-	clock = pygame.time.Clock()
+def main_loop(im, reference, screen, clock):
 	status = EDIT_MODE
 	while True:
 		events = list(pygame.event.get())
@@ -306,12 +312,15 @@ def main_loop(im):
 			im.handle_selection_actions(events)
 		elif status == EDIT_MODE:
 			im.handle_edit_actions()
+			im.print_status()
+			reference.handle_edit_actions()
 		else:
 			return status
 
 		# Display section
 		draw_base(screen, im, status)
 		im.draw(screen) # draw the sprite to the screen
+		reference.draw(screen)
 		pygame.display.update() # update the screen
 		clock.tick(40)
 
@@ -343,11 +352,14 @@ def main(d):
 
 	i = 0
 	pygame.init()
+	reference = Sprite(REFERENCE_PATH, REFERENCE_KEYS, Point(0, 0))
+	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
+	clock = pygame.time.Clock()
 	while i < len(images):
 		print_message("Image", i, "of", n_images, cursor=0)
 		im = images[i]
 
-		status = main_loop(im)
+		status = main_loop(im, reference, screen, clock)
 
 		if status == CONTINUE:
 			im.write_changes()
