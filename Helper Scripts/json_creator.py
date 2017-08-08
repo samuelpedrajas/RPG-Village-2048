@@ -26,6 +26,7 @@ PINK = (255,80,80,255)
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 
 class Point():
+
 	def __init__(self, x, y):
 		self.x = float(x)
 		self.y = float(y)
@@ -59,18 +60,18 @@ class Point():
 			return Point(self.x * other.x, self.y * other.y)
 		return Point(other * self.x, other * self.y)
 
-	_rmul_ = __mul__
-
 	def __truediv__(self, other):
 		return Point(self.x / other, self.y / other)
-
-	__floordiv__ = __truediv__
 
 	def __add__(self, other):
 		return Point(self.x + other.x, self.y + other.y)
 
 	def __sub__(self, other):
 		return Point(self.x - other.x, self.y - other.y)
+
+	_rmul_ = __mul__
+
+	__floordiv__ = __truediv__
 
 CELL_SIZE = Point(151, 76)
 BOARD_SIZE = Point(5, 5)
@@ -88,7 +89,6 @@ class Sprite():  # represents the sprite, not the game
 						None, pygame.BLEND_RGBA_MULT)
 		self.size = Point(*self.image.get_rect().size)
 		self.current_size = self.size
-		self.last_size = self.size
 		# the sprite's position
 		self.pos = get_central_cell() * CELL_SIZE
 		self.offset = Point(0, 0)
