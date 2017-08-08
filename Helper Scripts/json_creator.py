@@ -96,7 +96,7 @@ class Sprite():
 						None, pygame.BLEND_RGBA_MULT)
 		self.size = Point(*self.image.get_rect().size)
 		self.current_size = self.size
-		self.pos = pos
+		self.pos = pos - self.size / 2.0
 		self.offset = Point(0, 0)
 		self.scale = 1.0
 		self._set_keys(keys)
@@ -119,7 +119,7 @@ class Sprite():
 		elif key[self.left_key]: # left key
 			self.offset.x -= dist # move left
 
-	def _recenter(self):
+	def _recentre(self):
 		new_size = self.size * self.scale
 		self.pos += self.current_size / 2.0 - new_size / 2.0
 		self.current_size = new_size
@@ -132,7 +132,7 @@ class Sprite():
 			self.scale += step # move up
 		self.scale = min(1.0, self.scale)
 		self.scale = max(0.0, self.scale)
-		self._recenter()
+		self._recentre()
 
 	def print_status(self):
 		offset_str = str(self.offset.get_tuple())
@@ -162,7 +162,7 @@ class Sprite():
 class Image(Sprite):
 	def __init__(self, image_name, directory, keys):
 		self.image_path = os.path.join(directory, image_name)
-		screen_centre = get_central_cell() * CELL_SIZE  # default pos
+		screen_centre = IMAGE_SIZE / 2.0  # default pos
 		Sprite.__init__(self, self.image_path, keys, screen_centre)
 		self.json_path = self.image_path.replace(".png", ".json")
 		self.image_backup_path = self.image_path + BACKUP_EXTENSION
