@@ -90,6 +90,7 @@ class Point():
 
 class Sprite():
 	def __init__(self, image_path, keys, pos):
+		self.original_image = pygame.image.load(image_path)
 		self.image = pygame.image.load(image_path)
 		self.image.fill((255, 255, 255, 200),
 						None, pygame.BLEND_RGBA_MULT)
@@ -155,6 +156,7 @@ class Sprite():
 			pygame.transform.scale(self.image, current_size_t),
 			pos_t
 		)
+		pygame.transform.scale(self.image, current_size_t)
 
 
 class Image(Sprite):
@@ -208,6 +210,10 @@ class Image(Sprite):
 		with open(self.json_path, 'w') as f:
 			s = json.dumps(cfg, indent=4, sort_keys=True)
 			f.write(s)
+		# Save scaled image
+		current_size_t = self.current_size.get_tuple_int()
+		s = pygame.transform.scale(self.original_image, current_size_t)
+		pygame.image.save(s, self.image_path)
 
 	def _get_cfg(self):
 		return {
