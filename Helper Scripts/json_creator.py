@@ -72,11 +72,11 @@ class Sprite():  # represents the sprite, not the game
 
 	def _print_status(self):
 		offset_str = str(self.offset.get_tuple())
-		_print_message("Offset:", offset_str, cursor=1)
+		print_message("Offset:", offset_str, cursor=1)
 		size_str = str(self.size.get_tuple())
-		_print_message("Size  :", size_str, cursor=2)
+		print_message("Size  :", size_str, cursor=2)
 
-	def handle_keys(self):
+	def handle_edit_actions(self):
 		key = pygame.key.get_pressed()
 
 		if key[pygame.K_LCTRL]:
@@ -116,6 +116,29 @@ class Image(Sprite):
 			self.used_cells.remove(self.cursor)
 		else:
 			self.used_cells.append(self.cursor)
+
+	def handle_selection_actions(self, events):
+		for event in events:
+			if event.type != pygame.KEYUP:
+				continue
+
+			if event.key == pygame.K_SPACE: # space key
+				self.select()
+			elif event.key == pygame.K_DOWN: # down key
+				self.cursor += Point(0, 1)
+			elif event.key == pygame.K_UP: # up key
+				self.cursor += Point(0, -1)
+			elif event.key == pygame.K_RIGHT: # right key
+				self.cursor += Point(1, 0)
+			elif event.key == pygame.K_LEFT: # left key
+				self.cursor += Point(-1, 0)
+			elif event.key == pygame.K_0: # 0 key
+				self.layer = 0
+			elif event.key == pygame.K_1: # 1 key
+				self.layer = 1
+			elif event.key == pygame.K_2: # 2 key
+				self.layer = 2
+		print_message("Select layer (" + str(self.layer) + ")", cursor=4)
 
 	def write_changes(self):
 		cfg = self._get_cfg()
@@ -163,7 +186,7 @@ def _paint_cell(surface, p, color):
 	p4 = Point(i, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
-def _draw_base(surface, im, status):
+def draw_base(surface, im, status):
 	surface.fill(GRAY)
 	center = get_central_cell()
 	for i in range(BOARD_SIZE.x_int):
@@ -181,12 +204,13 @@ def _draw_base(surface, im, status):
 			elif chess_condition:
 				_paint_cell(surface, p, BLACK)
 
-def _handle_flow(im, status):
-	# handle every event since the last frame.
-	for event in pygame.event.get():
+def handle_flow_actions(events, status):
+	for event in events:
+		# handle every event since the last frame.
 		if event.type == pygame.QUIT:
 			return QUIT
 		elif event.type == pygame.KEYUP:
+			# handle actions like quit, previous, continue...
 			if event.key == pygame.K_q:
 				return QUIT
 			elif event.key == pygame.K_r:
@@ -198,56 +222,35 @@ def _handle_flow(im, status):
 					return PREVIOUS
 			elif event.key == pygame.K_RETURN:
 				if status != SEL_MODE:
-					_print_message("Cell selection mode ON")
+					print_message("Cell selection mode ON")
 					return SEL_MODE
 				else:
 					return CONTINUE
-			if status == SEL_MODE:
-				step = None
-				if event.key == pygame.K_SPACE: # down key
-					im.select()
-				elif event.key == pygame.K_DOWN: # down key
-					step = Point(0, 1)
-				elif event.key == pygame.K_UP: # up key
-					step = Point(0, -1)
-				elif event.key == pygame.K_RIGHT: # right key
-					step = Point(1, 0)
-				elif event.key == pygame.K_LEFT: # left key
-					step = Point(-1, 0)
-				elif event.key == pygame.K_0: # down key
-					im.layer = 0
-				elif event.key == pygame.K_1: # up key
-					im.layer = 1
-				elif event.key == pygame.K_2: # right key
-					im.layer = 2
-
-				if step:
-					im.cursor += step
 	return status
 
-def _main_loop(im):
+def main_loop(im):
 	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
 	clock = pygame.time.Clock()
 	status = EDIT_MODE
 	while True:
-		status = _handle_flow(im, status)
-		_draw_base(screen, im, status)
+		events = list(pygame.event.get())
 
-		# Handle state
-		if status == EDIT_MODE:
-			im.handle_keys()
-		elif status != SEL_MODE:
-			return status
+		status = handle_flow_actions(events, status)
+
+		if status == SEL_MODE:
+			im.handle_selection_actions(events)
+		elif status == EDIT_MODE:
+			im.handle_edit_actions()
 		else:
-			_print_message("Select layer (" + str(im.layer) + ")",
-						   cursor=4)
+			return status
 
 		# Display section
+		draw_base(screen, im, status)
 		im.draw(screen) # draw the sprite to the screen
 		pygame.display.update() # update the screen
 		clock.tick(40)
 
-def _print_message(*message, cursor=None):
+def print_message(*message, cursor=None):
 	global line_count
 	if cursor is None:
 		cursor = line_count
@@ -255,7 +258,7 @@ def _print_message(*message, cursor=None):
 	print(*message)
 	line_count = cursor + 1
 
-def _get_images(d):
+def get_images(d):
 	images = []
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
@@ -269,17 +272,17 @@ def _get_images(d):
 
 line_count = 0
 
-def _main(d):
-	images = _get_images(d)
+def main(d):
+	images = get_images(d)
 	n_images = len(images)
 
 	i = 0
 	pygame.init()
 	while i < len(images):
-		_print_message("Image", i, "of", n_images, cursor=0)
+		print_message("Image", i, "of", n_images, cursor=0)
 		im = images[i]
 
-		status =_main_loop(im)
+		status = main_loop(im)
 
 		if status == CONTINUE:
 			im.write_changes()
@@ -296,7 +299,7 @@ def _main(d):
 			break
 
 	[image.remove_backup() for image in images]  # Remove all backups
-	_print_message("Backups removed successfully")
+	print_message("Backups removed successfully")
 
 if __name__ == "__main__":
-	_main(TILES_PATH)
+	main(TILES_PATH)
