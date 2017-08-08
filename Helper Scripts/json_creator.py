@@ -2,19 +2,20 @@ import pygame
 import os
 import shutil
 import sys
-import math
 import json
-from collections import namedtuple
+from point import Point
+from cfg import (
+	CELL_SIZE, BOARD_SIZE, IMAGE_SIZE, BACKUP_EXTENSION
+)
 
 PREVIOUS = -2
 RESET = -1
 SEL_MODE = 3
 CONTINUE = 2
-OK = 1
+EDIT_MODE = 1
 QUIT = 0
 
 TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
-BACKUP_EXTENSION = ".backup"
 
 WHITE = (255,255,255,150)
 RED = (255,0,0,220)
@@ -25,57 +26,6 @@ PINK = (255,80,80,255)
 
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 
-class Point():
-
-	def __init__(self, x, y):
-		self.x = float(x)
-		self.y = float(y)
-		self.x_int = int(x)
-		self.y_int = int(y)
-
-	def get_tuple(self):
-		return (self.x, self.y)
-
-	def get_tuple_int(self):
-		return (self.x_int, self.y_int)
-
-	def to_iso(self):
-		x = (self.x - self.y) * CELL_SIZE.x / 2.0
-		y = (self.y + self.x) * CELL_SIZE.y / 2.0
-		return (IMAGE_SIZE.x / 2.0 + x, y)
-
-	def to_dict(self):
-		return {
-			"x": self.x,
-			"y": self.y
-		}
-
-	def __eq__(self, other):
-		if isinstance(other, self.__class__):
-			return self.__dict__ == other.__dict__
-		return False
-
-	def __mul__(self, other):
-		if isinstance(other, self.__class__):
-			return Point(self.x * other.x, self.y * other.y)
-		return Point(other * self.x, other * self.y)
-
-	def __truediv__(self, other):
-		return Point(self.x / other, self.y / other)
-
-	def __add__(self, other):
-		return Point(self.x + other.x, self.y + other.y)
-
-	def __sub__(self, other):
-		return Point(self.x - other.x, self.y - other.y)
-
-	_rmul_ = __mul__
-
-	__floordiv__ = __truediv__
-
-CELL_SIZE = Point(151, 76)
-BOARD_SIZE = Point(5, 5)
-IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, BOARD_SIZE.y*CELL_SIZE.y)
 
 def get_central_cell():
 	i = (BOARD_SIZE.x_int - 1) / 2
@@ -207,10 +157,10 @@ class Image(Sprite):
 
 def _paint_cell(surface, p, color):
 	i = p.x; j = p.y
-	p1 = Point(i+1.0, j+1.0).to_iso()
-	p2 = Point(i+1.0, j).to_iso()
-	p3 = Point(i, j).to_iso()
-	p4 = Point(i, j+1.0).to_iso()
+	p1 = Point(i+1.0, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p2 = Point(i+1.0, j).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p3 = Point(i, j).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p4 = Point(i, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
 def _draw_base(surface, im, status):
@@ -243,7 +193,7 @@ def _handle_flow(im, status):
 				return RESET
 			elif event.key == pygame.K_BACKSPACE:
 				if status == SEL_MODE:
-					return OK
+					return EDIT_MODE
 				else:
 					return PREVIOUS
 			elif event.key == pygame.K_RETURN:
@@ -278,13 +228,13 @@ def _handle_flow(im, status):
 def _main_loop(im):
 	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
 	clock = pygame.time.Clock()
-	status = OK
+	status = EDIT_MODE
 	while True:
 		status = _handle_flow(im, status)
 		_draw_base(screen, im, status)
 
 		# Handle state
-		if status == OK:
+		if status == EDIT_MODE:
 			im.handle_keys()
 		elif status != SEL_MODE:
 			return status
