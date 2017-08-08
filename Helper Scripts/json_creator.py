@@ -216,20 +216,22 @@ class Image(Sprite):
 		pygame.image.save(s, self.image_path)
 
 	def _get_cfg(self):
+		center = get_central_cell()
 		return {
-			"used_cells": [cell.to_dict() for cell in self.used_cells],
+			"used_cells": [(cell - center).to_dict() for cell in self.used_cells],
 			"offset": self.offset.to_dict(),
 			"layer": self.layer
 		}
 
 	def _load_cfg(self):
+		center = get_central_cell()
 		if os.path.exists(self.json_path):
 			with open(self.json_path) as json_file:
 				json_data = json.load(json_file)
 				self.offset = Point(**json_data["offset"])
 				self.layer = json_data["layer"]
 				self.used_cells = [
-					Point(**cell)
+					Point(**cell) + center
 					for cell in json_data["used_cells"]
 				]
 
