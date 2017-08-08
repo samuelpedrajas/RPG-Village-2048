@@ -3,10 +3,6 @@ import os
 import shutil
 import sys
 import json
-from point import Point
-from cfg import (
-	CELL_SIZE, BOARD_SIZE, IMAGE_SIZE, BACKUP_EXTENSION
-)
 
 PREVIOUS = -2
 RESET = -1
@@ -26,11 +22,54 @@ PINK = (255,80,80,255)
 
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 
+class Point():
 
-def get_central_cell():
-	i = (BOARD_SIZE.x_int - 1) / 2
-	j = (BOARD_SIZE.y_int - 1) / 2
-	return Point(i, j)
+	def __init__(self, x, y):
+		self.x = float(x)
+		self.y = float(y)
+		self.x_int = int(x)
+		self.y_int = int(y)
+
+	def get_tuple(self):
+		return (self.x, self.y)
+
+	def get_tuple_int(self):
+		return (self.x_int, self.y_int)
+
+	def to_iso(self, cell_size, image_size):
+		x = (self.x - self.y) * cell_size.x / 2.0
+		y = (self.y + self.x) * cell_size.y / 2.0
+		return (image_size.x / 2.0 + x, y)
+
+	def to_dict(self):
+		return {
+			"x": self.x,
+			"y": self.y
+		}
+
+	def __eq__(self, other):
+		if isinstance(other, self.__class__):
+			return self.__dict__ == other.__dict__
+		return False
+
+	def __mul__(self, other):
+		if isinstance(other, self.__class__):
+			return Point(self.x * other.x, self.y * other.y)
+		return Point(other * self.x, other * self.y)
+
+	def __truediv__(self, other):
+		return Point(self.x / other, self.y / other)
+
+	def __add__(self, other):
+		return Point(self.x + other.x, self.y + other.y)
+
+	def __sub__(self, other):
+		return Point(self.x - other.x, self.y - other.y)
+
+	_rmul_ = __mul__
+
+	__floordiv__ = __truediv__
+
 
 class Sprite():  # represents the sprite, not the game
 	def __init__(self, image_path):
@@ -178,31 +217,10 @@ class Image(Sprite):
 		os.remove(self.json_backup_path)
 
 
-def _paint_cell(surface, p, color):
-	i = p.x; j = p.y
-	p1 = Point(i+1.0, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
-	p2 = Point(i+1.0, j).to_iso(CELL_SIZE, IMAGE_SIZE)
-	p3 = Point(i, j).to_iso(CELL_SIZE, IMAGE_SIZE)
-	p4 = Point(i, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
-	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
-
-def draw_base(surface, im, status):
-	surface.fill(GRAY)
-	center = get_central_cell()
-	for i in range(BOARD_SIZE.x_int):
-		for j in range(BOARD_SIZE.y_int):
-			p = Point(i, j)
-			chess_condition = (
-				i % 2 == 0 or j % 2 != 0) and (i % 2 != 0 or j % 2 == 0
-			)
-			if p == im.cursor and status == SEL_MODE:
-				_paint_cell(surface, p, PINK)
-			elif p in im.used_cells and status == SEL_MODE:
-				_paint_cell(surface, p, RED)
-			elif p == center:
-				_paint_cell(surface, p, BLUE)
-			elif chess_condition:
-				_paint_cell(surface, p, BLACK)
+CELL_SIZE = Point(151, 76)
+BOARD_SIZE = Point(5, 5)
+IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, BOARD_SIZE.y*CELL_SIZE.y)
+BACKUP_EXTENSION = ".backup"
 
 def handle_flow_actions(events, status):
 	for event in events:
@@ -227,6 +245,37 @@ def handle_flow_actions(events, status):
 				else:
 					return CONTINUE
 	return status
+
+def get_central_cell():
+	i = (BOARD_SIZE.x_int - 1) / 2
+	j = (BOARD_SIZE.y_int - 1) / 2
+	return Point(i, j)
+
+def paint_cell(surface, p, color):
+	i = p.x; j = p.y
+	p1 = Point(i+1.0, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p2 = Point(i+1.0, j).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p3 = Point(i, j).to_iso(CELL_SIZE, IMAGE_SIZE)
+	p4 = Point(i, j+1.0).to_iso(CELL_SIZE, IMAGE_SIZE)
+	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
+
+def draw_base(surface, im, status):
+	surface.fill(GRAY)
+	center = get_central_cell()
+	for i in range(BOARD_SIZE.x_int):
+		for j in range(BOARD_SIZE.y_int):
+			p = Point(i, j)
+			chess_condition = (
+				i % 2 == 0 or j % 2 != 0) and (i % 2 != 0 or j % 2 == 0
+			)
+			if p == im.cursor and status == SEL_MODE:
+				paint_cell(surface, p, PINK)
+			elif p in im.used_cells and status == SEL_MODE:
+				paint_cell(surface, p, RED)
+			elif p == center:
+				paint_cell(surface, p, BLUE)
+			elif chess_condition:
+				paint_cell(surface, p, BLACK)
 
 def main_loop(im):
 	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
