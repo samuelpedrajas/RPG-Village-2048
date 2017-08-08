@@ -8,9 +8,22 @@ from collections import namedtuple
 
 PREVIOUS = -2
 RESET = -1
+SEL_MODE = 3
 CONTINUE = 2
 OK = 1
 QUIT = 0
+
+TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
+BACKUP_EXTENSION = ".backup"
+
+WHITE = (255,255,255,150)
+RED = (255,0,0,220)
+BLUE = (0,0,255,220)
+BLACK = (0, 0, 0, 255)
+GRAY = (200,200,200,150)
+PINK = (255,80,80,255)
+
+REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 
 class Point():
 	def __init__(self, x, y):
@@ -30,27 +43,168 @@ class Point():
 		y = (self.y + self.x) * CELL_SIZE.y / 2.0
 		return (IMAGE_SIZE.x / 2.0 + x, y)
 
-	def __eq__(self, other):
-	    """Override the default Equals behavior"""
-	    if isinstance(other, self.__class__):
-	        return self.__dict__ == other.__dict__
-	    return False
+	def to_dict(self):
+		return {
+			"x": self.x,
+			"y": self.y
+		}
 
-TILES_PATH = "/home/samuel/Godot Projects/RPG-Village-2048/RPG Village 2048/Assets/"
+	def __eq__(self, other):
+		if isinstance(other, self.__class__):
+			return self.__dict__ == other.__dict__
+		return False
+
+	def __mul__(self, other):
+		if isinstance(other, self.__class__):
+			return Point(self.x * other.x, self.y * other.y)
+		return Point(other * self.x, other * self.y)
+
+	_rmul_ = __mul__
+
+	def __truediv__(self, other):
+		return Point(self.x / other, self.y / other)
+
+	__floordiv__ = __truediv__
+
+	def __add__(self, other):
+		return Point(self.x + other.x, self.y + other.y)
+
+	def __sub__(self, other):
+		return Point(self.x - other.x, self.y - other.y)
+
 CELL_SIZE = Point(151, 76)
 BOARD_SIZE = Point(5, 5)
 IMAGE_SIZE = Point(BOARD_SIZE.x*CELL_SIZE.x, BOARD_SIZE.y*CELL_SIZE.y)
-WHITE = (255,255,255,150)
-RED = (255,0,0,220)
-BLUE = (0,0,255,220)
-BLACK = (0, 0, 0, 255)
-GRAY = (200,200,200,150)
-PINK = (255,80,80,255)
 
-BACKUP_EXTENSION = ".backup"
+def get_central_cell():
+	i = (BOARD_SIZE.x_int - 1) / 2
+	j = (BOARD_SIZE.y_int - 1) / 2
+	return Point(i, j)
 
-REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
-line_count = 0
+class Sprite():  # represents the sprite, not the game
+	def __init__(self, image_path):
+		self.image = pygame.image.load(image_path)
+		self.image.fill((255, 255, 255, 200),
+						None, pygame.BLEND_RGBA_MULT)
+		self.size = Point(*self.image.get_rect().size)
+		self.current_size = self.size
+		self.last_size = self.size
+		# the sprite's position
+		self.pos = get_central_cell() * CELL_SIZE
+		self.offset = Point(0, 0)
+		self.scale = 1.0
+
+	def _change_offset(self, key):
+		dist = 1 # distance moved in 1 frame, try changing it to 5
+		if key[pygame.K_DOWN]: # down key
+			self.offset.y += dist # move down
+		elif key[pygame.K_UP]: # up key
+			self.offset.y -= dist # move up
+		if key[pygame.K_RIGHT]: # right key
+			self.offset.x += dist # move right
+		elif key[pygame.K_LEFT]: # left key
+			self.offset.x -= dist # move left
+
+	def _recenter(self):
+		new_size = self.size * self.scale
+		self.pos += self.current_size / 2.0 - new_size / 2.0
+		self.current_size = new_size
+
+	def _change_scale(self, key):
+		step = 0.01 # distance moved in 1 frame, try changing it to 5
+		if key[pygame.K_DOWN]: # down key
+			self.scale -= step # move down
+		elif key[pygame.K_UP]: # up key
+			self.scale += step # move up
+		self.scale = min(1.0, self.scale)
+		self.scale = max(0.0, self.scale)
+		self._recenter()
+
+	def _print_status(self):
+		offset_str = str(self.offset.get_tuple())
+		_print_message("Offset:", offset_str, cursor=1)
+		size_str = str(self.size.get_tuple())
+		_print_message("Size  :", size_str, cursor=2)
+
+	def handle_keys(self):
+		key = pygame.key.get_pressed()
+
+		if key[pygame.K_LCTRL]:
+			self._change_scale(key)
+		else:
+			self._change_offset(key)
+		self._print_status()
+
+	def draw(self, surface):
+		""" Draw on surface """
+		current_size_t = self.current_size.get_tuple_int()
+		pos_t = (self.pos + self.offset).get_tuple()
+		surface.blit(
+			pygame.transform.scale(self.image, current_size_t),
+			pos_t
+		)
+
+
+class Image(Sprite):
+	def __init__(self, image_name, directory):
+		self.image_path = os.path.join(directory, image_name)
+		Sprite.__init__(self, self.image_path)
+		self.json_path = self.image_path.replace(".png", ".json")
+		self.image_backup_path = self.image_path + BACKUP_EXTENSION
+		self.json_backup_path = self.json_path + BACKUP_EXTENSION
+		self.backed_up = False
+		self.cursor = get_central_cell()
+		self.used_cells = [get_central_cell()]
+		self.layer = 2
+		if not os.path.exists(self.json_path):
+			self.write_changes()
+		else:
+			self._load_cfg()
+		self._backup()
+
+	def select(self):
+		if self.cursor in self.used_cells:
+			self.used_cells.remove(self.cursor)
+		else:
+			self.used_cells.append(self.cursor)
+
+	def write_changes(self):
+		cfg = self._get_cfg()
+		with open(self.json_path, 'w') as f:
+			s = json.dumps(cfg, indent=4, sort_keys=True)
+			f.write(s)
+
+	def _get_cfg(self):
+		return {
+			"used_cells": [cell.to_dict() for cell in self.used_cells],
+			"offset": self.offset.to_dict(),
+			"layer": self.layer
+		}
+
+	def _load_cfg(self):
+		if os.path.exists(self.json_path):
+			with open(self.json_path) as json_file:
+				json_data = json.load(json_file)
+				self.offset = Point(**json_data["offset"])
+				self.layer = json_data["layer"]
+				self.used_cells = [
+					Point(**cell)
+					for cell in json_data["used_cells"]
+				]
+
+	def restore_backup(self):
+		shutil.copyfile(self.image_backup_path, self.image_path)
+		shutil.copyfile(self.json_backup_path, self.json_path)
+		self._load_cfg()
+
+	def _backup(self):
+		shutil.copyfile(self.image_path, self.image_backup_path)		
+		shutil.copyfile(self.json_path, self.json_backup_path)
+
+	def remove_backup(self):
+		os.remove(self.image_backup_path)
+		os.remove(self.json_backup_path)
+
 
 def _paint_cell(surface, p, color):
 	i = p.x; j = p.y
@@ -60,260 +214,89 @@ def _paint_cell(surface, p, color):
 	p4 = Point(i, j+1.0).to_iso()
 	pygame.draw.polygon(surface, color, [p1, p2, p3, p4])
 
-def _draw_base(surface, state):
+def _draw_base(surface, im, status):
 	surface.fill(GRAY)
-	center = Point((BOARD_SIZE.x-1)/2, (BOARD_SIZE.y-1)/2)
-	sel_mode = state["sel_mode"]
+	center = get_central_cell()
 	for i in range(BOARD_SIZE.x_int):
 		for j in range(BOARD_SIZE.y_int):
 			p = Point(i, j)
-			if p == state["cursor"] and sel_mode:
+			chess_condition = (
+				i % 2 == 0 or j % 2 != 0) and (i % 2 != 0 or j % 2 == 0
+			)
+			if p == im.cursor and status == SEL_MODE:
 				_paint_cell(surface, p, PINK)
-			elif p in state["out"]["used_cells"] and sel_mode:
+			elif p in im.used_cells and status == SEL_MODE:
 				_paint_cell(surface, p, RED)
 			elif p == center:
 				_paint_cell(surface, p, BLUE)
-			elif (i % 2 == 0 or j % 2 != 0) and (i % 2 != 0 or j % 2 == 0):
+			elif chess_condition:
 				_paint_cell(surface, p, BLACK)
 
-class Sprite(object):  # represents the sprite, not the game
-	def __init__(self, _path, state):
-		""" The constructor of the class """
-		self.image = pygame.image.load(_path)
-		self.image.fill((255, 255, 255, 200),
-						None, pygame.BLEND_RGBA_MULT)
-		# to get the center
-		self.w, self.h = self.image.get_rect().size
-		self.last_w, self.last_h = (self.w, self.h)
-		# the sprite's position
-		self.x = IMAGE_SIZE.x / 2.0 - self.w / 2.0
-		self.y = IMAGE_SIZE.y / 2.0 - self.h / 2.0
-		self.offset_x = state["out"]["offset"]["x"]
-		self.offset_y = state["out"]["offset"]["y"]
-		self.scale = 1.0
-
-	def _change_offset(self, key):
-		dist = 1 # distance moved in 1 frame, try changing it to 5
-		if key[pygame.K_DOWN]: # down key
-			self.offset_y += dist # move down
-		elif key[pygame.K_UP]: # up key
-			self.offset_y -= dist # move up
-		if key[pygame.K_RIGHT]: # right key
-			self.offset_x += dist # move right
-		elif key[pygame.K_LEFT]: # left key
-			self.offset_x -= dist # move left
-		return {"x": self.offset_x, "y": self.offset_y}
-
-	def _change_scale(self, key):
-		change = 0.01 # distance moved in 1 frame, try changing it to 5
-		if key[pygame.K_DOWN]: # down key
-			self.scale -= change # move down
-		elif key[pygame.K_UP]: # up key
-			self.scale += change # move up
-		self.scale = min(1.0, self.scale)
-		self.scale = max(0.0, self.scale)
-
-	def _print_status(self, current_line):
-		offset_x_str = str(self.offset_x)
-		offset_y_str = str(self.offset_y)
-		offset = "(" + offset_x_str + ", " + offset_y_str + ")"
-		_print_message("Offset:", offset, cursor=current_line)
-		size_x_str = str(int(self.w * self.scale))
-		size_y_str = str(int(self.h * self.scale))
-		size = "(" + size_x_str + ", " + size_y_str + ")"
-		_print_message("Size  :", size, cursor=current_line+1)
-
-	def handle_keys(self, state):
-		""" Handles Keys """
-		key = pygame.key.get_pressed()
-
-		if key[pygame.K_LCTRL]:
-			self._change_scale(key)
-		else:
-			state["out"]["offset"] = self._change_offset(key)
-		self._print_status(state["line_count"])
-
-	def draw(self, surface):
-		""" Draw on surface """
-		# blit yourself at your current position
-		w = int(self.w * self.scale)
-		h = int(self.h * self.scale)
-		# recalculate the center
-		self.x += (self.last_w / 2.0) - (w / 2.0)
-		self.y += (self.last_h / 2.0) - (h / 2.0)
-		self.last_w, self.last_h = (w, h)
-		surface.blit(pygame.transform.scale(self.image, (w, h)),
-					 (self.x + self.offset_x, self.y + self.offset_y))
-
-	def get_offset(self):
-		return self.offset_x, self.offset_y
-
-	def get_scale(self):
-		return self.scale
-
-def _handle_flow(state):
+def _handle_flow(im, status):
 	# handle every event since the last frame.
-	state["status"] = OK
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
-			state["status"] = QUIT
+			return QUIT
 		elif event.type == pygame.KEYUP:
 			if event.key == pygame.K_q:
-				state["status"] = QUIT
+				return QUIT
 			elif event.key == pygame.K_r:
-				state["status"] = RESET
+				return RESET
 			elif event.key == pygame.K_BACKSPACE:
-				if state["sel_mode"]:
-					state["sel_mode"] = False
+				if status == SEL_MODE:
+					return OK
 				else:
-					state["status"] = PREVIOUS
+					return PREVIOUS
 			elif event.key == pygame.K_RETURN:
-				if not state["sel_mode"]:
-					state["sel_mode"] = True
+				if status != SEL_MODE:
 					_print_message("Cell selection mode ON")
+					return SEL_MODE
 				else:
-					state["status"] = CONTINUE
-			if state["sel_mode"]:
-				cursor = state["cursor"]
+					return CONTINUE
+			if status == SEL_MODE:
+				step = None
 				if event.key == pygame.K_SPACE: # down key
-					if cursor in state["out"]["used_cells"]:
-						state["out"]["used_cells"].remove(cursor)
-					else:
-						state["out"]["used_cells"].append(cursor)
+					im.select()
 				elif event.key == pygame.K_DOWN: # down key
-					cursor = Point(cursor.x, cursor.y+1)
+					step = Point(0, 1)
 				elif event.key == pygame.K_UP: # up key
-					cursor = Point(cursor.x, cursor.y-1)
+					step = Point(0, -1)
 				elif event.key == pygame.K_RIGHT: # right key
-					cursor = Point(cursor.x+1, cursor.y)
+					step = Point(1, 0)
 				elif event.key == pygame.K_LEFT: # left key
-					cursor = Point(cursor.x-1, cursor.y)
+					step = Point(-1, 0)
 				elif event.key == pygame.K_0: # down key
-					state["out"]["layer"] = 0
+					im.layer = 0
 				elif event.key == pygame.K_1: # up key
-					state["out"]["layer"] = 1
+					im.layer = 1
 				elif event.key == pygame.K_2: # right key
-					state["out"]["layer"] = 2
-				layer = str(state["out"]["layer"])
-				_print_message("Select layer (" + layer + ")",
-							   cursor=state["line_count"]+3)
-				state["cursor"] = cursor
+					im.layer = 2
 
-def _get_default_out():
-	center = Point((BOARD_SIZE.x-1)/2,
-				   (BOARD_SIZE.y-1)/2)
-	out = {
-		"used_cells": [{"x": center.x, "y": center.y}],
-		"offset": {
-			"x": 0,
-			"y": 0
-		},
-		"layer": 2,
-	}
-	return out
+				if step:
+					im.cursor += step
+	return status
 
-def _get_state(file_name, root):
-	cfg = _get_json_data(file_name, root)
-	out = _get_default_out()
-	out = {**out, **cfg}
-	cells = []
-	for cell in out["used_cells"]:
-		cells.append((cell["x"], cell["y"]))
-	out["used_cells"] = cells
-	return {
-		"sel_mode": False,
-		"out": out,
-		"cursor": Point((BOARD_SIZE.x-1)/2, (BOARD_SIZE.y-1)/2),
-		"status": OK,
-		"line_count": 0
-	}
-
-def _get_json_data(file_name, directory):
-	file_path = os.path.join(directory, file_name).replace(".png", ".json")
-	if os.path.exists(file_path):
-		with open(file_path) as json_file:
-		    json_data = json.load(json_file)
-		    return json_data
-	return {}
-
-def _write_json_file(file_name, directory, d):
-	file_path = os.path.join(directory, file_name).replace(".png", ".json")
-	with open(file_path, 'w') as f:
-		s = json.dumps(d, indent=4, sort_keys=True)
-		f.write(s)
-
-def _write_changes(file_name, root, out):
-	cells = []
-	for p in out["used_cells"]:
-		d = {
-			"x": p[0],
-			"y": p[1]
-		}
-		cells.append(d)
-	out["used_cells"] = cells
-	_write_json_file(file_name, root, out)
-
-def _main_loop(file_name, directory, state):
-	file_path = os.path.join(directory, file_name)
+def _main_loop(im):
 	screen = pygame.display.set_mode(IMAGE_SIZE.get_tuple_int())
-
-	sprite = Sprite(file_path, state) # create an instance
 	clock = pygame.time.Clock()
-
+	status = OK
 	while True:
-		_handle_flow(state)
-		_draw_base(screen, state)
+		status = _handle_flow(im, status)
+		_draw_base(screen, im, status)
 
 		# Handle state
-		if state["status"] != OK:
-			return state
-		elif not state["sel_mode"]:
-			sprite.handle_keys(state)
+		if status == OK:
+			im.handle_keys()
+		elif status != SEL_MODE:
+			return status
+		else:
+			_print_message("Select layer (" + str(im.layer) + ")",
+						   cursor=4)
 
 		# Display section
-		sprite.draw(screen) # draw the sprite to the screen
+		im.draw(screen) # draw the sprite to the screen
 		pygame.display.update() # update the screen
 		clock.tick(40)
-
-def _remove_backups(file_paths):
-	for (file_name, root, _) in file_paths:
-		json_backup = file_name.replace(".png", ".json") + BACKUP_EXTENSION
-		png_backup = file_name + BACKUP_EXTENSION
-
-		json_backup_path = os.path.join(root, json_backup)
-		png_backup_path = os.path.join(root, png_backup)
-
-		if os.path.exists(json_backup_path):
-			os.remove(json_backup_path)
-			_print_message(json_backup, "removed")
-		if os.path.exists(png_backup_path):
-			os.remove(png_backup_path)
-			_print_message(png_backup, "removed")
-
-def _restore_backup(file_name, root):
-	file_path = os.path.join(root, file_name)
-	shutil.copyfile(file_path + BACKUP_EXTENSION, file_path)
-
-	# backup json if exists
-	json_file = file_name.replace(".png", ".json")
-	json_file_path = os.path.join(root, json_file)
-	if os.path.exists(json_file_path + BACKUP_EXTENSION):
-		shutil.copyfile(json_file_path + BACKUP_EXTENSION, json_file_path)
-	else:
-		out = _get_default_out()
-		_write_json_file(file_name, root, out)
-
-def _backup(file_name, root):
-	file_path = os.path.join(root, file_name)
-	shutil.copyfile(file_path, file_path + BACKUP_EXTENSION)
-	_print_message(file_name, "backed up")
-
-	# backup json if exists
-	json_file = file_name.replace(".png", ".json")
-	json_file_path = os.path.join(root, json_file)
-	if os.path.exists(json_file_path):
-		shutil.copyfile(json_file_path, json_file_path + BACKUP_EXTENSION)
-		_print_message(json_file, "backed up")
 
 def _print_message(*message, cursor=None):
 	global line_count
@@ -323,46 +306,48 @@ def _print_message(*message, cursor=None):
 	print(*message)
 	line_count = cursor + 1
 
-def _get_file_paths(d):
-	file_paths = []
+def _get_images(d):
+	images = []
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
 			if file_name.endswith(".png"):
-				file_paths.append([file_name, root, False])
+				im = Image(file_name, root)
 
-	file_paths.sort(key=lambda t: t[1])
-	return file_paths
+				images.append(im)
+
+	images.sort(key=lambda im: im.image_path)
+	return images
+
+line_count = 0
 
 def _main(d):
-	file_paths = _get_file_paths(d)
+	images = _get_images(d)
+	n_images = len(images)
 
 	i = 0
 	pygame.init()
-	while i < len(file_paths):
-		_print_message("Image", i, "of", len(file_paths), cursor=0)
-		[file_name, root, backed_up] = file_paths[i]
-		if not backed_up:
-			_backup(file_name, root)
-			file_paths[i][2] = True # avoid backing up again
+	while i < len(images):
+		_print_message("Image", i, "of", n_images, cursor=0)
+		im = images[i]
 
-		state = _get_state(file_name, root)
-		state = _main_loop(file_name, root, state)
-		status = state["status"]
+		status =_main_loop(im)
+
 		if status == CONTINUE:
-			_write_changes(file_name, root, state["out"])
+			im.write_changes()
 			i += 1
 		elif status == RESET:
-			_restore_backup(file_name, root)
+			im.restore_backup()
 		elif status == PREVIOUS:
 			if i == 0:
-				_restore_backup(file_name, root)
+				im.restore_backup()
 			else:
 				i -= 1
 		elif status == QUIT:
 			pygame.quit() # quit the screen
-			_print_message("Exiting...")
 			break
-	_remove_backups(file_paths)
+
+	[image.remove_backup() for image in images]  # Remove all backups
+	_print_message("Backups removed successfully")
 
 if __name__ == "__main__":
-    _main(TILES_PATH)
+	_main(TILES_PATH)
