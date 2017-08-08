@@ -22,6 +22,14 @@ PINK = (255,80,80,255)
 
 REMOVE_PREVIOUS_LINE = '\x1b[1A' + '\x1b[2K'
 
+EDIT_KEYS = {
+	"mod": pygame.K_LCTRL,
+	"up": pygame.K_UP,
+	"down": pygame.K_DOWN,
+	"left": pygame.K_LEFT,
+	"right": pygame.K_RIGHT
+}
+
 class Point():
 
 	def __init__(self, x, y):
@@ -72,7 +80,7 @@ class Point():
 
 
 class Sprite():  # represents the sprite, not the game
-	def __init__(self, image_path):
+	def __init__(self, image_path, keys):
 		self.image = pygame.image.load(image_path)
 		self.image.fill((255, 255, 255, 200),
 						None, pygame.BLEND_RGBA_MULT)
@@ -82,16 +90,24 @@ class Sprite():  # represents the sprite, not the game
 		self.pos = get_central_cell() * CELL_SIZE
 		self.offset = Point(0, 0)
 		self.scale = 1.0
+		self._set_keys(keys)
+
+	def _set_keys(self, keys):
+		self.modifier_key = keys["mod"]
+		self.up_key = keys["up"]
+		self.down_key = keys["down"]
+		self.left_key = keys["left"]
+		self.right_key = keys["right"]
 
 	def _change_offset(self, key):
 		dist = 1 # distance moved in 1 frame, try changing it to 5
-		if key[pygame.K_DOWN]: # down key
+		if key[self.down_key]: # down key
 			self.offset.y += dist # move down
-		elif key[pygame.K_UP]: # up key
+		elif key[self.up_key]: # up key
 			self.offset.y -= dist # move up
-		if key[pygame.K_RIGHT]: # right key
+		if key[self.right_key]: # right key
 			self.offset.x += dist # move right
-		elif key[pygame.K_LEFT]: # left key
+		elif key[self.left_key]: # left key
 			self.offset.x -= dist # move left
 
 	def _recenter(self):
@@ -101,9 +117,9 @@ class Sprite():  # represents the sprite, not the game
 
 	def _change_scale(self, key):
 		step = 0.01 # distance moved in 1 frame, try changing it to 5
-		if key[pygame.K_DOWN]: # down key
+		if key[self.down_key]: # down key
 			self.scale -= step # move down
-		elif key[pygame.K_UP]: # up key
+		elif key[self.up_key]: # up key
 			self.scale += step # move up
 		self.scale = min(1.0, self.scale)
 		self.scale = max(0.0, self.scale)
@@ -118,7 +134,7 @@ class Sprite():  # represents the sprite, not the game
 	def handle_edit_actions(self):
 		key = pygame.key.get_pressed()
 
-		if key[pygame.K_LCTRL]:
+		if key[self.modifier_key]:
 			self._change_scale(key)
 		else:
 			self._change_offset(key)
@@ -135,9 +151,9 @@ class Sprite():  # represents the sprite, not the game
 
 
 class Image(Sprite):
-	def __init__(self, image_name, directory):
+	def __init__(self, image_name, directory, keys):
 		self.image_path = os.path.join(directory, image_name)
-		Sprite.__init__(self, self.image_path)
+		Sprite.__init__(self, self.image_path, keys)
 		self.json_path = self.image_path.replace(".png", ".json")
 		self.image_backup_path = self.image_path + BACKUP_EXTENSION
 		self.json_backup_path = self.json_path + BACKUP_EXTENSION
@@ -312,7 +328,7 @@ def get_images(d):
 	for root, dirs, files in os.walk(d):
 		for file_name in files:
 			if file_name.endswith(".png"):
-				im = Image(file_name, root)
+				im = Image(file_name, root, EDIT_KEYS)
 
 				images.append(im)
 
