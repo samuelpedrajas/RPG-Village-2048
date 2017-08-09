@@ -1722,251 +1722,251 @@ offset = Vector2( -4, -112 )
 
 [node name="human-street-castles-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 69, 7168 )
+transform/pos = Vector2( 372, 7168 )
 texture = ExtResource( 242 )
 offset = Vector2( 0, -157 )
 
 [node name="human-street-castles-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 138, 7168 )
+transform/pos = Vector2( 793, 7168 )
 texture = ExtResource( 243 )
 offset = Vector2( 4, -159 )
 
 [node name="human-resources-containers-empty-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 213, 7168 )
+transform/pos = Vector2( 1152, 7168 )
 texture = ExtResource( 244 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-containers-empty-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 258, 7168 )
+transform/pos = Vector2( 1197, 7168 )
 texture = ExtResource( 245 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-containers-empty-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 303, 7168 )
+transform/pos = Vector2( 1242, 7168 )
 texture = ExtResource( 246 )
 offset = Vector2( 0, -5 )
 
 [node name="human-resources-containers-full-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 378, 7168 )
+transform/pos = Vector2( 1317, 7168 )
 texture = ExtResource( 247 )
 offset = Vector2( 0, -9 )
 
 [node name="human-resources-containers-full-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 423, 7168 )
+transform/pos = Vector2( 1362, 7168 )
 texture = ExtResource( 248 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-containers-full-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 497, 7168 )
+transform/pos = Vector2( 1436, 7168 )
 texture = ExtResource( 249 )
 offset = Vector2( 0, -13 )
 
 [node name="human-resources-containers-full-4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 542, 7168 )
+transform/pos = Vector2( 1481, 7168 )
 texture = ExtResource( 250 )
 offset = Vector2( 0, -9 )
 
 [node name="human-resources-containers-closed-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 587, 7168 )
+transform/pos = Vector2( 1526, 7168 )
 texture = ExtResource( 251 )
 
 [node name="human-resources-containers-closed-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 660, 7168 )
+transform/pos = Vector2( 1599, 7168 )
 texture = ExtResource( 252 )
 offset = Vector2( 0, -5 )
 
 [node name="human-resources-containers-closed-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 711, 7168 )
+transform/pos = Vector2( 1650, 7168 )
 texture = ExtResource( 253 )
 offset = Vector2( 0, -5 )
 
 [node name="human-resources-containers-closed-4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 782, 7168 )
+transform/pos = Vector2( 1721, 7168 )
 texture = ExtResource( 254 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-bronze-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 871, 7168 )
+transform/pos = Vector2( 1810, 7168 )
 texture = ExtResource( 255 )
 
 [node name="human-resources-bronze-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 964, 7168 )
+transform/pos = Vector2( 1903, 7168 )
 texture = ExtResource( 256 )
 
 [node name="human-resources-bronze-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1057, 7168 )
+transform/pos = Vector2( 1996, 7168 )
 texture = ExtResource( 257 )
 
 [node name="human-resources-farming-12" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1150, 7168 )
+transform/pos = Vector2( 0, 7680 )
 texture = ExtResource( 258 )
 offset = Vector2( 3, -9 )
 
 [node name="human-resources-farming-10" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1306, 7168 )
+transform/pos = Vector2( 156, 7680 )
 texture = ExtResource( 259 )
 offset = Vector2( 2, -3 )
 
 [node name="human-resources-farming-5" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1462, 7168 )
+transform/pos = Vector2( 312, 7680 )
 texture = ExtResource( 260 )
 offset = Vector2( 2, -12 )
 
 [node name="human-resources-farming-8" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1618, 7168 )
+transform/pos = Vector2( 468, 7680 )
 texture = ExtResource( 261 )
 offset = Vector2( 2, 2 )
 
 [node name="human-resources-farming-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1774, 7168 )
+transform/pos = Vector2( 624, 7680 )
 texture = ExtResource( 262 )
 offset = Vector2( 3, 2 )
 
 [node name="human-resources-farming-11" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1930, 7168 )
+transform/pos = Vector2( 780, 7680 )
 texture = ExtResource( 263 )
 offset = Vector2( 3, -10 )
 
 [node name="human-resources-farming-9" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 7680 )
+transform/pos = Vector2( 936, 7680 )
 texture = ExtResource( 264 )
 offset = Vector2( 2, 0 )
 
 [node name="human-resources-farming-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 156, 7680 )
+transform/pos = Vector2( 1092, 7680 )
 texture = ExtResource( 265 )
 offset = Vector2( 2, 3 )
 
 [node name="human-resources-farming-13" type="Sprite" parent="."]
 
-transform/pos = Vector2( 304, 7680 )
+transform/pos = Vector2( 1240, 7680 )
 texture = ExtResource( 266 )
 offset = Vector2( 2, -9 )
 
 [node name="human-resources-farming-14" type="Sprite" parent="."]
 
-transform/pos = Vector2( 460, 7680 )
+transform/pos = Vector2( 1396, 7680 )
 texture = ExtResource( 267 )
 offset = Vector2( 2, -7 )
 
 [node name="human-resources-farming-7" type="Sprite" parent="."]
 
-transform/pos = Vector2( 616, 7680 )
+transform/pos = Vector2( 1552, 7680 )
 texture = ExtResource( 268 )
 offset = Vector2( 3, 2 )
 
 [node name="human-resources-farming-6" type="Sprite" parent="."]
 
-transform/pos = Vector2( 772, 7680 )
+transform/pos = Vector2( 1708, 7680 )
 texture = ExtResource( 269 )
 offset = Vector2( 3, -12 )
 
 [node name="human-resources-farming-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 928, 7680 )
+transform/pos = Vector2( 1864, 7680 )
 texture = ExtResource( 270 )
 offset = Vector2( 2, 3 )
 
 [node name="human-resources-farming-4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1084, 7680 )
+transform/pos = Vector2( 2020, 7680 )
 texture = ExtResource( 271 )
 
 [node name="human-resources-gold-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1240, 7680 )
+transform/pos = Vector2( 0, 8192 )
 texture = ExtResource( 272 )
 
 [node name="human-resources-gold-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1333, 7680 )
+transform/pos = Vector2( 93, 8192 )
 texture = ExtResource( 273 )
 
 [node name="human-resources-gold-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1426, 7680 )
+transform/pos = Vector2( 186, 8192 )
 texture = ExtResource( 274 )
 
 [node name="human-resources-silver-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1519, 7680 )
+transform/pos = Vector2( 279, 8192 )
 texture = ExtResource( 275 )
 
 [node name="human-resources-silver-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1613, 7680 )
+transform/pos = Vector2( 373, 8192 )
 texture = ExtResource( 276 )
 
 [node name="human-resources-silver-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1710, 7680 )
+transform/pos = Vector2( 470, 8192 )
 texture = ExtResource( 277 )
 
 [node name="human-resources-wood-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1806, 7680 )
+transform/pos = Vector2( 566, 8192 )
 texture = ExtResource( 278 )
 offset = Vector2( 0, -9 )
 
 [node name="human-resources-wood-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1893, 7680 )
+transform/pos = Vector2( 653, 8192 )
 texture = ExtResource( 279 )
 offset = Vector2( 0, -2 )
 
 [node name="human-resources-wood-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1980, 7680 )
+transform/pos = Vector2( 740, 8192 )
 texture = ExtResource( 280 )
 
 [node name="human-resources-wood-4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 8192 )
+transform/pos = Vector2( 827, 8192 )
 texture = ExtResource( 281 )
 
 [node name="human-resources-stone-1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 136, 8192 )
+transform/pos = Vector2( 963, 8192 )
 texture = ExtResource( 282 )
 
 [node name="human-resources-stone-2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 242, 8192 )
+transform/pos = Vector2( 1069, 8192 )
 texture = ExtResource( 283 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-stone-3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 335, 8192 )
+transform/pos = Vector2( 1162, 8192 )
 texture = ExtResource( 284 )
 offset = Vector2( 0, -7 )
 
 [node name="human-resources-stone-4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 428, 8192 )
+transform/pos = Vector2( 1255, 8192 )
 texture = ExtResource( 285 )
 offset = Vector2( 0, -2 )
 
