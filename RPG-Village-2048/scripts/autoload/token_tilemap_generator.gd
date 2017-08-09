@@ -27,9 +27,11 @@ var tilemaps = []
 var default_probabilities = {}
 var realistic_probabilities = {}
 
-var M = []
+var M = [[-1]]
 
-func _get_initalised_map(layer_index, level):
+var db = load("res://scripts/util/debugging_tools.gd").new()
+
+func get_initalised_map(layer_index, level):
 	var tileset = tilesets[layer_index]  # get proper tileset
 	var layer = TileMap.new()
 	var scale = TOKEN_SIZE.x / (CELL_SIZE.x * TILEMAP_SIZES[level].total.x)
@@ -43,7 +45,7 @@ func _get_initalised_map(layer_index, level):
 
 	return layer
 
-func _get_complete_tilemap(l0, l1, l2):
+func get_complete_tilemap(l0, l1, l2):
 	var tilemap = Node2D.new()
 
 	tilemap.set_name("tilemap")
@@ -54,21 +56,21 @@ func _get_complete_tilemap(l0, l1, l2):
 
 	return tilemap
 
-func _init_name2id():
+func init_name2id():
 	for tileset in tilesets.values():
 		for tile_id in tileset.get_tiles_ids():
 			name2id[tileset.tile_get_name(tile_id)] = tile_id
 
-func _load_tilesets():
+func load_tilesets():
 	for key in TILESET_PATHS:
 		tilesets[key] = load(TILESET_PATHS[key])
 
-func _get_tile_dimensions(tile_id, tileset):
+func get_tile_dimensions(tile_id, tileset):
 	var t = tileset.tile_get_texture(tile_id)
 
 	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
 
-func _even_spread(t):
+func even_spread(t):
 	var keys = t.keys()
 	var p = (1.0 / keys.size()) * 100
 
@@ -76,16 +78,16 @@ func _even_spread(t):
 		var c = t[key]
 		c.p = p
 		if "d" in c.keys():
-			_even_spread(c.d)
+			even_spread(c.d)
 
-func _build_tree(d, tile_name, tileset, tile_id):
+func build_tree(d, tile_name, tileset, tile_id):
 	var c = tile_name[0]
 
 	if tile_name.size() == 1:
 		d[c] = {}
 		d[c]["p"] = 0
 		d[c]["id"] = tile_id
-		d[c]["size"] = _get_tile_dimensions(tile_id, tileset)
+		d[c]["size"] = get_tile_dimensions(tile_id, tileset)
 	else:
 		tile_name.remove(0)
 		if !d.has(c):
@@ -93,9 +95,9 @@ func _build_tree(d, tile_name, tileset, tile_id):
 				"p": 0,
 				"d": {}
 			}
-		_build_tree(d[c].d, tile_name, tileset, tile_id)
+		build_tree(d[c].d, tile_name, tileset, tile_id)
 
-func _init_probabilities():
+func init_probabilities():
 	for i in range(3):
 		var tileset = tilesets[i]
 		var tiles = []
@@ -103,11 +105,11 @@ func _init_probabilities():
 
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
-			_build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
+			build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
 
-		_even_spread(default_probabilities[i])
+		even_spread(default_probabilities[i])
 
-func _pick_random_tile(t):
+func pick_random_tile(t):
 	var acc = 0.0
 	var r = randi() % 100
 
@@ -120,10 +122,10 @@ func _pick_random_tile(t):
 			continue
 
 		if "d" in c.keys():
-			return _pick_random_tile(c.d)
+			return pick_random_tile(c.d)
 		return c
 
-func _pick_random_pos(i):
+func pick_random_pos(i):
 	var w = M.size()
 	var h = M[0].size()
 	var s = w * h
@@ -151,7 +153,7 @@ func _add_col(m, s):
 	for r in M:
 		r.insert(rn, -1)
 
-func _create_expanded_matrix(i):
+func expand_matrix(i):
 	var diff = TILEMAP_SIZES[i].usable - TILEMAP_SIZES[i - 1].usable
 
 	for r in range(diff.x):
@@ -159,24 +161,16 @@ func _create_expanded_matrix(i):
 	for c in range(diff.y):
 		_add_col(M, TILEMAP_SIZES[i - 1].usable)
 
-func _create_matrix(i):
-	var size = TILEMAP_SIZES[i].usable
-	for i in range(int(size.x)):
-		var r = []
-		for j in range(int(size.y)):
-			r.append(-1)
-		M.append(r)
-
-func _put_stuff(layer, i):
-	var p = _pick_random_pos(i)
+func put_stuff(layer, i):
+	var p = pick_random_pos(i)
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
 	if p.x != -1:
 		var map_position = p + offset
-		var tile = _pick_random_tile(default_probabilities[2])
+		var tile = pick_random_tile(default_probabilities[2])
 		M[p.x][p.y] = tile.id
 		layer.set_cell(map_position.x, map_position.y, tile.id)
 
-func _rebuild_layer(layer, i):
+func rebuild_layer(layer, i):
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
 
 	for i in range(M.size()):
@@ -186,27 +180,24 @@ func _rebuild_layer(layer, i):
 
 func create_tilemaps():
 	randomize()
-	_load_tilesets()  # load tilesets in tilesets global
-	_init_probabilities()  # init probability tree
-	_init_name2id()  # make a structure to translate from name to id
+	load_tilesets()  # load tilesets in tilesets global
+	init_probabilities()  # init probability tree
+	init_name2id()  # make a structure to translate from name to id
 	for i in range(0, N_TILEMAPS):
 		# initialise layers
-		var layer0 = _get_initalised_map(0, i)
-		var layer1 = _get_initalised_map(1, i)
-		var layer2 = _get_initalised_map(2, i)
+		var layer0 = get_initalised_map(0, i)
+		var layer1 = get_initalised_map(1, i)
+		var layer2 = get_initalised_map(2, i)
 
-		# Expand matrix or create one if there's not
-		if i == 0:
-			_create_matrix(0)
-		else:
-			_create_expanded_matrix(i)
-			_rebuild_layer(layer2, i)
+		if i != 0:
+			expand_matrix(i)
+			rebuild_layer(layer2, i)
 
-		_put_floor(layer0, i)
-		_put_stuff(layer2, i)
-		tilemaps.append(_get_complete_tilemap(layer0, layer1, layer2))
+		put_floor(layer0, i)
+		put_stuff(layer2, i)
+		tilemaps.append(get_complete_tilemap(layer0, layer1, layer2))
 
-func _put_floor(layer, level):
+func put_floor(layer, level):
 	var total_size = TILEMAP_SIZES[level].total
 	var usable_size = TILEMAP_SIZES[level].usable
 	var upper_left_corner = total_size / 2 - usable_size / 2 - Vector2(1, 1)
@@ -247,7 +238,7 @@ func _put_floor(layer, level):
 
 			layer.set_cell(i, j, tile)
 
-func _put_trees(layer):
+func put_trees(layer):
 	var max_pos = 6
 	var r = randi() % 6
 	var offset = Vector2(randi() % max_pos, randi() % max_pos)

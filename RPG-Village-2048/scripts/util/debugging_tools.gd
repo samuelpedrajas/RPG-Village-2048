@@ -2,6 +2,18 @@ extends Node
 
 const DEFAULT_PATH = "res://scripts/util/logs/"
 
+func print_matrix(M):
+	var s = ""
+	for r in M:
+		var first = true
+		for c in r:
+			if !first:
+				s += "\t\t"
+			s += str(c)
+			first = false
+		s += "\n"
+	print(s, "\r")
+
 func _dump_dict_recursive(d, s, t):
 	s += "{\n"
 	t += "\t"
