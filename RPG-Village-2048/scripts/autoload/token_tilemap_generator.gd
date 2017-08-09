@@ -27,13 +27,14 @@ var tilemaps = []
 var default_probabilities = {}
 var realistic_probabilities = {}
 
-var MATRIX = []
+var M = []
 
 func _get_initalised_map(layer_index, level):
-	var tileset = tilesets[layer_index]
+	var tileset = tilesets[layer_index]  # get proper tileset
 	var layer = TileMap.new()
 	var scale = TOKEN_SIZE.x / (CELL_SIZE.x * TILEMAP_SIZES[level].total.x)
 
+	# set properties
 	layer.set_tileset(tileset)
 	layer.set_scale(Vector2(scale, scale))
 	layer.set_mode(layer.MODE_ISOMETRIC)
@@ -123,15 +124,14 @@ func _pick_random_tile(t):
 		return c
 
 func _pick_random_pos(i):
-	var m = MATRIX
-	var w = m.size()
-	var h = m[0].size()
+	var w = M.size()
+	var h = M[0].size()
 	var s = w * h
 	var r = randi() % s
 	var p = Vector2(r / h, r % h)
 
 	var first = r
-	while m[p.x][p.y] != -1:
+	while M[p.x][p.y] != -1:
 		r = (r + 1) % s
 		if r == first:
 			return Vector2(-1, -1)
@@ -144,60 +144,58 @@ func _add_row(m, s):
 	var r = []
 	for _ in range(s.y):
 		r.append(-1)
-	m.insert(rn, r)
+	M.insert(rn, r)
 
 func _add_col(m, s):
 	var rn = randi() % int(s.y)
-	for r in m:
+	for r in M:
 		r.insert(rn, -1)
 
 func _create_expanded_matrix(i):
 	var diff = TILEMAP_SIZES[i].usable - TILEMAP_SIZES[i - 1].usable
-	var m = MATRIX
 
 	for r in range(diff.x):
-		_add_row(m, TILEMAP_SIZES[i - 1].usable)
+		_add_row(M, TILEMAP_SIZES[i - 1].usable)
 	for c in range(diff.y):
-		_add_col(m, TILEMAP_SIZES[i - 1].usable)
+		_add_col(M, TILEMAP_SIZES[i - 1].usable)
 
 func _create_matrix(i):
 	var size = TILEMAP_SIZES[i].usable
-	var m = MATRIX
 	for i in range(int(size.x)):
 		var r = []
 		for j in range(int(size.y)):
 			r.append(-1)
-		m.append(r)
+		M.append(r)
 
 func _put_stuff(layer, i):
 	var p = _pick_random_pos(i)
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
-	var m = MATRIX
 	if p.x != -1:
 		var map_position = p + offset
 		var tile = _pick_random_tile(default_probabilities[2])
-		m[p.x][p.y] = tile.id
+		M[p.x][p.y] = tile.id
 		layer.set_cell(map_position.x, map_position.y, tile.id)
 
 func _rebuild_layer(layer, i):
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
-	var m = MATRIX
 
-	for i in range(m.size()):
-		for j in range(m[0].size()):
-			if m[i][j] > -1:
-				layer.set_cell(i + offset.x, j + offset.y, m[i][j])
+	for i in range(M.size()):
+		for j in range(M[0].size()):
+			if M[i][j] > -1:
+				layer.set_cell(i + offset.x, j + offset.y, M[i][j])
 
 func create_tilemaps():
 	randomize()
-	_load_tilesets()
-	_init_probabilities()
-	_init_name2id()
+	_load_tilesets()  # load tilesets in tilesets global
+	_init_probabilities()  # init probability tree
+	_init_name2id()  # make a structure to translate from name to id
 	for i in range(0, N_TILEMAPS):
+		# initialise layers
 		var layer0 = _get_initalised_map(0, i)
 		var layer1 = _get_initalised_map(1, i)
 		var layer2 = _get_initalised_map(2, i)
 
+		# Expand matrix or create one if there's not
 		if i == 0:
 			_create_matrix(0)
 		else:
