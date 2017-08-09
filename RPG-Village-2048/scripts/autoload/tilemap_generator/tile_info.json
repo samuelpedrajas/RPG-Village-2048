@@ -1,5 +1,5 @@
 {
-    "tiles-floor-grass-flower_grass": {
+    "floor-grass-flower_grass": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -12,7 +12,7 @@
             }
         ]
     },
-    "tiles-floor-grass-grass": {
+    "floor-grass-grass": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -25,7 +25,7 @@
             }
         ]
     },
-    "tiles-floor-grass-tall_grass": {
+    "floor-grass-tall_grass": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -38,7 +38,7 @@
             }
         ]
     },
-    "tiles-floor-water-borders-down": {
+    "floor-water-borders-down": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -51,7 +51,7 @@
             }
         ]
     },
-    "tiles-floor-water-borders-left": {
+    "floor-water-borders-left": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -64,7 +64,7 @@
             }
         ]
     },
-    "tiles-floor-water-borders-right": {
+    "floor-water-borders-right": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -77,7 +77,7 @@
             }
         ]
     },
-    "tiles-floor-water-borders-up": {
+    "floor-water-borders-up": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -90,7 +90,7 @@
             }
         ]
     },
-    "tiles-floor-water-in_corners-down": {
+    "floor-water-in_corners-down": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -103,7 +103,7 @@
             }
         ]
     },
-    "tiles-floor-water-in_corners-left": {
+    "floor-water-in_corners-left": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -116,7 +116,7 @@
             }
         ]
     },
-    "tiles-floor-water-in_corners-right": {
+    "floor-water-in_corners-right": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -129,7 +129,7 @@
             }
         ]
     },
-    "tiles-floor-water-in_corners-up": {
+    "floor-water-in_corners-up": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -142,7 +142,7 @@
             }
         ]
     },
-    "tiles-floor-water-out_corner-down": {
+    "floor-water-out_corner-down": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -155,7 +155,7 @@
             }
         ]
     },
-    "tiles-floor-water-out_corner-left": {
+    "floor-water-out_corner-left": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -168,7 +168,7 @@
             }
         ]
     },
-    "tiles-floor-water-out_corner-right": {
+    "floor-water-out_corner-right": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -181,7 +181,7 @@
             }
         ]
     },
-    "tiles-floor-water-out_corner-up": {
+    "floor-water-out_corner-up": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -194,7 +194,7 @@
             }
         ]
     },
-    "tiles-floor-water-water": {
+    "floor-water-water": {
         "layer": 0,
         "offset": {
             "x": 0.0,
@@ -207,7 +207,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-attacking": {
+    "human-characters-archer-attacking": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -220,7 +220,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-defending": {
+    "human-characters-archer-defending": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -233,7 +233,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-dying": {
+    "human-characters-archer-dying": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -246,7 +246,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-dying2": {
+    "human-characters-archer-dying2": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -259,7 +259,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-falling": {
+    "human-characters-archer-falling": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -272,7 +272,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-sliding": {
+    "human-characters-archer-sliding": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -285,7 +285,7 @@
             }
         ]
     },
-    "tiles-human-characters-archer-walking": {
+    "human-characters-archer-walking": {
         "layer": 2,
         "offset": {
             "x": -1.0,
@@ -298,7 +298,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-attacking": {
+    "human-characters-healer-attacking": {
         "layer": 2,
         "offset": {
             "x": 10.0,
@@ -311,7 +311,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-attacking2": {
+    "human-characters-healer-attacking2": {
         "layer": 2,
         "offset": {
             "x": 12.0,
@@ -324,7 +324,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-defending": {
+    "human-characters-healer-defending": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -337,7 +337,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-dying": {
+    "human-characters-healer-dying": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -350,7 +350,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-healing": {
+    "human-characters-healer-healing": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -363,7 +363,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-sliding": {
+    "human-characters-healer-sliding": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -376,7 +376,7 @@
             }
         ]
     },
-    "tiles-human-characters-healer-walking": {
+    "human-characters-healer-walking": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -389,7 +389,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-attacking": {
+    "human-characters-sword_man-attacking": {
         "layer": 2,
         "offset": {
             "x": 8.0,
@@ -402,7 +402,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-attacking2": {
+    "human-characters-sword_man-attacking2": {
         "layer": 2,
         "offset": {
             "x": 11.0,
@@ -415,7 +415,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-defending": {
+    "human-characters-sword_man-defending": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -428,7 +428,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-dying": {
+    "human-characters-sword_man-dying": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -441,7 +441,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-sliding": {
+    "human-characters-sword_man-sliding": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -454,7 +454,7 @@
             }
         ]
     },
-    "tiles-human-characters-sword_man-walking": {
+    "human-characters-sword_man-walking": {
         "layer": 2,
         "offset": {
             "x": -5.0,
@@ -467,7 +467,7 @@
             }
         ]
     },
-    "tiles-human-forest-caves-gold": {
+    "human-forest-caves-gold": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -480,7 +480,7 @@
             }
         ]
     },
-    "tiles-human-forest-caves-silver": {
+    "human-forest-caves-silver": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -493,7 +493,7 @@
             }
         ]
     },
-    "tiles-human-forest-caves-stone": {
+    "human-forest-caves-stone": {
         "layer": 2,
         "offset": {
             "x": 6.0,
@@ -506,7 +506,7 @@
             }
         ]
     },
-    "tiles-human-forest-houses-double": {
+    "human-forest-houses-double": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -519,7 +519,7 @@
             }
         ]
     },
-    "tiles-human-forest-houses-regular": {
+    "human-forest-houses-regular": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -532,7 +532,7 @@
             }
         ]
     },
-    "tiles-human-forest-houses-tend": {
+    "human-forest-houses-tend": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -545,7 +545,7 @@
             }
         ]
     },
-    "tiles-human-forest-wood-post": {
+    "human-forest-wood-post": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -558,7 +558,7 @@
             }
         ]
     },
-    "tiles-human-forest-wood-wall": {
+    "human-forest-wood-wall": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -571,7 +571,7 @@
             }
         ]
     },
-    "tiles-human-forest-wood-working_place": {
+    "human-forest-wood-working_place": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -584,7 +584,7 @@
             }
         ]
     },
-    "tiles-human-resources-bronze-1": {
+    "human-resources-bronze-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -597,7 +597,7 @@
             }
         ]
     },
-    "tiles-human-resources-bronze-2": {
+    "human-resources-bronze-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -610,7 +610,7 @@
             }
         ]
     },
-    "tiles-human-resources-bronze-3": {
+    "human-resources-bronze-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -623,7 +623,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-closed-1": {
+    "human-resources-containers-closed-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -636,7 +636,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-closed-2": {
+    "human-resources-containers-closed-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -649,7 +649,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-closed-3": {
+    "human-resources-containers-closed-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -662,7 +662,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-closed-4": {
+    "human-resources-containers-closed-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -675,7 +675,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-empty-1": {
+    "human-resources-containers-empty-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -688,7 +688,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-empty-2": {
+    "human-resources-containers-empty-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -701,7 +701,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-empty-3": {
+    "human-resources-containers-empty-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -714,7 +714,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-full-1": {
+    "human-resources-containers-full-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -727,7 +727,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-full-2": {
+    "human-resources-containers-full-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -740,7 +740,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-full-3": {
+    "human-resources-containers-full-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -753,7 +753,7 @@
             }
         ]
     },
-    "tiles-human-resources-containers-full-4": {
+    "human-resources-containers-full-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -766,7 +766,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-1": {
+    "human-resources-farming-1": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -779,7 +779,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-10": {
+    "human-resources-farming-10": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -792,7 +792,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-11": {
+    "human-resources-farming-11": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -805,7 +805,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-12": {
+    "human-resources-farming-12": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -818,7 +818,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-13": {
+    "human-resources-farming-13": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -831,7 +831,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-14": {
+    "human-resources-farming-14": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -844,7 +844,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-2": {
+    "human-resources-farming-2": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -857,7 +857,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-3": {
+    "human-resources-farming-3": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -870,7 +870,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-4": {
+    "human-resources-farming-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -883,7 +883,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-5": {
+    "human-resources-farming-5": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -896,7 +896,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-6": {
+    "human-resources-farming-6": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -909,7 +909,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-7": {
+    "human-resources-farming-7": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -922,7 +922,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-8": {
+    "human-resources-farming-8": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -935,7 +935,7 @@
             }
         ]
     },
-    "tiles-human-resources-farming-9": {
+    "human-resources-farming-9": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -948,7 +948,7 @@
             }
         ]
     },
-    "tiles-human-resources-gold-1": {
+    "human-resources-gold-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -961,7 +961,7 @@
             }
         ]
     },
-    "tiles-human-resources-gold-2": {
+    "human-resources-gold-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -974,7 +974,7 @@
             }
         ]
     },
-    "tiles-human-resources-gold-3": {
+    "human-resources-gold-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -987,7 +987,7 @@
             }
         ]
     },
-    "tiles-human-resources-silver-1": {
+    "human-resources-silver-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1000,7 +1000,7 @@
             }
         ]
     },
-    "tiles-human-resources-silver-2": {
+    "human-resources-silver-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1013,7 +1013,7 @@
             }
         ]
     },
-    "tiles-human-resources-silver-3": {
+    "human-resources-silver-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1026,7 +1026,7 @@
             }
         ]
     },
-    "tiles-human-resources-stone-1": {
+    "human-resources-stone-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1039,7 +1039,7 @@
             }
         ]
     },
-    "tiles-human-resources-stone-2": {
+    "human-resources-stone-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1052,7 +1052,7 @@
             }
         ]
     },
-    "tiles-human-resources-stone-3": {
+    "human-resources-stone-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1065,7 +1065,7 @@
             }
         ]
     },
-    "tiles-human-resources-stone-4": {
+    "human-resources-stone-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1078,7 +1078,7 @@
             }
         ]
     },
-    "tiles-human-resources-wood-1": {
+    "human-resources-wood-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1091,7 +1091,7 @@
             }
         ]
     },
-    "tiles-human-resources-wood-2": {
+    "human-resources-wood-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1104,7 +1104,7 @@
             }
         ]
     },
-    "tiles-human-resources-wood-3": {
+    "human-resources-wood-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1117,7 +1117,7 @@
             }
         ]
     },
-    "tiles-human-resources-wood-4": {
+    "human-resources-wood-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1130,7 +1130,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-1": {
+    "human-street-buildings-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1155,7 +1155,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-10": {
+    "human-street-buildings-10": {
         "layer": 2,
         "offset": {
             "x": -6.0,
@@ -1180,7 +1180,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-11": {
+    "human-street-buildings-11": {
         "layer": 2,
         "offset": {
             "x": 7.0,
@@ -1205,7 +1205,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-12": {
+    "human-street-buildings-12": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -1230,7 +1230,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-13": {
+    "human-street-buildings-13": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1255,7 +1255,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-14": {
+    "human-street-buildings-14": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1280,7 +1280,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-15": {
+    "human-street-buildings-15": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1305,7 +1305,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-16": {
+    "human-street-buildings-16": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1330,7 +1330,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-17": {
+    "human-street-buildings-17": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1355,7 +1355,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-18": {
+    "human-street-buildings-18": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1380,7 +1380,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-19": {
+    "human-street-buildings-19": {
         "layer": 2,
         "offset": {
             "x": 36.0,
@@ -1413,7 +1413,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-2": {
+    "human-street-buildings-2": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -1438,7 +1438,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-20": {
+    "human-street-buildings-20": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1463,7 +1463,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-21": {
+    "human-street-buildings-21": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1488,7 +1488,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-22": {
+    "human-street-buildings-22": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1513,7 +1513,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-23": {
+    "human-street-buildings-23": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -1538,7 +1538,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-24": {
+    "human-street-buildings-24": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1563,7 +1563,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-25": {
+    "human-street-buildings-25": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1588,7 +1588,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-26": {
+    "human-street-buildings-26": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -1613,7 +1613,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-27": {
+    "human-street-buildings-27": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -1638,7 +1638,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-28": {
+    "human-street-buildings-28": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1663,7 +1663,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-3": {
+    "human-street-buildings-3": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -1688,7 +1688,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-4": {
+    "human-street-buildings-4": {
         "layer": 2,
         "offset": {
             "x": 33.0,
@@ -1705,7 +1705,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-5": {
+    "human-street-buildings-5": {
         "layer": 2,
         "offset": {
             "x": 40.0,
@@ -1722,7 +1722,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-6": {
+    "human-street-buildings-6": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -1747,7 +1747,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-7": {
+    "human-street-buildings-7": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1772,7 +1772,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-8": {
+    "human-street-buildings-8": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1797,7 +1797,7 @@
             }
         ]
     },
-    "tiles-human-street-buildings-9": {
+    "human-street-buildings-9": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1822,7 +1822,7 @@
             }
         ]
     },
-    "tiles-human-street-castles-1": {
+    "human-street-castles-1": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -1867,7 +1867,7 @@
             }
         ]
     },
-    "tiles-human-street-castles-2": {
+    "human-street-castles-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1912,7 +1912,7 @@
             }
         ]
     },
-    "tiles-human-street-castles-3": {
+    "human-street-castles-3": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -1957,7 +1957,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-arrows-1": {
+    "human-street-misc-arrows-1": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -1970,7 +1970,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-arrows-2": {
+    "human-street-misc-arrows-2": {
         "layer": 2,
         "offset": {
             "x": -5.0,
@@ -1983,7 +1983,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-arrows-3": {
+    "human-street-misc-arrows-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -1996,7 +1996,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-arrows-4": {
+    "human-street-misc-arrows-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2009,7 +2009,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-chests-1": {
+    "human-street-misc-chests-1": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -2022,7 +2022,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-chests-2": {
+    "human-street-misc-chests-2": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -2035,7 +2035,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-gates-1": {
+    "human-street-misc-gates-1": {
         "layer": 2,
         "offset": {
             "x": -42.0,
@@ -2052,7 +2052,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-gates-2": {
+    "human-street-misc-gates-2": {
         "layer": 2,
         "offset": {
             "x": -41.0,
@@ -2069,7 +2069,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-other-fountain": {
+    "human-street-misc-other-fountain": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2082,7 +2082,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-other-light_post": {
+    "human-street-misc-other-light_post": {
         "layer": 2,
         "offset": {
             "x": -9.0,
@@ -2095,7 +2095,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-other-magic_tower": {
+    "human-street-misc-other-magic_tower": {
         "layer": 2,
         "offset": {
             "x": -1.0,
@@ -2108,7 +2108,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-other-portal": {
+    "human-street-misc-other-portal": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -2121,7 +2121,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-other-well": {
+    "human-street-misc-other-well": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2134,7 +2134,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-trees-1": {
+    "human-street-misc-trees-1": {
         "layer": 2,
         "offset": {
             "x": -5.0,
@@ -2147,7 +2147,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-trees-2": {
+    "human-street-misc-trees-2": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -2160,7 +2160,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-trees-apple_tree": {
+    "human-street-misc-trees-apple_tree": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2173,7 +2173,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-walls-1": {
+    "human-street-misc-walls-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2186,7 +2186,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-walls-2": {
+    "human-street-misc-walls-2": {
         "layer": 2,
         "offset": {
             "x": -5.0,
@@ -2199,7 +2199,7 @@
             }
         ]
     },
-    "tiles-human-street-misc-walls-3": {
+    "human-street-misc-walls-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2212,7 +2212,7 @@
             }
         ]
     },
-    "tiles-human-street-road-down": {
+    "human-street-road-down": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2225,7 +2225,7 @@
             }
         ]
     },
-    "tiles-human-street-road-left": {
+    "human-street-road-left": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2238,7 +2238,7 @@
             }
         ]
     },
-    "tiles-human-street-road-right": {
+    "human-street-road-right": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2251,7 +2251,7 @@
             }
         ]
     },
-    "tiles-human-street-road-road": {
+    "human-street-road-road": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2264,7 +2264,7 @@
             }
         ]
     },
-    "tiles-human-street-road-up": {
+    "human-street-road-up": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2277,7 +2277,7 @@
             }
         ]
     },
-    "tiles-human-street-towers-1": {
+    "human-street-towers-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2290,7 +2290,7 @@
             }
         ]
     },
-    "tiles-human-street-towers-2": {
+    "human-street-towers-2": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -2303,7 +2303,7 @@
             }
         ]
     },
-    "tiles-human-street-towers-3": {
+    "human-street-towers-3": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -2316,7 +2316,7 @@
             }
         ]
     },
-    "tiles-nature-animals-buffalo": {
+    "nature-animals-buffalo": {
         "layer": 2,
         "offset": {
             "x": -9.0,
@@ -2329,7 +2329,7 @@
             }
         ]
     },
-    "tiles-nature-animals-croco": {
+    "nature-animals-croco": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2342,7 +2342,7 @@
             }
         ]
     },
-    "tiles-nature-animals-elephant": {
+    "nature-animals-elephant": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -2355,7 +2355,7 @@
             }
         ]
     },
-    "tiles-nature-animals-giraffe": {
+    "nature-animals-giraffe": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -2368,7 +2368,7 @@
             }
         ]
     },
-    "tiles-nature-animals-hypo": {
+    "nature-animals-hypo": {
         "layer": 2,
         "offset": {
             "x": -6.0,
@@ -2381,7 +2381,7 @@
             }
         ]
     },
-    "tiles-nature-animals-leopard": {
+    "nature-animals-leopard": {
         "layer": 2,
         "offset": {
             "x": -6.0,
@@ -2394,7 +2394,7 @@
             }
         ]
     },
-    "tiles-nature-animals-lion": {
+    "nature-animals-lion": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -2407,7 +2407,7 @@
             }
         ]
     },
-    "tiles-nature-animals-rhyno": {
+    "nature-animals-rhyno": {
         "layer": 2,
         "offset": {
             "x": -8.0,
@@ -2420,7 +2420,7 @@
             }
         ]
     },
-    "tiles-nature-animals-zebra": {
+    "nature-animals-zebra": {
         "layer": 2,
         "offset": {
             "x": -5.0,
@@ -2433,7 +2433,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-dispersed-1": {
+    "nature-grass-flowers-dispersed-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2446,7 +2446,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-dispersed-2": {
+    "nature-grass-flowers-dispersed-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2459,7 +2459,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-dispersed-3": {
+    "nature-grass-flowers-dispersed-3": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -2472,7 +2472,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-dispersed-4": {
+    "nature-grass-flowers-dispersed-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2485,7 +2485,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-dispersed-5": {
+    "nature-grass-flowers-dispersed-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2498,7 +2498,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-floor-1": {
+    "nature-grass-flowers-floor-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2511,7 +2511,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-floor-2": {
+    "nature-grass-flowers-floor-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2524,7 +2524,7 @@
             }
         ]
     },
-    "tiles-nature-grass-flowers-floor-3": {
+    "nature-grass-flowers-floor-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2537,7 +2537,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-1": {
+    "nature-grass-plants-disperse-1": {
         "layer": 1,
         "offset": {
             "x": 8.0,
@@ -2550,7 +2550,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-10": {
+    "nature-grass-plants-disperse-10": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -2563,7 +2563,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-11": {
+    "nature-grass-plants-disperse-11": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2576,7 +2576,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-2": {
+    "nature-grass-plants-disperse-2": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -2589,7 +2589,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-3": {
+    "nature-grass-plants-disperse-3": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2602,7 +2602,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-4": {
+    "nature-grass-plants-disperse-4": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2615,7 +2615,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-5": {
+    "nature-grass-plants-disperse-5": {
         "layer": 2,
         "offset": {
             "x": -11.0,
@@ -2628,7 +2628,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-6": {
+    "nature-grass-plants-disperse-6": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2641,7 +2641,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-7": {
+    "nature-grass-plants-disperse-7": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2654,7 +2654,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-8": {
+    "nature-grass-plants-disperse-8": {
         "layer": 1,
         "offset": {
             "x": -7.0,
@@ -2667,7 +2667,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-disperse-9": {
+    "nature-grass-plants-disperse-9": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2680,7 +2680,7 @@
             }
         ]
     },
-    "tiles-nature-grass-plants-floor-1": {
+    "nature-grass-plants-floor-1": {
         "layer": 1,
         "offset": {
             "x": 0.0,
@@ -2693,7 +2693,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-1": {
+    "nature-grass-tall-1": {
         "layer": 2,
         "offset": {
             "x": 9.0,
@@ -2706,7 +2706,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-2": {
+    "nature-grass-tall-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2719,7 +2719,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-3": {
+    "nature-grass-tall-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2732,7 +2732,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-4": {
+    "nature-grass-tall-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2745,7 +2745,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-5": {
+    "nature-grass-tall-5": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -2758,7 +2758,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-6": {
+    "nature-grass-tall-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2771,7 +2771,7 @@
             }
         ]
     },
-    "tiles-nature-grass-tall-7": {
+    "nature-grass-tall-7": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -2784,7 +2784,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-multiple_bush-1": {
+    "nature-plants-bushes-multiple_bush-1": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -2797,7 +2797,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-multiple_bush-2": {
+    "nature-plants-bushes-multiple_bush-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2810,7 +2810,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-multiple_bush-3": {
+    "nature-plants-bushes-multiple_bush-3": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -2823,7 +2823,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-multiple_bush-4": {
+    "nature-plants-bushes-multiple_bush-4": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -2836,7 +2836,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-1": {
+    "nature-plants-bushes-single_bush-1": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -2849,7 +2849,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-10": {
+    "nature-plants-bushes-single_bush-10": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -2862,7 +2862,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-11": {
+    "nature-plants-bushes-single_bush-11": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2875,7 +2875,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-12": {
+    "nature-plants-bushes-single_bush-12": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2888,7 +2888,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-13": {
+    "nature-plants-bushes-single_bush-13": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2901,7 +2901,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-14": {
+    "nature-plants-bushes-single_bush-14": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -2914,7 +2914,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-15": {
+    "nature-plants-bushes-single_bush-15": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -2927,7 +2927,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-16": {
+    "nature-plants-bushes-single_bush-16": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -2940,7 +2940,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-17": {
+    "nature-plants-bushes-single_bush-17": {
         "layer": 2,
         "offset": {
             "x": 7.0,
@@ -2953,7 +2953,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-18": {
+    "nature-plants-bushes-single_bush-18": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2966,7 +2966,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-19": {
+    "nature-plants-bushes-single_bush-19": {
         "layer": 2,
         "offset": {
             "x": 6.0,
@@ -2979,7 +2979,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-2": {
+    "nature-plants-bushes-single_bush-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -2992,7 +2992,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-20": {
+    "nature-plants-bushes-single_bush-20": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -3005,7 +3005,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-3": {
+    "nature-plants-bushes-single_bush-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3018,7 +3018,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-4": {
+    "nature-plants-bushes-single_bush-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3031,7 +3031,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-5": {
+    "nature-plants-bushes-single_bush-5": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -3044,7 +3044,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-6": {
+    "nature-plants-bushes-single_bush-6": {
         "layer": 2,
         "offset": {
             "x": -3.0,
@@ -3057,7 +3057,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-7": {
+    "nature-plants-bushes-single_bush-7": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3070,7 +3070,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-8": {
+    "nature-plants-bushes-single_bush-8": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -3083,7 +3083,7 @@
             }
         ]
     },
-    "tiles-nature-plants-bushes-single_bush-9": {
+    "nature-plants-bushes-single_bush-9": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3096,7 +3096,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-1": {
+    "nature-plants-carnivour-1": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -3109,7 +3109,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-2": {
+    "nature-plants-carnivour-2": {
         "layer": 2,
         "offset": {
             "x": 9.0,
@@ -3122,7 +3122,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-3": {
+    "nature-plants-carnivour-3": {
         "layer": 2,
         "offset": {
             "x": -9.0,
@@ -3135,7 +3135,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-4": {
+    "nature-plants-carnivour-4": {
         "layer": 2,
         "offset": {
             "x": 9.0,
@@ -3148,7 +3148,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-5": {
+    "nature-plants-carnivour-5": {
         "layer": 2,
         "offset": {
             "x": -9.0,
@@ -3161,7 +3161,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-6": {
+    "nature-plants-carnivour-6": {
         "layer": 2,
         "offset": {
             "x": -44.0,
@@ -3178,7 +3178,7 @@
             }
         ]
     },
-    "tiles-nature-plants-carnivour-7": {
+    "nature-plants-carnivour-7": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -3191,7 +3191,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-1": {
+    "nature-plants-palm-1": {
         "layer": 2,
         "offset": {
             "x": 6.0,
@@ -3204,7 +3204,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-2": {
+    "nature-plants-palm-2": {
         "layer": 2,
         "offset": {
             "x": 1.0,
@@ -3217,7 +3217,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-3": {
+    "nature-plants-palm-3": {
         "layer": 2,
         "offset": {
             "x": -20.0,
@@ -3230,7 +3230,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-4": {
+    "nature-plants-palm-4": {
         "layer": 2,
         "offset": {
             "x": -19.0,
@@ -3243,7 +3243,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-5": {
+    "nature-plants-palm-5": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3256,7 +3256,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-6": {
+    "nature-plants-palm-6": {
         "layer": 2,
         "offset": {
             "x": 8.0,
@@ -3269,7 +3269,7 @@
             }
         ]
     },
-    "tiles-nature-plants-palm-7": {
+    "nature-plants-palm-7": {
         "layer": 2,
         "offset": {
             "x": 8.0,
@@ -3282,7 +3282,7 @@
             }
         ]
     },
-    "tiles-nature-plants-pink-1": {
+    "nature-plants-pink-1": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3295,7 +3295,7 @@
             }
         ]
     },
-    "tiles-nature-plants-pink-2": {
+    "nature-plants-pink-2": {
         "layer": 2,
         "offset": {
             "x": 11.0,
@@ -3308,7 +3308,7 @@
             }
         ]
     },
-    "tiles-nature-plants-pink-3": {
+    "nature-plants-pink-3": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3321,7 +3321,7 @@
             }
         ]
     },
-    "tiles-nature-plants-spiral": {
+    "nature-plants-spiral": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3334,7 +3334,7 @@
             }
         ]
     },
-    "tiles-nature-resources-bronze-1": {
+    "nature-resources-bronze-1": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -3347,7 +3347,7 @@
             }
         ]
     },
-    "tiles-nature-resources-bronze-2": {
+    "nature-resources-bronze-2": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3360,7 +3360,7 @@
             }
         ]
     },
-    "tiles-nature-resources-bronze-3": {
+    "nature-resources-bronze-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3373,7 +3373,7 @@
             }
         ]
     },
-    "tiles-nature-resources-gold-1": {
+    "nature-resources-gold-1": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3386,7 +3386,7 @@
             }
         ]
     },
-    "tiles-nature-resources-gold-2": {
+    "nature-resources-gold-2": {
         "layer": 2,
         "offset": {
             "x": 2.0,
@@ -3399,7 +3399,7 @@
             }
         ]
     },
-    "tiles-nature-resources-gold-3": {
+    "nature-resources-gold-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3412,7 +3412,7 @@
             }
         ]
     },
-    "tiles-nature-resources-silver-1": {
+    "nature-resources-silver-1": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3425,7 +3425,7 @@
             }
         ]
     },
-    "tiles-nature-resources-silver-2": {
+    "nature-resources-silver-2": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -3438,7 +3438,7 @@
             }
         ]
     },
-    "tiles-nature-resources-silver-3": {
+    "nature-resources-silver-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3451,7 +3451,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-1": {
+    "nature-resources-stone-1": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -3464,7 +3464,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-2": {
+    "nature-resources-stone-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3477,7 +3477,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-3": {
+    "nature-resources-stone-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3490,7 +3490,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-4": {
+    "nature-resources-stone-4": {
         "layer": 2,
         "offset": {
             "x": -4.0,
@@ -3503,7 +3503,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-5": {
+    "nature-resources-stone-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3516,7 +3516,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-6": {
+    "nature-resources-stone-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3529,7 +3529,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-7": {
+    "nature-resources-stone-7": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3542,7 +3542,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-8": {
+    "nature-resources-stone-8": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3555,7 +3555,7 @@
             }
         ]
     },
-    "tiles-nature-resources-stone-9": {
+    "nature-resources-stone-9": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3568,7 +3568,7 @@
             }
         ]
     },
-    "tiles-nature-trees-flower_trees-1": {
+    "nature-trees-flower_trees-1": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3581,7 +3581,7 @@
             }
         ]
     },
-    "tiles-nature-trees-flower_trees-2": {
+    "nature-trees-flower_trees-2": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3594,7 +3594,7 @@
             }
         ]
     },
-    "tiles-nature-trees-flower_trees-3": {
+    "nature-trees-flower_trees-3": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3607,7 +3607,7 @@
             }
         ]
     },
-    "tiles-nature-trees-flower_trees-4": {
+    "nature-trees-flower_trees-4": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3620,7 +3620,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-1": {
+    "nature-trees-palm_trees-1": {
         "layer": 2,
         "offset": {
             "x": -11.0,
@@ -3633,7 +3633,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-10": {
+    "nature-trees-palm_trees-10": {
         "layer": 2,
         "offset": {
             "x": 31.0,
@@ -3646,7 +3646,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-2": {
+    "nature-trees-palm_trees-2": {
         "layer": 2,
         "offset": {
             "x": -21.0,
@@ -3659,7 +3659,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-3": {
+    "nature-trees-palm_trees-3": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -3672,7 +3672,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-4": {
+    "nature-trees-palm_trees-4": {
         "layer": 2,
         "offset": {
             "x": 5.0,
@@ -3685,7 +3685,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-5": {
+    "nature-trees-palm_trees-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3698,7 +3698,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-6": {
+    "nature-trees-palm_trees-6": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -3711,7 +3711,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-7": {
+    "nature-trees-palm_trees-7": {
         "layer": 2,
         "offset": {
             "x": 28.0,
@@ -3724,7 +3724,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-8": {
+    "nature-trees-palm_trees-8": {
         "layer": 2,
         "offset": {
             "x": -16.0,
@@ -3737,7 +3737,7 @@
             }
         ]
     },
-    "tiles-nature-trees-palm_trees-9": {
+    "nature-trees-palm_trees-9": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3750,7 +3750,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-1": {
+    "nature-trees-pine_trees-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3763,7 +3763,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-2": {
+    "nature-trees-pine_trees-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3776,7 +3776,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-3": {
+    "nature-trees-pine_trees-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3789,7 +3789,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-4": {
+    "nature-trees-pine_trees-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3802,7 +3802,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-5": {
+    "nature-trees-pine_trees-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3815,7 +3815,7 @@
             }
         ]
     },
-    "tiles-nature-trees-pine_trees-6": {
+    "nature-trees-pine_trees-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3828,7 +3828,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type1-1": {
+    "nature-trees-type1-1": {
         "layer": 2,
         "offset": {
             "x": 20.0,
@@ -3841,7 +3841,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type1-2": {
+    "nature-trees-type1-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3854,7 +3854,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type1-3": {
+    "nature-trees-type1-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3867,7 +3867,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type1-4": {
+    "nature-trees-type1-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3880,7 +3880,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-1": {
+    "nature-trees-type2-1": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -3893,7 +3893,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-2": {
+    "nature-trees-type2-2": {
         "layer": 2,
         "offset": {
             "x": 4.0,
@@ -3906,7 +3906,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-3": {
+    "nature-trees-type2-3": {
         "layer": 2,
         "offset": {
             "x": 6.0,
@@ -3919,7 +3919,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-4": {
+    "nature-trees-type2-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3932,7 +3932,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-5": {
+    "nature-trees-type2-5": {
         "layer": 2,
         "offset": {
             "x": 3.0,
@@ -3945,7 +3945,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type2-6": {
+    "nature-trees-type2-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -3958,7 +3958,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-1": {
+    "nature-trees-type3-1": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -3971,7 +3971,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-2": {
+    "nature-trees-type3-2": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -3984,7 +3984,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-3": {
+    "nature-trees-type3-3": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -3997,7 +3997,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-4": {
+    "nature-trees-type3-4": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -4010,7 +4010,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-5": {
+    "nature-trees-type3-5": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -4023,7 +4023,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type3-6": {
+    "nature-trees-type3-6": {
         "layer": 2,
         "offset": {
             "x": -7.0,
@@ -4036,7 +4036,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-1": {
+    "nature-trees-type4-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4049,7 +4049,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-10": {
+    "nature-trees-type4-10": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4062,7 +4062,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-11": {
+    "nature-trees-type4-11": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4075,7 +4075,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-12": {
+    "nature-trees-type4-12": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4088,7 +4088,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-13": {
+    "nature-trees-type4-13": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4101,7 +4101,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-14": {
+    "nature-trees-type4-14": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4114,7 +4114,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-15": {
+    "nature-trees-type4-15": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4127,7 +4127,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-16": {
+    "nature-trees-type4-16": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4140,7 +4140,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-17": {
+    "nature-trees-type4-17": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4153,7 +4153,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-18": {
+    "nature-trees-type4-18": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4166,7 +4166,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-2": {
+    "nature-trees-type4-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4179,7 +4179,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-3": {
+    "nature-trees-type4-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4192,7 +4192,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-4": {
+    "nature-trees-type4-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4205,7 +4205,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-5": {
+    "nature-trees-type4-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4218,7 +4218,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-6": {
+    "nature-trees-type4-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4231,7 +4231,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-7": {
+    "nature-trees-type4-7": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4244,7 +4244,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-8": {
+    "nature-trees-type4-8": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4257,7 +4257,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type4-9": {
+    "nature-trees-type4-9": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4270,7 +4270,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type5-1": {
+    "nature-trees-type5-1": {
         "layer": 2,
         "offset": {
             "x": -2.0,
@@ -4283,7 +4283,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type5-2": {
+    "nature-trees-type5-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4296,7 +4296,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type5-3": {
+    "nature-trees-type5-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4309,7 +4309,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type5-4": {
+    "nature-trees-type5-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4322,7 +4322,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-1": {
+    "nature-trees-type6-1": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4335,7 +4335,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-10": {
+    "nature-trees-type6-10": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4348,7 +4348,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-11": {
+    "nature-trees-type6-11": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4361,7 +4361,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-12": {
+    "nature-trees-type6-12": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4374,7 +4374,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-13": {
+    "nature-trees-type6-13": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4387,7 +4387,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-2": {
+    "nature-trees-type6-2": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4400,7 +4400,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-3": {
+    "nature-trees-type6-3": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4413,7 +4413,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-4": {
+    "nature-trees-type6-4": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4426,7 +4426,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-5": {
+    "nature-trees-type6-5": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4439,7 +4439,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-6": {
+    "nature-trees-type6-6": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4452,7 +4452,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-7": {
+    "nature-trees-type6-7": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4465,7 +4465,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-8": {
+    "nature-trees-type6-8": {
         "layer": 2,
         "offset": {
             "x": 0.0,
@@ -4478,7 +4478,7 @@
             }
         ]
     },
-    "tiles-nature-trees-type6-9": {
+    "nature-trees-type6-9": {
         "layer": 2,
         "offset": {
             "x": 0.0,

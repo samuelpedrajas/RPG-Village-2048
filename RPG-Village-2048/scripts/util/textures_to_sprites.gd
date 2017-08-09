@@ -9,7 +9,12 @@ var current_pos = Vector2(0, 0)
 var h_spacing = 16
 var v_spacing = 512
 
-var current_layer = 2
+var current_layer = 0
+
+var utils = load("res://scripts/util/utils.gd").new()
+
+var json_path = "res://scripts/autoload/tilemap_generator/tile_info.json"
+var big_json = utils.load_json(json_path)
 
 func _get_full_path(categories):
 	var path = TILES_PATH
@@ -18,7 +23,6 @@ func _get_full_path(categories):
 		path += category + "/"
 
 	return path
-
 
 func _get_file_name(file_path):
 	var file_name = file_path.substr(0, file_path.length())
@@ -52,23 +56,16 @@ func _recursive_import(dir_path, categories):
 func _run():
 	_recursive_import(TILES_PATH, [])
 
-func _load_json(file_path):
-	var d = {}
-	var file = File.new()
-	file.open(file_path, file.READ)
-	d.parse_json(file.get_as_text())
-	file.close()
-	return d
-
 func _create_sprite(file_path):
-	var info = _load_json(file_path.replace(".tex", ".json"))
+	var name = _get_file_name(file_path)
+	var info = big_json[name]
 	if info.layer != current_layer:
 		return
 	var s = Sprite.new()
 	var t = ResourceLoader.load(file_path)
 
 	s.set_texture(t)
-	s.set_name(_get_file_name(file_path))
+	s.set_name(name)
 	s.set_pos(current_pos)
 	s.set_offset(Vector2(info.offset.x, info.offset.y))
 	get_scene().add_child(s)

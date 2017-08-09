@@ -1,8 +1,7 @@
 import json
 import os
 
-PREFIX = "../RPG-Village-2048/"
-INPUT_PATH = os.path.join(PREFIX, "tiles")
+INPUT_PATH = "../Assets/"
 OUTPUT_FILE = "../RPG-Village-2048/scripts/autoload/tilemap_generator/tile_info.json"
 
 def read_json_file(filepath):
@@ -16,7 +15,7 @@ def write_json_file(d, file_path):
 		f.write(s)
 
 def get_name(file_path):
-	return file_path.replace(PREFIX, "").replace("/", "-").replace(".json", "")
+	return file_path.replace(INPUT_PATH, "").replace("/", "-").replace(".json", "")
 
 def main(input_path, output_path):
 	big_json = read_json_file(output_path)
