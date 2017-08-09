@@ -14,25 +14,25 @@ func print_matrix(M):
 		s += "\n"
 	print(s, "\r")
 
-func _dump_dict_recursive(d, s, t):
+func dump_dict_recursive(d, s, t):
 	s += "{\n"
 	t += "\t"
 	for key in d.keys():
 		var value = d[key]
 		s += t + str(key) + ": "
 		if (typeof(value) == TYPE_DICTIONARY):
-			s = _dump_dict_recursive(value, s, t + "\t") + t + "},\n"
+			s = dump_dict_recursive(value, s, t + "\t") + t + "},\n"
 		else:
 			s += str(value) + ",\n"
 	return s
 
-func _dump_to_file(s, path):
+func dump_to_file(s, path):
 	var f = File.new()
 
 	f.open(path, f.WRITE)
 	f.store_string(s)
 	f.close()
 
-func _dump_dict(d, fn):
-	var output = _dump_dict_recursive(d, "", "")
-	_dump_to_file(output, DEFAULT_PATH + fn + ".log")
+func dump_dict(d, fn):
+	var output = dump_dict_recursive(d, "", "")
+	dump_to_file(output, DEFAULT_PATH + fn + ".log")

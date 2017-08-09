@@ -1,5 +1,6 @@
 extends Node
 
+const BIG_JSON_PATH = "res://scripts/autoload/tilemap_generator/tile_info.json"
 const N_TILEMAPS = 9
 const TILESET_PATHS = {
 	0: "res://tilesets/layer0_tileset.tres",
@@ -33,11 +34,16 @@ var realistic_probabilities = {}
 # main matrix
 var M = [[-1]]
 
+# containing used cells
+var big_json = {}
+
 # results
 var tilemaps = []
 
 # debugging tools
 var db = load("res://scripts/util/debugging_tools.gd").new()
+
+var utils = load("res://scripts/util/utils.gd").new()
 
 ########## OUTPUT FUNCTION ##########
 
@@ -69,7 +75,8 @@ func init_probabilities():
 		# for each tile, get its categories and dig across the tree
 		for tile_id in tileset.get_tiles_ids():
 			var tile_name = tileset.tile_get_name(tile_id)
-			build_tree(default_probabilities[i], tile_name.split("-"), tileset, tile_id)
+			build_tree(default_probabilities[i], tile_name.split("-"),
+					   tileset, tile_id, tile_name)
 
 		# even probability distribution in every level
 		even_spread(default_probabilities[i])
@@ -78,6 +85,15 @@ func init_name2id():
 	for tileset in tilesets.values():
 		for tile_id in tileset.get_tiles_ids():
 			name2id[tileset.tile_get_name(tile_id)] = tile_id
+
+########## LOAD FUNCTIONS ##########
+
+func load_tilesets():
+	for key in TILESET_PATHS:
+		tilesets[key] = load(TILESET_PATHS[key])
+
+func load_big_json():
+	big_json = utils.load_json(BIG_JSON_PATH)
 
 ########## INIT HELPER FUNCTIONS ##########
 
@@ -91,14 +107,14 @@ func even_spread(t):
 		if "d" in c.keys():
 			even_spread(c.d)
 
-func build_tree(d, categories, tileset, tile_id):
+func build_tree(d, categories, tileset, tile_id, tile_name):
 	var c = categories[0]
 
 	if categories.size() == 1:
 		d[c] = {}
 		d[c]["p"] = 0
 		d[c]["id"] = tile_id
-		d[c]["size"] = get_tile_dimensions(tile_id, tileset)
+		d[c]["used_cells"] = big_json[tile_name]["used_cells"]
 	else:
 		categories.remove(0)
 		if !d.has(c):
@@ -106,13 +122,7 @@ func build_tree(d, categories, tileset, tile_id):
 				"p": 0,
 				"d": {}
 			}
-		build_tree(d[c].d, categories, tileset, tile_id)
-
-########## LOAD FUNCTIONS ##########
-
-func load_tilesets():
-	for key in TILESET_PATHS:
-		tilesets[key] = load(TILESET_PATHS[key])
+		build_tree(d[c].d, categories, tileset, tile_id, tile_name)
 
 ########## PUT AND SELECT STUFF FUNCTIONS ##########
 
@@ -241,15 +251,11 @@ func get_complete_tilemap(l0, l1, l2):
 
 	return tilemap
 
-func get_tile_dimensions(tile_id, tileset):
-	var t = tileset.tile_get_texture(tile_id)
-
-	return Vector2(ceil(t.get_width()  / CELL_SIZE.x), ceil(t.get_height() / CELL_SIZE.y))
-
 ########## MAIN ##########
 
 func create_tilemaps():
 	randomize()
+	load_big_json()  # load big json
 	load_tilesets()  # load tilesets in tilesets global
 	init_probabilities()  # init probability tree
 	init_name2id()  # make a structure to translate from name to id
