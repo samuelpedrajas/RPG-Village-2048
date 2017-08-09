@@ -9,7 +9,7 @@ var current_pos = Vector2(0, 0)
 var h_spacing = 16
 var v_spacing = 512
 
-var current_layer = 0
+var current_layer = 2
 
 func _get_full_path(categories):
 	var path = TILES_PATH
