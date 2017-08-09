@@ -36,7 +36,7 @@ func _increase_value():
 func _set_texture():
 	if has_node("tilemap"):
 		remove_child(get_node("tilemap"))
-	add_child(token_tilemap_generator.get_tilemap(level))
+	add_child(tilemap_generator.get_tilemap(level))
 
 func _interpolated_move(pos):
 	var world_current_pos = get_parent().map_to_world(current_pos)

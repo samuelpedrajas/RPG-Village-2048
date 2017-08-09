@@ -11,7 +11,7 @@ var board
 onready var token = preload("res://scenes/token.tscn")
 
 func _ready():
-	token_tilemap_generator.create_tilemaps()
+	tilemap_generator.create_tilemaps()
 	input_handler = get_node("input_handler")
 	input_handler.connect("user_input", self, "move")
 	tween = get_node("tween")
