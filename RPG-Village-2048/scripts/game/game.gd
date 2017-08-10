@@ -12,7 +12,7 @@ onready var token = preload("res://scenes/token.tscn")
 
 ########## DEBUG MODE - REMOVE ##########
 
-const DEBUG_MODE = true
+const DEBUG_MODE = false
 
 func _debug_func():
 	tween = get_node("tween")
@@ -26,7 +26,6 @@ func _debug_func():
 			board.add_child(t)
 			t.setup(Vector2(j, i), tween, lvl)
 			lvl += 1
-
 
 ########## END DEBUG MODE ##########
 

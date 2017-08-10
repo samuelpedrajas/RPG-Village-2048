@@ -24,18 +24,13 @@ const V_OFFSET = 10
 
 var tilesets = {}
 
-# name2id["nature-blah-1"] = 129
-var name2id = {}
-
 # probability trees
-var default_probabilities = {}
-var realistic_probabilities = {}
+var probability_tree = load(
+	"res://scripts/autoload/tilemap_generator/probability_tree.gd"
+).new()
 
 # main matrix
 var M = [[-1]]
-
-# containing used cells
-var big_json = {}
 
 # results
 var tilemaps = []
@@ -66,81 +61,13 @@ func init_map(layer_index, level):
 
 	return layer
 
-func init_probabilities():
-	for i in range(3):
-		var tileset = tilesets[i]
-		var tiles = []
-		default_probabilities[i] = {}
-
-		# for each tile, get its categories and dig across the tree
-		for tile_id in tileset.get_tiles_ids():
-			var tile_name = tileset.tile_get_name(tile_id)
-			build_tree(default_probabilities[i], tile_name.split("-"),
-					   tileset, tile_id, tile_name)
-
-		# even probability distribution in every level
-		even_spread(default_probabilities[i])
-
-func init_name2id():
-	for tileset in tilesets.values():
-		for tile_id in tileset.get_tiles_ids():
-			name2id[tileset.tile_get_name(tile_id)] = tile_id
-
 ########## LOAD FUNCTIONS ##########
 
 func load_tilesets():
 	for key in TILESET_PATHS:
 		tilesets[key] = load(TILESET_PATHS[key])
 
-func load_big_json():
-	big_json = utils.load_json(BIG_JSON_PATH)
-
-########## INIT HELPER FUNCTIONS ##########
-
-func even_spread(t):
-	var keys = t.keys()
-	var p = (1.0 / keys.size()) * 100
-
-	for key in keys:
-		var c = t[key]
-		c.p = p
-		if "d" in c.keys():
-			even_spread(c.d)
-
-func build_tree(d, categories, tileset, tile_id, tile_name):
-	var c = categories[0]
-
-	if categories.size() == 1:
-		d[c] = {}
-		d[c]["p"] = 0
-		d[c]["id"] = tile_id
-		d[c]["used_cells"] = big_json[tile_name]["used_cells"]
-	else:
-		categories.remove(0)
-		if !d.has(c):
-			d[c] = {
-				"p": 0,
-				"d": {}
-			}
-		build_tree(d[c].d, categories, tileset, tile_id, tile_name)
-
 ########## PUT AND SELECT STUFF FUNCTIONS ##########
-
-func pick_random_tile(t):
-	var acc = 0.0
-	var r = randi() % 100
-
-	for key in t.keys():
-		var c = t[key]
-		var p = c.p
-		acc += p
-
-		if acc < r:
-			continue
-
-		if "d" in c.keys():
-			return pick_random_tile(c.d)
-		return c
 
 func pick_random_pos(i):
 	var w = M.size()
@@ -163,7 +90,7 @@ func put_stuff(layer, i):
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
 	if p.x != -1:
 		var map_position = p + offset
-		var tile = pick_random_tile(default_probabilities[2])
+		var tile = probability_tree.layer(2).pick_random_tile()
 		M[p.x][p.y] = tile.id
 		layer.set_cell(map_position.x, map_position.y, tile.id)
 
@@ -184,29 +111,29 @@ func put_floor(layer, level):
 	for i in range(total_size.x):
 		for j in range(total_size.y):
 			var cell_pos = Vector2(i, j)
-			var tile = name2id["floor-water-water"]
+			var tile = probability_tree.layer(0).get("floor-water-water")
 
 			if center.has_point(cell_pos):
-				tile = name2id["floor-grass-grass"]
+				tile = probability_tree.layer(0).get("floor-grass-grass")
 			elif cell_pos == Vector2(bounds.down, bounds.left):
-				tile = name2id["floor-water-out_corner-right"]
+				tile = probability_tree.layer(0).get("floor-water-out_corner-right")
 			elif cell_pos == Vector2(bounds.down, bounds.right):
-				tile = name2id["floor-water-out_corner-down"]
+				tile = probability_tree.layer(0).get("floor-water-out_corner-down")
 			elif cell_pos == Vector2(bounds.up, bounds.right):
-				tile = name2id["floor-water-out_corner-left"]
+				tile = probability_tree.layer(0).get("floor-water-out_corner-left")
 			elif cell_pos == Vector2(bounds.up, bounds.left):
-				tile = name2id["floor-water-out_corner-up"]
+				tile = probability_tree.layer(0).get("floor-water-out_corner-up")
 			elif big_center.has_point(cell_pos): 
 				if cell_pos.x == bounds.right:
-					tile = name2id["floor-water-borders-right"]
+					tile = probability_tree.layer(0).get("floor-water-borders-right")
 				elif cell_pos.y == bounds.down:
-					tile = name2id["floor-water-borders-down"]
+					tile = probability_tree.layer(0).get("floor-water-borders-down")
 				elif cell_pos.x == bounds.left:
-					tile = name2id["floor-water-borders-left"]
+					tile = probability_tree.layer(0).get("floor-water-borders-left")
 				elif cell_pos.y == bounds.up:
-					tile = name2id["floor-water-borders-up"]
+					tile = probability_tree.layer(0).get("floor-water-borders-up")
 
-			layer.set_cell(i, j, tile)
+			layer.set_cell(i, j, tile.id)
 
 ########## MATRIX FUNCTIONS ##########
 
@@ -255,10 +182,8 @@ func get_complete_tilemap(l0, l1, l2):
 
 func create_tilemaps():
 	randomize()
-	load_big_json()  # load big json
 	load_tilesets()  # load tilesets in tilesets global
-	init_probabilities()  # init probability tree
-	init_name2id()  # make a structure to translate from name to id
+	probability_tree.setup(tilesets)
 	for i in range(0, N_TILEMAPS):
 		# initialise layers
 		var layer0 = init_map(0, i)

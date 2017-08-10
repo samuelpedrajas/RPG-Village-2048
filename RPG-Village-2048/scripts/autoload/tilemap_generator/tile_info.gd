@@ -1,4 +1,6 @@
-{
+extends Node
+
+const big_dict = {
     "floor-grass-flower_grass": {
         "layer": 0,
         "offset": {
