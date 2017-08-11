@@ -1,0 +1,2138 @@
+[gd_scene load_steps=313 format=1]
+
+[ext_resource path="res://tiles/nature/grass/tall/5.tex" type="Texture" id=1]
+[ext_resource path="res://tiles/nature/grass/tall/1.tex" type="Texture" id=2]
+[ext_resource path="res://tiles/nature/grass/tall/2.tex" type="Texture" id=3]
+[ext_resource path="res://tiles/nature/grass/tall/7.tex" type="Texture" id=4]
+[ext_resource path="res://tiles/nature/grass/tall/6.tex" type="Texture" id=5]
+[ext_resource path="res://tiles/nature/grass/tall/3.tex" type="Texture" id=6]
+[ext_resource path="res://tiles/nature/grass/tall/4.tex" type="Texture" id=7]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/10.tex" type="Texture" id=8]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/5.tex" type="Texture" id=9]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/8.tex" type="Texture" id=10]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/1.tex" type="Texture" id=11]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/11.tex" type="Texture" id=12]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/9.tex" type="Texture" id=13]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/2.tex" type="Texture" id=14]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/7.tex" type="Texture" id=15]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/6.tex" type="Texture" id=16]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/3.tex" type="Texture" id=17]
+[ext_resource path="res://tiles/nature/grass/plants/disperse/4.tex" type="Texture" id=18]
+[ext_resource path="res://tiles/nature/grass/plants/floor/1.tex" type="Texture" id=19]
+[ext_resource path="res://tiles/nature/grass/flowers/dispersed/5.tex" type="Texture" id=20]
+[ext_resource path="res://tiles/nature/grass/flowers/dispersed/1.tex" type="Texture" id=21]
+[ext_resource path="res://tiles/nature/grass/flowers/dispersed/2.tex" type="Texture" id=22]
+[ext_resource path="res://tiles/nature/grass/flowers/dispersed/3.tex" type="Texture" id=23]
+[ext_resource path="res://tiles/nature/grass/flowers/dispersed/4.tex" type="Texture" id=24]
+[ext_resource path="res://tiles/nature/grass/flowers/floor/1.tex" type="Texture" id=25]
+[ext_resource path="res://tiles/nature/grass/flowers/floor/2.tex" type="Texture" id=26]
+[ext_resource path="res://tiles/nature/grass/flowers/floor/3.tex" type="Texture" id=27]
+[ext_resource path="res://tiles/nature/trees/palm_trees/10.tex" type="Texture" id=28]
+[ext_resource path="res://tiles/nature/trees/palm_trees/5.tex" type="Texture" id=29]
+[ext_resource path="res://tiles/nature/trees/palm_trees/8.tex" type="Texture" id=30]
+[ext_resource path="res://tiles/nature/trees/palm_trees/1.tex" type="Texture" id=31]
+[ext_resource path="res://tiles/nature/trees/palm_trees/9.tex" type="Texture" id=32]
+[ext_resource path="res://tiles/nature/trees/palm_trees/2.tex" type="Texture" id=33]
+[ext_resource path="res://tiles/nature/trees/palm_trees/7.tex" type="Texture" id=34]
+[ext_resource path="res://tiles/nature/trees/palm_trees/6.tex" type="Texture" id=35]
+[ext_resource path="res://tiles/nature/trees/palm_trees/3.tex" type="Texture" id=36]
+[ext_resource path="res://tiles/nature/trees/palm_trees/4.tex" type="Texture" id=37]
+[ext_resource path="res://tiles/nature/trees/flower_trees/1.tex" type="Texture" id=38]
+[ext_resource path="res://tiles/nature/trees/flower_trees/2.tex" type="Texture" id=39]
+[ext_resource path="res://tiles/nature/trees/flower_trees/3.tex" type="Texture" id=40]
+[ext_resource path="res://tiles/nature/trees/flower_trees/4.tex" type="Texture" id=41]
+[ext_resource path="res://tiles/nature/trees/type6/12.tex" type="Texture" id=42]
+[ext_resource path="res://tiles/nature/trees/type6/10.tex" type="Texture" id=43]
+[ext_resource path="res://tiles/nature/trees/type6/5.tex" type="Texture" id=44]
+[ext_resource path="res://tiles/nature/trees/type6/8.tex" type="Texture" id=45]
+[ext_resource path="res://tiles/nature/trees/type6/1.tex" type="Texture" id=46]
+[ext_resource path="res://tiles/nature/trees/type6/11.tex" type="Texture" id=47]
+[ext_resource path="res://tiles/nature/trees/type6/9.tex" type="Texture" id=48]
+[ext_resource path="res://tiles/nature/trees/type6/2.tex" type="Texture" id=49]
+[ext_resource path="res://tiles/nature/trees/type6/13.tex" type="Texture" id=50]
+[ext_resource path="res://tiles/nature/trees/type6/7.tex" type="Texture" id=51]
+[ext_resource path="res://tiles/nature/trees/type6/6.tex" type="Texture" id=52]
+[ext_resource path="res://tiles/nature/trees/type6/3.tex" type="Texture" id=53]
+[ext_resource path="res://tiles/nature/trees/type6/4.tex" type="Texture" id=54]
+[ext_resource path="res://tiles/nature/trees/type5/1.tex" type="Texture" id=55]
+[ext_resource path="res://tiles/nature/trees/type5/2.tex" type="Texture" id=56]
+[ext_resource path="res://tiles/nature/trees/type5/3.tex" type="Texture" id=57]
+[ext_resource path="res://tiles/nature/trees/type5/4.tex" type="Texture" id=58]
+[ext_resource path="res://tiles/nature/trees/type4/12.tex" type="Texture" id=59]
+[ext_resource path="res://tiles/nature/trees/type4/18.tex" type="Texture" id=60]
+[ext_resource path="res://tiles/nature/trees/type4/15.tex" type="Texture" id=61]
+[ext_resource path="res://tiles/nature/trees/type4/10.tex" type="Texture" id=62]
+[ext_resource path="res://tiles/nature/trees/type4/5.tex" type="Texture" id=63]
+[ext_resource path="res://tiles/nature/trees/type4/8.tex" type="Texture" id=64]
+[ext_resource path="res://tiles/nature/trees/type4/1.tex" type="Texture" id=65]
+[ext_resource path="res://tiles/nature/trees/type4/11.tex" type="Texture" id=66]
+[ext_resource path="res://tiles/nature/trees/type4/9.tex" type="Texture" id=67]
+[ext_resource path="res://tiles/nature/trees/type4/16.tex" type="Texture" id=68]
+[ext_resource path="res://tiles/nature/trees/type4/17.tex" type="Texture" id=69]
+[ext_resource path="res://tiles/nature/trees/type4/2.tex" type="Texture" id=70]
+[ext_resource path="res://tiles/nature/trees/type4/13.tex" type="Texture" id=71]
+[ext_resource path="res://tiles/nature/trees/type4/14.tex" type="Texture" id=72]
+[ext_resource path="res://tiles/nature/trees/type4/7.tex" type="Texture" id=73]
+[ext_resource path="res://tiles/nature/trees/type4/6.tex" type="Texture" id=74]
+[ext_resource path="res://tiles/nature/trees/type4/3.tex" type="Texture" id=75]
+[ext_resource path="res://tiles/nature/trees/type4/4.tex" type="Texture" id=76]
+[ext_resource path="res://tiles/nature/trees/type2/5.tex" type="Texture" id=77]
+[ext_resource path="res://tiles/nature/trees/type2/1.tex" type="Texture" id=78]
+[ext_resource path="res://tiles/nature/trees/type2/2.tex" type="Texture" id=79]
+[ext_resource path="res://tiles/nature/trees/type2/6.tex" type="Texture" id=80]
+[ext_resource path="res://tiles/nature/trees/type2/3.tex" type="Texture" id=81]
+[ext_resource path="res://tiles/nature/trees/type2/4.tex" type="Texture" id=82]
+[ext_resource path="res://tiles/nature/trees/pine_trees/5.tex" type="Texture" id=83]
+[ext_resource path="res://tiles/nature/trees/pine_trees/1.tex" type="Texture" id=84]
+[ext_resource path="res://tiles/nature/trees/pine_trees/2.tex" type="Texture" id=85]
+[ext_resource path="res://tiles/nature/trees/pine_trees/6.tex" type="Texture" id=86]
+[ext_resource path="res://tiles/nature/trees/pine_trees/3.tex" type="Texture" id=87]
+[ext_resource path="res://tiles/nature/trees/pine_trees/4.tex" type="Texture" id=88]
+[ext_resource path="res://tiles/nature/trees/type3/5.tex" type="Texture" id=89]
+[ext_resource path="res://tiles/nature/trees/type3/1.tex" type="Texture" id=90]
+[ext_resource path="res://tiles/nature/trees/type3/2.tex" type="Texture" id=91]
+[ext_resource path="res://tiles/nature/trees/type3/6.tex" type="Texture" id=92]
+[ext_resource path="res://tiles/nature/trees/type3/3.tex" type="Texture" id=93]
+[ext_resource path="res://tiles/nature/trees/type3/4.tex" type="Texture" id=94]
+[ext_resource path="res://tiles/nature/trees/type1/1.tex" type="Texture" id=95]
+[ext_resource path="res://tiles/nature/trees/type1/2.tex" type="Texture" id=96]
+[ext_resource path="res://tiles/nature/trees/type1/3.tex" type="Texture" id=97]
+[ext_resource path="res://tiles/nature/trees/type1/4.tex" type="Texture" id=98]
+[ext_resource path="res://tiles/nature/plants/carnivour/5.tex" type="Texture" id=99]
+[ext_resource path="res://tiles/nature/plants/carnivour/1.tex" type="Texture" id=100]
+[ext_resource path="res://tiles/nature/plants/carnivour/2.tex" type="Texture" id=101]
+[ext_resource path="res://tiles/nature/plants/carnivour/7.tex" type="Texture" id=102]
+[ext_resource path="res://tiles/nature/plants/carnivour/6.tex" type="Texture" id=103]
+[ext_resource path="res://tiles/nature/plants/carnivour/3.tex" type="Texture" id=104]
+[ext_resource path="res://tiles/nature/plants/carnivour/4.tex" type="Texture" id=105]
+[ext_resource path="res://tiles/nature/plants/bushes/multiple_bush/1.tex" type="Texture" id=106]
+[ext_resource path="res://tiles/nature/plants/bushes/multiple_bush/2.tex" type="Texture" id=107]
+[ext_resource path="res://tiles/nature/plants/bushes/multiple_bush/3.tex" type="Texture" id=108]
+[ext_resource path="res://tiles/nature/plants/bushes/multiple_bush/4.tex" type="Texture" id=109]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/12.tex" type="Texture" id=110]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/18.tex" type="Texture" id=111]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/15.tex" type="Texture" id=112]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/10.tex" type="Texture" id=113]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/5.tex" type="Texture" id=114]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/20.tex" type="Texture" id=115]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/8.tex" type="Texture" id=116]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/1.tex" type="Texture" id=117]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/11.tex" type="Texture" id=118]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/9.tex" type="Texture" id=119]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/16.tex" type="Texture" id=120]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/17.tex" type="Texture" id=121]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/2.tex" type="Texture" id=122]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/13.tex" type="Texture" id=123]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/14.tex" type="Texture" id=124]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/19.tex" type="Texture" id=125]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/7.tex" type="Texture" id=126]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/6.tex" type="Texture" id=127]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/3.tex" type="Texture" id=128]
+[ext_resource path="res://tiles/nature/plants/bushes/single_bush/4.tex" type="Texture" id=129]
+[ext_resource path="res://tiles/nature/plants/pink/1.tex" type="Texture" id=130]
+[ext_resource path="res://tiles/nature/plants/pink/2.tex" type="Texture" id=131]
+[ext_resource path="res://tiles/nature/plants/pink/3.tex" type="Texture" id=132]
+[ext_resource path="res://tiles/nature/plants/spiral.tex" type="Texture" id=133]
+[ext_resource path="res://tiles/nature/plants/palm/5.tex" type="Texture" id=134]
+[ext_resource path="res://tiles/nature/plants/palm/1.tex" type="Texture" id=135]
+[ext_resource path="res://tiles/nature/plants/palm/2.tex" type="Texture" id=136]
+[ext_resource path="res://tiles/nature/plants/palm/7.tex" type="Texture" id=137]
+[ext_resource path="res://tiles/nature/plants/palm/6.tex" type="Texture" id=138]
+[ext_resource path="res://tiles/nature/plants/palm/3.tex" type="Texture" id=139]
+[ext_resource path="res://tiles/nature/plants/palm/4.tex" type="Texture" id=140]
+[ext_resource path="res://tiles/nature/animals/zebra.tex" type="Texture" id=141]
+[ext_resource path="res://tiles/nature/animals/giraffe.tex" type="Texture" id=142]
+[ext_resource path="res://tiles/nature/animals/elephant.tex" type="Texture" id=143]
+[ext_resource path="res://tiles/nature/animals/lion.tex" type="Texture" id=144]
+[ext_resource path="res://tiles/nature/animals/croco.tex" type="Texture" id=145]
+[ext_resource path="res://tiles/nature/animals/leopard.tex" type="Texture" id=146]
+[ext_resource path="res://tiles/nature/animals/rhyno.tex" type="Texture" id=147]
+[ext_resource path="res://tiles/nature/animals/hypo.tex" type="Texture" id=148]
+[ext_resource path="res://tiles/nature/animals/buffalo.tex" type="Texture" id=149]
+[ext_resource path="res://tiles/nature/resources/bronze/1.tex" type="Texture" id=150]
+[ext_resource path="res://tiles/nature/resources/bronze/2.tex" type="Texture" id=151]
+[ext_resource path="res://tiles/nature/resources/bronze/3.tex" type="Texture" id=152]
+[ext_resource path="res://tiles/nature/resources/gold/1.tex" type="Texture" id=153]
+[ext_resource path="res://tiles/nature/resources/gold/2.tex" type="Texture" id=154]
+[ext_resource path="res://tiles/nature/resources/gold/3.tex" type="Texture" id=155]
+[ext_resource path="res://tiles/nature/resources/silver/1.tex" type="Texture" id=156]
+[ext_resource path="res://tiles/nature/resources/silver/2.tex" type="Texture" id=157]
+[ext_resource path="res://tiles/nature/resources/silver/3.tex" type="Texture" id=158]
+[ext_resource path="res://tiles/nature/resources/stone/5.tex" type="Texture" id=159]
+[ext_resource path="res://tiles/nature/resources/stone/8.tex" type="Texture" id=160]
+[ext_resource path="res://tiles/nature/resources/stone/1.tex" type="Texture" id=161]
+[ext_resource path="res://tiles/nature/resources/stone/9.tex" type="Texture" id=162]
+[ext_resource path="res://tiles/nature/resources/stone/2.tex" type="Texture" id=163]
+[ext_resource path="res://tiles/nature/resources/stone/7.tex" type="Texture" id=164]
+[ext_resource path="res://tiles/nature/resources/stone/6.tex" type="Texture" id=165]
+[ext_resource path="res://tiles/nature/resources/stone/3.tex" type="Texture" id=166]
+[ext_resource path="res://tiles/nature/resources/stone/4.tex" type="Texture" id=167]
+[ext_resource path="res://tiles/floor/water/water.tex" type="Texture" id=168]
+[ext_resource path="res://tiles/floor/water/borders/left.tex" type="Texture" id=169]
+[ext_resource path="res://tiles/floor/water/borders/up.tex" type="Texture" id=170]
+[ext_resource path="res://tiles/floor/water/borders/right.tex" type="Texture" id=171]
+[ext_resource path="res://tiles/floor/water/borders/down.tex" type="Texture" id=172]
+[ext_resource path="res://tiles/floor/water/in_corners/left.tex" type="Texture" id=173]
+[ext_resource path="res://tiles/floor/water/in_corners/up.tex" type="Texture" id=174]
+[ext_resource path="res://tiles/floor/water/in_corners/right.tex" type="Texture" id=175]
+[ext_resource path="res://tiles/floor/water/in_corners/down.tex" type="Texture" id=176]
+[ext_resource path="res://tiles/floor/water/out_corner/left.tex" type="Texture" id=177]
+[ext_resource path="res://tiles/floor/water/out_corner/up.tex" type="Texture" id=178]
+[ext_resource path="res://tiles/floor/water/out_corner/right.tex" type="Texture" id=179]
+[ext_resource path="res://tiles/floor/water/out_corner/down.tex" type="Texture" id=180]
+[ext_resource path="res://tiles/floor/grass/tall_grass.tex" type="Texture" id=181]
+[ext_resource path="res://tiles/floor/grass/grass.tex" type="Texture" id=182]
+[ext_resource path="res://tiles/floor/grass/flower_grass.tex" type="Texture" id=183]
+[ext_resource path="res://tiles/human/characters/sword_man/attacking2.tex" type="Texture" id=184]
+[ext_resource path="res://tiles/human/characters/sword_man/defending.tex" type="Texture" id=185]
+[ext_resource path="res://tiles/human/characters/sword_man/walking.tex" type="Texture" id=186]
+[ext_resource path="res://tiles/human/characters/sword_man/dying.tex" type="Texture" id=187]
+[ext_resource path="res://tiles/human/characters/sword_man/sliding.tex" type="Texture" id=188]
+[ext_resource path="res://tiles/human/characters/sword_man/attacking.tex" type="Texture" id=189]
+[ext_resource path="res://tiles/human/characters/healer/attacking2.tex" type="Texture" id=190]
+[ext_resource path="res://tiles/human/characters/healer/defending.tex" type="Texture" id=191]
+[ext_resource path="res://tiles/human/characters/healer/walking.tex" type="Texture" id=192]
+[ext_resource path="res://tiles/human/characters/healer/dying.tex" type="Texture" id=193]
+[ext_resource path="res://tiles/human/characters/healer/healing.tex" type="Texture" id=194]
+[ext_resource path="res://tiles/human/characters/healer/sliding.tex" type="Texture" id=195]
+[ext_resource path="res://tiles/human/characters/healer/attacking.tex" type="Texture" id=196]
+[ext_resource path="res://tiles/human/characters/archer/dying2.tex" type="Texture" id=197]
+[ext_resource path="res://tiles/human/characters/archer/defending.tex" type="Texture" id=198]
+[ext_resource path="res://tiles/human/characters/archer/walking.tex" type="Texture" id=199]
+[ext_resource path="res://tiles/human/characters/archer/dying.tex" type="Texture" id=200]
+[ext_resource path="res://tiles/human/characters/archer/falling.tex" type="Texture" id=201]
+[ext_resource path="res://tiles/human/characters/archer/sliding.tex" type="Texture" id=202]
+[ext_resource path="res://tiles/human/characters/archer/attacking.tex" type="Texture" id=203]
+[ext_resource path="res://tiles/human/forest/houses/double.tex" type="Texture" id=204]
+[ext_resource path="res://tiles/human/forest/houses/tend.tex" type="Texture" id=205]
+[ext_resource path="res://tiles/human/forest/houses/regular.tex" type="Texture" id=206]
+[ext_resource path="res://tiles/human/forest/caves/gold.tex" type="Texture" id=207]
+[ext_resource path="res://tiles/human/forest/caves/stone.tex" type="Texture" id=208]
+[ext_resource path="res://tiles/human/forest/caves/silver.tex" type="Texture" id=209]
+[ext_resource path="res://tiles/human/forest/wood/working_place.tex" type="Texture" id=210]
+[ext_resource path="res://tiles/human/forest/wood/wall.tex" type="Texture" id=211]
+[ext_resource path="res://tiles/human/forest/wood/post.tex" type="Texture" id=212]
+[ext_resource path="res://tiles/human/street/misc/walls/1.tex" type="Texture" id=213]
+[ext_resource path="res://tiles/human/street/misc/walls/2.tex" type="Texture" id=214]
+[ext_resource path="res://tiles/human/street/misc/walls/3.tex" type="Texture" id=215]
+[ext_resource path="res://tiles/human/street/misc/other/fountain.tex" type="Texture" id=216]
+[ext_resource path="res://tiles/human/street/misc/other/light_post.tex" type="Texture" id=217]
+[ext_resource path="res://tiles/human/street/misc/other/well.tex" type="Texture" id=218]
+[ext_resource path="res://tiles/human/street/misc/other/magic_tower.tex" type="Texture" id=219]
+[ext_resource path="res://tiles/human/street/misc/other/portal.tex" type="Texture" id=220]
+[ext_resource path="res://tiles/human/street/misc/arrows/1.tex" type="Texture" id=221]
+[ext_resource path="res://tiles/human/street/misc/arrows/2.tex" type="Texture" id=222]
+[ext_resource path="res://tiles/human/street/misc/arrows/3.tex" type="Texture" id=223]
+[ext_resource path="res://tiles/human/street/misc/arrows/4.tex" type="Texture" id=224]
+[ext_resource path="res://tiles/human/street/misc/gates/1.tex" type="Texture" id=225]
+[ext_resource path="res://tiles/human/street/misc/gates/2.tex" type="Texture" id=226]
+[ext_resource path="res://tiles/human/street/misc/chests/1.tex" type="Texture" id=227]
+[ext_resource path="res://tiles/human/street/misc/chests/2.tex" type="Texture" id=228]
+[ext_resource path="res://tiles/human/street/misc/trees/1.tex" type="Texture" id=229]
+[ext_resource path="res://tiles/human/street/misc/trees/2.tex" type="Texture" id=230]
+[ext_resource path="res://tiles/human/street/misc/trees/apple_tree.tex" type="Texture" id=231]
+[ext_resource path="res://tiles/human/street/buildings/12.tex" type="Texture" id=232]
+[ext_resource path="res://tiles/human/street/buildings/21.tex" type="Texture" id=233]
+[ext_resource path="res://tiles/human/street/buildings/18.tex" type="Texture" id=234]
+[ext_resource path="res://tiles/human/street/buildings/26.tex" type="Texture" id=235]
+[ext_resource path="res://tiles/human/street/buildings/15.tex" type="Texture" id=236]
+[ext_resource path="res://tiles/human/street/buildings/28.tex" type="Texture" id=237]
+[ext_resource path="res://tiles/human/street/buildings/10.tex" type="Texture" id=238]
+[ext_resource path="res://tiles/human/street/buildings/24.tex" type="Texture" id=239]
+[ext_resource path="res://tiles/human/street/buildings/5.tex" type="Texture" id=240]
+[ext_resource path="res://tiles/human/street/buildings/20.tex" type="Texture" id=241]
+[ext_resource path="res://tiles/human/street/buildings/8.tex" type="Texture" id=242]
+[ext_resource path="res://tiles/human/street/buildings/22.tex" type="Texture" id=243]
+[ext_resource path="res://tiles/human/street/buildings/1.tex" type="Texture" id=244]
+[ext_resource path="res://tiles/human/street/buildings/11.tex" type="Texture" id=245]
+[ext_resource path="res://tiles/human/street/buildings/9.tex" type="Texture" id=246]
+[ext_resource path="res://tiles/human/street/buildings/16.tex" type="Texture" id=247]
+[ext_resource path="res://tiles/human/street/buildings/23.tex" type="Texture" id=248]
+[ext_resource path="res://tiles/human/street/buildings/17.tex" type="Texture" id=249]
+[ext_resource path="res://tiles/human/street/buildings/2.tex" type="Texture" id=250]
+[ext_resource path="res://tiles/human/street/buildings/27.tex" type="Texture" id=251]
+[ext_resource path="res://tiles/human/street/buildings/25.tex" type="Texture" id=252]
+[ext_resource path="res://tiles/human/street/buildings/13.tex" type="Texture" id=253]
+[ext_resource path="res://tiles/human/street/buildings/14.tex" type="Texture" id=254]
+[ext_resource path="res://tiles/human/street/buildings/19.tex" type="Texture" id=255]
+[ext_resource path="res://tiles/human/street/buildings/7.tex" type="Texture" id=256]
+[ext_resource path="res://tiles/human/street/buildings/6.tex" type="Texture" id=257]
+[ext_resource path="res://tiles/human/street/buildings/3.tex" type="Texture" id=258]
+[ext_resource path="res://tiles/human/street/buildings/4.tex" type="Texture" id=259]
+[ext_resource path="res://tiles/human/street/road/left.tex" type="Texture" id=260]
+[ext_resource path="res://tiles/human/street/road/up.tex" type="Texture" id=261]
+[ext_resource path="res://tiles/human/street/road/right.tex" type="Texture" id=262]
+[ext_resource path="res://tiles/human/street/road/down.tex" type="Texture" id=263]
+[ext_resource path="res://tiles/human/street/road/road.tex" type="Texture" id=264]
+[ext_resource path="res://tiles/human/street/towers/1.tex" type="Texture" id=265]
+[ext_resource path="res://tiles/human/street/towers/2.tex" type="Texture" id=266]
+[ext_resource path="res://tiles/human/street/towers/3.tex" type="Texture" id=267]
+[ext_resource path="res://tiles/human/street/castles/1.tex" type="Texture" id=268]
+[ext_resource path="res://tiles/human/street/castles/2.tex" type="Texture" id=269]
+[ext_resource path="res://tiles/human/street/castles/3.tex" type="Texture" id=270]
+[ext_resource path="res://tiles/human/resources/containers/empty/1.tex" type="Texture" id=271]
+[ext_resource path="res://tiles/human/resources/containers/empty/2.tex" type="Texture" id=272]
+[ext_resource path="res://tiles/human/resources/containers/empty/3.tex" type="Texture" id=273]
+[ext_resource path="res://tiles/human/resources/containers/full/1.tex" type="Texture" id=274]
+[ext_resource path="res://tiles/human/resources/containers/full/2.tex" type="Texture" id=275]
+[ext_resource path="res://tiles/human/resources/containers/full/3.tex" type="Texture" id=276]
+[ext_resource path="res://tiles/human/resources/containers/full/4.tex" type="Texture" id=277]
+[ext_resource path="res://tiles/human/resources/containers/closed/1.tex" type="Texture" id=278]
+[ext_resource path="res://tiles/human/resources/containers/closed/2.tex" type="Texture" id=279]
+[ext_resource path="res://tiles/human/resources/containers/closed/3.tex" type="Texture" id=280]
+[ext_resource path="res://tiles/human/resources/containers/closed/4.tex" type="Texture" id=281]
+[ext_resource path="res://tiles/human/resources/bronze/1.tex" type="Texture" id=282]
+[ext_resource path="res://tiles/human/resources/bronze/2.tex" type="Texture" id=283]
+[ext_resource path="res://tiles/human/resources/bronze/3.tex" type="Texture" id=284]
+[ext_resource path="res://tiles/human/resources/farming/12.tex" type="Texture" id=285]
+[ext_resource path="res://tiles/human/resources/farming/10.tex" type="Texture" id=286]
+[ext_resource path="res://tiles/human/resources/farming/5.tex" type="Texture" id=287]
+[ext_resource path="res://tiles/human/resources/farming/8.tex" type="Texture" id=288]
+[ext_resource path="res://tiles/human/resources/farming/1.tex" type="Texture" id=289]
+[ext_resource path="res://tiles/human/resources/farming/11.tex" type="Texture" id=290]
+[ext_resource path="res://tiles/human/resources/farming/9.tex" type="Texture" id=291]
+[ext_resource path="res://tiles/human/resources/farming/2.tex" type="Texture" id=292]
+[ext_resource path="res://tiles/human/resources/farming/13.tex" type="Texture" id=293]
+[ext_resource path="res://tiles/human/resources/farming/14.tex" type="Texture" id=294]
+[ext_resource path="res://tiles/human/resources/farming/7.tex" type="Texture" id=295]
+[ext_resource path="res://tiles/human/resources/farming/6.tex" type="Texture" id=296]
+[ext_resource path="res://tiles/human/resources/farming/3.tex" type="Texture" id=297]
+[ext_resource path="res://tiles/human/resources/farming/4.tex" type="Texture" id=298]
+[ext_resource path="res://tiles/human/resources/gold/1.tex" type="Texture" id=299]
+[ext_resource path="res://tiles/human/resources/gold/2.tex" type="Texture" id=300]
+[ext_resource path="res://tiles/human/resources/gold/3.tex" type="Texture" id=301]
+[ext_resource path="res://tiles/human/resources/silver/1.tex" type="Texture" id=302]
+[ext_resource path="res://tiles/human/resources/silver/2.tex" type="Texture" id=303]
+[ext_resource path="res://tiles/human/resources/silver/3.tex" type="Texture" id=304]
+[ext_resource path="res://tiles/human/resources/wood/1.tex" type="Texture" id=305]
+[ext_resource path="res://tiles/human/resources/wood/2.tex" type="Texture" id=306]
+[ext_resource path="res://tiles/human/resources/wood/3.tex" type="Texture" id=307]
+[ext_resource path="res://tiles/human/resources/wood/4.tex" type="Texture" id=308]
+[ext_resource path="res://tiles/human/resources/stone/1.tex" type="Texture" id=309]
+[ext_resource path="res://tiles/human/resources/stone/2.tex" type="Texture" id=310]
+[ext_resource path="res://tiles/human/resources/stone/3.tex" type="Texture" id=311]
+[ext_resource path="res://tiles/human/resources/stone/4.tex" type="Texture" id=312]
+
+[node name="token_tileset_edit" type="Node"]
+
+[node name="nature-grass-tall-5" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+offset = Vector2( 4, -10 )
+
+[node name="nature-grass-tall-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 123, 0 )
+texture = ExtResource( 2 )
+offset = Vector2( 9, -21 )
+
+[node name="nature-grass-tall-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 222, 0 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -27 )
+
+[node name="nature-grass-tall-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 304, 0 )
+texture = ExtResource( 4 )
+offset = Vector2( -3, -20 )
+
+[node name="nature-grass-tall-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 447, 0 )
+texture = ExtResource( 5 )
+offset = Vector2( 0, -13 )
+
+[node name="nature-grass-tall-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 587, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 0, -24 )
+
+[node name="nature-grass-tall-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 716, 0 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, -10 )
+
+[node name="nature-grass-plants-disperse-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 836, 0 )
+texture = ExtResource( 8 )
+offset = Vector2( -7, -6 )
+
+[node name="nature-grass-plants-disperse-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 940, 0 )
+texture = ExtResource( 9 )
+offset = Vector2( -11, -9 )
+
+[node name="nature-grass-plants-disperse-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1060, 0 )
+texture = ExtResource( 10 )
+offset = Vector2( -7, -5 )
+
+[node name="nature-grass-plants-disperse-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1195, 0 )
+texture = ExtResource( 11 )
+offset = Vector2( 8, 0 )
+
+[node name="nature-grass-plants-disperse-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1316, 0 )
+texture = ExtResource( 12 )
+
+[node name="nature-grass-plants-disperse-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1361, 0 )
+texture = ExtResource( 13 )
+offset = Vector2( 3, -20 )
+
+[node name="nature-grass-plants-disperse-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1494, 0 )
+texture = ExtResource( 14 )
+offset = Vector2( 2, -5 )
+
+[node name="nature-grass-plants-disperse-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1627, 0 )
+texture = ExtResource( 15 )
+offset = Vector2( 3, -5 )
+
+[node name="nature-grass-plants-disperse-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1760, 0 )
+texture = ExtResource( 16 )
+
+[node name="nature-grass-plants-disperse-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1805, 0 )
+texture = ExtResource( 17 )
+offset = Vector2( 0, -3 )
+
+[node name="nature-grass-plants-disperse-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1932, 0 )
+texture = ExtResource( 18 )
+offset = Vector2( 3, -14 )
+
+[node name="nature-grass-plants-floor-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 512 )
+texture = ExtResource( 19 )
+
+[node name="nature-grass-flowers-dispersed-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 158, 512 )
+texture = ExtResource( 20 )
+
+[node name="nature-grass-flowers-dispersed-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 241, 512 )
+texture = ExtResource( 21 )
+offset = Vector2( 0, 10 )
+
+[node name="nature-grass-flowers-dispersed-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 366, 512 )
+texture = ExtResource( 22 )
+
+[node name="nature-grass-flowers-dispersed-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 439, 512 )
+texture = ExtResource( 23 )
+offset = Vector2( -7, -2 )
+
+[node name="nature-grass-flowers-dispersed-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 519, 512 )
+texture = ExtResource( 24 )
+
+[node name="nature-grass-flowers-floor-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 620, 512 )
+texture = ExtResource( 25 )
+
+[node name="nature-grass-flowers-floor-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 769, 512 )
+texture = ExtResource( 26 )
+
+[node name="nature-grass-flowers-floor-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 923, 512 )
+texture = ExtResource( 27 )
+
+[node name="nature-trees-palm_trees-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1072, 512 )
+texture = ExtResource( 28 )
+offset = Vector2( 31, -42 )
+
+[node name="nature-trees-palm_trees-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1178, 512 )
+texture = ExtResource( 29 )
+offset = Vector2( 0, -27 )
+
+[node name="nature-trees-palm_trees-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1286, 512 )
+texture = ExtResource( 30 )
+offset = Vector2( -16, -40 )
+
+[node name="nature-trees-palm_trees-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1370, 512 )
+texture = ExtResource( 31 )
+offset = Vector2( -11, -44 )
+
+[node name="nature-trees-palm_trees-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1484, 512 )
+texture = ExtResource( 32 )
+offset = Vector2( 0, -34 )
+
+[node name="nature-trees-palm_trees-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1612, 512 )
+texture = ExtResource( 33 )
+offset = Vector2( -21, -33 )
+
+[node name="nature-trees-palm_trees-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1708, 512 )
+texture = ExtResource( 34 )
+offset = Vector2( 28, -43 )
+
+[node name="nature-trees-palm_trees-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1817, 512 )
+texture = ExtResource( 35 )
+offset = Vector2( -2, -41 )
+
+[node name="nature-trees-palm_trees-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1962, 512 )
+texture = ExtResource( 36 )
+offset = Vector2( -2, -43 )
+
+[node name="nature-trees-palm_trees-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 1024 )
+texture = ExtResource( 37 )
+offset = Vector2( 5, -42 )
+
+[node name="nature-trees-flower_trees-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 137, 1024 )
+texture = ExtResource( 38 )
+offset = Vector2( 5, -30 )
+
+[node name="nature-trees-flower_trees-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 224, 1024 )
+texture = ExtResource( 39 )
+offset = Vector2( 5, -31 )
+
+[node name="nature-trees-flower_trees-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 311, 1024 )
+texture = ExtResource( 40 )
+offset = Vector2( 5, -29 )
+
+[node name="nature-trees-flower_trees-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 398, 1024 )
+texture = ExtResource( 41 )
+offset = Vector2( 5, -27 )
+
+[node name="nature-trees-type6-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 485, 1024 )
+texture = ExtResource( 42 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 592, 1024 )
+texture = ExtResource( 43 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 699, 1024 )
+texture = ExtResource( 44 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 817, 1024 )
+texture = ExtResource( 45 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 924, 1024 )
+texture = ExtResource( 46 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1042, 1024 )
+texture = ExtResource( 47 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1149, 1024 )
+texture = ExtResource( 48 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1256, 1024 )
+texture = ExtResource( 49 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1364, 1024 )
+texture = ExtResource( 50 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1471, 1024 )
+texture = ExtResource( 51 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1589, 1024 )
+texture = ExtResource( 52 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1707, 1024 )
+texture = ExtResource( 53 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type6-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1825, 1024 )
+texture = ExtResource( 54 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type5-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1943, 1024 )
+texture = ExtResource( 55 )
+offset = Vector2( -2, -37 )
+
+[node name="nature-trees-type5-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 1536 )
+texture = ExtResource( 56 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type5-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 122, 1536 )
+texture = ExtResource( 57 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type5-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 243, 1536 )
+texture = ExtResource( 58 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 361, 1536 )
+texture = ExtResource( 59 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-18" type="Sprite" parent="."]
+
+transform/pos = Vector2( 460, 1536 )
+texture = ExtResource( 60 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-15" type="Sprite" parent="."]
+
+transform/pos = Vector2( 588, 1536 )
+texture = ExtResource( 61 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 717, 1536 )
+texture = ExtResource( 62 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 816, 1536 )
+texture = ExtResource( 63 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 936, 1536 )
+texture = ExtResource( 64 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1035, 1536 )
+texture = ExtResource( 65 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1155, 1536 )
+texture = ExtResource( 66 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1254, 1536 )
+texture = ExtResource( 67 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-16" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1353, 1536 )
+texture = ExtResource( 68 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-17" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1482, 1536 )
+texture = ExtResource( 69 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1611, 1536 )
+texture = ExtResource( 70 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1731, 1536 )
+texture = ExtResource( 71 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-14" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1860, 1536 )
+texture = ExtResource( 72 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1988, 1536 )
+texture = ExtResource( 73 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-trees-type4-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 2048 )
+texture = ExtResource( 74 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 120, 2048 )
+texture = ExtResource( 75 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type4-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 2048 )
+texture = ExtResource( 76 )
+offset = Vector2( 0, -40 )
+
+[node name="nature-trees-type2-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 360, 2048 )
+texture = ExtResource( 77 )
+offset = Vector2( 3, -38 )
+
+[node name="nature-trees-type2-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 483, 2048 )
+texture = ExtResource( 78 )
+offset = Vector2( 3, -37 )
+
+[node name="nature-trees-type2-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 605, 2048 )
+texture = ExtResource( 79 )
+offset = Vector2( 4, -40 )
+
+[node name="nature-trees-type2-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 728, 2048 )
+texture = ExtResource( 80 )
+offset = Vector2( 0, -35 )
+
+[node name="nature-trees-type2-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 852, 2048 )
+texture = ExtResource( 81 )
+offset = Vector2( 6, -38 )
+
+[node name="nature-trees-type2-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 975, 2048 )
+texture = ExtResource( 82 )
+offset = Vector2( 0, -37 )
+
+[node name="nature-trees-pine_trees-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1098, 2048 )
+texture = ExtResource( 83 )
+offset = Vector2( 0, -43 )
+
+[node name="nature-trees-pine_trees-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1210, 2048 )
+texture = ExtResource( 84 )
+offset = Vector2( 0, -45 )
+
+[node name="nature-trees-pine_trees-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1328, 2048 )
+texture = ExtResource( 85 )
+offset = Vector2( 0, -45 )
+
+[node name="nature-trees-pine_trees-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1444, 2048 )
+texture = ExtResource( 86 )
+offset = Vector2( 0, -44 )
+
+[node name="nature-trees-pine_trees-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1556, 2048 )
+texture = ExtResource( 87 )
+offset = Vector2( 0, -44 )
+
+[node name="nature-trees-pine_trees-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1669, 2048 )
+texture = ExtResource( 88 )
+offset = Vector2( 0, -42 )
+
+[node name="nature-trees-type3-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1781, 2048 )
+texture = ExtResource( 89 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type3-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1912, 2048 )
+texture = ExtResource( 90 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type3-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2043, 2048 )
+texture = ExtResource( 91 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type3-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 2560 )
+texture = ExtResource( 92 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type3-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 132, 2560 )
+texture = ExtResource( 93 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type3-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 263, 2560 )
+texture = ExtResource( 94 )
+offset = Vector2( -7, -36 )
+
+[node name="nature-trees-type1-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 394, 2560 )
+texture = ExtResource( 95 )
+offset = Vector2( 20, -51 )
+
+[node name="nature-trees-type1-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 538, 2560 )
+texture = ExtResource( 96 )
+offset = Vector2( 0, -53 )
+
+[node name="nature-trees-type1-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 685, 2560 )
+texture = ExtResource( 97 )
+offset = Vector2( 0, -54 )
+
+[node name="nature-trees-type1-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 832, 2560 )
+texture = ExtResource( 98 )
+offset = Vector2( 0, -54 )
+
+[node name="nature-plants-carnivour-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 979, 2560 )
+texture = ExtResource( 99 )
+offset = Vector2( -9, -21 )
+
+[node name="nature-plants-carnivour-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1052, 2560 )
+texture = ExtResource( 100 )
+offset = Vector2( -4, -37 )
+
+[node name="nature-plants-carnivour-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1153, 2560 )
+texture = ExtResource( 101 )
+offset = Vector2( 9, -41 )
+
+[node name="nature-plants-carnivour-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1263, 2560 )
+texture = ExtResource( 102 )
+offset = Vector2( 1, -19 )
+
+[node name="nature-plants-carnivour-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1388, 2560 )
+texture = ExtResource( 103 )
+offset = Vector2( -44, -60 )
+
+[node name="nature-plants-carnivour-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1548, 2560 )
+texture = ExtResource( 104 )
+offset = Vector2( -9, -40 )
+
+[node name="nature-plants-carnivour-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1610, 2560 )
+texture = ExtResource( 105 )
+offset = Vector2( 9, -47 )
+
+[node name="nature-plants-bushes-multiple_bush-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1678, 2560 )
+texture = ExtResource( 106 )
+offset = Vector2( -4, -9 )
+
+[node name="nature-plants-bushes-multiple_bush-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1816, 2560 )
+texture = ExtResource( 107 )
+offset = Vector2( 0, -11 )
+
+[node name="nature-plants-bushes-multiple_bush-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1919, 2560 )
+texture = ExtResource( 108 )
+offset = Vector2( 1, -8 )
+
+[node name="nature-plants-bushes-multiple_bush-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 3072 )
+texture = ExtResource( 109 )
+offset = Vector2( 1, -11 )
+
+[node name="nature-plants-bushes-single_bush-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 110, 3072 )
+texture = ExtResource( 110 )
+offset = Vector2( 3, 0 )
+
+[node name="nature-plants-bushes-single_bush-18" type="Sprite" parent="."]
+
+transform/pos = Vector2( 180, 3072 )
+texture = ExtResource( 111 )
+
+[node name="nature-plants-bushes-single_bush-15" type="Sprite" parent="."]
+
+transform/pos = Vector2( 256, 3072 )
+texture = ExtResource( 112 )
+offset = Vector2( 2, -2 )
+
+[node name="nature-plants-bushes-single_bush-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 346, 3072 )
+texture = ExtResource( 113 )
+offset = Vector2( 5, -10 )
+
+[node name="nature-plants-bushes-single_bush-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 422, 3072 )
+texture = ExtResource( 114 )
+offset = Vector2( -2, -6 )
+
+[node name="nature-plants-bushes-single_bush-20" type="Sprite" parent="."]
+
+transform/pos = Vector2( 525, 3072 )
+texture = ExtResource( 115 )
+offset = Vector2( 2, -3 )
+
+[node name="nature-plants-bushes-single_bush-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 601, 3072 )
+texture = ExtResource( 116 )
+offset = Vector2( 2, -3 )
+
+[node name="nature-plants-bushes-single_bush-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 691, 3072 )
+texture = ExtResource( 117 )
+offset = Vector2( 1, -12 )
+
+[node name="nature-plants-bushes-single_bush-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 790, 3072 )
+texture = ExtResource( 118 )
+
+[node name="nature-plants-bushes-single_bush-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 866, 3072 )
+texture = ExtResource( 119 )
+offset = Vector2( 5, -8 )
+
+[node name="nature-plants-bushes-single_bush-16" type="Sprite" parent="."]
+
+transform/pos = Vector2( 954, 3072 )
+texture = ExtResource( 120 )
+offset = Vector2( 3, -8 )
+
+[node name="nature-plants-bushes-single_bush-17" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1042, 3072 )
+texture = ExtResource( 121 )
+offset = Vector2( 7, -11 )
+
+[node name="nature-plants-bushes-single_bush-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1118, 3072 )
+texture = ExtResource( 122 )
+offset = Vector2( 0, -25 )
+
+[node name="nature-plants-bushes-single_bush-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1246, 3072 )
+texture = ExtResource( 123 )
+
+[node name="nature-plants-bushes-single_bush-14" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1322, 3072 )
+texture = ExtResource( 124 )
+offset = Vector2( 5, -6 )
+
+[node name="nature-plants-bushes-single_bush-19" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1414, 3072 )
+texture = ExtResource( 125 )
+offset = Vector2( 6, 0 )
+
+[node name="nature-plants-bushes-single_bush-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1484, 3072 )
+texture = ExtResource( 126 )
+offset = Vector2( 5, -4 )
+
+[node name="nature-plants-bushes-single_bush-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1576, 3072 )
+texture = ExtResource( 127 )
+offset = Vector2( -3, -4 )
+
+[node name="nature-plants-bushes-single_bush-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1677, 3072 )
+texture = ExtResource( 128 )
+offset = Vector2( 0, -8 )
+
+[node name="nature-plants-bushes-single_bush-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1766, 3072 )
+texture = ExtResource( 129 )
+offset = Vector2( 0, -5 )
+
+[node name="nature-plants-pink-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1874, 3072 )
+texture = ExtResource( 130 )
+offset = Vector2( 4, -29 )
+
+[node name="nature-plants-pink-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1953, 3072 )
+texture = ExtResource( 131 )
+offset = Vector2( 11, -21 )
+
+[node name="nature-plants-pink-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2031, 3072 )
+texture = ExtResource( 132 )
+offset = Vector2( 4, -39 )
+
+[node name="nature-plants-spiral" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 3584 )
+texture = ExtResource( 133 )
+offset = Vector2( 0, -28 )
+
+[node name="nature-plants-palm-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 89, 3584 )
+texture = ExtResource( 134 )
+offset = Vector2( 5, -34 )
+
+[node name="nature-plants-palm-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 168, 3584 )
+texture = ExtResource( 135 )
+offset = Vector2( 6, -38 )
+
+[node name="nature-plants-palm-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 284, 3584 )
+texture = ExtResource( 136 )
+offset = Vector2( 1, -44 )
+
+[node name="nature-plants-palm-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 415, 3584 )
+texture = ExtResource( 137 )
+offset = Vector2( 8, -28 )
+
+[node name="nature-plants-palm-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 505, 3584 )
+texture = ExtResource( 138 )
+offset = Vector2( 8, -24 )
+
+[node name="nature-plants-palm-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 581, 3584 )
+texture = ExtResource( 139 )
+offset = Vector2( -20, -38 )
+
+[node name="nature-plants-palm-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 673, 3584 )
+texture = ExtResource( 140 )
+offset = Vector2( -19, -36 )
+
+[node name="nature-animals-zebra" type="Sprite" parent="."]
+
+transform/pos = Vector2( 781, 3584 )
+texture = ExtResource( 141 )
+offset = Vector2( -5, -21 )
+
+[node name="nature-animals-giraffe" type="Sprite" parent="."]
+
+transform/pos = Vector2( 866, 3584 )
+texture = ExtResource( 142 )
+offset = Vector2( -4, -43 )
+
+[node name="nature-animals-elephant" type="Sprite" parent="."]
+
+transform/pos = Vector2( 952, 3584 )
+texture = ExtResource( 143 )
+offset = Vector2( -4, -22 )
+
+[node name="nature-animals-lion" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1058, 3584 )
+texture = ExtResource( 144 )
+offset = Vector2( -4, -21 )
+
+[node name="nature-animals-croco" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1160, 3584 )
+texture = ExtResource( 145 )
+
+[node name="nature-animals-leopard" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1266, 3584 )
+texture = ExtResource( 146 )
+offset = Vector2( -6, -17 )
+
+[node name="nature-animals-rhyno" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1367, 3584 )
+texture = ExtResource( 147 )
+offset = Vector2( -8, -16 )
+
+[node name="nature-animals-hypo" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1473, 3584 )
+texture = ExtResource( 148 )
+offset = Vector2( -6, -14 )
+
+[node name="nature-animals-buffalo" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1579, 3584 )
+texture = ExtResource( 149 )
+offset = Vector2( -9, -19 )
+
+[node name="nature-resources-bronze-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1685, 3584 )
+texture = ExtResource( 150 )
+offset = Vector2( 3, -3 )
+
+[node name="nature-resources-bronze-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1781, 3584 )
+texture = ExtResource( 151 )
+offset = Vector2( 4, -2 )
+
+[node name="nature-resources-bronze-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1880, 3584 )
+texture = ExtResource( 152 )
+offset = Vector2( 0, -4 )
+
+[node name="nature-resources-gold-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1979, 3584 )
+texture = ExtResource( 153 )
+offset = Vector2( 4, -3 )
+
+[node name="nature-resources-gold-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 4096 )
+texture = ExtResource( 154 )
+offset = Vector2( 2, -2 )
+
+[node name="nature-resources-gold-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 84, 4096 )
+texture = ExtResource( 155 )
+
+[node name="nature-resources-silver-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 188, 4096 )
+texture = ExtResource( 156 )
+offset = Vector2( 4, -3 )
+
+[node name="nature-resources-silver-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 278, 4096 )
+texture = ExtResource( 157 )
+offset = Vector2( 3, -2 )
+
+[node name="nature-resources-silver-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 363, 4096 )
+texture = ExtResource( 158 )
+
+[node name="nature-resources-stone-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 468, 4096 )
+texture = ExtResource( 159 )
+offset = Vector2( 0, -8 )
+
+[node name="nature-resources-stone-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 589, 4096 )
+texture = ExtResource( 160 )
+offset = Vector2( 0, -6 )
+
+[node name="nature-resources-stone-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 696, 4096 )
+texture = ExtResource( 161 )
+offset = Vector2( 3, -2 )
+
+[node name="nature-resources-stone-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 792, 4096 )
+texture = ExtResource( 162 )
+offset = Vector2( 0, -11 )
+
+[node name="nature-resources-stone-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 909, 4096 )
+texture = ExtResource( 163 )
+
+[node name="nature-resources-stone-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1008, 4096 )
+texture = ExtResource( 164 )
+offset = Vector2( 0, -4 )
+
+[node name="nature-resources-stone-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1104, 4096 )
+texture = ExtResource( 165 )
+offset = Vector2( 0, -11 )
+
+[node name="nature-resources-stone-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1220, 4096 )
+texture = ExtResource( 166 )
+offset = Vector2( 0, -3 )
+
+[node name="nature-resources-stone-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1319, 4096 )
+texture = ExtResource( 167 )
+offset = Vector2( -4, -2 )
+
+[node name="floor-water-water" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1433, 4096 )
+texture = ExtResource( 168 )
+
+[node name="floor-water-borders-left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1600, 4096 )
+texture = ExtResource( 169 )
+
+[node name="floor-water-borders-up" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1767, 4096 )
+texture = ExtResource( 170 )
+
+[node name="floor-water-borders-right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1934, 4096 )
+texture = ExtResource( 171 )
+
+[node name="floor-water-borders-down" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 4608 )
+texture = ExtResource( 172 )
+
+[node name="floor-water-in_corners-left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 167, 4608 )
+texture = ExtResource( 173 )
+
+[node name="floor-water-in_corners-up" type="Sprite" parent="."]
+
+transform/pos = Vector2( 334, 4608 )
+texture = ExtResource( 174 )
+
+[node name="floor-water-in_corners-right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 501, 4608 )
+texture = ExtResource( 175 )
+
+[node name="floor-water-in_corners-down" type="Sprite" parent="."]
+
+transform/pos = Vector2( 668, 4608 )
+texture = ExtResource( 176 )
+
+[node name="floor-water-out_corner-left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 835, 4608 )
+texture = ExtResource( 177 )
+
+[node name="floor-water-out_corner-up" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1002, 4608 )
+texture = ExtResource( 178 )
+
+[node name="floor-water-out_corner-right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1169, 4608 )
+texture = ExtResource( 179 )
+
+[node name="floor-water-out_corner-down" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1336, 4608 )
+texture = ExtResource( 180 )
+
+[node name="floor-grass-tall_grass" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1503, 4608 )
+texture = ExtResource( 181 )
+
+[node name="floor-grass-grass" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1670, 4608 )
+texture = ExtResource( 182 )
+
+[node name="floor-grass-flower_grass" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1837, 4608 )
+texture = ExtResource( 183 )
+
+[node name="human-characters-sword_man-attacking2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2004, 4608 )
+texture = ExtResource( 184 )
+offset = Vector2( 11, -25 )
+
+[node name="human-characters-sword_man-defending" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 5120 )
+texture = ExtResource( 185 )
+offset = Vector2( 0, -22 )
+
+[node name="human-characters-sword_man-walking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 87, 5120 )
+texture = ExtResource( 186 )
+offset = Vector2( -5, -22 )
+
+[node name="human-characters-sword_man-dying" type="Sprite" parent="."]
+
+transform/pos = Vector2( 163, 5120 )
+texture = ExtResource( 187 )
+offset = Vector2( 0, -9 )
+
+[node name="human-characters-sword_man-sliding" type="Sprite" parent="."]
+
+transform/pos = Vector2( 254, 5120 )
+texture = ExtResource( 188 )
+offset = Vector2( 0, -16 )
+
+[node name="human-characters-sword_man-attacking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 342, 5120 )
+texture = ExtResource( 189 )
+offset = Vector2( 8, -23 )
+
+[node name="human-characters-healer-attacking2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 450, 5120 )
+texture = ExtResource( 190 )
+offset = Vector2( 12, -25 )
+
+[node name="human-characters-healer-defending" type="Sprite" parent="."]
+
+transform/pos = Vector2( 545, 5120 )
+texture = ExtResource( 191 )
+offset = Vector2( 4, -28 )
+
+[node name="human-characters-healer-walking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 626, 5120 )
+texture = ExtResource( 192 )
+offset = Vector2( -4, -23 )
+
+[node name="human-characters-healer-dying" type="Sprite" parent="."]
+
+transform/pos = Vector2( 698, 5120 )
+texture = ExtResource( 193 )
+offset = Vector2( 0, -11 )
+
+[node name="human-characters-healer-healing" type="Sprite" parent="."]
+
+transform/pos = Vector2( 785, 5120 )
+texture = ExtResource( 194 )
+offset = Vector2( 2, -24 )
+
+[node name="human-characters-healer-sliding" type="Sprite" parent="."]
+
+transform/pos = Vector2( 866, 5120 )
+texture = ExtResource( 195 )
+offset = Vector2( 0, -14 )
+
+[node name="human-characters-healer-attacking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 955, 5120 )
+texture = ExtResource( 196 )
+offset = Vector2( 10, -27 )
+
+[node name="human-characters-archer-dying2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1044, 5120 )
+texture = ExtResource( 197 )
+offset = Vector2( -3, -8 )
+
+[node name="human-characters-archer-defending" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1135, 5120 )
+texture = ExtResource( 198 )
+offset = Vector2( -4, -24 )
+
+[node name="human-characters-archer-walking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1209, 5120 )
+texture = ExtResource( 199 )
+offset = Vector2( -1, -23 )
+
+[node name="human-characters-archer-dying" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1281, 5120 )
+texture = ExtResource( 200 )
+offset = Vector2( -4, -24 )
+
+[node name="human-characters-archer-falling" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1355, 5120 )
+texture = ExtResource( 201 )
+offset = Vector2( 0, -18 )
+
+[node name="human-characters-archer-sliding" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1429, 5120 )
+texture = ExtResource( 202 )
+offset = Vector2( -2, -15 )
+
+[node name="human-characters-archer-attacking" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1520, 5120 )
+texture = ExtResource( 203 )
+offset = Vector2( -2, -26 )
+
+[node name="human-forest-houses-double" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1596, 5120 )
+texture = ExtResource( 204 )
+offset = Vector2( 0, -42 )
+
+[node name="human-forest-houses-tend" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1709, 5120 )
+texture = ExtResource( 205 )
+offset = Vector2( 0, -19 )
+
+[node name="human-forest-houses-regular" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1846, 5120 )
+texture = ExtResource( 206 )
+offset = Vector2( 0, -38 )
+
+[node name="human-forest-caves-gold" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2002, 5120 )
+texture = ExtResource( 207 )
+offset = Vector2( 5, -12 )
+
+[node name="human-forest-caves-stone" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 5632 )
+texture = ExtResource( 208 )
+offset = Vector2( 6, -16 )
+
+[node name="human-forest-caves-silver" type="Sprite" parent="."]
+
+transform/pos = Vector2( 135, 5632 )
+texture = ExtResource( 209 )
+offset = Vector2( 5, -11 )
+
+[node name="human-forest-wood-working_place" type="Sprite" parent="."]
+
+transform/pos = Vector2( 274, 5632 )
+texture = ExtResource( 210 )
+offset = Vector2( 0, -29 )
+
+[node name="human-forest-wood-wall" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400, 5632 )
+texture = ExtResource( 211 )
+offset = Vector2( 0, -28 )
+
+[node name="human-forest-wood-post" type="Sprite" parent="."]
+
+transform/pos = Vector2( 517, 5632 )
+texture = ExtResource( 212 )
+offset = Vector2( 0, -40 )
+
+[node name="human-street-misc-walls-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 625, 5632 )
+texture = ExtResource( 213 )
+offset = Vector2( 0, -34 )
+
+[node name="human-street-misc-walls-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 728, 5632 )
+texture = ExtResource( 214 )
+offset = Vector2( -5, -38 )
+
+[node name="human-street-misc-walls-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 831, 5632 )
+texture = ExtResource( 215 )
+offset = Vector2( 0, -36 )
+
+[node name="human-street-misc-other-fountain" type="Sprite" parent="."]
+
+transform/pos = Vector2( 934, 5632 )
+texture = ExtResource( 216 )
+offset = Vector2( 0, -12 )
+
+[node name="human-street-misc-other-light_post" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1051, 5632 )
+texture = ExtResource( 217 )
+offset = Vector2( -9, -30 )
+
+[node name="human-street-misc-other-well" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1111, 5632 )
+texture = ExtResource( 218 )
+offset = Vector2( 0, -13 )
+
+[node name="human-street-misc-other-magic_tower" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1210, 5632 )
+texture = ExtResource( 219 )
+offset = Vector2( -1, -78 )
+
+[node name="human-street-misc-other-portal" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1311, 5632 )
+texture = ExtResource( 220 )
+offset = Vector2( 2, -31 )
+
+[node name="human-street-misc-arrows-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1427, 5632 )
+texture = ExtResource( 221 )
+offset = Vector2( 4, -10 )
+
+[node name="human-street-misc-arrows-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1496, 5632 )
+texture = ExtResource( 222 )
+offset = Vector2( -5, -12 )
+
+[node name="human-street-misc-arrows-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1565, 5632 )
+texture = ExtResource( 223 )
+offset = Vector2( 0, -9 )
+
+[node name="human-street-misc-arrows-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1640, 5632 )
+texture = ExtResource( 224 )
+offset = Vector2( 0, -10 )
+
+[node name="human-street-misc-gates-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1715, 5632 )
+texture = ExtResource( 225 )
+offset = Vector2( -42, -83 )
+
+[node name="human-street-misc-gates-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1892, 5632 )
+texture = ExtResource( 226 )
+offset = Vector2( -41, -82 )
+
+[node name="human-street-misc-chests-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 6144 )
+texture = ExtResource( 227 )
+offset = Vector2( -3, -13 )
+
+[node name="human-street-misc-chests-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 99, 6144 )
+texture = ExtResource( 228 )
+offset = Vector2( 1, -10 )
+
+[node name="human-street-misc-trees-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 183, 6144 )
+texture = ExtResource( 229 )
+offset = Vector2( -5, -78 )
+
+[node name="human-street-misc-trees-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 321, 6144 )
+texture = ExtResource( 230 )
+offset = Vector2( -3, -77 )
+
+[node name="human-street-misc-trees-apple_tree" type="Sprite" parent="."]
+
+transform/pos = Vector2( 457, 6144 )
+texture = ExtResource( 231 )
+offset = Vector2( 3, -64 )
+
+[node name="human-street-buildings-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 575, 6144 )
+texture = ExtResource( 232 )
+offset = Vector2( -4, -83 )
+
+[node name="human-street-buildings-21" type="Sprite" parent="."]
+
+transform/pos = Vector2( 801, 6144 )
+texture = ExtResource( 233 )
+offset = Vector2( 0, -64 )
+
+[node name="human-street-buildings-18" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1086, 6144 )
+texture = ExtResource( 234 )
+offset = Vector2( 0, -119 )
+
+[node name="human-street-buildings-26" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1331, 6144 )
+texture = ExtResource( 235 )
+offset = Vector2( 4, -114 )
+
+[node name="human-street-buildings-15" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1623, 6144 )
+texture = ExtResource( 236 )
+offset = Vector2( 0, -73 )
+
+[node name="human-street-buildings-28" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1890, 6144 )
+texture = ExtResource( 237 )
+offset = Vector2( 0, -75 )
+
+[node name="human-street-buildings-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 6656 )
+texture = ExtResource( 238 )
+offset = Vector2( -6, -63 )
+
+[node name="human-street-buildings-24" type="Sprite" parent="."]
+
+transform/pos = Vector2( 277, 6656 )
+texture = ExtResource( 239 )
+offset = Vector2( 0, -58 )
+
+[node name="human-street-buildings-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 554, 6656 )
+texture = ExtResource( 240 )
+offset = Vector2( 40, -51 )
+
+[node name="human-street-buildings-20" type="Sprite" parent="."]
+
+transform/pos = Vector2( 752, 6656 )
+texture = ExtResource( 241 )
+offset = Vector2( 0, -63 )
+
+[node name="human-street-buildings-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1024, 6656 )
+texture = ExtResource( 242 )
+offset = Vector2( 0, -82 )
+
+[node name="human-street-buildings-22" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1275, 6656 )
+texture = ExtResource( 243 )
+offset = Vector2( 0, -80 )
+
+[node name="human-street-buildings-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1561, 6656 )
+texture = ExtResource( 244 )
+offset = Vector2( 0, -90 )
+
+[node name="human-street-buildings-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1804, 6656 )
+texture = ExtResource( 245 )
+offset = Vector2( 7, -53 )
+
+[node name="human-street-buildings-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 7168 )
+texture = ExtResource( 246 )
+offset = Vector2( 0, -75 )
+
+[node name="human-street-buildings-16" type="Sprite" parent="."]
+
+transform/pos = Vector2( 301, 7168 )
+texture = ExtResource( 247 )
+offset = Vector2( 0, -89 )
+
+[node name="human-street-buildings-23" type="Sprite" parent="."]
+
+transform/pos = Vector2( 526, 7168 )
+texture = ExtResource( 248 )
+offset = Vector2( 2, -65 )
+
+[node name="human-street-buildings-17" type="Sprite" parent="."]
+
+transform/pos = Vector2( 837, 7168 )
+texture = ExtResource( 249 )
+offset = Vector2( 0, -109 )
+
+[node name="human-street-buildings-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1052, 7168 )
+texture = ExtResource( 250 )
+offset = Vector2( -2, -92 )
+
+[node name="human-street-buildings-27" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1310, 7168 )
+texture = ExtResource( 251 )
+offset = Vector2( -3, -121 )
+
+[node name="human-street-buildings-25" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1551, 7168 )
+texture = ExtResource( 252 )
+offset = Vector2( 0, -57 )
+
+[node name="human-street-buildings-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1816, 7168 )
+texture = ExtResource( 253 )
+offset = Vector2( 0, -105 )
+
+[node name="human-street-buildings-14" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2022, 7168 )
+texture = ExtResource( 254 )
+offset = Vector2( 0, -55 )
+
+[node name="human-street-buildings-19" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 7680 )
+texture = ExtResource( 255 )
+offset = Vector2( 36, -55 )
+
+[node name="human-street-buildings-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 302, 7680 )
+texture = ExtResource( 256 )
+offset = Vector2( 0, -85 )
+
+[node name="human-street-buildings-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 585, 7680 )
+texture = ExtResource( 257 )
+offset = Vector2( 4, -87 )
+
+[node name="human-street-buildings-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 803, 7680 )
+texture = ExtResource( 258 )
+offset = Vector2( -3, -82 )
+
+[node name="human-street-buildings-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1071, 7680 )
+texture = ExtResource( 259 )
+offset = Vector2( 33, -36 )
+
+[node name="human-street-road-left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1273, 7680 )
+texture = ExtResource( 260 )
+
+[node name="human-street-road-up" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1440, 7680 )
+texture = ExtResource( 261 )
+
+[node name="human-street-road-right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1607, 7680 )
+texture = ExtResource( 262 )
+
+[node name="human-street-road-down" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1774, 7680 )
+texture = ExtResource( 263 )
+
+[node name="human-street-road-road" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1941, 7680 )
+texture = ExtResource( 264 )
+
+[node name="human-street-towers-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 8192 )
+texture = ExtResource( 265 )
+offset = Vector2( 0, -70 )
+
+[node name="human-street-towers-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 109, 8192 )
+texture = ExtResource( 266 )
+offset = Vector2( -3, -53 )
+
+[node name="human-street-towers-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 282, 8192 )
+texture = ExtResource( 267 )
+offset = Vector2( 5, -57 )
+
+[node name="human-street-castles-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 412, 8192 )
+texture = ExtResource( 268 )
+offset = Vector2( -4, -112 )
+
+[node name="human-street-castles-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 784, 8192 )
+texture = ExtResource( 269 )
+offset = Vector2( 0, -157 )
+
+[node name="human-street-castles-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1205, 8192 )
+texture = ExtResource( 270 )
+offset = Vector2( 4, -159 )
+
+[node name="human-resources-containers-empty-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1564, 8192 )
+texture = ExtResource( 271 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-containers-empty-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1609, 8192 )
+texture = ExtResource( 272 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-containers-empty-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1654, 8192 )
+texture = ExtResource( 273 )
+offset = Vector2( 0, -5 )
+
+[node name="human-resources-containers-full-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1729, 8192 )
+texture = ExtResource( 274 )
+offset = Vector2( 0, -9 )
+
+[node name="human-resources-containers-full-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1774, 8192 )
+texture = ExtResource( 275 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-containers-full-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1848, 8192 )
+texture = ExtResource( 276 )
+offset = Vector2( 0, -13 )
+
+[node name="human-resources-containers-full-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1893, 8192 )
+texture = ExtResource( 277 )
+offset = Vector2( 0, -9 )
+
+[node name="human-resources-containers-closed-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1938, 8192 )
+texture = ExtResource( 278 )
+
+[node name="human-resources-containers-closed-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2011, 8192 )
+texture = ExtResource( 279 )
+offset = Vector2( 0, -5 )
+
+[node name="human-resources-containers-closed-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 8704 )
+texture = ExtResource( 280 )
+offset = Vector2( 0, -5 )
+
+[node name="human-resources-containers-closed-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 71, 8704 )
+texture = ExtResource( 281 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-bronze-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 160, 8704 )
+texture = ExtResource( 282 )
+
+[node name="human-resources-bronze-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 253, 8704 )
+texture = ExtResource( 283 )
+
+[node name="human-resources-bronze-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 346, 8704 )
+texture = ExtResource( 284 )
+
+[node name="human-resources-farming-12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 439, 8704 )
+texture = ExtResource( 285 )
+offset = Vector2( 3, -9 )
+
+[node name="human-resources-farming-10" type="Sprite" parent="."]
+
+transform/pos = Vector2( 595, 8704 )
+texture = ExtResource( 286 )
+offset = Vector2( 2, -3 )
+
+[node name="human-resources-farming-5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 751, 8704 )
+texture = ExtResource( 287 )
+offset = Vector2( 2, -12 )
+
+[node name="human-resources-farming-8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 907, 8704 )
+texture = ExtResource( 288 )
+offset = Vector2( 2, 2 )
+
+[node name="human-resources-farming-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1063, 8704 )
+texture = ExtResource( 289 )
+offset = Vector2( 3, 2 )
+
+[node name="human-resources-farming-11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1219, 8704 )
+texture = ExtResource( 290 )
+offset = Vector2( 3, -10 )
+
+[node name="human-resources-farming-9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1375, 8704 )
+texture = ExtResource( 291 )
+offset = Vector2( 2, 0 )
+
+[node name="human-resources-farming-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1531, 8704 )
+texture = ExtResource( 292 )
+offset = Vector2( 2, 3 )
+
+[node name="human-resources-farming-13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1679, 8704 )
+texture = ExtResource( 293 )
+offset = Vector2( 2, -9 )
+
+[node name="human-resources-farming-14" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1835, 8704 )
+texture = ExtResource( 294 )
+offset = Vector2( 2, -7 )
+
+[node name="human-resources-farming-7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1991, 8704 )
+texture = ExtResource( 295 )
+offset = Vector2( 3, 2 )
+
+[node name="human-resources-farming-6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 9216 )
+texture = ExtResource( 296 )
+offset = Vector2( 3, -12 )
+
+[node name="human-resources-farming-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 156, 9216 )
+texture = ExtResource( 297 )
+offset = Vector2( 2, 3 )
+
+[node name="human-resources-farming-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 312, 9216 )
+texture = ExtResource( 298 )
+
+[node name="human-resources-gold-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 468, 9216 )
+texture = ExtResource( 299 )
+
+[node name="human-resources-gold-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 561, 9216 )
+texture = ExtResource( 300 )
+
+[node name="human-resources-gold-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 654, 9216 )
+texture = ExtResource( 301 )
+
+[node name="human-resources-silver-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 747, 9216 )
+texture = ExtResource( 302 )
+
+[node name="human-resources-silver-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 841, 9216 )
+texture = ExtResource( 303 )
+
+[node name="human-resources-silver-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 938, 9216 )
+texture = ExtResource( 304 )
+
+[node name="human-resources-wood-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1034, 9216 )
+texture = ExtResource( 305 )
+offset = Vector2( 0, -9 )
+
+[node name="human-resources-wood-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1121, 9216 )
+texture = ExtResource( 306 )
+offset = Vector2( 0, -2 )
+
+[node name="human-resources-wood-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1208, 9216 )
+texture = ExtResource( 307 )
+
+[node name="human-resources-wood-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1295, 9216 )
+texture = ExtResource( 308 )
+
+[node name="human-resources-stone-1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1431, 9216 )
+texture = ExtResource( 309 )
+
+[node name="human-resources-stone-2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1537, 9216 )
+texture = ExtResource( 310 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-stone-3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1630, 9216 )
+texture = ExtResource( 311 )
+offset = Vector2( 0, -7 )
+
+[node name="human-resources-stone-4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1723, 9216 )
+texture = ExtResource( 312 )
+offset = Vector2( 0, -2 )
+
+

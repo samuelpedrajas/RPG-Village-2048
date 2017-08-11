@@ -45,7 +45,7 @@ func _interpolated_move(pos):
 	var d = (world_current_pos - pos).length()
 
 	# if it's close enough -> time to restore the opacity
-	if d < cnf.MERGE_THRESHOLD:
+	if d < cfg.MERGE_THRESHOLD:
 		if get_opacity() < 1:  # must check, otherwise opacity will be set more than once
 			set_opacity(1)
 		# if it's close enough and flagged as merge -> merge it
@@ -64,9 +64,9 @@ func _define_tweening():
 
 	# interpolate the position
 	tween.interpolate_method(self, "_interpolated_move", get_pos(), world_pos,
-							 cnf.ANIMATION_TIME, tween.TRANS_LINEAR, tween.EASE_IN)
+							 cfg.ANIMATION_TIME, tween.TRANS_LINEAR, tween.EASE_IN)
 	# decrease opacity for a smoother animation
-	set_opacity(cnf.MOVEMENT_OPACITY)
+	set_opacity(cfg.MOVEMENT_OPACITY)
 	# set Z properly, so we avoid problems with depth
 	_set_Z()
 

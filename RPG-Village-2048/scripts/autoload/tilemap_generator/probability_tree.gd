@@ -4,24 +4,32 @@ const N_LAYERS = 3
 
 var layers = []
 
+var db = null;
+
+func _get_tile_info(tile_name):
+	var res = db.fetch_array("SELECT * FROM tile_info WHERE tile_info.name='" + tile_name + "';")
+	return res[0]
+
 func layer(i):
 	return layers[i]
 
-func setup(tilesets):
+func setup(tileset):
+	db = utils.load_db(cfg.DB_PATH)
 	for i in range(N_LAYERS):
-		var tileset = tilesets[i]
 		var root = CategoryNode.new().setup("root")
+		layers.append(root)
 
-		# for each tile, get its categories and dig across the tree
-		for tile_id in tileset.get_tiles_ids():
-			var tile_name = tileset.tile_get_name(tile_id)
-			var tile_node = TileNode.new().setup(tile_id, tile_name)
+	# for each tile, get its categories and dig across the tree
+	for tile_id in tileset.get_tiles_ids():
+		var tile_name = tileset.tile_get_name(tile_id)
+		var tile_node = TileNode.new().setup(tile_id, tile_name)
+		var tile_info = _get_tile_info(tile_name)
+		layers[int(tile_info.layer)].insert(tile_node)
 
-			root.insert(tile_node)
-
+	for root in layers:
 		# even probability distribution in every level
 		root.even_spread()
-		layers.append(root)
+	db.close()
 
 	return self
 

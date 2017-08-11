@@ -52,7 +52,7 @@ func check_moves_available():
 		return
 
 	for current_cell in used_cells:
-		for d in cnf.DIRECTIONS:
+		for d in cfg.DIRECTIONS:
 			var v = current_cell - d.matrix_direction
 			if matrix.has(v) and matrix[v].level == matrix[current_cell].level:
 				return
@@ -67,7 +67,7 @@ func _set_direction_pivots():
 	# for each used cell, if it has no previous cell but it has a next one
 	# for a given direction, then it is a pivot for that direction
 	for cell_pos in used_cells:
-		for d in cnf.DIRECTIONS:
+		for d in cfg.DIRECTIONS:
 			var next_pos = (cell_pos + d.matrix_direction)
 			var prev_pos = (cell_pos - d.matrix_direction)
 			if next_pos in used_cells and !(prev_pos in used_cells):

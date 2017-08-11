@@ -10,11 +10,9 @@ var h_spacing = 16
 var v_spacing = 512
 
 var current_layer = 0
-
 var utils = load("res://scripts/util/utils.gd").new()
-
-var json_path = "res://scripts/autoload/tilemap_generator/tile_info.json"
-var big_json = utils.load_json(json_path)
+var cfg = load("res://scripts/autoload/cfg.gd").new()
+var db = utils.load_db(cfg.DB_PATH);
 
 func _get_full_path(categories):
 	var path = TILES_PATH
@@ -55,19 +53,25 @@ func _recursive_import(dir_path, categories):
 
 func _run():
 	_recursive_import(TILES_PATH, [])
+	db.close()
+
+func _get_tile_offset(name):
+	var res = db.fetch_array("SELECT offset_x, offset_y FROM tile_info WHERE tile_info.name='" + name + "';")
+	return {
+		"x": res[0]["offset_x"],
+		"y": res[0]["offset_y"]
+	}
 
 func _create_sprite(file_path):
 	var name = _get_file_name(file_path)
-	var info = big_json[name]
-	if info.layer != current_layer:
-		return
+	var offset = _get_tile_offset(name)
 	var s = Sprite.new()
 	var t = ResourceLoader.load(file_path)
 
 	s.set_texture(t)
 	s.set_name(name)
 	s.set_pos(current_pos)
-	s.set_offset(Vector2(info.offset.x, info.offset.y))
+	s.set_offset(Vector2(offset.x, offset.y))
 	get_scene().add_child(s)
 	s.set_owner(get_scene())
 	current_pos.x += t.get_width() + h_spacing

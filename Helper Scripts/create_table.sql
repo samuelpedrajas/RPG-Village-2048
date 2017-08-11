@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS tile_info (
+	name TEXT PRIMARY KEY,
+	layer INTEGER NOT NULL,
+	offset_x INTEGER NOT NULL,
+	offset_y INTEGER NOT NULL
+);

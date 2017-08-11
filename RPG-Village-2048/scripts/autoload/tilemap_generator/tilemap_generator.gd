@@ -1,12 +1,6 @@
 extends Node
 
-const BIG_JSON_PATH = "res://scripts/autoload/tilemap_generator/tile_info.json"
 const N_TILEMAPS = 9
-const TILESET_PATHS = {
-	0: "res://tilesets/layer0_tileset.tres",
-	1: "res://tilesets/layer1_tileset.tres",
-	2: "res://tilesets/layer2_tileset.tres"
-}
 const TILEMAP_SIZES = [
 	{"total": Vector2(5, 5), "usable": Vector2(1, 1)},
 	{"total": Vector2(5, 5), "usable": Vector2(3, 3)},
@@ -22,7 +16,8 @@ const TOKEN_SIZE = Vector2(532, 268)
 const CELL_SIZE = Vector2(151, 76)
 const V_OFFSET = 10
 
-var tilesets = {}
+const TILESET_PATH = "res://tilesets/token_tileset.tres"
+var tileset = load(TILESET_PATH)
 
 # probability trees
 var probability_tree = load(
@@ -35,11 +30,6 @@ var M = [[-1]]
 # results
 var tilemaps = []
 
-# debugging tools
-var db = load("res://scripts/util/debugging_tools.gd").new()
-
-var utils = load("res://scripts/util/utils.gd").new()
-
 ########## OUTPUT FUNCTION ##########
 
 func get_tilemap(level):
@@ -48,7 +38,6 @@ func get_tilemap(level):
 ########## INIT FUNCTIONS ##########
 
 func init_map(layer_index, level):
-	var tileset = tilesets[layer_index]  # get proper tileset
 	var layer = TileMap.new()
 	var scale = TOKEN_SIZE.x / (CELL_SIZE.x * TILEMAP_SIZES[level].total.x)
 
@@ -60,12 +49,6 @@ func init_map(layer_index, level):
 	layer.set_tile_origin(layer.TILE_ORIGIN_CENTER)
 
 	return layer
-
-########## LOAD FUNCTIONS ##########
-
-func load_tilesets():
-	for key in TILESET_PATHS:
-		tilesets[key] = load(TILESET_PATHS[key])
 
 ########## PUT AND SELECT STUFF FUNCTIONS ##########
 
@@ -182,8 +165,7 @@ func get_complete_tilemap(l0, l1, l2):
 
 func create_tilemaps():
 	randomize()
-	load_tilesets()  # load tilesets in tilesets global
-	probability_tree.setup(tilesets)
+	probability_tree.setup(tileset)
 	for i in range(0, N_TILEMAPS):
 		# initialise layers
 		var layer0 = init_map(0, i)
