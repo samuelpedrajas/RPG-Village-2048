@@ -14,5 +14,3 @@ const MOVEMENT_OPACITY = 0.2  # opacity when moving
 
 const MOTION_DISTANCE = 15  # Minimum distance with the mouse pressed to make a move
 const MINIMUM_DISTANCE_TO_MOVE = 0.6  # Minimum distance from the 8 direction vectors to make a move
-
-const DB_PATH = "res://data/tile_info.sqlite"

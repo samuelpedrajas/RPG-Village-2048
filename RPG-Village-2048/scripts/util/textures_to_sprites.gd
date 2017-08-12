@@ -9,10 +9,19 @@ var current_pos = Vector2(0, 0)
 var h_spacing = 16
 var v_spacing = 512
 
+var big_json = {}
+
 var current_layer = 0
 var utils = load("res://scripts/util/utils.gd").new()
-var cfg = load("res://scripts/autoload/cfg.gd").new()
-var db = utils.load_db(cfg.DB_PATH);
+
+func _init_big_json():
+	var d1 = utils.load_json("res://data/tile_info_part1.json")
+	var d2 = utils.load_json("res://data/tile_info_part2.json")
+
+	big_json = d1
+	for name in d2.keys():
+		var value = d2[name]
+		big_json[name] = value
 
 func _get_full_path(categories):
 	var path = TILES_PATH
@@ -52,19 +61,12 @@ func _recursive_import(dir_path, categories):
 		name = d.get_next()
 
 func _run():
+	_init_big_json()
 	_recursive_import(TILES_PATH, [])
-	db.close()
-
-func _get_tile_offset(name):
-	var res = db.fetch_array("SELECT offset_x, offset_y FROM tile_info WHERE tile_info.name='" + name + "';")
-	return {
-		"x": res[0]["offset_x"],
-		"y": res[0]["offset_y"]
-	}
 
 func _create_sprite(file_path):
 	var name = _get_file_name(file_path)
-	var offset = _get_tile_offset(name)
+	var offset = big_json[name].offset
 	var s = Sprite.new()
 	var t = ResourceLoader.load(file_path)
 
