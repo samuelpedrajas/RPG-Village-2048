@@ -4,17 +4,22 @@ const N_LAYERS = 3
 
 var layers = []
 
-var db = null;
+var big_json = {};
 
-func _get_tile_info(tile_name):
-	var res = db.fetch_array("SELECT * FROM tile_info WHERE tile_info.name='" + tile_name + "';")
-	return res[0]
+func _init_big_json():
+	var d1 = utils.load_json("res://data/tile_info_part1.json")
+	var d2 = utils.load_json("res://data/tile_info_part2.json")
+
+	big_json = d1
+	for name in d2.keys():
+		var value = d2[name]
+		big_json[name] = value
 
 func layer(i):
 	return layers[i]
 
 func setup(tileset):
-	db = utils.load_db(cfg.DB_PATH)
+	_init_big_json()
 	for i in range(N_LAYERS):
 		var root = CategoryNode.new().setup("root")
 		layers.append(root)
@@ -23,13 +28,12 @@ func setup(tileset):
 	for tile_id in tileset.get_tiles_ids():
 		var tile_name = tileset.tile_get_name(tile_id)
 		var tile_node = TileNode.new().setup(tile_id, tile_name)
-		var tile_info = _get_tile_info(tile_name)
+		var tile_info = big_json[tile_name]
 		layers[int(tile_info.layer)].insert(tile_node)
 
 	for root in layers:
 		# even probability distribution in every level
 		root.even_spread()
-	db.close()
 
 	return self
 
