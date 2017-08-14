@@ -52,7 +52,19 @@ func init_map(layer_index, level):
 
 ########## PUT AND SELECT STUFF FUNCTIONS ##########
 
-func pick_random_pos(i):
+func update_matrix(p, tile):
+	for cell in tile.used_cells:
+		var dest = cell + p
+		M[dest.x][dest.y] = tile.id
+
+func check_valid_pos(p, tile):
+	for cell in tile.used_cells:
+		var pos = p + cell
+		if M[pos.x][pos.y] != -1:
+			return false
+	return true
+
+func pick_random_pos(i, tile):
 	var w = M.size()
 	var h = M[0].size()
 	var s = w * h
@@ -64,17 +76,20 @@ func pick_random_pos(i):
 		r = (r + 1) % s
 		if r == first:
 			return Vector2(-1, -1)
+		if !check_valid_pos(p, tile):
+			continue
 		p = Vector2(r / h, r % h)
 
 	return p
 
 func put_stuff(layer, i):
-	var p = pick_random_pos(i)
+	var tile = probability_tree.layer(2).pick_random_tile()
+	var p = pick_random_pos(i, tile)
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
 	if p.x != -1:
 		var map_position = p + offset
 		var tile = probability_tree.layer(2).pick_random_tile()
-		M[p.x][p.y] = tile.id
+		update_matrix(p, tile)
 		layer.set_cell(map_position.x, map_position.y, tile.id)
 
 func put_floor(layer, level):

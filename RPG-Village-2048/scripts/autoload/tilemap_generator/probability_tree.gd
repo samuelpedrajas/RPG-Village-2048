@@ -113,7 +113,8 @@ class TileNode extends TreeNode:
 		.setup(_name)
 		var tile_info = big_json[_name]
 		id = _id
-		used_cells = tile_info.used_cells
+		for cell in tile_info.used_cells:
+			used_cells.append(Vector2(cell.x, cell.y))
 		return self
 
 	func _get_aux(categories, _):
