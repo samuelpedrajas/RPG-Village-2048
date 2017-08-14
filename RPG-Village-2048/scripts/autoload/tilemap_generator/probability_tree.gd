@@ -27,8 +27,8 @@ func setup(tileset):
 	# for each tile, get its categories and dig across the tree
 	for tile_id in tileset.get_tiles_ids():
 		var tile_name = tileset.tile_get_name(tile_id)
-		var tile_node = TileNode.new().setup(tile_id, tile_name)
 		var tile_info = big_json[tile_name]
+		var tile_node = TileNode.new().setup(tile_id, tile_name, big_json)
 		layers[int(tile_info.layer)].insert(tile_node)
 
 	for root in layers:
@@ -109,9 +109,11 @@ class TileNode extends TreeNode:
 	var id = null
 	var used_cells = []
 
-	func setup(_id, _name):
+	func setup(_id, _name, big_json):
 		.setup(_name)
+		var tile_info = big_json[_name]
 		id = _id
+		used_cells = tile_info.used_cells
 		return self
 
 	func _get_aux(categories, _):
