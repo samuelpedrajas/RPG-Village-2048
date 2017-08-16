@@ -12,7 +12,7 @@ onready var token = preload("res://scenes/token.tscn")
 
 ########## DEBUG MODE - REMOVE ##########
 
-const DEBUG_MODE = false
+const DEBUG_MODE = true
 
 func _debug_func():
 	tween = get_node("tween")

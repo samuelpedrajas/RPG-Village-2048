@@ -52,36 +52,6 @@ func init_map(layer_index, level):
 
 ########## PUT AND SELECT STUFF FUNCTIONS ##########
 
-func update_matrix(p, tile):
-	for cell in tile.used_cells:
-		var dest = cell + p
-		M[dest.x][dest.y] = tile.id
-
-func check_valid_pos(p, tile):
-	for cell in tile.used_cells:
-		var pos = p + cell
-		if M[pos.x][pos.y] != -1:
-			return false
-	return true
-
-func pick_random_pos(i, tile):
-	var w = M.size()
-	var h = M[0].size()
-	var s = w * h
-	var r = randi() % s
-	var p = Vector2(r / h, r % h)
-
-	var first = r
-	while M[p.x][p.y] != -1:
-		r = (r + 1) % s
-		if r == first:
-			return Vector2(-1, -1)
-		if !check_valid_pos(p, tile):
-			continue
-		p = Vector2(r / h, r % h)
-
-	return p
-
 func put_stuff(layer, i):
 	var tile = probability_tree.layer(2).pick_random_tile()
 	var p = pick_random_pos(i, tile)
@@ -135,14 +105,89 @@ func put_floor(layer, level):
 
 ########## MATRIX FUNCTIONS ##########
 
-func _add_row(m, s):
+func _init_cache():
+	var c = []
+	for j in range(M[0].size()):
+		c.append(0)
+	return c
+
+func _update_cache(i, c):
+	for j in range(M[0].size()):
+		if M[i][j] != -1:
+			c[j] = c[j] + 1
+		else:
+			c[j] = 0
+
+func _grow_ones(ll, c, w, h):
+	var ur = Vector2(ll.x - 1, ll.y - 1)
+	var x_max = w
+	var y = ll.y - 1
+	while y + 1 < h and M[ll.x][y + 1] != -1:
+		y += 1
+		x_max = min(ll.x + c[y] - 1, x_max)
+		if _area(ll, Vector2(x_max, y)) > _area(ll, ur):
+			ur = Vector2(x_max, y)
+	return ur
+
+func _area(ll, ur):
+	if ll.x > ur.x or ll.y > ur.y:
+		return 0
+	return (ur.x - ll.x + 1) * (ur.y - ll.y + 1)
+
+func get_max_rectangle():
+	var w = M.size()
+	var h = M[0].size()
+	var c = _init_cache()
+	var best_ll = Vector2(0, 0)
+	var best_ur = Vector2(-1, -1)
+	for i in range(w - 1, -1, -1):
+		_update_cache(i, c)
+		for j in range(0, h):
+			var ll = Vector2(i, j)
+			var ur = _grow_ones(ll, c, w, h)
+			if _area(ll, ur) > _area(best_ll, best_ur):
+				best_ll = ll
+				best_ur = ur
+	return _area(best_ll, best_ur)
+
+func update_matrix(p, tile):
+	for cell in tile.used_cells:
+		var dest = cell + p
+		M[dest.x][dest.y] = tile.id
+
+func check_valid_pos(p, tile):
+	for cell in tile.used_cells:
+		var pos = p + cell
+		if M[pos.x][pos.y] != -1:
+			return false
+	return true
+
+func pick_random_pos(i, tile):
+	var w = M.size()
+	var h = M[0].size()
+	var s = w * h
+	var r = randi() % s
+	var p = Vector2(r / h, r % h)
+
+	var first = r
+	while M[p.x][p.y] != -1:
+		r = (r + 1) % s
+		if r == first:
+			return Vector2(-1, -1)
+		if !check_valid_pos(p, tile):
+			continue
+		p = Vector2(r / h, r % h)
+
+	return p
+
+func _add_row_random(m, s):
 	var rn = randi() % int(s.x)
 	var r = []
 	for _ in range(s.y):
 		r.append(-1)
 	M.insert(rn, r)
 
-func _add_col(m, s):
+func _add_col_random(m, s):
 	var rn = randi() % int(s.y)
 	for r in M:
 		r.insert(rn, -1)
@@ -151,9 +196,9 @@ func expand_matrix(i):
 	var diff = TILEMAP_SIZES[i].usable - TILEMAP_SIZES[i - 1].usable
 
 	for r in range(diff.x):
-		_add_row(M, TILEMAP_SIZES[i - 1].usable)
+		_add_row_random(M, TILEMAP_SIZES[i - 1].usable)
 	for c in range(diff.y):
-		_add_col(M, TILEMAP_SIZES[i - 1].usable)
+		_add_col_random(M, TILEMAP_SIZES[i - 1].usable)
 
 func rebuild_layer(layer, i):
 	var offset = (TILEMAP_SIZES[i].total - TILEMAP_SIZES[i].usable) / 2
@@ -190,6 +235,7 @@ func create_tilemaps():
 		if i != 0:
 			expand_matrix(i)
 			rebuild_layer(layer2, i)
+			# print(get_max_rectangle())
 
 		put_floor(layer0, i)
 		put_stuff(layer2, i)
