@@ -152,8 +152,11 @@ func get_max_rectangle():
 
 func update_matrix(p, tile):
 	for cell in tile.used_cells:
+		var val = -2
+		if cell == Vector2(0, 0):
+			val = tile.id
 		var dest = cell + p
-		M[dest.x][dest.y] = tile.id
+		M[dest.x][dest.y] = val
 
 func check_valid_pos(p, tile):
 	for cell in tile.used_cells:
