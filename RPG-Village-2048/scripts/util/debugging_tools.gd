@@ -9,7 +9,10 @@ func print_matrix(M):
 		for c in r:
 			if !first:
 				s += "\t\t"
-			s += str(c)
+			if c != null:
+				s += str(c.tile_id)
+			else:
+				s += '-1'
 			first = false
 		s += "\n"
 	print(s, "\r")
