@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tile",
+				"tilemap_lab"
+			],
+			[
+				"load",
+				"load_tilemaps"
+			],
+			[
+				"ti",
+				"tilemap_lab"
+			],
+			[
+				"user",
+				"user_ip\tstatement"
+			],
+			[
+				"cryp",
+				"crypto_amounts\tstatement"
+			],
+			[
+				"curren",
+				"currency_info\tstatement"
+			],
+			[
+				"crypto",
+				"crypto_amounts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 8 files for \"tilemap\"\n\n/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/scripts/game/game.gd:\n   29  \n   30  func _ready():\n   31: \ttilemap_generator.create_tilemaps()\n   32  \tif cfg.DEBUG_MODE:\n   33  \t\t_debug_func()\n\n/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/scripts/game/token.gd:\n   35  \n   36  func _set_texture():\n   37: \tif has_node(\"tilemap\"):\n   38: \t\tremove_child(get_node(\"tilemap\"))\n   39: \tadd_child(g.get_tilemap(level))\n   40  \n   41  func _interpolated_move(pos):\n\n5 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 583,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "RPG-Village-2048/scripts/game/game.gd",
+			"settings":
+			{
+				"buffer_size": 5379,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "RPG-Village-2048/scripts/game/token.gd",
+			"settings":
+			{
+				"buffer_size": 1980,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 128.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/linkis/Godot Projects/RPG-Village-2048",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/dev_scripts",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/dev_scripts/tilemap_generator",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/scripts",
+		"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/scripts/game"
+	],
+	"file_history":
+	[
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/myamount/templates/myamount/myamount.html",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/myamount/views.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/myamount/utils.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycrytomoney/urls.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycrytomoney/settings.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/myamount/settings.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/settings.py",
+		"/home/linkis/Github/zenbot/conf.js",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/requirements.txt",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/mycryptomoney/settings.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/myamount/utils.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/myamount/settings.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/myamount/views.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/myamount/templates/myamount.html",
+		"/home/linkis/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/linkis/.config/sublime-text-3/Packages/Python Flake8 Lint/Flake8Lint.sublime-settings",
+		"/home/linkis/.config/sublime-text-3/Packages/User/Flake8Lint.sublime-settings",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/myamount/urls.py",
+		"/home/linkis/Github/mycryptomoney/mycryptomoney/mycryptomoney/mycryptomoney/urls.py",
+		"/home/linkis/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/home/linkis/Godot Projects/runner/.gitignore"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+			"/home/linkis/Godot Projects/RPG-Village-2048/RPG Village 2048/RPG-Village-2048/scripts"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"get_tilemap",
+			"get_tilemapp",
+			"get_tilemal",
+			"tilemap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 583,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										172,
+										179
+									],
+									[
+										197,
+										204
+									],
+									[
+										418,
+										425
+									],
+									[
+										461,
+										468
+									],
+									[
+										496,
+										503
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "RPG-Village-2048/scripts/game/game.gd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								701,
+								701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GDScript (Godot Engine)/GDScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "RPG-Village-2048/scripts/game/token.gd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GDScript (Godot Engine)/GDScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rpg.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

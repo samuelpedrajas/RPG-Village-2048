@@ -1,6 +1,7 @@
 extends Node
 
 var matrix = {}
+var tilemap_lab
 
 # first positions in each direction line
 var direction_pivots = {}
@@ -10,28 +11,8 @@ var board
 
 onready var token = preload("res://scenes/token.tscn")
 
-########## DEBUG ##########
-
-func _debug_func():
-	tween = get_node("tween")
-	board = get_node("board")
-
-	var lvl = 0
-	for i in range(-1, 2):
-		for j in range(1, 4):
-			var t = token.instance()
-			board.add_child(t)
-			t.set_owner(get_tree().get_edited_scene_root())
-			t.setup(Vector2(j, i), tween, lvl)
-			lvl += 1
-
-########## END DEBUG ##########
-
 func _ready():
-	tilemap_generator.create_tilemaps()
-	if cfg.DEBUG_MODE:
-		_debug_func()
-		return
+	tilemap_lab = load("res://dev_scripts/tilemap_generator/tilemap_lab.tscn").instance()
 	input_handler = get_node("input_handler")
 	input_handler.connect("user_input", self, "move")
 	tween = get_node("tween")

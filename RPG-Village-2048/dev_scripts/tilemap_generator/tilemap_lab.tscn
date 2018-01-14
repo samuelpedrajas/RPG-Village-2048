@@ -6,6 +6,9 @@
 
 [node name="LVL 0" type="Node2D" parent="."]
 
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
+
 [node name="TileMap" type="TileMap" parent="LVL 0"]
 
 transform/scale = Vector2( 0.704636, 0.704636 )
@@ -64,6 +67,9 @@ occluder/light_mask = 1
 tile_data = IntArray( 131074, 109 )
 
 [node name="LVL 1" type="Node2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
 
 [node name="TileMap" type="TileMap" parent="LVL 1"]
 
@@ -124,6 +130,9 @@ tile_data = IntArray( 65538, 110, 131073, 109, 131074, 105, 131075, 108, 196609,
 
 [node name="LVL 2" type="Node2D" parent="."]
 
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
+
 [node name="TileMap" type="TileMap" parent="LVL 2"]
 
 transform/scale = Vector2( 0.704636, 0.704636 )
@@ -183,7 +192,8 @@ tile_data = IntArray( 65538, 82, 65539, 82, 131073, 69, 131074, 70, 131075, 82, 
 
 [node name="LVL 3" type="Node2D" parent="."]
 
-visibility/visible = false
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
 
 [node name="TileMap" type="TileMap" parent="LVL 3"]
 
@@ -244,6 +254,9 @@ tile_data = IntArray( 65538, 82, 131073, 69, 131074, 234, 196611, 99 )
 
 [node name="LVL 4" type="Node2D" parent="."]
 
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
+
 [node name="TileMap" type="TileMap" parent="LVL 4"]
 
 transform/scale = Vector2( 0.587196, 0.587196 )
@@ -302,6 +315,9 @@ occluder/light_mask = 1
 tile_data = IntArray( 65539, 37, 131074, 234, 196611, 536871053, 196612, 536870956, 262145, 227, 262147, 536871053, 262148, 536870957 )
 
 [node name="LVL 5" type="Node2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
 
 [node name="TileMap" type="TileMap" parent="LVL 5"]
 
@@ -362,6 +378,9 @@ tile_data = IntArray( 65539, 126, 131074, 234, 131075, 274, 131077, 256, 196611,
 
 [node name="LVL 6" type="Node2D" parent="."]
 
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
+
 [node name="TileMap" type="TileMap" parent="LVL 6"]
 
 transform/scale = Vector2( 0.503311, 0.503311 )
@@ -421,6 +440,9 @@ tile_data = IntArray( 2, 536871033, 4, 113, 65537, 234, 65539, 239, 65542, 246, 
 
 [node name="LVL 7" type="Node2D" parent="."]
 
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
+
 [node name="TileMap" type="TileMap" parent="LVL 7"]
 
 transform/scale = Vector2( 0.440397, 0.440397 )
@@ -479,6 +501,9 @@ occluder/light_mask = 1
 tile_data = IntArray( 2, 274, 5, 230, 65537, 248, 65540, 256, 65543, 241, 131074, 260, 131078, 198, 196608, 226, 196610, 215, 196611, 229, 196615, 223, 262144, 227, 262147, 22, 262150, 233, 262151, 290, 327684, 536871101, 327685, 21, 327687, 290, 393216, 23, 393217, 536871128, 393220, 188, 393222, 217, 393223, 230, 458753, 143, 458755, 264, 458758, 101 )
 
 [node name="LVL 8" type="Node2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 12 )
 
 [node name="TileMap" type="TileMap" parent="LVL 8"]
 
