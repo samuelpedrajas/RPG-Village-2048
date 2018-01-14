@@ -1,4 +1,5 @@
-extends Node
+extends EditorScript
+tool
 
 const N_TILEMAPS = 9
 const TILEMAP_SIZES = [
@@ -31,6 +32,22 @@ var M = [[null]]
 var tilemaps = []
 
 var db = load("res://scripts/util/debugging_tools.gd").new()
+var utils = load("res://scripts/util/utils.gd").new()
+
+func _run():
+	create_tilemaps()
+	for i in range(tilemaps.size()):
+		var t = tilemaps[i].duplicate()
+		var n = Node2D.new()
+		n.hide()
+		n.set_name("LVL " + str(i))
+		n
+		get_scene().add_child(n)
+		n.set_owner(get_scene())
+		for c in t.get_children():
+			var cd = c.duplicate()
+			n.add_child(cd)
+			cd.set_owner(get_scene())
 
 ########## OUTPUT FUNCTION ##########
 

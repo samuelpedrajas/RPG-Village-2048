@@ -1,0 +1,556 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://tilesets/token_tileset.tres" type="TileSet" id=1]
+
+[node name="tilemap_lab" type="Node2D"]
+
+[node name="LVL 0" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 0"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 167, 1, 167, 2, 167, 3, 167, 4, 167, 65536, 167, 65537, 177, 65538, 169, 65539, 178, 65540, 167, 131072, 167, 131073, 168, 131074, 181, 131075, 170, 131076, 167, 196608, 167, 196609, 176, 196610, 171, 196611, 179, 196612, 167, 262144, 167, 262145, 167, 262146, 167, 262147, 167, 262148, 167 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 0"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 0"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 131074, 132 )
+
+[node name="LVL 1" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 1"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 177, 1, 169, 2, 169, 3, 169, 4, 178, 65536, 168, 65537, 181, 65538, 181, 65539, 181, 65540, 170, 131072, 168, 131073, 181, 131074, 181, 131075, 181, 131076, 170, 196608, 168, 196609, 181, 196610, 181, 196611, 181, 196612, 170, 262144, 176, 262145, 171, 262146, 171, 262147, 171, 262148, 179 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 1"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 1"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 131074, 132, 196609, 299 )
+
+[node name="LVL 2" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 2"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 177, 1, 169, 2, 169, 3, 169, 4, 178, 65536, 168, 65537, 181, 65538, 181, 65539, 181, 65540, 170, 131072, 168, 131073, 181, 131074, 181, 131075, 181, 131076, 170, 196608, 168, 196609, 181, 196610, 181, 196611, 181, 196612, 170, 262144, 176, 262145, 171, 262146, 171, 262147, 171, 262148, 179 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 2"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 2"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65538, 198, 131074, 132, 196609, 299 )
+
+[node name="LVL 3" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 3"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 177, 1, 169, 2, 169, 3, 169, 4, 178, 65536, 168, 65537, 181, 65538, 181, 65539, 181, 65540, 170, 131072, 168, 131073, 181, 131074, 181, 131075, 181, 131076, 170, 196608, 168, 196609, 181, 196610, 181, 196611, 181, 196612, 170, 262144, 176, 262145, 171, 262146, 171, 262147, 171, 262148, 179 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 3"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 3"]
+
+transform/scale = Vector2( 0.704636, 0.704636 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65538, 198, 65539, 196, 131074, 132, 196609, 299 )
+
+[node name="LVL 4" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 4"]
+
+transform/scale = Vector2( 0.587196, 0.587196 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 177, 1, 169, 2, 169, 3, 169, 4, 169, 5, 178, 65536, 168, 65537, 181, 65538, 181, 65539, 181, 65540, 181, 65541, 170, 131072, 168, 131073, 181, 131074, 181, 131075, 181, 131076, 181, 131077, 170, 196608, 168, 196609, 181, 196610, 181, 196611, 181, 196612, 181, 196613, 170, 262144, 168, 262145, 181, 262146, 181, 262147, 181, 262148, 181, 262149, 170, 327680, 176, 327681, 171, 327682, 171, 327683, 171, 327684, 171, 327685, 179 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 4"]
+
+transform/scale = Vector2( 0.587196, 0.587196 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 4"]
+
+transform/scale = Vector2( 0.587196, 0.587196 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 131074, 198, 131075, 196, 196610, 132, 262145, 299, 262146, 79 )
+
+[node name="LVL 5" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 5"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 177, 1, 169, 2, 169, 3, 169, 4, 169, 5, 169, 6, 178, 65536, 168, 65537, 181, 65538, 181, 65539, 181, 65540, 181, 65541, 181, 65542, 170, 131072, 168, 131073, 181, 131074, 181, 131075, 181, 131076, 181, 131077, 181, 131078, 170, 196608, 168, 196609, 181, 196610, 181, 196611, 181, 196612, 181, 196613, 181, 196614, 170, 262144, 168, 262145, 181, 262146, 181, 262147, 181, 262148, 181, 262149, 181, 262150, 170, 327680, 168, 327681, 181, 327682, 181, 327683, 181, 327684, 181, 327685, 181, 327686, 170, 393216, 176, 393217, 171, 393218, 171, 393219, 171, 393220, 171, 393221, 171, 393222, 179 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 5"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 5"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 131075, 198, 131076, 196, 196611, 132, 262145, 299, 262147, 79, 327683, 145 )
+
+[node name="LVL 6" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 6"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 181, 1, 181, 2, 181, 3, 181, 4, 181, 5, 181, 6, 181, 65536, 181, 65537, 181, 65538, 181, 65539, 181, 65540, 181, 65541, 181, 65542, 181, 131072, 181, 131073, 181, 131074, 181, 131075, 181, 131076, 181, 131077, 181, 131078, 181, 196608, 181, 196609, 181, 196610, 181, 196611, 181, 196612, 181, 196613, 181, 196614, 181, 262144, 181, 262145, 181, 262146, 181, 262147, 181, 262148, 181, 262149, 181, 262150, 181, 327680, 181, 327681, 181, 327682, 181, 327683, 181, 327684, 181, 327685, 181, 327686, 181, 393216, 181, 393217, 181, 393218, 181, 393219, 181, 393220, 181, 393221, 181, 393222, 181 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 6"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 6"]
+
+transform/scale = Vector2( 0.503311, 0.503311 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 144, 131074, 198, 131076, 196, 196610, 132, 262144, 299, 262146, 79, 393218, 145 )
+
+[node name="LVL 7" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 7"]
+
+transform/scale = Vector2( 0.440397, 0.440397 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 181, 1, 181, 2, 181, 3, 181, 4, 181, 5, 181, 6, 181, 7, 181, 65536, 181, 65537, 181, 65538, 181, 65539, 181, 65540, 181, 65541, 181, 65542, 181, 65543, 181, 131072, 181, 131073, 181, 131074, 181, 131075, 181, 131076, 181, 131077, 181, 131078, 181, 131079, 181, 196608, 181, 196609, 181, 196610, 181, 196611, 181, 196612, 181, 196613, 181, 196614, 181, 196615, 181, 262144, 181, 262145, 181, 262146, 181, 262147, 181, 262148, 181, 262149, 181, 262150, 181, 262151, 181, 327680, 181, 327681, 181, 327682, 181, 327683, 181, 327684, 181, 327685, 181, 327686, 181, 327687, 181, 393216, 181, 393217, 181, 393218, 181, 393219, 181, 393220, 181, 393221, 181, 393222, 181, 393223, 181, 458752, 181, 458753, 181, 458754, 181, 458755, 181, 458756, 181, 458757, 181, 458758, 181, 458759, 181 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 7"]
+
+transform/scale = Vector2( 0.440397, 0.440397 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 7"]
+
+transform/scale = Vector2( 0.440397, 0.440397 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 144, 131074, 198, 131076, 196, 196610, 132, 262144, 299, 262146, 79, 393223, 183, 458754, 145 )
+
+[node name="LVL 8" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="TileMap" type="TileMap" parent="LVL 8"]
+
+transform/scale = Vector2( 0.391464, 0.391464 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 181, 1, 181, 2, 181, 3, 181, 4, 181, 5, 181, 6, 181, 7, 181, 8, 181, 65536, 181, 65537, 181, 65538, 181, 65539, 181, 65540, 181, 65541, 181, 65542, 181, 65543, 181, 65544, 181, 131072, 181, 131073, 181, 131074, 181, 131075, 181, 131076, 181, 131077, 181, 131078, 181, 131079, 181, 131080, 181, 196608, 181, 196609, 181, 196610, 181, 196611, 181, 196612, 181, 196613, 181, 196614, 181, 196615, 181, 196616, 181, 262144, 181, 262145, 181, 262146, 181, 262147, 181, 262148, 181, 262149, 181, 262150, 181, 262151, 181, 262152, 181, 327680, 181, 327681, 181, 327682, 181, 327683, 181, 327684, 181, 327685, 181, 327686, 181, 327687, 181, 327688, 181, 393216, 181, 393217, 181, 393218, 181, 393219, 181, 393220, 181, 393221, 181, 393222, 181, 393223, 181, 393224, 181, 458752, 181, 458753, 181, 458754, 181, 458755, 181, 458756, 181, 458757, 181, 458758, 181, 458759, 181, 458760, 181, 524288, 181, 524289, 181, 524290, 181, 524291, 181, 524292, 181, 524293, 181, 524294, 181, 524295, 181, 524296, 181 )
+
+[node name="TileMap 2" type="TileMap" parent="LVL 8"]
+
+transform/scale = Vector2( 0.391464, 0.391464 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
+[node name="TileMap 3" type="TileMap" parent="LVL 8"]
+
+transform/scale = Vector2( 0.391464, 0.391464 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 151, 76 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 144, 131074, 198, 131077, 196, 196610, 132, 196613, 142, 262144, 299, 262146, 79, 393224, 183, 458754, 145 )
+
+

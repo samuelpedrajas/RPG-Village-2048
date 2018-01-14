@@ -6,6 +6,8 @@ var layers = []
 
 var big_json = {};
 
+var utils = load("res://scripts/util/utils.gd").new()
+
 func _init_big_json():
 	var d1 = utils.load_json("res://data/tile_info_part1.json")
 	var d2 = utils.load_json("res://data/tile_info_part2.json")
